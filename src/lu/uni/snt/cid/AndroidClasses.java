@@ -11,7 +11,7 @@ public class AndroidClasses
 	{
 		if (null == androidClasses)
 		{
-			androidClasses = CommonUtils.loadFile("res/android-classes.txt");
+			androidClasses = CommonUtils.loadFile("apis/Official/android/android-classes.txt");
 		}
 		
 		if (androidClasses.contains(cls))

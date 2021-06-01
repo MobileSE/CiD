@@ -39,12 +39,12 @@ public class AndroidAPILifeModel implements Serializable
 	public Map<String, String> method2inheritedAPIs = new HashMap<String, String>();
 	
 	private static AndroidAPILifeModel instance = null;
-	private static String modelPath = "res/android_api_model.txt";
+	private static String modelPath = "apis/Official/android/android_api_model.txt";
 	
-	private String lifetimeAPIPath = "res/android_api_lifetime.txt";
-	private String genericAPIPath = "res/android_api_generictype.txt";
-	private String varargsAPIPath = "res/android_api_varargs.txt";
-	private String androidAPIsDirPath = "res/android-apis"; 
+	private String lifetimeAPIPath = "apis/Official/android/android_api_lifetime.txt";
+	private String genericAPIPath = "apis/Official/android/android_api_generictype.txt";
+	private String varargsAPIPath = "apis/Official/android/android_api_varargs.txt";
+	private String androidAPIsDirPath = "apis/Official/android/android-apis";
 	
 	public static AndroidAPILifeModel getInstance()
 	{
@@ -321,6 +321,7 @@ public class AndroidAPILifeModel implements Serializable
 			{
 				current.setMaxAPILevel(target.getMaxAPILevel());
 			}
+			current.setAPILevels(target.getAPILevels());
 		}
 		
 		
@@ -357,6 +358,7 @@ public class AndroidAPILifeModel implements Serializable
 			{
 				current.setMaxAPILevel(target.getMaxAPILevel());
 			}
+			current.setAPILevels(target.getAPILevels());
 		}
 	
 		if (class2SuperClasses.containsKey(superCls))

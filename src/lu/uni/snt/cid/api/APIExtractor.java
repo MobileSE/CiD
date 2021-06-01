@@ -37,6 +37,7 @@ public class APIExtractor
         };
 			
 		Options.v().set_output_format(Options.output_format_none);
+//		Options.v().set_verbose(false);  // get rid of verbose output.
 		if (-1 != apiLevel)
 			Options.v().set_force_android_jar(androidJars + File.separator + "android-" + apiLevel + File.separator + "android.jar");
 		else

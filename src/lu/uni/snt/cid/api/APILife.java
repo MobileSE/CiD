@@ -7,6 +7,7 @@ public class APILife implements Serializable
 	private static final long serialVersionUID = 2736868985941458468L;
 	
 	String signature = "";
+	String apilevels = "";
 	int minAPILevel = Integer.MAX_VALUE;
 	int maxAPILevel = Integer.MIN_VALUE;
 	
@@ -21,17 +22,24 @@ public class APILife implements Serializable
 	
 	public APILife(String apiLifeTxt)
 	{
-		this.signature = apiLifeTxt.substring(0, apiLifeTxt.lastIndexOf(':'));
-		
-		String levelStr = apiLifeTxt.substring(apiLifeTxt.lastIndexOf('[') + 1, apiLifeTxt.lastIndexOf(']'));
-		this.minAPILevel = Integer.parseInt(levelStr.split(",")[0]);
-		this.maxAPILevel = Integer.parseInt(levelStr.split(",")[1]);
+//		this.signature = apiLifeTxt.substring(0, apiLifeTxt.lastIndexOf(':'));
+//
+//		String levelStr = apiLifeTxt.substring(apiLifeTxt.lastIndexOf('[') + 1, apiLifeTxt.lastIndexOf(']'));
+//		this.minAPILevel = Integer.parseInt(levelStr.split(",")[0]);
+//		this.maxAPILevel = Integer.parseInt(levelStr.split(",")[1]);
+		this.signature = apiLifeTxt.substring(0, apiLifeTxt.indexOf(":["));
+		String totalAPIs = apiLifeTxt.substring(apiLifeTxt.indexOf(":[") + 2, apiLifeTxt.lastIndexOf(']'));
+		String[] apiSplits = totalAPIs.split(",");
+		this.minAPILevel = Integer.parseInt(apiSplits[0]);
+		this.maxAPILevel = Integer.parseInt(apiSplits[apiSplits.length - 1]);
+		this.apilevels = totalAPIs;
 	}
 
 	@Override
 	public String toString()
 	{
-		return signature + ":[" + minAPILevel + "," + maxAPILevel + "]";
+//		return signature + ":[" + minAPILevel + "," + maxAPILevel + "]";
+		return signature + ":[" + this.apilevels + "]";
 	}
 
 	public String getSignature() {
@@ -56,5 +64,25 @@ public class APILife implements Serializable
 
 	public void setMaxAPILevel(int maxAPILevel) {
 		this.maxAPILevel = maxAPILevel;
+	}
+
+	public String getAPILevels() {
+		return this.apilevels;
+	}
+
+	public void setAPILevels(String apiLevels) {
+		this.apilevels = apiLevels;
+	}
+
+	public int[] getAPILevelsInInt() {
+		String[] splits = this.apilevels.split(",");
+		int[] apis = new int[splits.length];
+		int idx = 0;
+		for (String api: splits) {
+			apis[idx] = Integer.parseInt(api);
+			idx += 1;
+		}
+
+		return apis;
 	}
 }

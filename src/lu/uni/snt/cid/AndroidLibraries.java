@@ -11,7 +11,7 @@ public class AndroidLibraries
 	{
 		if (null == androidLibraries)
 		{
-			androidLibraries = CommonUtils.loadFile("res/android-libraries.txt");
+			androidLibraries = CommonUtils.loadFile("apis/Official/android/android-libraries.txt");
 		}
 		
 		for (String prefix : androidLibraries)

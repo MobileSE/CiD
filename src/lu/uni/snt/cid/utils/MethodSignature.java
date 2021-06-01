@@ -142,8 +142,6 @@ public class MethodSignature
 			sb.append("." + param);
 		}
 		
-		System.out.println(sb.toString());
-		
 		return sb.toString();
 	}
 	

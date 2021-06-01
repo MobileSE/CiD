@@ -65,7 +65,7 @@ public class CiD
 		}
 		
 		//(4) SDK check study (expand constructors)
-		//AndroidSDKVersionChecker.scan(apkPath, androidJars);
+//		AndroidSDKVersionChecker.scan(apkPath, androidJars);
 		ConditionalCallGraph.expandConstructors();
 		
 		System.out.println("--------------------------------------------------------------------------------------------------------");
@@ -96,11 +96,14 @@ public class CiD
 				continue;
 			}
 			
+			if (isAPIReverted(lifetime.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+				System.out.println("Reverted: " + method + ":[" + lifetime.getAPILevels() + "]:[" + minAPILevel + "," + maxAPILevel + "]");
+			}
+
 			if (lifetime.getMaxAPILevel() < maxAPILevel)
 			{
 				if (ConditionalCallGraph.obtainConditions(method).isEmpty())
 				{
-					
 					problematicAPIs_forward.add(lifetime);
 				}
 				else
@@ -142,7 +145,7 @@ public class CiD
 				else
 				{
 					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
-					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
+//					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
 				}
 			}
 		}
@@ -161,7 +164,7 @@ public class CiD
 				else
 				{
 					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
-					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
+//					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
 				}
 			}
 		}
@@ -181,7 +184,7 @@ public class CiD
 				else
 				{
 					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
-					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
+//					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
 				}
 			}
 		}
@@ -200,7 +203,7 @@ public class CiD
 				else
 				{
 					System.out.println("--Library:False-->" + lifetime + "-->" + method);
-					System.out.println(ConditionalCallGraph.obtainCallStack(method));
+//					System.out.println(ConditionalCallGraph.obtainCallStack(method));
 				}	
 			}
 		}
@@ -251,6 +254,25 @@ public class CiD
 		{
 			e.printStackTrace();
 		}
+	}
+
+	public static boolean isAPIReverted(int[] apis, int minAPI, int maxAPI) {
+		boolean isReverted = false;
+		boolean[] supportAPIs = new boolean[31];
+		for (int api: apis) {
+			supportAPIs[api] = true;
+		}
+		supportAPIs[20] = true; // default true for API level 20 (actually retained for other purpose, we believe it support every API.)
+		for (int i = minAPI; i < maxAPI + 1; i++) {
+			if (i == 20) {
+				continue;
+			}
+			if (!supportAPIs[i]) {
+				isReverted = true;
+				break;
+			}
+		}
+		return isReverted;
 	}
 }
 

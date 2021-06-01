@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import lu.uni.snt.cid.AndroidAPILifeModel;
 import lu.uni.snt.cid.Config;
 import lu.uni.snt.cid.utils.SootUtils;
 import soot.Body;
@@ -111,26 +112,38 @@ public class AndroidSDKVersionChecker// extends BodyTransformer
 				edge.conditions.add(conditions.toString());
 				
 				ConditionalCallGraph.addEdge(edge);
+				String currMethodSig = stmt.getInvokeExpr().getMethod().getSignature();
+				if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(currMethodSig)) {
+					String superMethodSig = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(currMethodSig);
+					superMethodSig = superMethodSig.replace("$", ".");
+					Edge superClassEdge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), superMethodSig);
+					superClassEdge.conditions.add(conditions.toString());
+
+					ConditionalCallGraph.addEdge(superClassEdge);
+				}
 				
 				if (stmt.getInvokeExpr() instanceof InterfaceInvokeExpr)
 				{
 					SootMethod sootMethod = stmt.getInvokeExpr().getMethod();
+					System.out.println("Soot InterfaceInvokeExpr invoke:" + stmt.toString());
 					
-					if (sootMethod.getDeclaration().toString().contains("private"))
+					if (!sootMethod.getDeclaration().toString().contains("private"))
 					{
 						//If the method is declared as private, then it cannot be extended by the sub-classes.
-						continue;
-					}
+//						continue;
+//					}
+//					} else {
 					
-					SootClass sootClass = sootMethod.getDeclaringClass();
-					Set<SootClass> subClasses = SootUtils.getAllSubClasses(sootClass);
-					
-					for (SootClass subClass : subClasses)
-					{
-						Edge e = ConditionalCallGraph.getEdge(edge.srcSig, edge.tgtSig.replace(sootClass.getName() + ":", subClass.getName() + ":"));
-						e.conditions.addAll(edge.conditions);
+						SootClass sootClass = sootMethod.getDeclaringClass();
+						Set<SootClass> subClasses = SootUtils.getAllSubClasses(sootClass);
 						
-						ConditionalCallGraph.addEdge(e);
+						for (SootClass subClass : subClasses)
+						{
+							Edge e = ConditionalCallGraph.getEdge(edge.srcSig, edge.tgtSig.replace(sootClass.getName() + ":", subClass.getName() + ":"));
+							e.conditions.addAll(edge.conditions);
+
+							ConditionalCallGraph.addEdge(e);
+						}
 					}
 				}
 			}
@@ -195,7 +208,9 @@ public class AndroidSDKVersionChecker// extends BodyTransformer
 				negativeConditions.add("-" + ifStmt.getCondition().toString());
 				for (Unit u : succUnits)
 				{
-					traverse(b, graph, u, sdkIntValues, negativeConditions, visitedUnits);
+					if (!visitedUnits.contains(u)) {
+						traverse(b, graph, u, sdkIntValues, negativeConditions, visitedUnits);
+					}
 				}
 			}
 			else
@@ -209,7 +224,9 @@ public class AndroidSDKVersionChecker// extends BodyTransformer
 		{
 			for (Unit u : succUnits)
 			{
-				traverse(b, graph, u, sdkIntValues, conditions, visitedUnits);
+				if (!visitedUnits.contains(u)) {
+					traverse(b, graph, u, sdkIntValues, conditions, visitedUnits);
+				}
 			}
 		}
 	}

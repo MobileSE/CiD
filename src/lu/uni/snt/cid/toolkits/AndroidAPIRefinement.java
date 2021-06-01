@@ -12,7 +12,7 @@ public class AndroidAPIRefinement
 {
 	public static void main(String[] args)
 	{
-		File androidAPIsDir = new File("/Users/li.li/Documents/workspace2016/Mining4U/res/android-apis");
+		File androidAPIsDir = new File("apis/Official/android/android-apis/");
 		for (File file : androidAPIsDir.listFiles())
 		{
 			if (! (file.getName().endsWith(".txt") || file.getName().endsWith(".xml")))
@@ -52,7 +52,7 @@ public class AndroidAPIRefinement
 
 			}
 			
-			CommonUtils.writeResultToFile("/Users/li.li/Documents/workspace2016/Mining4U/res/android-apis-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", sb.toString());
+			CommonUtils.writeResultToFile("apis/Official/android/android-apis-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", sb.toString());
 		}
 	}
 }

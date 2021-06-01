@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.jdom2.Document;
 import org.jdom2.Element;
@@ -17,9 +19,13 @@ public class FrameworkBase
 {
 	public Map<String, Set<String>> class2SuperClasses = new HashMap<String, Set<String>>();
 	public Map<String, Set<String>> class2Methods = new HashMap<String, Set<String>>();
+	public static Set<String> javaLangClasses = new HashSet<String>();
+
+	private String lifetimeAPIPath = "apis/Official/android/android-java-lang-classes.txt";
 	
 	public void load(String androidAPIPath)
 	{
+		javaLangClassLoad();
 		if (androidAPIPath.endsWith(".txt"))
 		{
 			parseTxtFile(androidAPIPath);
@@ -27,6 +33,13 @@ public class FrameworkBase
 		else if (androidAPIPath.endsWith(".xml"))
 		{
 			parseXmlFile(androidAPIPath);
+		}
+	}
+
+	public void javaLangClassLoad() {
+		List<String> lines = CommonUtils.loadFileToList(lifetimeAPIPath);
+		for (String cls: lines) {
+			javaLangClasses.add(cls);
 		}
 	}
 	
@@ -78,7 +91,8 @@ public class FrameworkBase
 				
 				currentClsName = line;
 				
-				class2SuperClasses.put(currentClsName, superClses);
+				if (!currentClsName.contains(".test."))
+					class2SuperClasses.put(currentClsName, superClses);
 			}
 			else if (line.contains(" interface "))
 			{
@@ -87,7 +101,7 @@ public class FrameworkBase
 				line = line.replace("{", "").trim();
 				
 				Set<String> superClses = new HashSet<String>();
-				
+
 				if (line.contains("implements"))
 				{
 					String[] strs = line.split("implements");
@@ -102,34 +116,70 @@ public class FrameworkBase
 				
 				currentClsName = line;
 				
-				class2SuperClasses.put(currentClsName, superClses);
+				if (!currentClsName.contains(".test."))
+					class2SuperClasses.put(currentClsName, superClses);
 			}
 			else if (line.startsWith("ctor") || line.startsWith("method"))
 			{
 				StringBuilder sb = new StringBuilder();
+				StringBuilder sbparams = new StringBuilder();
+
+				String regPattern = "@NonNull\\s*|@Nullable\\s*|@FloatRange\\(.*?\\)\\s*|@IntRange\\(.*?\\)\\s*|@Size\\(.*?\\)\\s*";
 				
 				if (line.startsWith("ctor"))
 				{
 					sb.append("<" + currentClsName + ": void <init>");
 					
-					String params = line.substring(line.lastIndexOf('('), line.lastIndexOf(')')+1).replace(" ", "");
-					
-					sb.append(params + ">");
+//					String params = line.substring(line.lastIndexOf('('), line.lastIndexOf(')')+1).replace(" ", "");
+					String params = line.substring(line.lastIndexOf('('), line.lastIndexOf(')')+1).replaceAll(regPattern, "");
+					String[] paramSplits = params.substring(1, params.length() - 1).split(",");
+					sbparams.append("(");
+					boolean commaAdd = false;
+					for (String param: paramSplits) {
+						if (commaAdd) {
+							sbparams.append("," + param);
+						} else {
+							sbparams.append(param);
+							commaAdd = true;
+						}
+					}
+					sbparams.append(")");
+//					sb.append(params + ">");
+					sb.append(sbparams.toString() + ">");
 				}
 				else if (line.startsWith("method"))
 				{
+
+					int firstBracketPos = line.indexOf("(");
+					int lastBracketPos = line.lastIndexOf(")");
+
+					line = line.substring(0, firstBracketPos + 1) + line.substring(firstBracketPos + 1, lastBracketPos).replaceAll(regPattern, "") + line.substring(lastBracketPos);
 					sb.append("<" + currentClsName + ": ");
 					
 					String params = line.substring(line.lastIndexOf('('), line.lastIndexOf(')')+1).replace(" ", "");
 					
 					line = line.substring(0, line.lastIndexOf('('));
 					String[] strs = line.split(" ");
-					
-					sb.append(strs[strs.length-2] + " " + strs[strs.length-1]);
-					sb.append(params + ">");
+					sbparams.append("(");
+					String[] paramSplits = params.substring(1, params.length() - 1).split(",");
+					boolean commaAdd = false;
+					for (String param: paramSplits) {
+						String neatParam = javaLangAppend(param.trim());
+						if (commaAdd) {
+							sbparams.append("," + neatParam);
+						} else {
+							sbparams.append(neatParam);
+							commaAdd = true;
+						}
+					}
+					sbparams.append(")");
+					sb.append(javaLangAppend(strs[strs.length-2]) + " " + strs[strs.length-1]);
+//					sb.append(params + ">");
+					sb.append(sbparams.toString() + ">");
 				}
-			
-				put(class2Methods, currentClsName, sb.toString());
+				
+				if (!currentClsName.contains(".test."))
+					put(class2Methods, currentClsName, sb.toString());
 			}
 		}
 	}
@@ -147,6 +197,8 @@ public class FrameworkBase
 			for (Element packageEle : packageEles)
 			{
 				String packageName = packageEle.getAttributeValue("name");
+				if (packageName.contains(".test."))
+					continue;
 				
 				List<Element> classEles = packageEle.getChildren("class");
 				List<Element> interfaceEles = packageEle.getChildren("interface");
@@ -168,12 +220,14 @@ public class FrameworkBase
 					String extendedClass = classEle.getAttributeValue("extends");
 					if (! "java.lang.Object".equals(extendedClass))
 					{
-						put(class2SuperClasses, className, classEle.getAttributeValue("extends"));
+						if (!className.contains(".test."))
+							put(class2SuperClasses, className, classEle.getAttributeValue("extends"));
 					}
 
 					for (Element implementsEle : classEle.getChildren("implements"))
 					{
-						put(class2SuperClasses, className, implementsEle.getAttributeValue("name"));
+						if (!className.contains(".test."))
+							put(class2SuperClasses, className, implementsEle.getAttributeValue("name"));
 					}
 					
 					for (Element constructorEle : classEle.getChildren("constructor"))
@@ -187,25 +241,26 @@ public class FrameworkBase
 						{
 							if (first)
 							{
-								sb.append(removeGenericType(parameterEle.getAttributeValue("type")));
+								sb.append(javaLangAppend(removeGenericType(parameterEle.getAttributeValue("type"))));
 								first = false;
 							}
 							else
 							{
-								sb.append("," + removeGenericType(parameterEle.getAttributeValue("type")));
+								sb.append("," + javaLangAppend(removeGenericType(parameterEle.getAttributeValue("type"))));
 							}
 						}
 						
 						sb.append(")>");
-						
-						put(class2Methods, className, sb.toString());
+
+						if (!className.contains(".test."))
+							put(class2Methods, className, sb.toString());
 					}
 					
 					for (Element methodEle : classEle.getChildren("method"))
 					{
 						StringBuilder sb = new StringBuilder();
 						sb.append("<" + className + ": ");
-						sb.append(removeGenericType(methodEle.getAttributeValue("return")));
+						sb.append(javaLangAppend(removeGenericType(methodEle.getAttributeValue("return"))));
 						sb.append(" " + methodEle.getAttributeValue("name"));
 						sb.append("(");
 						
@@ -215,18 +270,19 @@ public class FrameworkBase
 						{
 							if (first)
 							{
-								sb.append(removeGenericType(parameterEle.getAttributeValue("type")));
+								sb.append(javaLangAppend(removeGenericType(parameterEle.getAttributeValue("type"))));
 								first = false;
 							}
 							else
 							{
-								sb.append("," + removeGenericType(parameterEle.getAttributeValue("type")));
+								sb.append("," + javaLangAppend(removeGenericType(parameterEle.getAttributeValue("type"))));
 							}
 						}
 						
 						sb.append(")>");
 						
-						put(class2Methods, className, sb.toString());
+						if (!className.contains(".test."))
+							put(class2Methods, className, sb.toString());
 					}
 				}
 			}
@@ -265,6 +321,31 @@ public class FrameworkBase
 			Set<String> methods = new HashSet<String>();
 			methods.add(method);
 			class2Methods.put(cls, methods);
+		}
+	}
+
+	public static String javaLangTrim(String paramType) {
+		String retType = paramType.trim();
+		if (paramType.contains("java.lang.")) {
+			System.out.println("javalang:" + paramType);
+			retType = paramType.trim().replace("java.lang.", "");
+		}
+		return retType;
+	}
+
+	public static String  javaLangAppend(String paramType) {
+		String param = paramType.trim();
+		String regPattern = "(^[A-Za-z]+)?(.*)";
+		if (param.contains(".")) {
+			return param;
+		} else {
+	        Pattern p = Pattern.compile(regPattern);
+	        Matcher m = p.matcher(param);
+	        if (m.matches() && javaLangClasses.contains(m.group(1))) {
+	        	return "java.lang." + param;
+	        } else {
+	        	return param;
+	        }
 		}
 	}
 }

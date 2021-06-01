@@ -241,6 +241,10 @@ public class ConditionalCallGraph
 		while (! workList.isEmpty())
 		{
 			Edge e = workList.remove(0);
+			if (visitedEdges.contains(e)) {
+				continue;
+			}
+//			System.out.println("WorkList size:" + workList.size() + ", visitedEdges:" + visitedEdges.size() + ":" + e);
 			visitedEdges.add(e);
 
 			String cond = e.conditions.toString().replaceAll("\\[", "").replaceAll("]", "");
@@ -248,20 +252,35 @@ public class ConditionalCallGraph
 			if (! cond.isEmpty())
 			{
 				conditions.add(e.conditions.toString());
+				if (!conditions.isEmpty()) {
+					break;
+				}
 			}
 			
 			edges = tgtMethod2edges.get(e.srcSig);
-			
-			if (null != edges)
-			{
-				for (Edge edge : edges)
-				{
-					if (! visitedEdges.contains(edge))
-					{
+
+			if (null != edges) {
+				edges.removeAll(visitedEdges);
+//				System.out.println("Unvisited edges:" + edges.size());
+				for (Edge edge : edges) {
+					if (!workList.contains(edge)) {
 						workList.add(edge);
 					}
 				}
 			}
+			
+//			if (null != edges)
+//			{
+//				for (Edge edge : edges)
+//				{
+//					System.out.println("Try to add");
+//					if (! visitedEdges.contains(edge))
+//					{
+//						System.out.println("Add successfully");
+//						workList.add(edge);
+//					}
+//				}
+//			}
 				
 		}
 		

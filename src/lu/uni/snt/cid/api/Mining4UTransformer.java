@@ -75,7 +75,6 @@ public class Mining4UTransformer extends SceneTransformer
 	protected void internalBodyTransform(Body b) 
 	{
 		extract(b);
-		
 		AndroidSDKVersionChecker.scan(b);
 	}
 
@@ -93,7 +92,6 @@ public class Mining4UTransformer extends SceneTransformer
 			}
 			
 			List<SootMethod> methods = sc.getMethods();
-			
 			for (int i = 0; i < methods.size(); i++)
 			{
 				SootMethod sm = methods.get(i);
