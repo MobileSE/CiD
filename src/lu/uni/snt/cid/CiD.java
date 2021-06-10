@@ -96,9 +96,9 @@ public class CiD
 				continue;
 			}
 			
-			if (isAPIReverted(lifetime.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-				System.out.println("Reverted: " + method + ":[" + lifetime.getAPILevels() + "]:[" + minAPILevel + "," + maxAPILevel + "]");
-			}
+//			if (isAPIReverted(lifetime.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+//				System.out.println("Reverted: " + method + ":[" + lifetime.getAPILevels() + "]:[" + minAPILevel + "," + maxAPILevel + "]");
+//			}
 
 			if (lifetime.getMaxAPILevel() < maxAPILevel)
 			{

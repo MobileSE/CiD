@@ -125,7 +125,6 @@ public class AndroidSDKVersionChecker// extends BodyTransformer
 				if (stmt.getInvokeExpr() instanceof InterfaceInvokeExpr)
 				{
 					SootMethod sootMethod = stmt.getInvokeExpr().getMethod();
-					System.out.println("Soot InterfaceInvokeExpr invoke:" + stmt.toString());
 					
 					if (!sootMethod.getDeclaration().toString().contains("private"))
 					{
