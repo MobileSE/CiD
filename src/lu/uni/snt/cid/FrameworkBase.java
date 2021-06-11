@@ -20,6 +20,8 @@ public class FrameworkBase
 	public Map<String, Set<String>> class2SuperClasses = new HashMap<String, Set<String>>();
 	public Map<String, Set<String>> class2Methods = new HashMap<String, Set<String>>();
 	public static Set<String> javaLangClasses = new HashSet<String>();
+	
+	public Map<String, Set<String>> class2Fields = new HashMap<String, Set<String>>();
 
 	private String lifetimeAPIPath = "apis/Official/android/android-java-lang-classes.txt";
 	
@@ -180,6 +182,60 @@ public class FrameworkBase
 				
 				if (!currentClsName.contains(".test."))
 					put(class2Methods, currentClsName, sb.toString());
+
+			} else if (line.contains("field")) {
+				StringBuilder sb = new StringBuilder();
+				StringBuilder modsb = new StringBuilder();
+				String newLine = line + "\n";
+				String pattern = "(.*)(;\\n|;[ \\t\\x0B\\f\\r]*\\n|;[ \\t\\x0B\\f\\r]*//.*\\n)";
+				Pattern r = Pattern.compile(pattern);
+				Matcher m = r.matcher(newLine);
+				String commentRemoved = line;
+				boolean firstMod = true;
+				if (m.find()) {
+					commentRemoved = m.group(1);
+				}
+				int semicolonPos = line.indexOf(";");
+//				String commentRemoved = line.substring(0, semicolonPos);
+				
+				sb.append("<" + currentClsName + ": ");
+				if (commentRemoved.contains("=")) {
+					String splits[] = commentRemoved.split(" ");
+					int splitSize = splits.length;
+					// field public static final int STATE_ERROR = 3; // 0x3
+					sb.append(splits[splitSize - 4] + " ");
+					sb.append(splits[splitSize - 3] + " ");
+					sb.append(splits[splitSize - 2] + " ");
+					sb.append(splits[splitSize - 1]);
+					for (int i = 0; i < splitSize - 4; i++) {
+						if (firstMod) {
+							modsb.append(splits[i].trim());
+							firstMod = false;
+						} else {
+							modsb.append("," + splits[i].trim());
+						}
+					}
+				} else {
+					String splits[] = commentRemoved.split(" ");
+					int splitSize = splits.length;
+					// field public final int flags;
+					sb.append(splits[splitSize - 2] + " ");
+					sb.append(splits[splitSize - 1]);
+					
+					for (int i = 0; i < splitSize - 2; i++) {
+						if (firstMod) {
+							modsb.append(splits[i].trim());
+							firstMod = false;
+						} else {
+							modsb.append("," + splits[i].trim());
+						}
+					}
+				}
+				sb.append(">");
+				
+				put(class2Fields, currentClsName, sb.toString());
+				System.out.println(sb.toString() + ":<" + modsb.toString() + ">");
+				System.out.println(111111);
 			}
 		}
 	}
@@ -283,6 +339,21 @@ public class FrameworkBase
 						
 						if (!className.contains(".test."))
 							put(class2Methods, className, sb.toString());
+					}
+					
+					for (Element fieldEle : classEle.getChildren("field")) {
+						StringBuilder sb = new StringBuilder();
+						sb.append("<" + className + ": ");
+						sb.append(fieldEle.getAttributeValue("type") + " ");
+						sb.append(fieldEle.getAttributeValue("name"));
+						String fieldValue = fieldEle.getAttributeValue("value");
+						if (null != fieldValue) {
+							sb.append(" = " + fieldValue);
+						}
+						sb.append(">");
+						
+						put(class2Fields, className, sb.toString());
+						System.out.println(sb.toString());
 					}
 				}
 			}

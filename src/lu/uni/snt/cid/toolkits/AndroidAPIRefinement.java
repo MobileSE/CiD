@@ -25,6 +25,7 @@ public class AndroidAPIRefinement
 			fb.load(file.getAbsolutePath());
 			
 			StringBuilder sb = new StringBuilder();
+			StringBuilder fieldsb = new StringBuilder();
 			
 			for (String cls : fb.class2SuperClasses.keySet())
 			{
@@ -52,7 +53,17 @@ public class AndroidAPIRefinement
 
 			}
 			
+			for (String cls : fb.class2Fields.keySet()) {
+				Set<String> fields = fb.class2Fields.get(cls);
+				if (null != fields) {
+					for (String field : fields) {
+						fieldsb.append(field + "\n");
+					}
+				}
+			}
+			
 			CommonUtils.writeResultToFile("apis/Official/android/android-apis-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", sb.toString());
+			CommonUtils.writeResultToFile("apis/Official/android/android-fields-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", fieldsb.toString());
 		}
 	}
 }
