@@ -17,7 +17,6 @@ public class MethodSignature
 	public MethodSignature(String signature)
 	{
 		this.signature = signature;
-		System.out.println(signature);
 		parse(signature);
 	}
 	

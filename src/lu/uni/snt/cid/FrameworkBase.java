@@ -234,8 +234,6 @@ public class FrameworkBase
 				sb.append(">");
 				
 				put(class2Fields, currentClsName, sb.toString());
-				System.out.println(sb.toString() + ":<" + modsb.toString() + ">");
-				System.out.println(111111);
 			}
 		}
 	}
@@ -353,7 +351,6 @@ public class FrameworkBase
 						sb.append(">");
 						
 						put(class2Fields, className, sb.toString());
-						System.out.println(sb.toString());
 					}
 				}
 			}
@@ -398,7 +395,6 @@ public class FrameworkBase
 	public static String javaLangTrim(String paramType) {
 		String retType = paramType.trim();
 		if (paramType.contains("java.lang.")) {
-			System.out.println("javalang:" + paramType);
 			retType = paramType.trim().replace("java.lang.", "");
 		}
 		return retType;
