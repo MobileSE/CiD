@@ -44,7 +44,7 @@ public class AndroidAPILifeModel implements Serializable
 	private String lifetimeAPIPath = "apis/Official/android/android_api_lifetime.txt";
 	private String genericAPIPath = "apis/Official/android/android_api_generictype.txt";
 	private String varargsAPIPath = "apis/Official/android/android_api_varargs.txt";
-	private String androidAPIsDirPath = "apis/Official/android/android-apis";
+	private String androidAPIsDirPath = "apis/Official/android/android-apis-refinement";
 	
 	public static AndroidAPILifeModel getInstance()
 	{
@@ -99,14 +99,21 @@ public class AndroidAPILifeModel implements Serializable
 	private AndroidAPILifeModel()
 	{
 		File androidAPIsDir = new File(androidAPIsDirPath);
-		for (File file : androidAPIsDir.listFiles())
-		{
-			FrameworkBase fb = new FrameworkBase();
-			
-			fb.load(file.getAbsolutePath());
-			
-			CommonUtils.put(class2SuperClasses, fb.class2SuperClasses);
-			CommonUtils.put(class2Methods, fb.class2Methods);
+//		for (File file : androidAPIsDir.listFiles())
+//		{
+//			FrameworkBase fb = new FrameworkBase();
+//			
+//			fb.load(file.getAbsolutePath());
+//			
+//			CommonUtils.put(class2SuperClasses, fb.class2SuperClasses);
+//			CommonUtils.put(class2Methods, fb.class2Methods);
+//		}
+		
+		for (File file : androidAPIsDir.listFiles()) {
+			FrameworkExtract fe = new FrameworkExtract();
+			fe.load(file.getAbsolutePath());
+			CommonUtils.put(class2SuperClasses, fe.class2SuperClasses);
+			CommonUtils.put(class2Methods, fe.class2Methods);
 		}
 		
 		Set<String> lines = CommonUtils.loadFile(lifetimeAPIPath);
@@ -252,6 +259,28 @@ public class AndroidAPILifeModel implements Serializable
 		catch(IOException ex) 
 		{
 			ex.printStackTrace();
+		}
+	}
+	
+	public APILife getDirectLifeTime(String methodSignature) {
+		if (method2APILifes.containsKey(methodSignature)) {
+			return method2APILifes.get(methodSignature);
+		} else {
+			return null;
+		}
+	}
+	
+	public void retrieveSuperClassAPILifes(String methodSig, Set<APILife> lifes) {
+		if (method2APILifes.containsKey(methodSig)) {
+			lifes.add(method2APILifes.get(methodSig));
+			MethodSignature sig = new MethodSignature(methodSig);
+			String cls = sig.getCls();
+			if (class2SuperClasses.containsKey(cls)) {
+				for (String superCls : class2SuperClasses.get(cls)) {
+					String newMethodSig = methodSig.replace(cls + ":", superCls + ":");
+					retrieveSuperClassAPILifes(newMethodSig, lifes);
+				}
+			}
 		}
 	}
 	

@@ -82,6 +82,31 @@ public class CiD
 		Set<APILife> problematicAPIs_backward = new HashSet<APILife>();
 		Set<APILife> protectedAPIs_backward = new HashSet<APILife>();
 		
+		for (String method : extractor.api2supermethods.keySet()) {
+			APILife methodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(method);
+			for (String superMethod : extractor.api2supermethods.get(method)) {
+				APILife superMethodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(superMethod);
+				if (null != methodLife && isAPIReverted(methodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+					System.out.println("Found Callback Current:" + superMethodLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">:" + methodLife);
+				} else {
+					if (isAPIReverted(superMethodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+						if (null != methodLife) {
+							System.out.println("Found Callback Official:" + superMethodLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">:" + methodLife);
+						} else {
+							System.out.println("Found Callback Customized:" + superMethodLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">:" + method);
+						}
+					}
+				}
+			}
+		}
+		
+//		for (String field : extractor.accessedFields) {
+//			APILife fieldLife = AndroidFieldLifeModel.getInstance().getDirectLifeTime(field);
+//			if (isAPIReverted(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+//				System.out.println("Found Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
+//			}
+//		}
+		
 		for (String method : extractor.usedAndroidAPIs)
 		{
 			APILife lifetime = AndroidAPILifeModel.getInstance().getLifetime(method);

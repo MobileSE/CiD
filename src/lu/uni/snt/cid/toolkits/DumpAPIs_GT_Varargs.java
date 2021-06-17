@@ -30,10 +30,10 @@ public class DumpAPIs_GT_Varargs {
 			}
 		}
 		
-		if (gt.toString().length() != 0) {
+		if (gt.toString().length() == 0) {
 			CommonUtils.writeResultToFile("apis/Official/android/android_api_generictype.txt", gt.toString());
 		}
-		if (varargs.toString().length() != 0) {
+		if (varargs.toString().length() == 0) {
 			CommonUtils.writeResultToFile("apis/Official/android/android_api_varargs.txt", varargs.toString());
 		}
 	}

@@ -12,21 +12,27 @@ public class APILifeStudy
 	public static final int LATEST_API_LEVEL = 30;
 	static Map<String, APILife> apiLifeMap = new HashMap<String, APILife>();
 	
+	static Map<String, APILife> fieldLifeMap = new HashMap<String, APILife>();
+	
+	
 	public static void main(String[] args) 
 	{
-		for (int level = 1; level <= LATEST_API_LEVEL; level++)
+		for (int level = 2; level <= LATEST_API_LEVEL; level++)
 		{
-//			if (level == 20)
-//			{
-//				continue;
-//			}
+			if (level == 20)
+			{
+				continue;
+			}
 
 			File androidLevel = new File("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
 			if (!androidLevel.exists()) {
 				System.out.println("Non exists:" + "apis/Official/android/android-apis-refinement/android-" + level + ".txt");
 				continue;
 			}
-			Set<String> methods = CommonUtils.loadFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+//			Set<String> methods = CommonUtils.loadFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+			Set<String> methods = CommonUtils.loadContentFromFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+			
+			Set<String> fields = CommonUtils.loadContentFromFile("apis/Official/android/android-fields-refinement/android-" + level + ".txt");
 			
 			for (String method : methods)
 			{
@@ -34,11 +40,6 @@ public class APILifeStudy
 				{
 					APILife apiLife = apiLifeMap.get(method);
 					apiLife.levelInterval += (level + ",");
-					if (level > apiLife.maxAPILevel && level - apiLife.maxAPILevel > 1) {
-						if (!((level == 27 && apiLife.maxAPILevel == 25) || (level == 25 && apiLife.maxAPILevel == 23) || (level == 21 && apiLife.maxAPILevel == 19))) {
-							apiLife.revert = true;
-						}
-					}
 					if (apiLife.minAPILevel > level)
 					{
 						apiLife.minAPILevel = level;
@@ -68,6 +69,42 @@ public class APILifeStudy
 					apiLifeMap.put(method, apiLife);
 				}
 			}
+			
+			for (String field : fields)
+			{
+				if (fieldLifeMap.containsKey(field))
+				{
+					APILife apiLife = fieldLifeMap.get(field);
+					apiLife.levelInterval += (level + ",");
+					if (apiLife.minAPILevel > level)
+					{
+						apiLife.minAPILevel = level;
+					}
+					if (apiLife.maxAPILevel < level)
+					{
+						apiLife.maxAPILevel = level;
+					}
+					
+					fieldLifeMap.put(field, apiLife);
+				}
+				else
+				{
+					APILife apiLife = new APILife();
+					apiLife.signature = field;
+					apiLife.levelInterval += (level + ",");
+					
+					if (apiLife.minAPILevel > level)
+					{
+						apiLife.minAPILevel = level;
+					}
+					if (apiLife.maxAPILevel < level)
+					{
+						apiLife.maxAPILevel = level;
+					}
+					
+					fieldLifeMap.put(field, apiLife);
+				}
+			}
 		}
 		
 		StringBuilder output = new StringBuilder();
@@ -78,6 +115,14 @@ public class APILifeStudy
 		}
 		
 		CommonUtils.writeResultToFile("apis/Official/android/android_api_lifetime.txt", output.toString());
+		
+		StringBuilder fieldOut = new StringBuilder();
+		
+		for (String key : fieldLifeMap.keySet()) {
+			fieldOut.append(fieldLifeMap.get(key) + "\n");
+		}
+		
+		CommonUtils.writeResultToFile("apis/Official/android/android_field_lifetime.txt", fieldOut.toString());
 	}
 
 	static class APILife

@@ -27,12 +27,15 @@ public class APILife implements Serializable
 //		String levelStr = apiLifeTxt.substring(apiLifeTxt.lastIndexOf('[') + 1, apiLifeTxt.lastIndexOf(']'));
 //		this.minAPILevel = Integer.parseInt(levelStr.split(",")[0]);
 //		this.maxAPILevel = Integer.parseInt(levelStr.split(",")[1]);
+		System.out.println(apiLifeTxt);
 		this.signature = apiLifeTxt.substring(0, apiLifeTxt.indexOf(":["));
 		String totalAPIs = apiLifeTxt.substring(apiLifeTxt.indexOf(":[") + 2, apiLifeTxt.lastIndexOf(']'));
 		String[] apiSplits = totalAPIs.split(",");
 		this.minAPILevel = Integer.parseInt(apiSplits[0]);
 		this.maxAPILevel = Integer.parseInt(apiSplits[apiSplits.length - 1]);
 		this.apilevels = totalAPIs;
+		
+		System.out.println(this.toString());
 	}
 
 	@Override

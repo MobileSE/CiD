@@ -108,43 +108,43 @@ public class AndroidSDKVersionChecker// extends BodyTransformer
 			
 			if (stmt.containsInvokeExpr())
 			{
-				Edge edge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), stmt.getInvokeExpr().getMethod().getSignature());
-				edge.conditions.add(conditions.toString());
-				
-				ConditionalCallGraph.addEdge(edge);
-				String currMethodSig = stmt.getInvokeExpr().getMethod().getSignature();
-				if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(currMethodSig)) {
-					String superMethodSig = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(currMethodSig);
-					superMethodSig = superMethodSig.replace("$", ".");
-					Edge superClassEdge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), superMethodSig);
-					superClassEdge.conditions.add(conditions.toString());
-
-					ConditionalCallGraph.addEdge(superClassEdge);
-				}
-				
-				if (stmt.getInvokeExpr() instanceof InterfaceInvokeExpr)
-				{
-					SootMethod sootMethod = stmt.getInvokeExpr().getMethod();
+					Edge edge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), stmt.getInvokeExpr().getMethod().getSignature());
+					edge.conditions.add(conditions.toString());
 					
-					if (!sootMethod.getDeclaration().toString().contains("private"))
+					ConditionalCallGraph.addEdge(edge);
+					String currMethodSig = stmt.getInvokeExpr().getMethod().getSignature();
+					if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(currMethodSig)) {
+						String superMethodSig = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(currMethodSig);
+						superMethodSig = superMethodSig.replace("$", ".");
+						Edge superClassEdge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), superMethodSig);
+						superClassEdge.conditions.add(conditions.toString());
+	
+						ConditionalCallGraph.addEdge(superClassEdge);
+					}
+					
+					if (stmt.getInvokeExpr() instanceof InterfaceInvokeExpr)
 					{
-						//If the method is declared as private, then it cannot be extended by the sub-classes.
-//						continue;
-//					}
-//					} else {
-					
-						SootClass sootClass = sootMethod.getDeclaringClass();
-						Set<SootClass> subClasses = SootUtils.getAllSubClasses(sootClass);
+						SootMethod sootMethod = stmt.getInvokeExpr().getMethod();
 						
-						for (SootClass subClass : subClasses)
+						if (!sootMethod.getDeclaration().toString().contains("private"))
 						{
-							Edge e = ConditionalCallGraph.getEdge(edge.srcSig, edge.tgtSig.replace(sootClass.getName() + ":", subClass.getName() + ":"));
-							e.conditions.addAll(edge.conditions);
-
-							ConditionalCallGraph.addEdge(e);
+							//If the method is declared as private, then it cannot be extended by the sub-classes.
+	//						continue;
+	//					}
+	//					} else {
+						
+							SootClass sootClass = sootMethod.getDeclaringClass();
+							Set<SootClass> subClasses = SootUtils.getAllSubClasses(sootClass);
+							
+							for (SootClass subClass : subClasses)
+							{
+								Edge e = ConditionalCallGraph.getEdge(edge.srcSig, edge.tgtSig.replace(sootClass.getName() + ":", subClass.getName() + ":"));
+								e.conditions.addAll(edge.conditions);
+	
+								ConditionalCallGraph.addEdge(e);
+							}
 						}
 					}
-				}
 			}
 			
 			if (stmt instanceof IfStmt)

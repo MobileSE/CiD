@@ -20,6 +20,15 @@ public class APIExtractor
 	public Map<String, Set<String>> api2callers = new HashMap<String, Set<String>>();
 	public Set<String> usedAndroidAPIs = new HashSet<String>();
 	
+	public Set<String> primarySuperAPIs = new HashSet<String>();
+	public Set<String> secondarySuperAPIs = new HashSet<String>();
+	
+	public Set<String> overrideSuperAPIs = new HashSet<String>();
+	
+	public Map<String, Set<String>> api2supermethods = new HashMap<String, Set<String>>();
+	
+	public Set<String> accessedFields = new HashSet<String>();
+	
 	public void transform(String apkOrDexPath, String androidJars, int apiLevel)
 	{
 		G.reset();
@@ -53,12 +62,26 @@ public class APIExtractor
 			primaryAPIs.addAll(transformer.accessedAndroidAPIs);
 			usedAndroidAPIs.addAll(primaryAPIs);
 			CommonUtils.put(api2callers, transformer.api2callers);
+			
+			primarySuperAPIs.addAll(transformer.superMethods);
+			
+			overrideSuperAPIs.addAll(primarySuperAPIs);
+			
+			CommonUtils.put(api2supermethods, transformer.api2supers);
+			accessedFields.addAll(transformer.accessedFields);
 		}
 		else
 		{
 			secondaryAPIs.addAll(transformer.accessedAndroidAPIs);
 			usedAndroidAPIs.addAll(secondaryAPIs);
 			CommonUtils.put(api2callers, transformer.api2callers);
+			
+			secondarySuperAPIs.addAll(transformer.superMethods);
+			
+			overrideSuperAPIs.addAll(secondarySuperAPIs);
+			
+			CommonUtils.put(api2supermethods, transformer.api2supers);
+			accessedFields.addAll(transformer.accessedFields);
 		}
 		
 		G.reset();

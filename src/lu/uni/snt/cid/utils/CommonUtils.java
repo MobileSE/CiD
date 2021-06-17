@@ -85,6 +85,30 @@ public class CommonUtils
 		return lines;
 	}
 	
+	public static Set<String> loadContentFromFile(String filePath)
+	{
+		Set<String> lines = new HashSet<String>();
+		
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(filePath));
+			String line = "";
+			while ((line = br.readLine()) != null)
+			{
+				String[] splits = line.split(">:<");
+				String method = splits[0] + ">";
+				lines.add(method);
+			}
+			
+			br.close();
+		}
+		catch (Exception ex)
+		{
+			ex.printStackTrace();
+		}
+
+		return lines;
+	}
+	
 	public static List<String> loadFileToList(String filePath)
 	{
 		List<String> lines = new ArrayList<String>();
@@ -187,6 +211,17 @@ public class CommonUtils
 		return rate;
 	}
 	
+	public static String getVariable(String varRef) {
+		if (varRef.contains("<") && varRef.contains(">")) {
+			int startBracket = varRef.indexOf("<");
+			int endBracket = varRef.lastIndexOf(">");
+			if (startBracket < endBracket) {
+				return varRef.substring(startBracket, endBracket + 1);
+			}
+		}
+		return "";
+	}
+	
 	public static <T> void put(Map<String, Set<T>> map1, String key, T value)
 	{
 		if (map1.containsKey(key))
@@ -223,5 +258,15 @@ public class CommonUtils
 				dest.put(cls, set1);
 			}
 		}
+	}
+	
+	public static String getClassName(String methodOrField) {
+		int semicolonPos = methodOrField.indexOf(":");
+		return methodOrField.substring(1, semicolonPos);
+	}
+	
+	public static String clsNameReplace(String origin, String clsName) {
+		int semicolonPos = origin.indexOf(":");
+		return "<" + clsName + origin.substring(semicolonPos);
 	}
 }

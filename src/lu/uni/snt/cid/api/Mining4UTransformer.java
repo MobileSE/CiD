@@ -8,16 +8,19 @@ import java.util.Map;
 import java.util.Set;
 
 import lu.uni.snt.cid.AndroidAPILifeModel;
+import lu.uni.snt.cid.AndroidFieldLifeModel;
 import lu.uni.snt.cid.Config;
 import lu.uni.snt.cid.ccg.AndroidSDKVersionChecker;
 import lu.uni.snt.cid.utils.CommonUtils;
 import soot.Body;
+import soot.Local;
 import soot.PatchingChain;
 import soot.Scene;
 import soot.SceneTransformer;
 import soot.SootClass;
 import soot.SootMethod;
 import soot.Unit;
+import soot.jimple.AssignStmt;
 import soot.jimple.Stmt;
 import soot.util.Chain;
 
@@ -25,10 +28,16 @@ public class Mining4UTransformer extends SceneTransformer
 {
 	public Set<String> accessedAndroidAPIs = new HashSet<String>();
 	public Map<String, Set<String>> api2callers = new HashMap<String, Set<String>>();
+	
+	public Map<String, Set<String>> api2supers = new HashMap<String, Set<String>>();
+	
+	public Set<String> superMethods = new HashSet<String>();
+	
+	public Set<String> accessedFields = new HashSet<String>();
 
 	private void extract(Body b)
 	{
-		String callerMethodSig = b.getMethod().getSignature();
+		String callerMethodSig = b.getMethod().getSignature().replace("$", ".");
 		
 		if (b.toString().contains(Config.FIELD_VERSION_SDK_INT) || b.toString().contains(Config.FIELD_VERSION_SDK))
 		{
@@ -67,6 +76,33 @@ public class Mining4UTransformer extends SceneTransformer
 					
 					accessedAndroidAPIs.add(methodSig);
 					CommonUtils.put(api2callers, methodSig, callerMethodSig);
+				}
+				
+				String maySuperSig = sootMethod.getSignature();
+				String currSig = sootMethod.getSignature();
+				while (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(maySuperSig)) {
+					String superMethod = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(maySuperSig);
+					superMethods.add(superMethod.replace("$", "."));
+					CommonUtils.put(api2supers, currSig.replace("$", "."), superMethod.replace("$", "."));
+					maySuperSig = superMethod;
+				}
+			} else if (stmt instanceof AssignStmt) {
+				AssignStmt assignStmt = (AssignStmt) stmt;
+				String leftOp = assignStmt.getLeftOp().toString();
+				String rightOp = assignStmt.getRightOp().toString();
+				String leftVar = CommonUtils.getVariable(leftOp);
+				String rightVar = CommonUtils.getVariable(rightOp);
+				if (!leftVar.isEmpty() && !leftVar.contains("(")) {
+					String currField = leftVar;
+					if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
+						accessedFields.add(currField.replace("$", "."));
+					}
+				}
+				if (!rightVar.isEmpty() && !rightVar.contains("(")) {
+					String currField = rightVar;
+					if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
+						accessedFields.add(currField.replace("$", "."));
+					}
 				}
 			}
 		}
