@@ -47,9 +47,13 @@ public class APIExtractor
 			
 		Options.v().set_output_format(Options.output_format_none);
 //		Options.v().set_verbose(false);  // get rid of verbose output.
-		if (-1 != apiLevel)
+		if (-1 != apiLevel) {
+			if (apiLevel == 20) {
+				apiLevel = 21;
+				System.out.println("WARNING: api level changed from api level 20 to api level 21");
+			}
 			Options.v().set_force_android_jar(androidJars + File.separator + "android-" + apiLevel + File.separator + "android.jar");
-		else
+		} else
 			Options.v().set_android_jars(androidJars);
 		
 		Mining4UTransformer transformer = new Mining4UTransformer();

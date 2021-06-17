@@ -13,7 +13,6 @@ import lu.uni.snt.cid.Config;
 import lu.uni.snt.cid.ccg.AndroidSDKVersionChecker;
 import lu.uni.snt.cid.utils.CommonUtils;
 import soot.Body;
-import soot.Local;
 import soot.PatchingChain;
 import soot.Scene;
 import soot.SceneTransformer;
