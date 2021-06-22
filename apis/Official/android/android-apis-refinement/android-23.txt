@@ -26,7 +26,6 @@
 <android.media.MediaRouter.SimpleCallback: void onRouteUnselected(android.media.MediaRouter,int,android.media.MediaRouter.RouteInfo)>:<public>:<android.media.MediaRouter.SimpleCallback:android.media.MediaRouter.Callback>
 <android.opengl.GLES20: void glShaderBinary(int,int[],int,int,java.nio.Buffer,int)>:<public static native>:<android.opengl.GLES20>
 <android.widget.HorizontalScrollView: void requestDisallowInterceptTouchEvent(boolean)>:<public>:<android.widget.HorizontalScrollView:android.widget.FrameLayout,android.view.ViewGroup,android.view.View>
-<android.text.method.TextKeyListener.Capitalize: void <init>(java.lang.String,int)>:<private>:<android.text.method.TextKeyListener.Capitalize:java.lang.Enum>
 <android.transition.TransitionInflater: android.transition.TransitionInflater 'from'(android.content.Context)>:<public static>:<android.transition.TransitionInflater>
 <android.graphics.ColorMatrix: void set(android.graphics.ColorMatrix)>:<public>:<android.graphics.ColorMatrix>
 <android.widget.LinearLayout: int getShowDividers()>:<public>:<android.widget.LinearLayout:android.view.ViewGroup,android.view.View>
@@ -859,7 +858,6 @@
 <android.view.KeyEvent: android.view.KeyEvent changeAction(android.view.KeyEvent,int)>:<public static>:<android.view.KeyEvent:android.view.InputEvent,android.os.Parcelable>
 <android.content.ComponentName: java.lang.Object clone()>:<public volatile>:<android.content.ComponentName:android.os.Parcelable,java.lang.Cloneable,java.lang.Comparable>
 <android.content.BroadcastReceiver: void setResultData(java.lang.String)>:<public final>:<android.content.BroadcastReceiver>
-<android.graphics.PathDashPathEffect.Style: void <init>(java.lang.String,int)>:<private>:<android.graphics.PathDashPathEffect.Style:java.lang.Enum>
 <android.graphics.EmbossMaskFilter: void <init>(float[],float,float,float)>:<public>:<android.graphics.EmbossMaskFilter:android.graphics.MaskFilter>
 <android.provider.Settings.Secure: void <init>()>:<public>:<android.provider.Settings.Secure:android.provider.Settings.NameValueTable>
 <android.database.sqlite.SQLiteDatabase: int getVersion()>:<public>:<android.database.sqlite.SQLiteDatabase:android.database.sqlite.SQLiteClosable>
@@ -953,7 +951,6 @@
 <android.nfc.NdefRecord: android.nfc.NdefRecord createUri(java.lang.String)>:<public static>:<android.nfc.NdefRecord:android.os.Parcelable>
 <junit.framework.TestResult: int failureCount()>:<public synchronized>:<junit.framework.TestResult>
 <android.text.style.StrikethroughSpan: void <init>()>:<public>:<android.text.style.StrikethroughSpan:android.text.style.CharacterStyle,android.text.style.UpdateAppearance,android.text.ParcelableSpan>
-<android.net.NetworkInfo.State: void <init>(java.lang.String,int)>:<private>:<android.net.NetworkInfo.State:java.lang.Enum>
 <android.view.ActionMode: android.view.MenuInflater getMenuInflater()>:<public abstract>:<android.view.ActionMode>
 <android.content.res.Resources: java.lang.String getResourceTypeName(int)>:<public>:<android.content.res.Resources>
 <android.webkit.WebChromeClient: void onHideCustomView()>:<public>:<android.webkit.WebChromeClient>
@@ -1029,7 +1026,6 @@
 <android.system.Os: long sendfile(java.io.FileDescriptor,java.io.FileDescriptor,android.util.MutableLong,long)>:<public static>:<android.system.Os>
 <android.media.session.MediaController.TransportControls: void fastForward()>:<public>:<android.media.session.MediaController.TransportControls>
 <android.mtp.MtpObjectInfo: int getThumbCompressedSize()>:<public final>:<android.mtp.MtpObjectInfo>
-<android.webkit.WebSettings.LayoutAlgorithm: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.LayoutAlgorithm:java.lang.Enum>
 <android.media.MediaPlayer: void setWakeMode(android.content.Context,int)>:<public>:<android.media.MediaPlayer>
 <android.preference.DialogPreference: java.lang.CharSequence getNegativeButtonText()>:<public>:<android.preference.DialogPreference:android.preference.Preference,android.content.DialogInterface.OnClickListener,android.content.DialogInterface.OnDismissListener,android.preference.PreferenceManager.OnActivityDestroyListener>
 <android.app.Fragment: void setExitSharedElementCallback(android.app.SharedElementCallback)>:<public>:<android.app.Fragment:android.content.ComponentCallbacks2,android.view.View.OnCreateContextMenuListener>
@@ -1198,7 +1194,6 @@
 <android.widget.TableRow.LayoutParams: void <init>(android.view.ViewGroup.MarginLayoutParams)>:<public>:<android.widget.TableRow.LayoutParams:android.widget.LinearLayout.LayoutParams,android.view.ViewGroup.MarginLayoutParams,android.view.ViewGroup.LayoutParams>
 <android.widget.Toolbar.LayoutParams: void <init>(android.app.ActionBar.LayoutParams)>:<public>:<android.widget.Toolbar.LayoutParams:android.app.ActionBar.LayoutParams,android.view.ViewGroup.MarginLayoutParams,android.view.ViewGroup.LayoutParams>
 <android.print.PrinterInfo: int describeContents()>:<public>:<android.print.PrinterInfo:android.os.Parcelable>
-<android.util.Xml.Encoding: void <init>(java.lang.String,int)>:<private>:<android.util.Xml.Encoding:java.lang.Enum>
 <android.webkit.WebMessage: android.webkit.WebMessagePort[] getPorts()>:<public>:<android.webkit.WebMessage>
 <android.content.Loader: void abandon()>:<public>:<android.content.Loader>
 <android.media.session.MediaSession.Callback: void onStop()>:<public>:<android.media.session.MediaSession.Callback>
@@ -1944,7 +1939,6 @@
 <android.renderscript.FieldPacker: void addI32(int)>:<public>:<android.renderscript.FieldPacker>
 <android.test.AndroidTestRunner: void setTest(junit.framework.Test)>:<public>:<android.test.AndroidTestRunner:junit.runner.BaseTestRunner>
 <android.telecom.Call.Callback: void onCannedTextResponsesLoaded(android.telecom.Call,java.util.List)>:<public>:<android.telecom.Call.Callback>
-<android.renderscript.Allocation.MipmapControl: void <init>(java.lang.String,int)>:<private>:<android.renderscript.Allocation.MipmapControl:java.lang.Enum>
 <android.media.MediaCodec.CodecException: java.lang.String getDiagnosticInfo()>:<public>:<android.media.MediaCodec.CodecException:java.lang.IllegalStateException,java.lang.RuntimeException,java.lang.Exception,java.lang.Throwable>
 <android.widget.TextView: void setShadowLayer(float,float,float,int)>:<public>:<android.widget.TextView:android.view.View,android.view.ViewTreeObserver.OnPreDrawListener>
 <android.webkit.CookieManager: void setAcceptFileSchemeCookies(boolean)>:<public static>:<android.webkit.CookieManager>
@@ -3725,7 +3719,6 @@
 <android.graphics.Paint: void setUnderlineText(boolean)>:<public native>:<android.graphics.Paint>
 <android.view.accessibility.AccessibilityEvent: void initFromParcel(android.os.Parcel)>:<public>:<android.view.accessibility.AccessibilityEvent:android.view.accessibility.AccessibilityRecord,android.os.Parcelable>
 <android.graphics.drawable.ScaleDrawable: void inflate(android.content.res.Resources,org.xmlpull.v1.XmlPullParser,android.util.AttributeSet,android.content.res.Resources.Theme)>:<public>:<android.graphics.drawable.ScaleDrawable:android.graphics.drawable.DrawableWrapper,android.graphics.drawable.Drawable>
-<android.graphics.AvoidXfermode.Mode: void <init>(java.lang.String,int)>:<private>:<android.graphics.AvoidXfermode.Mode:java.lang.Enum>
 <android.util.LruCache: java.lang.String toString()>:<public final synchronized>:<android.util.LruCache>
 <android.app.FragmentManager: boolean isDestroyed()>:<public abstract>:<android.app.FragmentManager>
 <android.view.View: void onScreenStateChanged(int)>:<public>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
@@ -5131,7 +5124,6 @@
 <android.graphics.drawable.shapes.Shape: boolean hasAlpha()>:<public>:<android.graphics.drawable.shapes.Shape:java.lang.Cloneable>
 <android.test.MoreAsserts: void assertNotContainsRegex(java.lang.String,java.lang.String)>:<public static>:<android.test.MoreAsserts>
 <android.test.MoreAsserts: void assertNotEmpty(java.util.Map)>:<public static>:<android.test.MoreAsserts>
-<android.renderscript.RenderScript.Priority: void <init>(java.lang.String,int)>:<private>:<android.renderscript.RenderScript.Priority:java.lang.Enum>
 <android.graphics.Region: boolean isComplex()>:<public native>:<android.graphics.Region:android.os.Parcelable>
 <android.content.ContentProviderResult: void writeToParcel(android.os.Parcel,int)>:<public>:<android.content.ContentProviderResult:android.os.Parcelable>
 <android.media.effect.EffectContext: void release()>:<public>:<android.media.effect.EffectContext>
@@ -5738,7 +5730,6 @@
 <android.view.accessibility.AccessibilityEvent: void appendRecord(android.view.accessibility.AccessibilityRecord)>:<public>:<android.view.accessibility.AccessibilityEvent:android.view.accessibility.AccessibilityRecord,android.os.Parcelable>
 <android.widget.AbsListView: void setSelector(int)>:<public>:<android.widget.AbsListView:android.widget.AdapterView,android.view.ViewGroup,android.view.View,android.text.TextWatcher,android.view.ViewTreeObserver.OnGlobalLayoutListener,android.widget.Filter.FilterListener,android.view.ViewTreeObserver.OnTouchModeChangeListener>
 <android.app.Fragment: android.view.View getView()>:<public>:<android.app.Fragment:android.content.ComponentCallbacks2,android.view.View.OnCreateContextMenuListener>
-<android.graphics.Canvas.EdgeType: void <init>(java.lang.String,int)>:<private>:<android.graphics.Canvas.EdgeType:java.lang.Enum>
 <org.json.JSONObject: double getDouble(java.lang.String)>:<public>:<org.json.JSONObject>
 <android.app.WallpaperManager: void <init>()>:<>:<android.app.WallpaperManager>
 <android.text.util.Rfc822Token: java.lang.String quoteNameIfNecessary(java.lang.String)>:<public static>:<android.text.util.Rfc822Token>
@@ -5988,7 +5979,6 @@
 <android.graphics.drawable.DrawableWrapper: void scheduleDrawable(android.graphics.drawable.Drawable,java.lang.Runnable,long)>:<public>:<android.graphics.drawable.DrawableWrapper:android.graphics.drawable.Drawable,android.graphics.drawable.Drawable.Callback>
 <android.media.MediaPlayer: android.media.MediaPlayer create(android.content.Context,android.net.Uri,android.view.SurfaceHolder)>:<public static>:<android.media.MediaPlayer>
 <android.graphics.Paint: boolean isFakeBoldText()>:<public final>:<android.graphics.Paint>
-<android.renderscript.Element.DataKind: void <init>(java.lang.String,int)>:<private>:<android.renderscript.Element.DataKind:java.lang.Enum>
 <android.media.MediaMetadataRetriever: void <init>()>:<public>:<android.media.MediaMetadataRetriever>
 <android.graphics.drawable.GradientDrawable: android.graphics.drawable.Drawable.ConstantState getConstantState()>:<public>:<android.graphics.drawable.GradientDrawable:android.graphics.drawable.Drawable>
 <android.test.mock.MockContext: android.content.pm.PackageManager getPackageManager()>:<public>:<android.test.mock.MockContext:android.content.Context>
@@ -6924,7 +6914,6 @@
 <android.text.TextUtils.SimpleStringSplitter: void remove()>:<public>:<android.text.TextUtils.SimpleStringSplitter:android.text.TextUtils.StringSplitter,java.util.Iterator>
 <android.renderscript.ScriptIntrinsicBlend: void forEachSrc(android.renderscript.Allocation,android.renderscript.Allocation)>:<public>:<android.renderscript.ScriptIntrinsicBlend:android.renderscript.ScriptIntrinsic,android.renderscript.Script,android.renderscript.BaseObj>
 <android.widget.ImageView: int getBaseline()>:<public>:<android.widget.ImageView:android.view.View>
-<android.view.ViewDebug.HierarchyTraceType: void <init>(java.lang.String,int)>:<private>:<android.view.ViewDebug.HierarchyTraceType:java.lang.Enum>
 <android.provider.Telephony.Mms.Rate: void <init>()>:<>:<android.provider.Telephony.Mms.Rate>
 <android.provider.Contacts.People.Extensions: void <init>()>:<>:<android.provider.Contacts.People.Extensions:android.provider.BaseColumns,android.provider.Contacts.ExtensionsColumns>
 <android.view.animation.LayoutAnimationController: boolean isDone()>:<public>:<android.view.animation.LayoutAnimationController>
@@ -7267,7 +7256,6 @@
 <android.widget.ExpandableListView.OnGroupCollapseListener: void onGroupCollapse(int)>:<public abstract>:<android.widget.ExpandableListView.OnGroupCollapseListener>
 <android.net.LinkProperties: java.util.List getDnsServers()>:<public>:<android.net.LinkProperties:android.os.Parcelable>
 <android.text.method.BaseMovementMethod: boolean right(android.widget.TextView,android.text.Spannable)>:<protected>:<android.text.method.BaseMovementMethod:android.text.method.MovementMethod>
-<android.database.CursorJoiner.Result: void <init>(java.lang.String,int)>:<private>:<android.database.CursorJoiner.Result:java.lang.Enum>
 <android.text.style.SubscriptSpan: void <init>(android.os.Parcel)>:<public>:<android.text.style.SubscriptSpan:android.text.style.MetricAffectingSpan,android.text.style.CharacterStyle,android.text.ParcelableSpan>
 <android.graphics.drawable.DrawableContainer: void setAutoMirrored(boolean)>:<public>:<android.graphics.drawable.DrawableContainer:android.graphics.drawable.Drawable,android.graphics.drawable.Drawable.Callback>
 <android.media.MediaDrm: boolean isCryptoSchemeSupported(java.util.UUID)>:<public static final>:<android.media.MediaDrm>
@@ -7406,7 +7394,6 @@
 <android.view.WindowInsets: boolean isConsumed()>:<public>:<android.view.WindowInsets>
 <android.view.ViewPropertyAnimator: void cancel()>:<public>:<android.view.ViewPropertyAnimator>
 <android.os.Looper: android.os.MessageQueue getQueue()>:<public>:<android.os.Looper>
-<android.graphics.Bitmap.Config: void <init>(java.lang.String,int)>:<private>:<android.graphics.Bitmap.Config:java.lang.Enum>
 <android.telecom.RemoteConnection.VideoProvider.Callback: void onCameraCapabilitiesChanged(android.telecom.RemoteConnection.VideoProvider,android.telecom.VideoProfile.CameraCapabilities)>:<public>:<android.telecom.RemoteConnection.VideoProvider.Callback>
 <android.util.SparseIntArray: int get(int,int)>:<public>:<android.util.SparseIntArray:java.lang.Cloneable>
 <android.media.tv.TvInputInfo: void <init>()>:<>:<android.media.tv.TvInputInfo:android.os.Parcelable>
@@ -7493,7 +7480,6 @@
 <android.mtp.MtpDevice: android.mtp.MtpObjectInfo getObjectInfo(int)>:<public>:<android.mtp.MtpDevice>
 <android.telecom.Connection.VideoProvider: void onRequestCameraCapabilities()>:<public abstract>:<android.telecom.Connection.VideoProvider>
 <android.bluetooth.BluetoothGattServerCallback: void onNotificationSent(android.bluetooth.BluetoothDevice,int)>:<public>:<android.bluetooth.BluetoothGattServerCallback>
-<android.net.wifi.SupplicantState: void <init>(java.lang.String,int)>:<private>:<android.net.wifi.SupplicantState:java.lang.Enum,android.os.Parcelable>
 <android.content.SharedPreferences.OnSharedPreferenceChangeListener: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>:<public abstract>:<android.content.SharedPreferences.OnSharedPreferenceChangeListener>
 <android.net.NetworkInfo: boolean isAvailable()>:<public>:<android.net.NetworkInfo:android.os.Parcelable>
 <android.renderscript.Element: android.renderscript.Element RGB_888(android.renderscript.RenderScript)>:<public static>:<android.renderscript.Element:android.renderscript.BaseObj>
@@ -8408,7 +8394,6 @@
 <android.widget.Toast: void setText(java.lang.CharSequence)>:<public>:<android.widget.Toast>
 <android.provider.DocumentsProvider: android.content.res.AssetFileDescriptor openAssetFile(android.net.Uri,java.lang.String)>:<public final>:<android.provider.DocumentsProvider:android.content.ContentProvider>
 <android.app.UiAutomation: void setRunAsMonkey(boolean)>:<public>:<android.app.UiAutomation>
-<android.util.JsonToken: void <init>(java.lang.String,int)>:<private>:<android.util.JsonToken:java.lang.Enum>
 <android.view.inputmethod.InputMethodSession: void appPrivateCommand(java.lang.String,android.os.Bundle)>:<public abstract>:<android.view.inputmethod.InputMethodSession>
 <android.media.Ringtone: int getStreamType()>:<public>:<android.media.Ringtone>
 <android.test.AndroidTestRunner: java.util.List getTestCases()>:<public>:<android.test.AndroidTestRunner:junit.runner.BaseTestRunner>
@@ -8520,7 +8505,6 @@
 <android.graphics.drawable.VectorDrawable: void setColorFilter(android.graphics.ColorFilter)>:<public>:<android.graphics.drawable.VectorDrawable:android.graphics.drawable.Drawable>
 <android.os.FileObserver: void startWatching()>:<public>:<android.os.FileObserver>
 <android.database.DatabaseUtils: void dumpCurrentRow(android.database.Cursor,java.io.PrintStream)>:<public static>:<android.database.DatabaseUtils>
-<android.graphics.Region.Op: void <init>(java.lang.String,int)>:<private>:<android.graphics.Region.Op:java.lang.Enum>
 <android.app.Notification.MediaStyle: void <init>(android.app.Notification.Builder)>:<public>:<android.app.Notification.MediaStyle:android.app.Notification.Style>
 <android.transition.ChangeClipBounds: java.lang.String[] getTransitionProperties()>:<public>:<android.transition.ChangeClipBounds:android.transition.Transition>
 <android.drm.DrmErrorEvent: void <init>(int,int,java.lang.String,java.util.HashMap)>:<public>:<android.drm.DrmErrorEvent:android.drm.DrmEvent>
@@ -8892,7 +8876,6 @@
 <android.media.MediaScannerConnection: void disconnect()>:<public>:<android.media.MediaScannerConnection:android.content.ServiceConnection>
 <android.view.View: int getSuggestedMinimumWidth()>:<protected>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
 <android.os.Bundle: java.util.ArrayList getStringArrayList(java.lang.String)>:<public>:<android.os.Bundle:android.os.BaseBundle,java.lang.Cloneable,android.os.Parcelable>
-<android.telephony.SmsMessage.MessageClass: void <init>(java.lang.String,int)>:<private>:<android.telephony.SmsMessage.MessageClass:java.lang.Enum>
 <android.hardware.Camera.ErrorCallback: void onError(int,android.hardware.Camera)>:<public abstract>:<android.hardware.Camera.ErrorCallback>
 <android.widget.ZoomButtonsController: boolean isVisible()>:<public>:<android.widget.ZoomButtonsController:android.view.View.OnTouchListener>
 <android.graphics.pdf.PdfDocument: java.util.List getPages()>:<public>:<android.graphics.pdf.PdfDocument>
@@ -9191,7 +9174,6 @@
 <android.database.AbstractCursor: android.net.Uri getNotificationUri()>:<public>:<android.database.AbstractCursor:android.database.CrossProcessCursor>
 <android.view.Window: void setContentView(int)>:<public abstract>:<android.view.Window>
 <android.util.Property: java.lang.Object get(java.lang.Object)>:<public abstract>:<android.util.Property>
-<android.widget.ImageView.ScaleType: void <init>(java.lang.String,int)>:<private>:<android.widget.ImageView.ScaleType:java.lang.Enum>
 <android.print.PrinterCapabilitiesInfo: java.util.List getMediaSizes()>:<public>:<android.print.PrinterCapabilitiesInfo:android.os.Parcelable>
 <android.os.Parcel: java.lang.Object readValue(java.lang.ClassLoader)>:<public final>:<android.os.Parcel>
 <android.graphics.Outline: void setRoundRect(android.graphics.Rect,float)>:<public>:<android.graphics.Outline>
@@ -9224,7 +9206,6 @@
 <android.media.session.MediaSession.Callback: void onRewind()>:<public>:<android.media.session.MediaSession.Callback>
 <android.os.Debug: void resetThreadExternalAllocCount()>:<public static>:<android.os.Debug>
 <android.graphics.drawable.shapes.ArcShape: void draw(android.graphics.Canvas,android.graphics.Paint)>:<public>:<android.graphics.drawable.shapes.ArcShape:android.graphics.drawable.shapes.RectShape,android.graphics.drawable.shapes.Shape>
-<android.graphics.Paint.Align: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Align:java.lang.Enum>
 <android.accessibilityservice.AccessibilityServiceInfo: void <init>()>:<public>:<android.accessibilityservice.AccessibilityServiceInfo:android.os.Parcelable>
 <android.widget.Switch: void setSwitchPadding(int)>:<public>:<android.widget.Switch:android.widget.CompoundButton,android.widget.Button,android.widget.TextView,android.view.View>
 <android.provider.Telephony.Sms.Draft: void <init>()>:<>:<android.provider.Telephony.Sms.Draft:android.provider.BaseColumns,android.provider.Telephony.TextBasedSmsColumns>
@@ -9445,7 +9426,6 @@
 <android.widget.HorizontalScrollView: void computeScroll()>:<public>:<android.widget.HorizontalScrollView:android.widget.FrameLayout,android.view.ViewGroup,android.view.View>
 <android.preference.PreferenceActivity: void onDestroy()>:<protected>:<android.preference.PreferenceActivity:android.app.ListActivity,android.app.Activity,android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.preference.PreferenceFragment.OnPreferenceStartFragmentCallback>
 <android.view.inputmethod.InputConnection: boolean sendKeyEvent(android.view.KeyEvent)>:<public abstract>:<android.view.inputmethod.InputConnection>
-<android.graphics.Paint.Join: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Join:java.lang.Enum>
 <android.content.ComponentName: java.lang.String flattenToShortString()>:<public>:<android.content.ComponentName:android.os.Parcelable,java.lang.Cloneable,java.lang.Comparable>
 <android.graphics.Matrix: int hashCode()>:<public>:<android.graphics.Matrix>
 <android.media.tv.TvView: boolean dispatchTouchEvent(android.view.MotionEvent)>:<public>:<android.media.tv.TvView:android.view.ViewGroup,android.view.View>
@@ -9683,7 +9663,6 @@
 <android.media.audiofx.BassBoost: void setStrength(short)>:<public>:<android.media.audiofx.BassBoost:android.media.audiofx.AudioEffect>
 <android.os.Handler: java.lang.String toString()>:<public>:<android.os.Handler>
 <android.widget.FrameLayout: void <init>(android.content.Context,android.util.AttributeSet,int)>:<public>:<android.widget.FrameLayout:android.view.ViewGroup,android.view.View>
-<android.webkit.ConsoleMessage.MessageLevel: void <init>(java.lang.String,int)>:<private>:<android.webkit.ConsoleMessage.MessageLevel:java.lang.Enum>
 <android.telecom.Conference: void onSwap()>:<public>:<android.telecom.Conference:android.telecom.Conferenceable>
 <android.view.MotionEvent.PointerProperties: boolean equals(java.lang.Object)>:<public>:<android.view.MotionEvent.PointerProperties>
 <android.text.style.TtsSpan.MoneyBuilder: void <init>()>:<public>:<android.text.style.TtsSpan.MoneyBuilder:android.text.style.TtsSpan.SemioticClassBuilder,android.text.style.TtsSpan.Builder>
@@ -10514,7 +10493,6 @@
 <android.media.MediaDrm.KeyRequest: byte[] getData()>:<public>:<android.media.MediaDrm.KeyRequest>
 <android.opengl.GLES10: void glBlendFunc(int,int)>:<public static native>:<android.opengl.GLES10>
 <android.graphics.BitmapRegionDecoder: android.graphics.BitmapRegionDecoder newInstance(byte[],int,int,boolean)>:<public static>:<android.graphics.BitmapRegionDecoder>
-<android.os.AsyncTask.Status: void <init>(java.lang.String,int)>:<private>:<android.os.AsyncTask.Status:java.lang.Enum>
 <android.text.style.StrikethroughSpan: void updateDrawState(android.text.TextPaint)>:<public>:<android.text.style.StrikethroughSpan:android.text.style.CharacterStyle,android.text.style.UpdateAppearance,android.text.ParcelableSpan>
 <android.bluetooth.le.AdvertiseData.Builder: android.bluetooth.le.AdvertiseData build()>:<public>:<android.bluetooth.le.AdvertiseData.Builder>
 <android.widget.CompoundButton: void onRestoreInstanceState(android.os.Parcelable)>:<public>:<android.widget.CompoundButton:android.widget.Button,android.widget.TextView,android.view.View,android.widget.Checkable>
@@ -11782,7 +11760,6 @@
 <android.renderscript.Script.LaunchOptions: android.renderscript.Script.LaunchOptions setX(int,int)>:<public>:<android.renderscript.Script.LaunchOptions>
 <android.preference.MultiSelectListPreference: java.util.Set getValues()>:<public>:<android.preference.MultiSelectListPreference:android.preference.DialogPreference,android.preference.Preference>
 <android.net.TrafficStats: long getTotalRxPackets()>:<public static>:<android.net.TrafficStats>
-<android.widget.TextView.BufferType: void <init>(java.lang.String,int)>:<private>:<android.widget.TextView.BufferType:java.lang.Enum>
 <android.webkit.WebChromeClient: void onReceivedTouchIconUrl(android.webkit.WebView,java.lang.String,boolean)>:<public>:<android.webkit.WebChromeClient>
 <android.text.TextUtils.SimpleStringSplitter: java.util.Iterator iterator()>:<public>:<android.text.TextUtils.SimpleStringSplitter:android.text.TextUtils.StringSplitter,java.util.Iterator>
 <android.os.StrictMode.VmPolicy.Builder: android.os.StrictMode.VmPolicy.Builder penaltyDropBox()>:<public>:<android.os.StrictMode.VmPolicy.Builder>
@@ -12202,7 +12179,6 @@
 <android.view.inputmethod.InputMethodManager: boolean switchToNextInputMethod(android.os.IBinder,boolean)>:<public>:<android.view.inputmethod.InputMethodManager>
 <android.view.InputEvent: long getEventTime()>:<public abstract>:<android.view.InputEvent:android.os.Parcelable>
 <android.transition.Transition: android.animation.Animator createAnimator(android.view.ViewGroup,android.transition.TransitionValues,android.transition.TransitionValues)>:<public>:<android.transition.Transition:java.lang.Cloneable>
-<android.renderscript.Sampler.Value: void <init>(java.lang.String,int)>:<private>:<android.renderscript.Sampler.Value:java.lang.Enum>
 <android.nfc.NfcAdapter.ReaderCallback: void onTagDiscovered(android.nfc.Tag)>:<public abstract>:<android.nfc.NfcAdapter.ReaderCallback>
 <android.text.style.TtsSpan.MeasureBuilder: void <init>()>:<public>:<android.text.style.TtsSpan.MeasureBuilder:android.text.style.TtsSpan.SemioticClassBuilder,android.text.style.TtsSpan.Builder>
 <android.widget.TabHost.TabSpec: android.widget.TabHost.TabSpec setIndicator(java.lang.CharSequence)>:<public>:<android.widget.TabHost.TabSpec>
@@ -12488,7 +12464,6 @@
 <android.text.Layout: int getLineForVertical(int)>:<public>:<android.text.Layout>
 <android.renderscript.Matrix4f: void load(android.renderscript.Matrix4f)>:<public>:<android.renderscript.Matrix4f>
 <android.media.ImageWriter: void setOnImageReleasedListener(android.media.ImageWriter.OnImageReleasedListener,android.os.Handler)>:<public>:<android.media.ImageWriter:java.lang.AutoCloseable>
-<android.graphics.drawable.GradientDrawable.Orientation: void <init>(java.lang.String,int)>:<private>:<android.graphics.drawable.GradientDrawable.Orientation:java.lang.Enum>
 <android.accounts.NetworkErrorException: void <init>(java.lang.String,java.lang.Throwable)>:<public>:<android.accounts.NetworkErrorException:android.accounts.AccountsException,java.lang.Exception,java.lang.Throwable>
 <android.util.SparseArray: void setValueAt(int,java.lang.Object)>:<public>:<android.util.SparseArray:java.lang.Cloneable>
 <android.media.tv.TvInputService.Session: void onTimeShiftPause()>:<public>:<android.media.tv.TvInputService.Session:android.view.KeyEvent.Callback>
@@ -12641,7 +12616,6 @@
 <android.provider.ContactsContract.CommonDataKinds.Organization: void <init>()>:<>:<android.provider.ContactsContract.CommonDataKinds.Organization:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.provider.SearchRecentSuggestions: void truncateHistory(android.content.ContentResolver,int)>:<protected>:<android.provider.SearchRecentSuggestions>
 <android.bluetooth.BluetoothGattServer: java.util.List getConnectedDevices()>:<public>:<android.bluetooth.BluetoothGattServer:android.bluetooth.BluetoothProfile>
-<android.renderscript.Element.DataType: void <init>(java.lang.String,int)>:<private>:<android.renderscript.Element.DataType:java.lang.Enum>
 <android.test.MoreAsserts: void assertEquals(java.util.Set,java.util.Set)>:<public static>:<android.test.MoreAsserts>
 <android.opengl.GLES31: void glGetTexLevelParameteriv(int,int,int,java.nio.IntBuffer)>:<public static native>:<android.opengl.GLES31:android.opengl.GLES30,android.opengl.GLES20>
 <android.text.style.UnderlineSpan: void updateDrawState(android.text.TextPaint)>:<public>:<android.text.style.UnderlineSpan:android.text.style.CharacterStyle,android.text.style.UpdateAppearance,android.text.ParcelableSpan>
@@ -13430,7 +13404,6 @@
 <android.content.SyncAdapterType: java.lang.String getSettingsActivity()>:<public>:<android.content.SyncAdapterType:android.os.Parcelable>
 <android.renderscript.ScriptIntrinsicBlend: void forEachSrcIn(android.renderscript.Allocation,android.renderscript.Allocation)>:<public>:<android.renderscript.ScriptIntrinsicBlend:android.renderscript.ScriptIntrinsic,android.renderscript.Script,android.renderscript.BaseObj>
 <android.widget.ShareActionProvider: android.view.View onCreateActionView()>:<public>:<android.widget.ShareActionProvider:android.view.ActionProvider>
-<android.net.NetworkInfo.DetailedState: void <init>(java.lang.String,int)>:<private>:<android.net.NetworkInfo.DetailedState:java.lang.Enum>
 <android.content.IntentFilter: boolean hasDataSchemeSpecificPart(java.lang.String)>:<public final>:<android.content.IntentFilter:android.os.Parcelable>
 <android.text.style.TextAppearanceSpan: void <init>(android.os.Parcel)>:<public>:<android.text.style.TextAppearanceSpan:android.text.style.MetricAffectingSpan,android.text.style.CharacterStyle,android.text.ParcelableSpan>
 <android.opengl.Matrix: void translateM(float[],int,float,float,float)>:<public static>:<android.opengl.Matrix>
@@ -14218,7 +14191,6 @@
 <android.media.MediaRouter: void addUserRoute(android.media.MediaRouter.UserRouteInfo)>:<public>:<android.media.MediaRouter>
 <android.location.Location: float bearingTo(android.location.Location)>:<public>:<android.location.Location:android.os.Parcelable>
 <android.media.audiofx.AudioEffect: void <init>()>:<>:<android.media.audiofx.AudioEffect>
-<android.webkit.WebSettings.PluginState: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.PluginState:java.lang.Enum>
 <org.json.JSONArray: org.json.JSONArray put(java.lang.Object)>:<public>:<org.json.JSONArray>
 <android.opengl.GLES11Ext: void glDeleteRenderbuffersOES(int,int[],int)>:<public static native>:<android.opengl.GLES11Ext>
 <android.opengl.GLES10Ext: int glQueryMatrixxOES(int[],int,int[],int)>:<public static native>:<android.opengl.GLES10Ext>
@@ -14323,7 +14295,6 @@
 <android.test.mock.MockPackageManager: java.util.List queryPermissionsByGroup(java.lang.String,int)>:<public>:<android.test.mock.MockPackageManager:android.content.pm.PackageManager>
 <android.text.method.BaseMovementMethod: boolean lineStart(android.widget.TextView,android.text.Spannable)>:<protected>:<android.text.method.BaseMovementMethod:android.text.method.MovementMethod>
 <android.provider.ContactsContract.PhoneLookup: void <clinit>()>:<static>:<android.provider.ContactsContract.PhoneLookup:android.provider.BaseColumns,android.provider.ContactsContract.PhoneLookupColumns,android.provider.ContactsContract.ContactsColumns,android.provider.ContactsContract.ContactOptionsColumns>
-<android.webkit.WebSettings.ZoomDensity: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.ZoomDensity:java.lang.Enum>
 <android.webkit.WebView.WebViewTransport: void <init>(android.webkit.WebView)>:<public>:<android.webkit.WebView.WebViewTransport>
 <android.opengl.GLES31: void glVertexAttribIFormat(int,int,int,int)>:<public static native>:<android.opengl.GLES31:android.opengl.GLES30,android.opengl.GLES20>
 <android.system.Os: android.system.StructStatVfs statvfs(java.lang.String)>:<public static>:<android.system.Os>
@@ -14362,7 +14333,6 @@
 <android.hardware.camera2.params.StreamConfigurationMap: long getOutputStallDuration(int,android.util.Size)>:<public>:<android.hardware.camera2.params.StreamConfigurationMap>
 <android.text.method.ScrollingMovementMethod: boolean lineEnd(android.widget.TextView,android.text.Spannable)>:<protected>:<android.text.method.ScrollingMovementMethod:android.text.method.BaseMovementMethod,android.text.method.MovementMethod>
 <android.opengl.GLES31: void glProgramUniformMatrix4x3fv(int,int,int,boolean,float[],int)>:<public static native>:<android.opengl.GLES31:android.opengl.GLES30,android.opengl.GLES20>
-<android.view.ViewDebug.RecyclerTraceType: void <init>(java.lang.String,int)>:<private>:<android.view.ViewDebug.RecyclerTraceType:java.lang.Enum>
 <android.widget.TextView: int computeVerticalScrollExtent()>:<protected>:<android.widget.TextView:android.view.View,android.view.ViewTreeObserver.OnPreDrawListener>
 <android.bluetooth.BluetoothAdapter: boolean cancelDiscovery()>:<public>:<android.bluetooth.BluetoothAdapter>
 <android.view.accessibility.AccessibilityRecord: void setItemCount(int)>:<public>:<android.view.accessibility.AccessibilityRecord>
@@ -14756,7 +14726,6 @@
 <android.os.Bundle: android.util.Size getSize(java.lang.String)>:<public>:<android.os.Bundle:android.os.BaseBundle,java.lang.Cloneable,android.os.Parcelable>
 <android.view.SurfaceView: void <init>(android.content.Context)>:<public>:<android.view.SurfaceView:android.view.View>
 <android.app.MediaRouteButton: void <init>(android.content.Context,android.util.AttributeSet,int,int)>:<public>:<android.app.MediaRouteButton:android.view.View>
-<android.graphics.Canvas.VertexMode: void <init>(java.lang.String,int)>:<private>:<android.graphics.Canvas.VertexMode:java.lang.Enum>
 <android.app.Activity: void dump(java.lang.String,java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])>:<public>:<android.app.Activity:android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.LayoutInflater.Factory2,android.view.Window.Callback,android.view.KeyEvent.Callback,android.view.View.OnCreateContextMenuListener,android.content.ComponentCallbacks2>
 <android.appwidget.AppWidgetManager: void <init>()>:<>:<android.appwidget.AppWidgetManager>
 <android.animation.AnimatorSet: long getDuration()>:<public>:<android.animation.AnimatorSet:android.animation.Animator>
@@ -15080,7 +15049,6 @@
 <android.opengl.GLES30: java.nio.Buffer glMapBufferRange(int,int,int,int)>:<public static native>:<android.opengl.GLES30:android.opengl.GLES20>
 <android.hardware.usb.UsbAccessory: java.lang.String toString()>:<public>:<android.hardware.usb.UsbAccessory:android.os.Parcelable>
 <android.graphics.drawable.RippleDrawable: boolean isStateful()>:<public>:<android.graphics.drawable.RippleDrawable:android.graphics.drawable.LayerDrawable,android.graphics.drawable.Drawable>
-<android.graphics.PorterDuff.Mode: void <init>(java.lang.String,int)>:<private>:<android.graphics.PorterDuff.Mode:java.lang.Enum>
 <android.widget.TextView: int getMaxEms()>:<public>:<android.widget.TextView:android.view.View,android.view.ViewTreeObserver.OnPreDrawListener>
 <android.inputmethodservice.InputMethodService.InputMethodImpl: void <init>(android.inputmethodservice.InputMethodService)>:<public>:<android.inputmethodservice.InputMethodService.InputMethodImpl:android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl>
 <android.media.tv.TvContract.Channels: void <init>()>:<>:<android.media.tv.TvContract.Channels:android.media.tv.TvContract.BaseTvColumns>
@@ -15646,7 +15614,6 @@
 <android.view.Window: void setFlags(int,int)>:<public>:<android.view.Window>
 <android.view.accessibility.AccessibilityNodeInfo: java.lang.CharSequence getContentDescription()>:<public>:<android.view.accessibility.AccessibilityNodeInfo:android.os.Parcelable>
 <android.graphics.drawable.PictureDrawable: void setPicture(android.graphics.Picture)>:<public>:<android.graphics.drawable.PictureDrawable:android.graphics.drawable.Drawable>
-<android.graphics.Path.Direction: void <init>(java.lang.String,int)>:<private>:<android.graphics.Path.Direction:java.lang.Enum>
 <android.test.mock.MockContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver,boolean)>:<public>:<android.test.mock.MockContentResolver:android.content.ContentResolver>
 <android.text.SpannableStringBuilder: void <init>(java.lang.CharSequence,int,int)>:<public>:<android.text.SpannableStringBuilder:java.lang.CharSequence,android.text.GetChars,android.text.Spannable,android.text.Editable,java.lang.Appendable>
 <android.app.FragmentTransaction: android.app.FragmentTransaction setTransitionStyle(int)>:<public abstract>:<android.app.FragmentTransaction>
@@ -16063,7 +16030,6 @@
 <android.telephony.CellIdentityWcdma: void <init>()>:<>:<android.telephony.CellIdentityWcdma:android.os.Parcelable>
 <android.content.pm.PathPermission: void <clinit>()>:<static>:<android.content.pm.PathPermission:android.os.PatternMatcher>
 <android.net.wifi.WifiEnterpriseConfig: void setEapMethod(int)>:<public>:<android.net.wifi.WifiEnterpriseConfig:android.os.Parcelable>
-<android.webkit.WebSettings.RenderPriority: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.RenderPriority:java.lang.Enum>
 <android.preference.PreferenceManager: void setDefaultValues(android.content.Context,java.lang.String,int,int,boolean)>:<public static>:<android.preference.PreferenceManager>
 <android.content.ComponentName: void <init>(android.os.Parcel)>:<public>:<android.content.ComponentName:android.os.Parcelable,java.lang.Cloneable,java.lang.Comparable>
 <junit.framework.Assert: void failSame(java.lang.String)>:<public static>:<junit.framework.Assert>
@@ -17252,7 +17218,6 @@
 <android.media.MediaCodec: void <init>()>:<>:<android.media.MediaCodec>
 <android.security.keystore.KeyGenParameterSpec.Builder: android.security.keystore.KeyGenParameterSpec.Builder setBlockModes(java.lang.String[])>:<public transient>:<android.security.keystore.KeyGenParameterSpec.Builder>
 <android.system.OsConstants: int WSTOPSIG(int)>:<public static>:<android.system.OsConstants>
-<android.graphics.Path.Op: void <init>(java.lang.String,int)>:<private>:<android.graphics.Path.Op:java.lang.Enum>
 <android.content.Context: int checkCallingUriPermission(android.net.Uri,int)>:<public abstract>:<android.content.Context>
 <android.app.FragmentTransaction: android.app.FragmentTransaction setCustomAnimations(int,int,int,int)>:<public abstract>:<android.app.FragmentTransaction>
 <android.widget.GridView: int getHorizontalSpacing()>:<public>:<android.widget.GridView:android.widget.AbsListView,android.widget.AdapterView,android.view.ViewGroup,android.view.View>
@@ -17765,7 +17730,6 @@
 <android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,int,android.content.Intent,int)>:<public static>:<android.app.PendingIntent:android.os.Parcelable>
 <android.location.LocationProvider: boolean supportsSpeed()>:<public>:<android.location.LocationProvider>
 <android.content.ClipDescription: int describeContents()>:<public>:<android.content.ClipDescription:android.os.Parcelable>
-<android.graphics.Path.FillType: void <init>(java.lang.String,int)>:<private>:<android.graphics.Path.FillType:java.lang.Enum>
 <android.view.View: float getPivotY()>:<public>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
 <android.net.ProxyInfo: android.net.ProxyInfo buildPacProxy(android.net.Uri)>:<public static>:<android.net.ProxyInfo:android.os.Parcelable>
 <android.app.Instrumentation: void callActivityOnCreate(android.app.Activity,android.os.Bundle,android.os.PersistableBundle)>:<public>:<android.app.Instrumentation>
@@ -18524,7 +18488,6 @@
 <android.renderscript.ScriptIntrinsicBlend: android.renderscript.Script.KernelID getKernelIDSrcIn()>:<public>:<android.renderscript.ScriptIntrinsicBlend:android.renderscript.ScriptIntrinsic,android.renderscript.Script,android.renderscript.BaseObj>
 <android.util.LongSparseArray: void append(long,java.lang.Object)>:<public>:<android.util.LongSparseArray:java.lang.Cloneable>
 <android.widget.AbsSpinner: android.widget.SpinnerAdapter getAdapter()>:<public>:<android.widget.AbsSpinner:android.widget.AdapterView,android.view.ViewGroup,android.view.View>
-<android.webkit.WebSettings.TextSize: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.TextSize:java.lang.Enum>
 <android.renderscript.FieldPacker: boolean subBoolean()>:<public>:<android.renderscript.FieldPacker>
 <android.opengl.ETC1Util: android.opengl.ETC1Util.ETC1Texture createTexture(java.io.InputStream)>:<public static>:<android.opengl.ETC1Util>
 <android.accounts.AccountManager: void setUserData(android.accounts.Account,java.lang.String,java.lang.String)>:<public>:<android.accounts.AccountManager>
@@ -18669,7 +18632,6 @@
 <android.media.midi.MidiManager: void openBluetoothDevice(android.bluetooth.BluetoothDevice,android.media.midi.MidiManager.OnDeviceOpenedListener,android.os.Handler)>:<public>:<android.media.midi.MidiManager>
 <android.preference.MultiSelectListPreference: void <init>(android.content.Context)>:<public>:<android.preference.MultiSelectListPreference:android.preference.DialogPreference,android.preference.Preference>
 <android.net.Credentials: int getUid()>:<public>:<android.net.Credentials>
-<android.renderscript.Type.CubemapFace: void <init>(java.lang.String,int)>:<private>:<android.renderscript.Type.CubemapFace:java.lang.Enum>
 <android.widget.Checkable: boolean isChecked()>:<public abstract>:<android.widget.Checkable>
 <android.opengl.GLES20: void glGetTexParameterfv(int,int,java.nio.FloatBuffer)>:<public static native>:<android.opengl.GLES20>
 <android.app.DialogFragment: void onStop()>:<public>:<android.app.DialogFragment:android.app.Fragment,android.content.DialogInterface.OnCancelListener,android.content.DialogInterface.OnDismissListener>
@@ -18856,7 +18818,6 @@
 <android.graphics.Rect: void sort()>:<public>:<android.graphics.Rect:android.os.Parcelable>
 <android.net.sip.SipSession.Listener: void onRingingBack(android.net.sip.SipSession)>:<public>:<android.net.sip.SipSession.Listener>
 <android.media.AudioTrack: float getMinVolume()>:<public static>:<android.media.AudioTrack>
-<android.graphics.Bitmap.CompressFormat: void <init>(java.lang.String,int)>:<private>:<android.graphics.Bitmap.CompressFormat:java.lang.Enum>
 <android.media.midi.MidiDevice: void <init>()>:<>:<android.media.midi.MidiDevice:java.io.Closeable>
 <android.app.ActionBar: void setDisplayShowCustomEnabled(boolean)>:<public abstract>:<android.app.ActionBar>
 <android.opengl.GLES31Ext: android.opengl.GLES31Ext.DebugProcKHR glGetDebugMessageCallbackKHR()>:<public static native>:<android.opengl.GLES31Ext>
@@ -18883,7 +18844,6 @@
 <android.media.AudioManager: void registerMediaButtonEventReceiver(android.app.PendingIntent)>:<public>:<android.media.AudioManager>
 <android.widget.OverScroller: boolean computeScrollOffset()>:<public>:<android.widget.OverScroller>
 <android.graphics.Path: void addRoundRect(float,float,float,float,float[],android.graphics.Path.Direction)>:<public>:<android.graphics.Path>
-<android.graphics.Matrix.ScaleToFit: void <init>(java.lang.String,int)>:<private>:<android.graphics.Matrix.ScaleToFit:java.lang.Enum>
 <android.media.midi.MidiSender: void disconnect(android.media.midi.MidiReceiver)>:<public>:<android.media.midi.MidiSender>
 <android.app.Activity: int getRequestedOrientation()>:<public>:<android.app.Activity:android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.LayoutInflater.Factory2,android.view.Window.Callback,android.view.KeyEvent.Callback,android.view.View.OnCreateContextMenuListener,android.content.ComponentCallbacks2>
 <android.animation.ValueAnimator: java.lang.Object clone()>:<public volatile>:<android.animation.ValueAnimator:android.animation.Animator>
@@ -19556,7 +19516,6 @@
 <junit.framework.TestFailure: java.lang.Throwable thrownException()>:<public>:<junit.framework.TestFailure>
 <android.hardware.camera2.params.StreamConfigurationMap: android.util.Size[] getInputSizes(int)>:<public>:<android.hardware.camera2.params.StreamConfigurationMap>
 <android.opengl.GLES30: void glSamplerParameterfv(int,int,float[],int)>:<public static native>:<android.opengl.GLES30:android.opengl.GLES20>
-<android.text.Layout.Alignment: void <init>(java.lang.String,int)>:<private>:<android.text.Layout.Alignment:java.lang.Enum>
 <android.app.Presentation: android.content.res.Resources getResources()>:<public>:<android.app.Presentation:android.app.Dialog>
 <android.nfc.tech.Ndef: boolean canMakeReadOnly()>:<public>:<android.nfc.tech.Ndef:android.nfc.tech.BasicTagTechnology>
 <android.os.Debug: void resetGlobalFreedCount()>:<public static>:<android.os.Debug>
@@ -19655,7 +19614,6 @@
 <android.system.Os: int umask(int)>:<public static>:<android.system.Os>
 <android.content.ContentProvider: void <init>()>:<public>:<android.content.ContentProvider:android.content.ComponentCallbacks2>
 <android.content.UriPermission: long getPersistedTime()>:<public>:<android.content.UriPermission:android.os.Parcelable>
-<android.net.LocalSocketAddress.Namespace: void <init>(java.lang.String,int)>:<private>:<android.net.LocalSocketAddress.Namespace:java.lang.Enum>
 <android.view.accessibility.AccessibilityNodeInfo: boolean isDismissable()>:<public>:<android.view.accessibility.AccessibilityNodeInfo:android.os.Parcelable>
 <android.widget.CompoundButton: void toggle()>:<public>:<android.widget.CompoundButton:android.widget.Button,android.widget.TextView,android.view.View,android.widget.Checkable>
 <android.provider.ContactsContract.RawContacts: void <init>()>:<>:<android.provider.ContactsContract.RawContacts:android.provider.BaseColumns,android.provider.ContactsContract.RawContactsColumns,android.provider.ContactsContract.ContactOptionsColumns,android.provider.ContactsContract.ContactNameColumns,android.provider.ContactsContract.SyncColumns>
@@ -20577,7 +20535,6 @@
 <android.bluetooth.BluetoothAdapter: android.bluetooth.BluetoothDevice getRemoteDevice(java.lang.String)>:<public>:<android.bluetooth.BluetoothAdapter>
 <android.database.MatrixCursor: double getDouble(int)>:<public>:<android.database.MatrixCursor:android.database.AbstractCursor>
 <android.widget.Toolbar.LayoutParams: void <init>(int,int)>:<public>:<android.widget.Toolbar.LayoutParams:android.app.ActionBar.LayoutParams,android.view.ViewGroup.MarginLayoutParams,android.view.ViewGroup.LayoutParams>
-<android.graphics.Paint.Cap: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Cap:java.lang.Enum>
 <android.net.wifi.WifiManager.MulticastLock: void release()>:<public>:<android.net.wifi.WifiManager.MulticastLock>
 <android.media.AudioManager: int getMode()>:<public>:<android.media.AudioManager>
 <android.test.MoreAsserts: void assertContentsInAnyOrder(java.lang.String,java.lang.Iterable,java.lang.Object[])>:<public static transient>:<android.test.MoreAsserts>
@@ -20920,7 +20877,6 @@
 <android.preference.PreferenceActivity: void startPreferenceFragment(android.app.Fragment,boolean)>:<public>:<android.preference.PreferenceActivity:android.app.ListActivity,android.app.Activity,android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.preference.PreferenceFragment.OnPreferenceStartFragmentCallback>
 <android.widget.TwoLineListItem: java.lang.CharSequence getAccessibilityClassName()>:<public>:<android.widget.TwoLineListItem:android.widget.RelativeLayout,android.view.ViewGroup,android.view.View>
 <android.view.animation.AnimationSet: void initialize(int,int,int,int)>:<public>:<android.view.animation.AnimationSet:android.view.animation.Animation>
-<android.graphics.Interpolator.Result: void <init>(java.lang.String,int)>:<private>:<android.graphics.Interpolator.Result:java.lang.Enum>
 <android.text.style.AbsoluteSizeSpan: void updateMeasureState(android.text.TextPaint)>:<public>:<android.text.style.AbsoluteSizeSpan:android.text.style.MetricAffectingSpan,android.text.style.CharacterStyle,android.text.ParcelableSpan>
 <android.webkit.WebBackForwardList: int getSize()>:<public abstract>:<android.webkit.WebBackForwardList:java.lang.Cloneable,java.io.Serializable>
 <android.graphics.Bitmap: void setPremultiplied(boolean)>:<public final>:<android.graphics.Bitmap:android.os.Parcelable>
@@ -21410,7 +21366,6 @@
 <android.telephony.TelephonyManager: java.lang.String getNetworkOperatorName()>:<public>:<android.telephony.TelephonyManager>
 <android.database.AbstractCursor: boolean move(int)>:<public final>:<android.database.AbstractCursor:android.database.CrossProcessCursor>
 <android.renderscript.RSRuntimeException: void <init>(java.lang.String)>:<public>:<android.renderscript.RSRuntimeException:java.lang.RuntimeException,java.lang.Exception,java.lang.Throwable>
-<android.graphics.Paint.Style: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Style:java.lang.Enum>
 <android.view.inputmethod.BaseInputConnection: android.view.inputmethod.ExtractedText getExtractedText(android.view.inputmethod.ExtractedTextRequest,int)>:<public>:<android.view.inputmethod.BaseInputConnection:android.view.inputmethod.InputConnection>
 <android.text.method.DigitsKeyListener: android.text.method.DigitsKeyListener getInstance(boolean,boolean)>:<public static>:<android.text.method.DigitsKeyListener:android.text.method.NumberKeyListener,android.text.method.BaseKeyListener,android.text.method.MetaKeyKeyListener>
 <android.text.method.SingleLineTransformationMethod: void <init>()>:<public>:<android.text.method.SingleLineTransformationMethod:android.text.method.ReplacementTransformationMethod>
@@ -22622,7 +22577,6 @@
 <android.transition.Slide: int getSlideEdge()>:<public>:<android.transition.Slide:android.transition.Visibility,android.transition.Transition>
 <android.os.Binder: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>:<protected>:<android.os.Binder:android.os.IBinder>
 <android.widget.ZoomControls: java.lang.CharSequence getAccessibilityClassName()>:<public>:<android.widget.ZoomControls:android.widget.LinearLayout,android.view.ViewGroup,android.view.View>
-<android.text.TextUtils.TruncateAt: void <init>(java.lang.String,int)>:<private>:<android.text.TextUtils.TruncateAt:java.lang.Enum>
 <android.animation.Animator: void pause()>:<public>:<android.animation.Animator:java.lang.Cloneable>
 <org.apache.http.params.HttpParams: org.apache.http.params.HttpParams setDoubleParameter(java.lang.String,double)>:<public abstract>:<org.apache.http.params.HttpParams>
 <android.opengl.GLES11Ext: void glGenFramebuffersOES(int,java.nio.IntBuffer)>:<public static native>:<android.opengl.GLES11Ext>
@@ -22656,7 +22610,6 @@
 <android.os.DropBoxManager.Entry: void <clinit>()>:<static>:<android.os.DropBoxManager.Entry:android.os.Parcelable,java.io.Closeable>
 <android.database.ContentObservable: void notifyChange(boolean)>:<public>:<android.database.ContentObservable:android.database.Observable>
 <android.media.AudioManager: void setBluetoothA2dpOn(boolean)>:<public>:<android.media.AudioManager>
-<android.telephony.gsm.SmsMessage.MessageClass: void <init>(java.lang.String,int)>:<private>:<android.telephony.gsm.SmsMessage.MessageClass:java.lang.Enum>
 <android.renderscript.Type.CubemapFace: android.renderscript.Type.CubemapFace[] values()>:<public static>:<android.renderscript.Type.CubemapFace:java.lang.Enum>
 <android.provider.ContactsContract.CommonDataKinds.Organization: int getTypeLabelResource(int)>:<public static final>:<android.provider.ContactsContract.CommonDataKinds.Organization:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.database.MergeCursor: void unregisterDataSetObserver(android.database.DataSetObserver)>:<public>:<android.database.MergeCursor:android.database.AbstractCursor>
@@ -22793,7 +22746,6 @@
 <android.inputmethodservice.InputMethodService: void setTheme(int)>:<public>:<android.inputmethodservice.InputMethodService:android.inputmethodservice.AbstractInputMethodService,android.app.Service,android.content.ContextWrapper,android.content.Context>
 <android.app.WallpaperInfo: java.lang.String toString()>:<public>:<android.app.WallpaperInfo:android.os.Parcelable>
 <android.app.Fragment: android.app.Fragment instantiate(android.content.Context,java.lang.String,android.os.Bundle)>:<public static>:<android.app.Fragment:android.content.ComponentCallbacks2,android.view.View.OnCreateContextMenuListener>
-<android.graphics.BlurMaskFilter.Blur: void <init>(java.lang.String,int)>:<private>:<android.graphics.BlurMaskFilter.Blur:java.lang.Enum>
 <android.net.sip.SipProfile.Builder: android.net.sip.SipProfile.Builder setPort(int)>:<public>:<android.net.sip.SipProfile.Builder>
 <android.net.sip.SipAudioCall: void answerCall(int)>:<public>:<android.net.sip.SipAudioCall>
 <android.renderscript.Type: int getYuv()>:<public>:<android.renderscript.Type:android.renderscript.BaseObj>
@@ -23466,7 +23418,6 @@
 <android.graphics.drawable.Drawable: boolean getPadding(android.graphics.Rect)>:<public>:<android.graphics.drawable.Drawable>
 <android.view.WindowInsets: int getStableInsetRight()>:<public>:<android.view.WindowInsets>
 <android.content.Intent: android.content.ClipData getClipData()>:<public>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
-<android.graphics.Shader.TileMode: void <init>(java.lang.String,int)>:<private>:<android.graphics.Shader.TileMode:java.lang.Enum>
 <android.widget.VideoView: void setOnErrorListener(android.media.MediaPlayer.OnErrorListener)>:<public>:<android.widget.VideoView:android.view.SurfaceView,android.view.View,android.widget.MediaController.MediaPlayerControl>
 <android.net.Network: java.net.URLConnection openConnection(java.net.URL)>:<public>:<android.net.Network:android.os.Parcelable>
 <android.hardware.usb.UsbDevice: void writeToParcel(android.os.Parcel,int)>:<public>:<android.hardware.usb.UsbDevice:android.os.Parcelable>
@@ -24150,7 +24101,6 @@
 <android.text.AlteredCharSequence: android.text.AlteredCharSequence make(java.lang.CharSequence,char[],int,int)>:<public static>:<android.text.AlteredCharSequence:java.lang.CharSequence,android.text.GetChars>
 <android.widget.ScrollView: boolean onStartNestedScroll(android.view.View,android.view.View,int)>:<public>:<android.widget.ScrollView:android.widget.FrameLayout,android.view.ViewGroup,android.view.View>
 <android.util.SparseIntArray: java.lang.String toString()>:<public>:<android.util.SparseIntArray:java.lang.Cloneable>
-<android.renderscript.RenderScript.ContextType: void <init>(java.lang.String,int)>:<private>:<android.renderscript.RenderScript.ContextType:java.lang.Enum>
 <android.widget.TextView: float getLineSpacingExtra()>:<public>:<android.widget.TextView:android.view.View,android.view.ViewTreeObserver.OnPreDrawListener>
 <android.nfc.tech.NfcV: int getMaxTransceiveLength()>:<public>:<android.nfc.tech.NfcV:android.nfc.tech.BasicTagTechnology>
 <android.telephony.CellSignalStrengthLte: int hashCode()>:<public>:<android.telephony.CellSignalStrengthLte:android.telephony.CellSignalStrength,android.os.Parcelable>

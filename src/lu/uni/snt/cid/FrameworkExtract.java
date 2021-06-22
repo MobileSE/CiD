@@ -48,8 +48,6 @@ public class FrameworkExtract {
 		
 		for (String line : lines) {
 			String[] splits = line.split(">:<");
-			System.out.println(line);
-			System.out.println("Length:" + splits.length);
 			String field = splits[0] + ">";
 			String clsSupers = splits[3].substring(0, splits[3].length() - 1);
 			String[] clsSuperSplits = clsSupers.split(":");

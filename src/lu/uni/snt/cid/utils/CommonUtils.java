@@ -212,7 +212,8 @@ public class CommonUtils
 	}
 	
 	public static String getVariable(String varRef) {
-		if (varRef.contains("<") && varRef.contains(">")) {
+		if (varRef.contains(":") && varRef.contains("<") &&
+				varRef.contains(">") && !varRef.contains("(") && !varRef.contains(")")) {
 			int startBracket = varRef.indexOf("<");
 			int endBracket = varRef.lastIndexOf(">");
 			if (startBracket < endBracket) {

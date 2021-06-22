@@ -13,7 +13,6 @@
 <android.content.ContentProvider: void setWritePermission(java.lang.String)>:<protected final>:<android.content.ContentProvider:android.content.ComponentCallbacks>
 <org.apache.http.HttpMessage: org.apache.http.HeaderIterator headerIterator()>:<public abstract>:<org.apache.http.HttpMessage>
 <android.net.UrlQuerySanitizer: void parseQuery(java.lang.String)>:<public>:<android.net.UrlQuerySanitizer>
-<android.text.method.TextKeyListener.Capitalize: void <init>(java.lang.String,int)>:<private>:<android.text.method.TextKeyListener.Capitalize:java.lang.Enum>
 <android.graphics.ColorMatrix: void set(android.graphics.ColorMatrix)>:<public>:<android.graphics.ColorMatrix>
 <org.apache.http.impl.cookie.BasicClientCookie: int getVersion()>:<public>:<org.apache.http.impl.cookie.BasicClientCookie:org.apache.http.cookie.SetCookie,org.apache.http.cookie.ClientCookie,java.lang.Cloneable>
 <org.apache.http.ParseException: void <init>()>:<public>:<org.apache.http.ParseException:java.lang.RuntimeException,java.lang.Exception,java.lang.Throwable>
@@ -353,7 +352,6 @@
 <org.apache.http.impl.client.AbstractHttpClient: org.apache.http.protocol.HttpContext createHttpContext()>:<protected abstract>:<org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.HttpClient>
 <android.opengl.GLES10: void glRotatex(int,int,int,int)>:<public static native>:<android.opengl.GLES10>
 <org.apache.http.message.ParserCursor: int getUpperBound()>:<public>:<org.apache.http.message.ParserCursor>
-<org.apache.http.conn.routing.RouteInfo.LayerType: void <init>(java.lang.String,int)>:<private>:<org.apache.http.conn.routing.RouteInfo.LayerType:java.lang.Enum>
 <org.apache.http.impl.client.EntityEnclosingRequestWrapper: boolean expectContinue()>:<public>:<org.apache.http.impl.client.EntityEnclosingRequestWrapper:org.apache.http.impl.client.RequestWrapper,org.apache.http.message.AbstractHttpMessage,org.apache.http.HttpEntityEnclosingRequest>
 <android.net.http.SslCertificate.DName: java.lang.String getUName()>:<public>:<android.net.http.SslCertificate.DName>
 <android.database.MergeCursor: byte[] getBlob(int)>:<public>:<android.database.MergeCursor:android.database.AbstractCursor>
@@ -456,7 +454,6 @@
 <android.graphics.drawable.BitmapDrawable: void setAlpha(int)>:<public>:<android.graphics.drawable.BitmapDrawable:android.graphics.drawable.Drawable>
 <android.widget.Spinner: void setPromptId(int)>:<public>:<android.widget.Spinner:android.widget.AbsSpinner,android.widget.AdapterView,android.view.ViewGroup,android.view.View,android.content.DialogInterface.OnClickListener>
 <android.content.BroadcastReceiver: void setResultData(java.lang.String)>:<public final>:<android.content.BroadcastReceiver>
-<android.graphics.PathDashPathEffect.Style: void <init>(java.lang.String,int)>:<private>:<android.graphics.PathDashPathEffect.Style:java.lang.Enum>
 <android.provider.Settings.Secure: void <init>()>:<public>:<android.provider.Settings.Secure:android.provider.Settings.NameValueTable>
 <android.graphics.EmbossMaskFilter: void <init>(float[],float,float,float)>:<public>:<android.graphics.EmbossMaskFilter:android.graphics.MaskFilter>
 <android.database.sqlite.SQLiteDatabase: int getVersion()>:<public>:<android.database.sqlite.SQLiteDatabase:android.database.sqlite.SQLiteClosable>
@@ -522,7 +519,6 @@
 <android.text.Selection: boolean extendToRightEdge(android.text.Spannable,android.text.Layout)>:<public static>:<android.text.Selection>
 <junit.framework.TestResult: int failureCount()>:<public synchronized>:<junit.framework.TestResult>
 <android.text.style.StrikethroughSpan: void <init>()>:<public>:<android.text.style.StrikethroughSpan:android.text.style.CharacterStyle,android.text.style.UpdateAppearance,android.text.ParcelableSpan>
-<android.net.NetworkInfo.State: void <init>(java.lang.String,int)>:<private>:<android.net.NetworkInfo.State:java.lang.Enum>
 <android.content.res.Resources: java.lang.String getResourceTypeName(int)>:<public>:<android.content.res.Resources>
 <android.webkit.WebChromeClient: void onHideCustomView()>:<public>:<android.webkit.WebChromeClient>
 <org.xmlpull.v1.XmlPullParserFactory: org.xmlpull.v1.XmlSerializer newSerializer()>:<public>:<org.xmlpull.v1.XmlPullParserFactory>
@@ -567,7 +563,6 @@
 <android.widget.ProgressBar: void setSecondaryProgress(int)>:<public synchronized>:<android.widget.ProgressBar:android.view.View>
 <android.os.ResultReceiver: void send(int,android.os.Bundle)>:<public>:<android.os.ResultReceiver:android.os.Parcelable>
 <android.os.Handler: android.os.Message obtainMessage(int,int,int,java.lang.Object)>:<public final>:<android.os.Handler>
-<android.webkit.WebSettings.LayoutAlgorithm: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.LayoutAlgorithm:java.lang.Enum>
 <android.media.MediaPlayer: void setWakeMode(android.content.Context,int)>:<public>:<android.media.MediaPlayer>
 <android.preference.DialogPreference: java.lang.CharSequence getNegativeButtonText()>:<public>:<android.preference.DialogPreference:android.preference.Preference,android.content.DialogInterface.OnClickListener,android.content.DialogInterface.OnDismissListener,android.preference.PreferenceManager.OnActivityDestroyListener>
 <android.view.inputmethod.InputMethodSession: void updateExtractedText(int,android.view.inputmethod.ExtractedText)>:<public abstract>:<android.view.inputmethod.InputMethodSession>
@@ -658,7 +653,6 @@
 <android.telephony.gsm.SmsMessage: android.telephony.gsm.SmsMessage createFromPdu(byte[])>:<public static>:<android.telephony.gsm.SmsMessage>
 <android.graphics.Region: void <init>()>:<public>:<android.graphics.Region:android.os.Parcelable>
 <android.widget.TableRow.LayoutParams: void <init>(android.view.ViewGroup.MarginLayoutParams)>:<public>:<android.widget.TableRow.LayoutParams:android.widget.LinearLayout.LayoutParams,android.view.ViewGroup.MarginLayoutParams,android.view.ViewGroup.LayoutParams>
-<android.util.Xml.Encoding: void <init>(java.lang.String,int)>:<private>:<android.util.Xml.Encoding:java.lang.Enum>
 <android.media.FaceDetector.Face: float pose(int)>:<public>:<android.media.FaceDetector.Face>
 <android.opengl.GLES11Ext: void glDrawTexsvOES(java.nio.ShortBuffer)>:<public static native>:<android.opengl.GLES11Ext>
 <android.widget.AbsoluteLayout: android.view.ViewGroup.LayoutParams generateDefaultLayoutParams()>:<protected>:<android.widget.AbsoluteLayout:android.view.ViewGroup,android.view.View>
@@ -2061,7 +2055,6 @@
 <android.opengl.GLES10: void glTexImage2D(int,int,int,int,int,int,int,int,java.nio.Buffer)>:<public static native>:<android.opengl.GLES10>
 <android.widget.ImageView.ScaleType: android.widget.ImageView.ScaleType[] values()>:<public static final>:<android.widget.ImageView.ScaleType:java.lang.Enum>
 <android.graphics.Paint: void setUnderlineText(boolean)>:<public native>:<android.graphics.Paint>
-<android.graphics.AvoidXfermode.Mode: void <init>(java.lang.String,int)>:<private>:<android.graphics.AvoidXfermode.Mode:java.lang.Enum>
 <org.apache.http.conn.ClientConnectionManager: org.apache.http.conn.scheme.SchemeRegistry getSchemeRegistry()>:<public abstract>:<org.apache.http.conn.ClientConnectionManager>
 <android.webkit.WebView: void loadUrl(java.lang.String)>:<public>:<android.webkit.WebView:android.widget.AbsoluteLayout,android.view.ViewGroup,android.view.View,android.view.ViewTreeObserver.OnGlobalFocusChangeListener,android.view.ViewGroup.OnHierarchyChangeListener>
 <org.apache.http.client.utils.URIUtils: void <init>()>:<>:<org.apache.http.client.utils.URIUtils>
@@ -3172,7 +3165,6 @@
 <org.apache.http.client.RedirectHandler: boolean isRedirectRequested(org.apache.http.HttpResponse,org.apache.http.protocol.HttpContext)>:<public abstract>:<org.apache.http.client.RedirectHandler>
 <android.widget.FrameLayout: void setForeground(android.graphics.drawable.Drawable)>:<public>:<android.widget.FrameLayout:android.view.ViewGroup,android.view.View>
 <org.json.JSONObject: double getDouble(java.lang.String)>:<public>:<org.json.JSONObject>
-<android.graphics.Canvas.EdgeType: void <init>(java.lang.String,int)>:<private>:<android.graphics.Canvas.EdgeType:java.lang.Enum>
 <android.app.WallpaperManager: void <init>()>:<>:<android.app.WallpaperManager>
 <android.text.util.Rfc822Token: java.lang.String quoteNameIfNecessary(java.lang.String)>:<public static>:<android.text.util.Rfc822Token>
 <org.apache.http.conn.MultihomePlainSocketFactory: boolean isSecure(java.net.Socket)>:<public final>:<org.apache.http.conn.MultihomePlainSocketFactory:org.apache.http.conn.scheme.SocketFactory>
@@ -3860,7 +3852,6 @@
 <android.os.Debug: void dumpHprofData(java.lang.String)>:<public static>:<android.os.Debug>
 <org.apache.http.impl.cookie.RFC2965SpecFactory: org.apache.http.cookie.CookieSpec newInstance(org.apache.http.params.HttpParams)>:<public>:<org.apache.http.impl.cookie.RFC2965SpecFactory:org.apache.http.cookie.CookieSpecFactory>
 <android.text.TextUtils.SimpleStringSplitter: void remove()>:<public>:<android.text.TextUtils.SimpleStringSplitter:android.text.TextUtils.StringSplitter,java.util.Iterator>
-<android.view.ViewDebug.HierarchyTraceType: void <init>(java.lang.String,int)>:<private>:<android.view.ViewDebug.HierarchyTraceType:java.lang.Enum>
 <android.widget.ImageView: int getBaseline()>:<public>:<android.widget.ImageView:android.view.View>
 <android.provider.Contacts.People.Extensions: void <init>()>:<>:<android.provider.Contacts.People.Extensions:android.provider.BaseColumns,android.provider.Contacts.ExtensionsColumns>
 <org.apache.http.HttpHost: int getPort()>:<public>:<org.apache.http.HttpHost:java.lang.Cloneable>
@@ -4058,7 +4049,6 @@
 <android.content.SyncStats: void clear()>:<public>:<android.content.SyncStats:android.os.Parcelable>
 <android.opengl.GLUtils: void texImage2D(int,int,android.graphics.Bitmap,int)>:<public static>:<android.opengl.GLUtils>
 <android.widget.ExpandableListView.OnGroupCollapseListener: void onGroupCollapse(int)>:<public abstract>:<android.widget.ExpandableListView.OnGroupCollapseListener>
-<android.database.CursorJoiner.Result: void <init>(java.lang.String,int)>:<private>:<android.database.CursorJoiner.Result:java.lang.Enum>
 <android.text.style.SubscriptSpan: void <init>(android.os.Parcel)>:<public>:<android.text.style.SubscriptSpan:android.text.style.MetricAffectingSpan,android.text.style.CharacterStyle,android.text.ParcelableSpan>
 <android.appwidget.AppWidgetHost: void <init>(android.content.Context,int)>:<public>:<android.appwidget.AppWidgetHost>
 <android.opengl.GLES10: void glLoadMatrixf(java.nio.FloatBuffer)>:<public static native>:<android.opengl.GLES10>
@@ -4126,7 +4116,6 @@
 <android.provider.Contacts: void <init>()>:<>:<android.provider.Contacts>
 <org.apache.http.message.BasicLineFormatter: org.apache.http.util.CharArrayBuffer appendProtocolVersion(org.apache.http.util.CharArrayBuffer,org.apache.http.ProtocolVersion)>:<public>:<org.apache.http.message.BasicLineFormatter:org.apache.http.message.LineFormatter>
 <org.apache.http.client.methods.HttpPost: java.lang.String getMethod()>:<public>:<org.apache.http.client.methods.HttpPost:org.apache.http.client.methods.HttpEntityEnclosingRequestBase,org.apache.http.client.methods.HttpRequestBase,org.apache.http.message.AbstractHttpMessage>
-<android.graphics.Bitmap.Config: void <init>(java.lang.String,int)>:<private>:<android.graphics.Bitmap.Config:java.lang.Enum>
 <android.view.View: int[] getDrawableState()>:<public final>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
 <org.apache.http.impl.client.AbstractHttpClient: org.apache.http.HttpResponse execute(org.apache.http.HttpHost,org.apache.http.HttpRequest,org.apache.http.protocol.HttpContext)>:<public final>:<org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.HttpClient>
 <org.apache.http.params.HttpProtocolParamBean: void setUseExpectContinue(boolean)>:<public>:<org.apache.http.params.HttpProtocolParamBean:org.apache.http.params.HttpAbstractParamBean>
@@ -4174,7 +4163,6 @@
 <org.apache.http.entity.StringEntity: void writeTo(java.io.OutputStream)>:<public>:<org.apache.http.entity.StringEntity:org.apache.http.entity.AbstractHttpEntity,java.lang.Cloneable>
 <org.apache.http.entity.StringEntity: boolean isStreaming()>:<public>:<org.apache.http.entity.StringEntity:org.apache.http.entity.AbstractHttpEntity,java.lang.Cloneable>
 <android.text.ClipboardManager: void setText(java.lang.CharSequence)>:<public>:<android.text.ClipboardManager>
-<android.net.wifi.SupplicantState: void <init>(java.lang.String,int)>:<private>:<android.net.wifi.SupplicantState:java.lang.Enum,android.os.Parcelable>
 <android.content.SharedPreferences.OnSharedPreferenceChangeListener: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>:<public abstract>:<android.content.SharedPreferences.OnSharedPreferenceChangeListener>
 <android.os.Bundle: java.util.ArrayList getIntegerArrayList(java.lang.String)>:<public>:<android.os.Bundle:android.os.Parcelable,java.lang.Cloneable>
 <android.net.NetworkInfo: boolean isAvailable()>:<public>:<android.net.NetworkInfo:android.os.Parcelable>
@@ -4797,7 +4785,6 @@
 <org.apache.http.cookie.CookieOrigin: int getPort()>:<public>:<org.apache.http.cookie.CookieOrigin>
 <android.os.FileObserver: void startWatching()>:<public>:<android.os.FileObserver>
 <android.database.DatabaseUtils: void dumpCurrentRow(android.database.Cursor,java.io.PrintStream)>:<public static>:<android.database.DatabaseUtils>
-<android.graphics.Region.Op: void <init>(java.lang.String,int)>:<private>:<android.graphics.Region.Op:java.lang.Enum>
 <android.widget.AbsListView: void getFocusedRect(android.graphics.Rect)>:<public>:<android.widget.AbsListView:android.widget.AdapterView,android.view.ViewGroup,android.view.View,android.text.TextWatcher,android.view.ViewTreeObserver.OnGlobalLayoutListener,android.widget.Filter.FilterListener,android.view.ViewTreeObserver.OnTouchModeChangeListener>
 <android.os.Bundle: void putCharSequence(java.lang.String,java.lang.CharSequence)>:<public>:<android.os.Bundle:android.os.Parcelable,java.lang.Cloneable>
 <android.content.OperationApplicationException: int getNumSuccessfulYieldPoints()>:<public>:<android.content.OperationApplicationException:java.lang.Exception,java.lang.Throwable>
@@ -4988,7 +4975,6 @@
 <android.webkit.WebSettings: int getDefaultFixedFontSize()>:<public synchronized>:<android.webkit.WebSettings>
 <android.media.MediaScannerConnection: void disconnect()>:<public>:<android.media.MediaScannerConnection:android.content.ServiceConnection>
 <android.view.View: int getSuggestedMinimumWidth()>:<protected>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
-<android.telephony.SmsMessage.MessageClass: void <init>(java.lang.String,int)>:<private>:<android.telephony.SmsMessage.MessageClass:java.lang.Enum>
 <android.hardware.Camera.ErrorCallback: void onError(int,android.hardware.Camera)>:<public abstract>:<android.hardware.Camera.ErrorCallback>
 <android.webkit.WebView: android.webkit.PluginList getPluginList()>:<public static synchronized>:<android.webkit.WebView:android.widget.AbsoluteLayout,android.view.ViewGroup,android.view.View,android.view.ViewTreeObserver.OnGlobalFocusChangeListener,android.view.ViewGroup.OnHierarchyChangeListener>
 <android.widget.ZoomButtonsController: boolean isVisible()>:<public>:<android.widget.ZoomButtonsController:android.view.View.OnTouchListener>
@@ -5171,7 +5157,6 @@
 <android.app.ExpandableListActivity: boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long)>:<public>:<android.app.ExpandableListActivity:android.app.Activity,android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.View.OnCreateContextMenuListener,android.widget.ExpandableListView.OnChildClickListener,android.widget.ExpandableListView.OnGroupCollapseListener,android.widget.ExpandableListView.OnGroupExpandListener>
 <android.view.Window: void setContentView(int)>:<public abstract>:<android.view.Window>
 <android.graphics.drawable.ScaleDrawable: boolean onLevelChange(int)>:<protected>:<android.graphics.drawable.ScaleDrawable:android.graphics.drawable.Drawable,android.graphics.drawable.Drawable.Callback>
-<android.widget.ImageView.ScaleType: void <init>(java.lang.String,int)>:<private>:<android.widget.ImageView.ScaleType:java.lang.Enum>
 <android.os.Parcel: java.lang.Object readValue(java.lang.ClassLoader)>:<public final>:<android.os.Parcel>
 <android.widget.PopupWindow.OnDismissListener: void onDismiss()>:<public abstract>:<android.widget.PopupWindow.OnDismissListener>
 <android.database.AbstractCursor: int getColumnCount()>:<public>:<android.database.AbstractCursor:android.database.CrossProcessCursor>
@@ -5190,7 +5175,6 @@
 <android.os.Debug: void resetThreadExternalAllocCount()>:<public static>:<android.os.Debug>
 <android.graphics.drawable.shapes.ArcShape: void draw(android.graphics.Canvas,android.graphics.Paint)>:<public>:<android.graphics.drawable.shapes.ArcShape:android.graphics.drawable.shapes.RectShape,android.graphics.drawable.shapes.Shape>
 <dalvik.system.VMRuntime: dalvik.system.VMRuntime getRuntime()>:<public static>:<dalvik.system.VMRuntime>
-<android.graphics.Paint.Align: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Align:java.lang.Enum>
 <android.accessibilityservice.AccessibilityServiceInfo: void <init>()>:<public>:<android.accessibilityservice.AccessibilityServiceInfo:android.os.Parcelable>
 <android.widget.AbsListView: android.view.ViewGroup.LayoutParams generateLayoutParams(android.view.ViewGroup.LayoutParams)>:<protected>:<android.widget.AbsListView:android.widget.AdapterView,android.view.ViewGroup,android.view.View,android.text.TextWatcher,android.view.ViewTreeObserver.OnGlobalLayoutListener,android.widget.Filter.FilterListener,android.view.ViewTreeObserver.OnTouchModeChangeListener>
 <android.test.mock.MockPackageManager: android.content.pm.ActivityInfo getActivityInfo(android.content.ComponentName,int)>:<public>:<android.test.mock.MockPackageManager:android.content.pm.PackageManager>
@@ -5301,7 +5285,6 @@
 <org.apache.http.io.HttpTransportMetrics: void reset()>:<public abstract>:<org.apache.http.io.HttpTransportMetrics>
 <android.widget.HorizontalScrollView: void computeScroll()>:<public>:<android.widget.HorizontalScrollView:android.widget.FrameLayout,android.view.ViewGroup,android.view.View>
 <android.view.inputmethod.InputConnection: boolean sendKeyEvent(android.view.KeyEvent)>:<public abstract>:<android.view.inputmethod.InputConnection>
-<android.graphics.Paint.Join: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Join:java.lang.Enum>
 <org.apache.http.cookie.SetCookie: void setVersion(int)>:<public abstract>:<org.apache.http.cookie.SetCookie:org.apache.http.cookie.Cookie>
 <android.preference.PreferenceGroup: void setOrderingAsAdded(boolean)>:<public>:<android.preference.PreferenceGroup:android.preference.Preference>
 <android.content.res.AssetFileDescriptor: void close()>:<public>:<android.content.res.AssetFileDescriptor:android.os.Parcelable>
@@ -5707,7 +5690,6 @@
 <android.content.pm.PackageManager: void removePermission(java.lang.String)>:<public abstract>:<android.content.pm.PackageManager>
 <android.view.View: boolean isDuplicateParentStateEnabled()>:<public>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
 <android.preference.ListPreference: void onSetInitialValue(boolean,java.lang.Object)>:<protected>:<android.preference.ListPreference:android.preference.DialogPreference,android.preference.Preference>
-<org.apache.http.conn.routing.RouteInfo.TunnelType: void <init>(java.lang.String,int)>:<private>:<org.apache.http.conn.routing.RouteInfo.TunnelType:java.lang.Enum>
 <android.net.LocalSocket: void setSendBufferSize(int)>:<public>:<android.net.LocalSocket>
 <android.hardware.Camera: void release()>:<public final>:<android.hardware.Camera>
 <android.widget.ExpandableListAdapter: long getChildId(int,int)>:<public abstract>:<android.widget.ExpandableListAdapter>
@@ -5956,7 +5938,6 @@
 <android.graphics.drawable.DrawableContainer: android.graphics.drawable.Drawable.ConstantState getConstantState()>:<public>:<android.graphics.drawable.DrawableContainer:android.graphics.drawable.Drawable,android.graphics.drawable.Drawable.Callback>
 <android.opengl.GLES10: void glBlendFunc(int,int)>:<public static native>:<android.opengl.GLES10>
 <org.apache.http.impl.io.AbstractSessionOutputBuffer: org.apache.http.io.HttpTransportMetrics getMetrics()>:<public>:<org.apache.http.impl.io.AbstractSessionOutputBuffer:org.apache.http.io.SessionOutputBuffer>
-<android.os.AsyncTask.Status: void <init>(java.lang.String,int)>:<private>:<android.os.AsyncTask.Status:java.lang.Enum>
 <android.text.style.StrikethroughSpan: void updateDrawState(android.text.TextPaint)>:<public>:<android.text.style.StrikethroughSpan:android.text.style.CharacterStyle,android.text.style.UpdateAppearance,android.text.ParcelableSpan>
 <org.apache.http.conn.EofSensorWatcher: boolean streamAbort(java.io.InputStream)>:<public abstract>:<org.apache.http.conn.EofSensorWatcher>
 <org.apache.http.conn.scheme.Scheme: boolean equals(java.lang.Object)>:<public final>:<org.apache.http.conn.scheme.Scheme>
@@ -6688,7 +6669,6 @@
 <android.telephony.ServiceState: java.lang.String getOperatorNumeric()>:<public>:<android.telephony.ServiceState:android.os.Parcelable>
 <org.apache.http.impl.client.BasicCookieStore: boolean clearExpired(java.util.Date)>:<public synchronized>:<org.apache.http.impl.client.BasicCookieStore:org.apache.http.client.CookieStore>
 <android.webkit.UrlInterceptRegistry: boolean urlInterceptDisabled()>:<public static synchronized>:<android.webkit.UrlInterceptRegistry>
-<android.widget.TextView.BufferType: void <init>(java.lang.String,int)>:<private>:<android.widget.TextView.BufferType:java.lang.Enum>
 <android.graphics.Canvas: void drawLines(float[],int,int,android.graphics.Paint)>:<public native>:<android.graphics.Canvas>
 <android.webkit.WebChromeClient: void onReceivedTouchIconUrl(android.webkit.WebView,java.lang.String,boolean)>:<public>:<android.webkit.WebChromeClient>
 <android.text.TextUtils.SimpleStringSplitter: java.util.Iterator iterator()>:<public>:<android.text.TextUtils.SimpleStringSplitter:android.text.TextUtils.StringSplitter,java.util.Iterator>
@@ -7055,7 +7035,6 @@
 <android.graphics.Rect: java.lang.String toString()>:<public>:<android.graphics.Rect:android.os.Parcelable>
 <android.widget.ListView: void setSelection(int)>:<public>:<android.widget.ListView:android.widget.AbsListView,android.widget.AdapterView,android.view.ViewGroup,android.view.View>
 <android.text.Layout: int getLineForVertical(int)>:<public>:<android.text.Layout>
-<android.graphics.drawable.GradientDrawable.Orientation: void <init>(java.lang.String,int)>:<private>:<android.graphics.drawable.GradientDrawable.Orientation:java.lang.Enum>
 <android.accounts.NetworkErrorException: void <init>(java.lang.String,java.lang.Throwable)>:<public>:<android.accounts.NetworkErrorException:android.accounts.AccountsException,java.lang.Exception,java.lang.Throwable>
 <org.apache.http.conn.routing.HttpRoute: boolean equals(java.lang.Object)>:<public final>:<org.apache.http.conn.routing.HttpRoute:org.apache.http.conn.routing.RouteInfo,java.lang.Cloneable>
 <android.media.AudioRecord: int getAudioSource()>:<public>:<android.media.AudioRecord>
@@ -7566,7 +7545,6 @@
 <android.app.Activity: void dismissDialog(int)>:<public final>:<android.app.Activity:android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.LayoutInflater.Factory,android.view.Window.Callback,android.view.KeyEvent.Callback,android.view.View.OnCreateContextMenuListener,android.content.ComponentCallbacks>
 <org.apache.http.conn.routing.RouteTracker: org.apache.http.HttpHost getHopTarget(int)>:<public final>:<org.apache.http.conn.routing.RouteTracker:org.apache.http.conn.routing.RouteInfo,java.lang.Cloneable>
 <org.apache.http.entity.HttpEntityWrapper: void consumeContent()>:<public>:<org.apache.http.entity.HttpEntityWrapper:org.apache.http.HttpEntity>
-<android.net.NetworkInfo.DetailedState: void <init>(java.lang.String,int)>:<private>:<android.net.NetworkInfo.DetailedState:java.lang.Enum>
 <android.text.style.TextAppearanceSpan: void <init>(android.os.Parcel)>:<public>:<android.text.style.TextAppearanceSpan:android.text.style.MetricAffectingSpan,android.text.style.CharacterStyle,android.text.ParcelableSpan>
 <org.apache.http.impl.auth.DigestScheme: void overrideParamter(java.lang.String,java.lang.String)>:<public>:<org.apache.http.impl.auth.DigestScheme:org.apache.http.impl.auth.RFC2617Scheme,org.apache.http.impl.auth.AuthSchemeBase>
 <android.opengl.Matrix: void translateM(float[],int,float,float,float)>:<public static>:<android.opengl.Matrix>
@@ -8126,7 +8104,6 @@
 <android.graphics.Region.Op: void <clinit>()>:<static>:<android.graphics.Region.Op:java.lang.Enum>
 <android.test.mock.MockPackageManager: java.util.List queryPermissionsByGroup(java.lang.String,int)>:<public>:<android.test.mock.MockPackageManager:android.content.pm.PackageManager>
 <android.provider.ContactsContract.PhoneLookup: void <clinit>()>:<static>:<android.provider.ContactsContract.PhoneLookup:android.provider.BaseColumns,android.provider.ContactsContract.PhoneLookupColumns,android.provider.ContactsContract.ContactsColumns,android.provider.ContactsContract.ContactOptionsColumns>
-<android.webkit.WebSettings.ZoomDensity: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.ZoomDensity:java.lang.Enum>
 <android.webkit.WebView.WebViewTransport: void <init>(android.webkit.WebView)>:<public>:<android.webkit.WebView.WebViewTransport>
 <android.app.Activity: void setPersistent(boolean)>:<public>:<android.app.Activity:android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.LayoutInflater.Factory,android.view.Window.Callback,android.view.KeyEvent.Callback,android.view.View.OnCreateContextMenuListener,android.content.ComponentCallbacks>
 <org.apache.http.protocol.RequestDate: void <init>()>:<public>:<org.apache.http.protocol.RequestDate:org.apache.http.HttpRequestInterceptor>
@@ -8148,7 +8125,6 @@
 <org.apache.http.entity.AbstractHttpEntity: boolean isChunked()>:<public>:<org.apache.http.entity.AbstractHttpEntity:org.apache.http.HttpEntity>
 <android.text.TextUtils: int getCapsMode(java.lang.CharSequence,int,int)>:<public static>:<android.text.TextUtils>
 <android.widget.HorizontalScrollView: boolean executeKeyEvent(android.view.KeyEvent)>:<public>:<android.widget.HorizontalScrollView:android.widget.FrameLayout,android.view.ViewGroup,android.view.View>
-<android.view.ViewDebug.RecyclerTraceType: void <init>(java.lang.String,int)>:<private>:<android.view.ViewDebug.RecyclerTraceType:java.lang.Enum>
 <android.bluetooth.BluetoothAdapter: boolean cancelDiscovery()>:<public>:<android.bluetooth.BluetoothAdapter>
 <android.widget.TextView: int computeVerticalScrollExtent()>:<protected>:<android.widget.TextView:android.view.View,android.view.ViewTreeObserver.OnPreDrawListener>
 <android.text.util.Linkify: boolean addLinks(android.widget.TextView,int)>:<public static final>:<android.text.util.Linkify>
@@ -8379,7 +8355,6 @@
 <android.content.res.Resources: android.content.res.XmlResourceParser getXml(int)>:<public>:<android.content.res.Resources>
 <android.accounts.AccountAuthenticatorActivity: void <init>()>:<public>:<android.accounts.AccountAuthenticatorActivity:android.app.Activity,android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context>
 <android.view.SurfaceView: void <init>(android.content.Context)>:<public>:<android.view.SurfaceView:android.view.View>
-<android.graphics.Canvas.VertexMode: void <init>(java.lang.String,int)>:<private>:<android.graphics.Canvas.VertexMode:java.lang.Enum>
 <android.appwidget.AppWidgetManager: void <init>()>:<>:<android.appwidget.AppWidgetManager>
 <android.opengl.GLES10: void glFrustumx(int,int,int,int,int,int)>:<public static native>:<android.opengl.GLES10>
 <org.apache.commons.logging.Log: void warn(java.lang.Object)>:<public abstract>:<org.apache.commons.logging.Log>
@@ -8564,7 +8539,6 @@
 <android.os.Bundle: void <clinit>()>:<static>:<android.os.Bundle:android.os.Parcelable,java.lang.Cloneable>
 <android.opengl.GLES11: void glColor4ub(byte,byte,byte,byte)>:<public static native>:<android.opengl.GLES11:android.opengl.GLES10>
 <android.webkit.UrlInterceptRegistry: boolean registerHandler(android.webkit.UrlInterceptHandler)>:<public static synchronized>:<android.webkit.UrlInterceptRegistry>
-<android.graphics.PorterDuff.Mode: void <init>(java.lang.String,int)>:<private>:<android.graphics.PorterDuff.Mode:java.lang.Enum>
 <android.inputmethodservice.InputMethodService.InputMethodImpl: void <init>(android.inputmethodservice.InputMethodService)>:<public>:<android.inputmethodservice.InputMethodService.InputMethodImpl:android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl>
 <android.test.mock.MockResources: int getColor(int)>:<public>:<android.test.mock.MockResources:android.content.res.Resources>
 <org.apache.http.cookie.Cookie: java.lang.String getValue()>:<public abstract>:<org.apache.http.cookie.Cookie>
@@ -8884,7 +8858,6 @@
 <android.view.Window: void setFlags(int,int)>:<public>:<android.view.Window>
 <org.apache.http.util.ByteArrayBuffer: int capacity()>:<public>:<org.apache.http.util.ByteArrayBuffer>
 <android.graphics.drawable.PictureDrawable: void setPicture(android.graphics.Picture)>:<public>:<android.graphics.drawable.PictureDrawable:android.graphics.drawable.Drawable>
-<android.graphics.Path.Direction: void <init>(java.lang.String,int)>:<private>:<android.graphics.Path.Direction:java.lang.Enum>
 <android.test.mock.MockContentResolver: void notifyChange(android.net.Uri,android.database.ContentObserver,boolean)>:<public>:<android.test.mock.MockContentResolver:android.content.ContentResolver>
 <android.text.SpannableStringBuilder: void <init>(java.lang.CharSequence,int,int)>:<public>:<android.text.SpannableStringBuilder:java.lang.CharSequence,android.text.GetChars,android.text.Spannable,android.text.Editable,java.lang.Appendable>
 <org.apache.http.auth.UsernamePasswordCredentials: void <init>(java.lang.String,java.lang.String)>:<public>:<org.apache.http.auth.UsernamePasswordCredentials:org.apache.http.auth.Credentials>
@@ -9128,7 +9101,6 @@
 <android.test.ActivityInstrumentationTestCase2: void setActivityInitialTouchMode(boolean)>:<public>:<android.test.ActivityInstrumentationTestCase2:android.test.ActivityTestCase,android.test.InstrumentationTestCase,junit.framework.TestCase,junit.framework.Assert>
 <android.os.Process: void setThreadPriority(int)>:<public static final native>:<android.os.Process>
 <android.content.pm.PathPermission: void <clinit>()>:<static>:<android.content.pm.PathPermission:android.os.PatternMatcher>
-<android.webkit.WebSettings.RenderPriority: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.RenderPriority:java.lang.Enum>
 <org.apache.http.protocol.DefaultedHttpContext: java.lang.Object removeAttribute(java.lang.String)>:<public>:<org.apache.http.protocol.DefaultedHttpContext:org.apache.http.protocol.HttpContext>
 <android.preference.PreferenceManager: void setDefaultValues(android.content.Context,java.lang.String,int,int,boolean)>:<public static>:<android.preference.PreferenceManager>
 <android.opengl.GLES11: void glGetFloatv(int,java.nio.FloatBuffer)>:<public static native>:<android.opengl.GLES11:android.opengl.GLES10>
@@ -10093,7 +10065,6 @@
 <android.text.BoringLayout: android.text.BoringLayout replaceOrMake(java.lang.CharSequence,android.text.TextPaint,int,android.text.Layout.Alignment,float,float,android.text.BoringLayout.Metrics,boolean)>:<public>:<android.text.BoringLayout:android.text.Layout,android.text.TextUtils.EllipsizeCallback>
 <android.widget.TextView: boolean hasSelection()>:<public>:<android.widget.TextView:android.view.View,android.view.ViewTreeObserver.OnPreDrawListener>
 <android.app.PendingIntent: android.app.PendingIntent getService(android.content.Context,int,android.content.Intent,int)>:<public static>:<android.app.PendingIntent:android.os.Parcelable>
-<android.graphics.Path.FillType: void <init>(java.lang.String,int)>:<private>:<android.graphics.Path.FillType:java.lang.Enum>
 <org.apache.http.impl.conn.tsccm.BasicPoolEntry: org.apache.http.impl.conn.tsccm.BasicPoolEntryRef getWeakRef()>:<protected final>:<org.apache.http.impl.conn.tsccm.BasicPoolEntry:org.apache.http.impl.conn.AbstractPoolEntry>
 <android.test.AndroidTestRunner: void clearTestListeners()>:<public>:<android.test.AndroidTestRunner:junit.runner.BaseTestRunner>
 <android.os.ParcelFileDescriptor: android.os.ParcelFileDescriptor open(java.io.File,int)>:<public static>:<android.os.ParcelFileDescriptor:android.os.Parcelable>
@@ -10502,7 +10473,6 @@
 <android.widget.SlidingDrawer: void lock()>:<public>:<android.widget.SlidingDrawer:android.view.ViewGroup,android.view.View>
 <org.apache.http.util.EncodingUtils: java.lang.String getString(byte[],java.lang.String)>:<public static>:<org.apache.http.util.EncodingUtils>
 <android.widget.AbsSpinner: android.widget.SpinnerAdapter getAdapter()>:<public>:<android.widget.AbsSpinner:android.widget.AdapterView,android.view.ViewGroup,android.view.View>
-<android.webkit.WebSettings.TextSize: void <init>(java.lang.String,int)>:<private>:<android.webkit.WebSettings.TextSize:java.lang.Enum>
 <android.accounts.AccountManager: void setUserData(android.accounts.Account,java.lang.String,java.lang.String)>:<public>:<android.accounts.AccountManager>
 <android.graphics.drawable.GradientDrawable: void setGradientType(int)>:<public>:<android.graphics.drawable.GradientDrawable:android.graphics.drawable.Drawable>
 <junit.framework.Assert: void assertFalse(boolean)>:<public static>:<junit.framework.Assert>
@@ -10679,7 +10649,6 @@
 <org.apache.http.entity.StringEntity: long getContentLength()>:<public>:<org.apache.http.entity.StringEntity:org.apache.http.entity.AbstractHttpEntity,java.lang.Cloneable>
 <android.graphics.drawable.RotateDrawable: boolean isStateful()>:<public>:<android.graphics.drawable.RotateDrawable:android.graphics.drawable.Drawable,android.graphics.drawable.Drawable.Callback>
 <android.media.AudioTrack: float getMinVolume()>:<public static>:<android.media.AudioTrack>
-<android.graphics.Bitmap.CompressFormat: void <init>(java.lang.String,int)>:<private>:<android.graphics.Bitmap.CompressFormat:java.lang.Enum>
 <android.view.View: void dispatchSetPressed(boolean)>:<protected>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
 <android.test.ViewAsserts: void assertVerticalCenterAligned(android.view.View,android.view.View)>:<public static>:<android.test.ViewAsserts>
 <android.widget.FrameLayout: android.graphics.drawable.Drawable getForeground()>:<public>:<android.widget.FrameLayout:android.view.ViewGroup,android.view.View>
@@ -10692,7 +10661,6 @@
 <android.os.Parcel: void writeString(java.lang.String)>:<public final native>:<android.os.Parcel>
 <android.webkit.CookieManager: boolean acceptCookie()>:<public synchronized>:<android.webkit.CookieManager>
 <org.apache.http.impl.client.AbstractHttpClient: void addRequestInterceptor(org.apache.http.HttpRequestInterceptor)>:<public synchronized>:<org.apache.http.impl.client.AbstractHttpClient:org.apache.http.client.HttpClient>
-<android.graphics.Matrix.ScaleToFit: void <init>(java.lang.String,int)>:<private>:<android.graphics.Matrix.ScaleToFit:java.lang.Enum>
 <android.app.ExpandableListActivity: void onContentChanged()>:<public>:<android.app.ExpandableListActivity:android.app.Activity,android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.View.OnCreateContextMenuListener,android.widget.ExpandableListView.OnChildClickListener,android.widget.ExpandableListView.OnGroupCollapseListener,android.widget.ExpandableListView.OnGroupExpandListener>
 <android.location.Location: java.lang.String toString()>:<public>:<android.location.Location:android.os.Parcelable>
 <org.apache.http.impl.auth.DigestScheme: boolean isConnectionBased()>:<public>:<org.apache.http.impl.auth.DigestScheme:org.apache.http.impl.auth.RFC2617Scheme,org.apache.http.impl.auth.AuthSchemeBase>
@@ -11060,7 +11028,6 @@
 <junit.framework.TestFailure: java.lang.Throwable thrownException()>:<public>:<junit.framework.TestFailure>
 <android.accessibilityservice.AccessibilityService: void onServiceConnected()>:<protected>:<android.accessibilityservice.AccessibilityService:android.app.Service,android.content.ContextWrapper,android.content.Context>
 <org.apache.http.util.VersionInfo: java.lang.String getPackage()>:<public final>:<org.apache.http.util.VersionInfo>
-<android.text.Layout.Alignment: void <init>(java.lang.String,int)>:<private>:<android.text.Layout.Alignment:java.lang.Enum>
 <android.os.Debug: void resetGlobalFreedCount()>:<public static>:<android.os.Debug>
 <android.app.Activity: void setIntent(android.content.Intent)>:<public>:<android.app.Activity:android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.LayoutInflater.Factory,android.view.Window.Callback,android.view.KeyEvent.Callback,android.view.View.OnCreateContextMenuListener,android.content.ComponentCallbacks>
 <android.view.View: boolean isFocusableInTouchMode()>:<public final>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
@@ -11112,7 +11079,6 @@
 <android.database.DatabaseUtils.InsertHelper: void bindNull(int)>:<public>:<android.database.DatabaseUtils.InsertHelper>
 <android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl: void <init>(android.inputmethodservice.AbstractInputMethodService)>:<public>:<android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl:android.view.inputmethod.InputMethodSession>
 <android.media.MediaRecorder: void prepare()>:<public>:<android.media.MediaRecorder>
-<android.net.LocalSocketAddress.Namespace: void <init>(java.lang.String,int)>:<private>:<android.net.LocalSocketAddress.Namespace:java.lang.Enum>
 <android.widget.CompoundButton: void toggle()>:<public>:<android.widget.CompoundButton:android.widget.Button,android.widget.TextView,android.view.View,android.widget.Checkable>
 <android.os.ConditionVariable: void <init>(boolean)>:<public>:<android.os.ConditionVariable>
 <android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String,java.lang.Object[])>:<public>:<android.database.sqlite.SQLiteDatabase:android.database.sqlite.SQLiteClosable>
@@ -11614,7 +11580,6 @@
 <android.bluetooth.BluetoothAdapter: android.bluetooth.BluetoothDevice getRemoteDevice(java.lang.String)>:<public>:<android.bluetooth.BluetoothAdapter>
 <android.app.Activity: void onUserLeaveHint()>:<protected>:<android.app.Activity:android.view.ContextThemeWrapper,android.content.ContextWrapper,android.content.Context,android.view.LayoutInflater.Factory,android.view.Window.Callback,android.view.KeyEvent.Callback,android.view.View.OnCreateContextMenuListener,android.content.ComponentCallbacks>
 <android.net.wifi.WifiManager.MulticastLock: void release()>:<public>:<android.net.wifi.WifiManager.MulticastLock>
-<android.graphics.Paint.Cap: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Cap:java.lang.Enum>
 <android.media.AudioManager: int getMode()>:<public>:<android.media.AudioManager>
 <android.database.DatabaseUtils: void bindObjectToProgram(android.database.sqlite.SQLiteProgram,int,java.lang.Object)>:<public static>:<android.database.DatabaseUtils>
 <android.webkit.GeolocationPermissions: void clearAll()>:<public>:<android.webkit.GeolocationPermissions>
@@ -11815,7 +11780,6 @@
 <android.widget.ProgressBar: boolean isIndeterminate()>:<public synchronized>:<android.widget.ProgressBar:android.view.View>
 <org.apache.http.impl.conn.Wire: void input(byte[],int,int)>:<public>:<org.apache.http.impl.conn.Wire>
 <android.view.animation.AnimationSet: void initialize(int,int,int,int)>:<public>:<android.view.animation.AnimationSet:android.view.animation.Animation>
-<android.graphics.Interpolator.Result: void <init>(java.lang.String,int)>:<private>:<android.graphics.Interpolator.Result:java.lang.Enum>
 <android.text.style.AbsoluteSizeSpan: void updateMeasureState(android.text.TextPaint)>:<public>:<android.text.style.AbsoluteSizeSpan:android.text.style.MetricAffectingSpan,android.text.style.CharacterStyle,android.text.ParcelableSpan>
 <android.view.MotionEvent: java.lang.String toString()>:<public>:<android.view.MotionEvent:android.os.Parcelable>
 <android.widget.ScrollView: boolean onRequestFocusInDescendants(int,android.graphics.Rect)>:<protected>:<android.widget.ScrollView:android.widget.FrameLayout,android.view.ViewGroup,android.view.View>
@@ -12120,7 +12084,6 @@
 <android.view.animation.Animation: android.view.animation.Interpolator getInterpolator()>:<public>:<android.view.animation.Animation:java.lang.Cloneable>
 <android.telephony.TelephonyManager: java.lang.String getNetworkOperatorName()>:<public>:<android.telephony.TelephonyManager>
 <android.database.AbstractCursor: boolean move(int)>:<public final>:<android.database.AbstractCursor:android.database.CrossProcessCursor>
-<android.graphics.Paint.Style: void <init>(java.lang.String,int)>:<private>:<android.graphics.Paint.Style:java.lang.Enum>
 <android.view.inputmethod.BaseInputConnection: android.view.inputmethod.ExtractedText getExtractedText(android.view.inputmethod.ExtractedTextRequest,int)>:<public>:<android.view.inputmethod.BaseInputConnection:android.view.inputmethod.InputConnection>
 <android.text.method.DigitsKeyListener: android.text.method.DigitsKeyListener getInstance(boolean,boolean)>:<public static>:<android.text.method.DigitsKeyListener:android.text.method.NumberKeyListener,android.text.method.BaseKeyListener,android.text.method.MetaKeyKeyListener>
 <android.text.method.SingleLineTransformationMethod: void <init>()>:<public>:<android.text.method.SingleLineTransformationMethod:android.text.method.ReplacementTransformationMethod>
@@ -12819,7 +12782,6 @@
 <android.sax.Element: void setStartElementListener(android.sax.StartElementListener)>:<public>:<android.sax.Element>
 <android.view.inputmethod.BaseInputConnection: void <init>(android.view.View,boolean)>:<public>:<android.view.inputmethod.BaseInputConnection:android.view.inputmethod.InputConnection>
 <android.os.Binder: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)>:<protected>:<android.os.Binder:android.os.IBinder>
-<android.text.TextUtils.TruncateAt: void <init>(java.lang.String,int)>:<private>:<android.text.TextUtils.TruncateAt:java.lang.Enum>
 <org.apache.http.params.HttpParams: org.apache.http.params.HttpParams setDoubleParameter(java.lang.String,double)>:<public abstract>:<org.apache.http.params.HttpParams>
 <android.opengl.GLES11Ext: void glGenFramebuffersOES(int,java.nio.IntBuffer)>:<public static native>:<android.opengl.GLES11Ext>
 <android.telephony.SmsMessage: int getIndexOnSim()>:<public>:<android.telephony.SmsMessage>
@@ -12834,7 +12796,6 @@
 <android.widget.SectionIndexer: int getPositionForSection(int)>:<public abstract>:<android.widget.SectionIndexer>
 <android.database.ContentObservable: void notifyChange(boolean)>:<public>:<android.database.ContentObservable:android.database.Observable>
 <android.media.AudioManager: void setBluetoothA2dpOn(boolean)>:<public>:<android.media.AudioManager>
-<android.telephony.gsm.SmsMessage.MessageClass: void <init>(java.lang.String,int)>:<private>:<android.telephony.gsm.SmsMessage.MessageClass:java.lang.Enum>
 <android.database.MergeCursor: void unregisterDataSetObserver(android.database.DataSetObserver)>:<public>:<android.database.MergeCursor:android.database.AbstractCursor>
 <android.provider.ContactsContract.CommonDataKinds.Organization: int getTypeLabelResource(int)>:<public static final>:<android.provider.ContactsContract.CommonDataKinds.Organization:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.database.AbstractWindowedCursor: double getDouble(int)>:<public>:<android.database.AbstractWindowedCursor:android.database.AbstractCursor>
@@ -12903,7 +12864,6 @@
 <org.apache.commons.logging.Log: boolean isFatalEnabled()>:<public abstract>:<org.apache.commons.logging.Log>
 <android.inputmethodservice.InputMethodService: void setTheme(int)>:<public>:<android.inputmethodservice.InputMethodService:android.inputmethodservice.AbstractInputMethodService,android.app.Service,android.content.ContextWrapper,android.content.Context>
 <android.app.WallpaperInfo: java.lang.String toString()>:<public>:<android.app.WallpaperInfo:android.os.Parcelable>
-<android.graphics.BlurMaskFilter.Blur: void <init>(java.lang.String,int)>:<private>:<android.graphics.BlurMaskFilter.Blur:java.lang.Enum>
 <android.widget.AbsListView: int getTranscriptMode()>:<public>:<android.widget.AbsListView:android.widget.AdapterView,android.view.ViewGroup,android.view.View,android.text.TextWatcher,android.view.ViewTreeObserver.OnGlobalLayoutListener,android.widget.Filter.FilterListener,android.view.ViewTreeObserver.OnTouchModeChangeListener>
 <org.apache.http.impl.conn.tsccm.WaitingThread: java.lang.Thread getThread()>:<public final>:<org.apache.http.impl.conn.tsccm.WaitingThread>
 <android.view.View: void measure(int,int)>:<public final>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
@@ -13285,7 +13245,6 @@
 <android.text.format.DateUtils: java.lang.String formatDateTime(android.content.Context,long,int)>:<public static>:<android.text.format.DateUtils>
 <android.database.sqlite.SQLiteDatabase: boolean inTransaction()>:<public>:<android.database.sqlite.SQLiteDatabase:android.database.sqlite.SQLiteClosable>
 <android.graphics.drawable.Drawable: boolean getPadding(android.graphics.Rect)>:<public>:<android.graphics.drawable.Drawable>
-<android.graphics.Shader.TileMode: void <init>(java.lang.String,int)>:<private>:<android.graphics.Shader.TileMode:java.lang.Enum>
 <android.widget.VideoView: void setOnErrorListener(android.media.MediaPlayer.OnErrorListener)>:<public>:<android.widget.VideoView:android.view.SurfaceView,android.view.View,android.widget.MediaController.MediaPlayerControl>
 <android.util.DisplayMetrics: void setTo(android.util.DisplayMetrics)>:<public>:<android.util.DisplayMetrics>
 <android.widget.ListAdapter: boolean areAllItemsEnabled()>:<public abstract>:<android.widget.ListAdapter:android.widget.Adapter>

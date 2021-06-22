@@ -21,6 +21,7 @@ import soot.SootMethod;
 import soot.Unit;
 import soot.jimple.AssignStmt;
 import soot.jimple.Stmt;
+import soot.tagkit.LineNumberTag;
 import soot.util.Chain;
 
 public class Mining4UTransformer extends SceneTransformer
@@ -79,11 +80,14 @@ public class Mining4UTransformer extends SceneTransformer
 				
 				String maySuperSig = sootMethod.getSignature();
 				String currSig = sootMethod.getSignature();
-				while (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(maySuperSig)) {
-					String superMethod = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(maySuperSig);
-					superMethods.add(superMethod.replace("$", "."));
-					CommonUtils.put(api2supers, currSig.replace("$", "."), superMethod.replace("$", "."));
-					maySuperSig = superMethod;
+				if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(maySuperSig)) {
+					String currAPI = currSig.replace("$", ".");
+					Set<String> inheritedMethods = AndroidAPILifeModel.getInstance().getInheritedAPIs(currSig);
+					if (api2supers.containsKey(currAPI)) {
+						api2supers.get(currAPI).addAll(inheritedMethods);
+					} else {
+						api2supers.put(currAPI, inheritedMethods);
+					}
 				}
 			} else if (stmt instanceof AssignStmt) {
 				AssignStmt assignStmt = (AssignStmt) stmt;
@@ -91,16 +95,20 @@ public class Mining4UTransformer extends SceneTransformer
 				String rightOp = assignStmt.getRightOp().toString();
 				String leftVar = CommonUtils.getVariable(leftOp);
 				String rightVar = CommonUtils.getVariable(rightOp);
-				if (!leftVar.isEmpty() && !leftVar.contains("(")) {
-					String currField = leftVar;
-					if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
-						accessedFields.add(currField.replace("$", "."));
+				if (stmt.hasTag("LineNumberTag")) {
+					LineNumberTag tag = (LineNumberTag) stmt.getTag("LineNumberTag");
+					int lineNumber = tag.getLineNumber();
+					if (!leftVar.isEmpty()) {
+						String currField = leftVar;
+						if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
+							accessedFields.add(currField.replace("$", ".") + "-" + lineNumber);
+						}
 					}
-				}
-				if (!rightVar.isEmpty() && !rightVar.contains("(")) {
-					String currField = rightVar;
-					if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
-						accessedFields.add(currField.replace("$", "."));
+					if (!rightVar.isEmpty()) {
+						String currField = rightVar;
+						if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
+							accessedFields.add(currField.replace("$", ".") + "-" + lineNumber);
+						}
 					}
 				}
 			}

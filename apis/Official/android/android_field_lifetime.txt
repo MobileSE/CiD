@@ -20,7 +20,6 @@
 <android.icu.lang.UCharacter.UnicodeBlock: int LINEAR_B_SYLLABARY_ID>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES32: int GL_SAMPLER_CUBE_MAP_ARRAY>:[24,25,26,27,28,29,30]:false
 <android.hardware.camera2.CameraDevice: int AUDIO_RESTRICTION_VIBRATION>:[30]:false
-<android.icu.text.AlphabeticIndex.Bucket.LabelType: android.icu.text.AlphabeticIndex.Bucket.LabelType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.view.inputmethod.EditorInfo: int initialSelStart>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit: android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit THURSDAY>:[24,25,26,27,28,29,30]:false
 <android.content.Intent: java.lang.String CATEGORY_SECONDARY_HOME>:[29,30]:false
@@ -605,7 +604,6 @@
 <org.apache.http.auth.AuthScope: org.apache.http.auth.AuthScope ANY>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.icu.lang.UScript: int DOGRA>:[29,30]:false
 <android.service.controls.actions.ControlAction: int TYPE_BOOLEAN>:[30]:false
-<android.net.NetworkInfo.DetailedState: android.net.NetworkInfo.DetailedState[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int EVDO_HDR_NO_SESSION>:[30]:false
 <android.location.GnssMeasurement: int STATE_SUBFRAME_SYNC>:[24,25,26,27,28,29,30]:false
 <android.app.ActivityManager: int LOCK_TASK_MODE_NONE>:[23,24,25,26,27,28,29,30]:false
@@ -644,7 +642,6 @@
 <android.telephony.DataFailCause: int SIM_CARD_CHANGED>:[30]:false
 <android.speech.tts.Voice: int QUALITY_VERY_LOW>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.net.nsd.NsdManager: int FAILURE_INTERNAL_ERROR>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.DisplayContext.Type: android.icu.text.DisplayContext.Type[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.hardware.Camera.Face: android.graphics.Point mouth>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.MediaStore: java.lang.String INTENT_ACTION_VIDEO_PLAY_FROM_SEARCH>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaFormat: java.lang.String MIMETYPE_TEXT_CEA_608>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -653,7 +650,6 @@
 <android.media.midi.MidiDevice.MidiConnection: android.media.midi.MidiDevice this.0>:[23,24,25,26,27,28,29,30]:false
 <android.telephony.CarrierConfigManager.Apn: java.lang.String PROTOCOL_IPV4>:[30]:false
 <android.R.attr: int subtitle>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.Path.Direction: android.graphics.Path.Direction[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES11Ext: int GL_WEIGHT_ARRAY_BUFFER_BINDING_OES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_Holo_Light_ActionBar_Solid>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.AccessNetworkConstants.EutranBand: int BAND_46>:[28,29,30]:false
@@ -810,7 +806,6 @@
 <android.R.style: int Theme_Wallpaper_NoTitleBar_Fullscreen>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothAssignedNumbers: int UNIVERSAL_ELECTRONICS>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.audiofx.Visualizer: int ALREADY_EXISTS>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.Type.CubemapFace: android.renderscript.Type.CubemapFace[] .VALUES>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int drawableTintMode>:[23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES11Ext: int GL_TEXTURE_EXTERNAL_OES>:[15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.service.controls.templates.ControlTemplate: int TYPE_TOGGLE>:[30]:false
@@ -871,7 +866,6 @@
 <android.content.pm.PermissionInfo: int PROTECTION_FLAG_PRIVILEGED>:[23,24,25,26,27,28,29,30]:false
 <android.print.PrinterCapabilitiesInfo: android.os.Parcelable.Creator CREATOR>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int level>:[24,25,26,27,28,29,30]:false
-<android.icu.number.NumberFormatter.GroupingStrategy: android.icu.number.NumberFormatter.GroupingStrategy[] .VALUES>:[30]:false
 <android.os.health.ProcessHealthStats: int MEASUREMENT_USER_TIME_MS>:[24,25,26,27,28,29,30]:false
 <android.media.tv.TvContract.WatchNextPrograms: java.lang.String COLUMN_POSTER_ART_ASPECT_RATIO>:[26,27,28,29,30]:false
 <android.security.keystore.KeyProperties: java.lang.String BLOCK_MODE_CBC>:[23,24,25,26,27,28,29,30]:false
@@ -1046,7 +1040,6 @@
 <android.Manifest.permission: java.lang.String FLASHLIGHT>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23]:false
 <android.provider.ContactsContract: java.lang.String STREQUENT_PHONE_ONLY>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.EGL14: int EGL_VG_COLORSPACE_LINEAR>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.BlendMode: android.graphics.BlendMode[] .VALUES>:[29,30]:false
 <android.system.OsConstants: int ENODEV>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES11Ext: int GL_RENDERBUFFER_DEPTH_SIZE_OES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.StructStat: long st_blocks>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -1567,7 +1560,6 @@
 <android.provider.VoicemailContract.Status: int DATA_CHANNEL_STATE_SERVER_CONNECTION_ERROR>:[24,25,26,27,28,29,30]:false
 <android.os.Build.VERSION_CODES: int O_MR1>:[27,28,29,30]:false
 <android.icu.text.Transliterator.Position: int contextLimit>:[29,30]:false
-<android.graphics.Shader.TileMode: android.graphics.Shader.TileMode[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int UNSUPPORTED_QCI_VALUE>:[30]:false
 <android.content.pm.ApplicationInfo: int GWP_ASAN_NEVER>:[30]:false
 <android.util.MutableBoolean: boolean value>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -1577,7 +1569,6 @@
 <android.content.Intent: java.lang.String EXTRA_ASSIST_INPUT_HINT_KEYBOARD>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int MISSING_UNKNOWN_APN>:[30]:false
 <android.telecom.Connection: int STATE_NEW>:[23,24,25,26,27,28,29,30]:false
-<android.util.JsonToken: android.util.JsonToken[] .VALUES>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int protectionLevel>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int alwaysDrawnWithCache>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.CellInfoCdma: android.os.Parcelable.Creator CREATOR>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -1864,7 +1855,6 @@
 <android.telephony.CarrierConfigManager: java.lang.String KEY_CARRIER_VVM_PACKAGE_NAME_STRING>:[23,24,25,26,27,28,29,30]:false
 <android.telephony.SmsMessage: int MAX_USER_DATA_SEPTETS>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.KeyEvent: int META_NUM_LOCK_ON>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.util.Currency.CurrencyUsage: android.icu.util.Currency.CurrencyUsage[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.icu.lang.UProperty: int LOWERCASE_MAPPING>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES31Ext: int GL_MIN_SAMPLE_SHADING_VALUE_OES>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.Im: java.lang.String EXTRA_ADDRESS_BOOK_INDEX>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -2033,7 +2023,6 @@
 <android.Manifest.permission: java.lang.String BIND_CARRIER_MESSAGING_SERVICE>:[22,23,24,25,26,27,28,29,30]:false
 <android.content.Intent: java.lang.String EXTRA_SHORTCUT_ICON>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.RestrictionsManager: java.lang.String ACTION_REQUEST_PERMISSION>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.net.wifi.SupplicantState: android.net.wifi.SupplicantState[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES11Ext: int GL_FUNC_REVERSE_SUBTRACT_OES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <dalvik.bytecode.Opcodes: int OP_CMPG_DOUBLE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.AccessNetworkConstants.NgranBands: int BAND_75>:[30]:false
@@ -2621,7 +2610,6 @@
 <android.opengl.GLES11Ext: int GL_UNSIGNED_INT_24_8_OES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.animation.ValueAnimator: int RESTART>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int O_DSYNC>:[27,28,29,30]:false
-<android.icu.text.UnicodeSetSpanner.TrimOption: android.icu.text.UnicodeSetSpanner.TrimOption[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.service.dreams.DreamService: java.lang.String SERVICE_INTERFACE>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.AccessNetworkConstants.GeranBand: int BAND_PCS1900>:[28,29,30]:false
 <android.telephony.ClosedSubscriberGroupInfo: android.os.Parcelable.Creator CREATOR>:[30]:false
@@ -3064,7 +3052,6 @@
 <android.R.attr: int fastScrollStyle>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.view.FrameMetrics: int INPUT_HANDLING_DURATION>:[24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int _SC_BC_SCALE_MAX>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.text.TextUtils.TruncateAt: android.text.TextUtils.TruncateAt[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.service.notification.Condition: int flags>:[24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock VARIATION_SELECTORS_SUPPLEMENT>:[24,25,26,27,28,29,30]:false
 <android.R.attr: int layout_alignParentBottom>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -3239,7 +3226,6 @@
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock MISCELLANEOUS_SYMBOLS_AND_PICTOGRAPHS>:[24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothGattService: int SERVICE_TYPE_SECONDARY>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.DisplayNameSources: int STRUCTURED_NAME>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.DateFormat.BooleanAttribute: android.icu.text.DateFormat.BooleanAttribute[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.util.TypedValue: int TYPE_DIMENSION>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int TextAppearance_DeviceDefault_Widget_Button>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.pm.ApplicationInfo: int FLAG_SUPPORTS_LARGE_SCREENS>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -3515,7 +3501,6 @@
 <android.media.AudioAttributes: int CONTENT_TYPE_UNKNOWN>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter: int MIN_CODE_POINT>:[24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothDevice: java.lang.String ACTION_NAME_CHANGED>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.util.TimeZone.SystemTimeZoneType: android.icu.util.TimeZone.SystemTimeZoneType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.view.textclassifier.TextLinks: int STATUS_NO_LINKS_FOUND>:[28,29,30]:false
 <android.provider.MediaStore.Audio.AlbumColumns: java.lang.String LAST_YEAR>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.p2p.WifiP2pGroup: int NETWORK_ID_TEMPORARY>:[30]:false
@@ -4176,7 +4161,6 @@
 <android.text.style.TtsSpan: java.lang.String ARG_MULTIPLICITY>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int buttonGravity>:[24,25,26,27,28,29,30]:false
 <android.net.NetworkCapabilities: int SIGNAL_STRENGTH_UNSPECIFIED>:[29,30]:false
-<android.graphics.Paint.Align: android.graphics.Paint.Align[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.SmsManager: int MMS_ERROR_UNSPECIFIED>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES32: int GL_MAX_GEOMETRY_ATOMIC_COUNTERS>:[24,25,26,27,28,29,30]:false
 <android.app.admin.DnsEvent: android.os.Parcelable.Creator CREATOR>:[26,27,28,29,30]:false
@@ -4730,7 +4714,6 @@
 <android.hardware.camera2.CameraCharacteristics: android.hardware.camera2.CameraCharacteristics.Key CONTROL_AVAILABLE_EXTENDED_SCENE_MODE_CAPABILITIES>:[30]:false
 <android.util.proto.ProtoOutputStream: long FIELD_TYPE_ENUM>:[30]:false
 <android.R.attr: int externalService>:[24,25,26,27,28,29,30]:false
-<android.webkit.WebSettings.ZoomDensity: android.webkit.WebSettings.ZoomDensity[] .VALUES>:[7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.color: int holo_red_dark>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.StructuredName: java.lang.String PREFIX>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.AggregationExceptions: java.lang.String RAW_CONTACT_ID1>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -4787,7 +4770,6 @@
 <android.view.WindowManager.LayoutParams: int SOFT_INPUT_STATE_ALWAYS_HIDDEN>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.admin.DevicePolicyManager: java.lang.String EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.Secure: java.lang.String ALLOWED_GEOLOCATION_ORIGINS>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.RelativeDateTimeFormatter.RelativeUnit: android.icu.text.RelativeDateTimeFormatter.RelativeUnit[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES30: int GL_UNSIGNED_INT_2_10_10_10_REV>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.RemoteControlClient.MetadataEditor: int BITMAP_KEY_ARTWORK>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodecInfo.CodecProfileLevel: int AVCProfileHigh>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -4933,7 +4915,6 @@
 <android.app.ActionBar: int DISPLAY_USE_LOGO>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int ENOPROTOOPT>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.MediaStore: java.lang.String EXTRA_MEDIA_GENRE>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.util.Xml.Encoding: android.util.Xml.Encoding[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telecom.Call.Details: int CAPABILITY_MANAGE_CONFERENCE>:[23,24,25,26,27,28,29,30]:false
 <android.view.accessibility.AccessibilityEvent: int CONTENT_CHANGE_TYPE_TEXT>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.NotificationManager.Policy: int PRIORITY_CATEGORY_CALLS>:[23,24,25,26,27,28,29,30]:false
@@ -5057,7 +5038,6 @@
 <android.opengl.GLES10: int GL_TEXTURE>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodec.BufferInfo: int offset>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaMetadataRetriever: int METADATA_KEY_COLOR_STANDARD>:[30]:false
-<android.text.method.TextKeyListener.Capitalize: android.text.method.TextKeyListener.Capitalize[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothAssignedNumbers: int SR_MEDIZINELEKTRONIK>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.EGL15: int EGL_GL_TEXTURE_CUBE_MAP_POSITIVE_Y>:[29,30]:false
 <android.bluetooth.BluetoothGatt: int CONNECTION_PRIORITY_BALANCED>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -5474,7 +5454,6 @@
 <android.media.MediaDrm: int EVENT_PROVISION_REQUIRED>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer: int ALL_BUT_NUL_LEGAL>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.CalendarContract.CalendarAlertsColumns: int STATE_FIRED>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.telephony.gsm.SmsMessage.MessageClass: android.telephony.gsm.SmsMessage.MessageClass[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES32: int GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS>:[24,25,26,27,28,29,30]:false
 <android.view.inputmethod.EditorInfo: int IME_FLAG_NO_ENTER_ACTION>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.rtt.CivicLocationKeys: int NEIGHBORHOOD>:[29,30]:false
@@ -5907,7 +5886,6 @@
 <android.bluetooth.BluetoothClass.Device.Major: int WEARABLE>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock MEROITIC_CURSIVE>:[24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothHidDevice: byte PROTOCOL_REPORT_MODE>:[28,29,30]:false
-<android.webkit.WebSettings.PluginState: android.webkit.WebSettings.PluginState[] .VALUES>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UProperty: int DEFAULT_IGNORABLE_CODE_POINT>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES20: int GL_BUFFER_USAGE>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothHidDevice: byte REPORT_TYPE_FEATURE>:[28,29,30]:false
@@ -6073,7 +6051,6 @@
 <android.Manifest.permission: java.lang.String INSTALL_LOCATION_PROVIDER>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.graphics.Canvas.EdgeType: android.graphics.Canvas.EdgeType AA>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.SubscriptionManager: int INVALID_SUBSCRIPTION_ID>:[24,25,26,27,28,29,30]:false
-<android.text.Layout.Alignment: android.text.Layout.Alignment[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int checked>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.pm.PackageManager: java.lang.String FEATURE_CONNECTION_SERVICE>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.app.SearchManager: java.lang.String EXTRA_SELECT_QUERY>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -6116,7 +6093,6 @@
 <android.content.Intent: java.lang.String EXTRA_ASSIST_PACKAGE>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.CellSignalStrength: int SIGNAL_STRENGTH_MODERATE>:[23,24,25,26,27,28,29,30]:false
 <android.view.WindowManager.LayoutParams: int TYPE_PHONE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.IDNA.Error: android.icu.text.IDNA.Error[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.view.textclassifier.TextClassifierEvent: int TYPE_SHARE_ACTION>:[29,30]:false
 <android.graphics.ImageFormat: int DEPTH16>:[23,24,25,26,27,28,29,30]:false
 <android.telephony.gsm.SmsManager: int STATUS_ON_SIM_UNSENT>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -6138,7 +6114,6 @@
 <android.provider.MediaStore.Video.VideoColumns: java.lang.String BUCKET_DISPLAY_NAME>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28]:false
 <android.R.style: int Widget_Holo_Light_WebTextView>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.usb.UsbConstants: int USB_ENDPOINT_DIR_MASK>:[12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.RelativeDateTimeFormatter.Style: android.icu.text.RelativeDateTimeFormatter.Style[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.os.Process: int THREAD_PRIORITY_LOWEST>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit GENERIC_TEMPERATURE>:[26,27,28,29,30]:false
 <android.telephony.DataFailCause: int UMTS_REACTIVATION_REQ>:[30]:false
@@ -6617,7 +6592,6 @@
 <android.opengl.GLES11: int GL_STENCIL_PASS_DEPTH_FAIL>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.SensorManager: int SENSOR_MAX>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.util.LayoutDirection: int INHERIT>:[19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.ColorSpace.Named: android.graphics.ColorSpace.Named[] .VALUES>:[26,27,28,29,30]:false
 <android.telephony.CarrierConfigManager: java.lang.String KEY_RTT_SUPPORTED_BOOL>:[28,29,30]:false
 <android.net.wifi.p2p.WifiP2pInfo: java.net.InetAddress groupOwnerAddress>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.accessibilityservice.AccessibilityServiceInfo: int FEEDBACK_HAPTIC>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -6642,7 +6616,6 @@
 <android.view.inputmethod.InputMethod: java.lang.String SERVICE_META_DATA>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.graphics.Paint.Join: android.graphics.Paint.Join ROUND>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.os.storage.OnObbStateChangeListener: int MOUNTED>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.ProgramFragmentFixedFunction.Builder.Format: android.renderscript.ProgramFragmentFixedFunction.Builder.Format[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.R.style: int Widget_Material_ButtonBar>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.MediaStore.MediaColumns: java.lang.String BITRATE>:[30]:false
 <android.opengl.GLES30: int GL_STREAM_COPY>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -7306,7 +7279,6 @@
 <android.R.attr: int isLightTheme>:[29,30]:false
 <android.R.attr: int listChoiceIndicatorMultiple>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.Global: java.lang.String ALWAYS_FINISH_ACTIVITIES>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.view.ViewDebug.HierarchyTraceType: android.view.ViewDebug.HierarchyTraceType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.text.style.TtsSpan: int WEEKDAY_FRIDAY>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES10: int GL_MAX_LIGHTS>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothGattCharacteristic: int PERMISSION_WRITE_ENCRYPTED>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -7544,7 +7516,6 @@
 <android.graphics.Paint: int CURSOR_AT_OR_AFTER>:[29,30]:false
 <android.view.KeyEvent: int KEYCODE_MINUS>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.Secure: java.lang.String ENABLED_INPUT_METHODS>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.BlurMaskFilter.Blur: android.graphics.BlurMaskFilter.Blur[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.AudioManager: int ERROR_DEAD_OBJECT>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.WifiManager: int WPS_TKIP_ONLY_PROHIBITED>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.service.autofill.SaveInfo: int FLAG_DELAY_SAVE>:[29,30]:false
@@ -8035,7 +8006,6 @@
 <dalvik.bytecode.Opcodes: int OP_MUL_DOUBLE_2ADDR>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_Holo_Tab>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.effect.EffectFactory: java.lang.String EFFECT_TINT>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.net.NetworkInfo.State: android.net.NetworkInfo.State[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit VOLT>:[24,25,26,27,28,29,30]:false
 <android.app.DownloadManager: int ERROR_UNHANDLED_HTTP_CODE>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction: android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction ACTION_SCROLL_BACKWARD>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -8046,7 +8016,6 @@
 <android.icu.lang.UCharacter.UnicodeBlock: int EMOTICONS_ID>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES20: int GL_RGB>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int ENOMEM>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.util.ULocale.Category: android.icu.util.ULocale.Category[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.media.MediaCodecInfo.CodecProfileLevel: int VP9Profile3>:[24,25,26,27,28,29,30]:false
 <android.telephony.mbms.GroupCall: int REASON_FREQUENCY_CONFLICT>:[29,30]:false
 <android.os.BatteryManager: java.lang.String EXTRA_TECHNOLOGY>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -8276,7 +8245,6 @@
 <android.accessibilityservice.AccessibilityService: int GESTURE_SWIPE_RIGHT_AND_DOWN>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Telephony.MmsSms.PendingMessages: java.lang.String MSG_TYPE>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.biometrics.BiometricManager.Authenticators: int BIOMETRIC_WEAK>:[30]:false
-<android.graphics.AvoidXfermode.Mode: android.graphics.AvoidXfermode.Mode[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23]:false
 <android.bluetooth.BluetoothAssignedNumbers: int VIZIO>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.CallLog.Calls: java.lang.String DATA_USAGE>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.content.Intent: int FLAG_GRANT_PREFIX_URI_PERMISSION>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -8503,7 +8471,6 @@
 <android.opengl.GLES32: int GL_QUERY>:[24,25,26,27,28,29,30]:false
 <android.media.tv.TvContract.WatchNextPrograms: java.lang.String COLUMN_AVAILABILITY>:[26,27,28,29,30]:false
 <android.provider.ContactsContract.PresenceColumns: java.lang.String IM_ACCOUNT>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.widget.TextView.BufferType: android.widget.TextView.BufferType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.text.MessagePattern.Part.Type: android.icu.text.MessagePattern.Part.Type ARG_LIMIT>:[24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.Organization: java.lang.String EXTRA_ADDRESS_BOOK_INDEX>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.inputmethodservice.Keyboard.Row: int defaultWidth>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -8624,7 +8591,6 @@
 <android.R.attr: int id>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodecInfo.CodecCapabilities: int COLOR_FormatYUV411Planar>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.View: int[] PRESSED_FOCUSED_SELECTED_WINDOW_FOCUSED_STATE_SET>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.ProgramStore.BlendSrcFunc: android.renderscript.ProgramStore.BlendSrcFunc[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.media.AudioFormat: int ENCODING_PCM_8BIT>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock MAHJONG_TILES>:[24,25,26,27,28,29,30]:false
 <android.provider.SearchRecentSuggestions: int QUERIES_PROJECTION_DISPLAY1_INDEX>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -8682,7 +8648,6 @@
 <android.security.keystore.KeyProperties: java.lang.String SIGNATURE_PADDING_RSA_PKCS1>:[23,24,25,26,27,28,29,30]:false
 <android.webkit.WebViewDatabase: java.lang.String LOGTAG>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]:false
 <android.R.style: int Widget_DeviceDefault_Light_HorizontalScrollView>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.SearchIterator.ElementComparisonType: android.icu.text.SearchIterator.ElementComparisonType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.R.attr: int supportsRtl>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothGattCharacteristic: int PERMISSION_WRITE_SIGNED>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.os.IBinder: int DUMP_TRANSACTION>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -8991,7 +8956,6 @@
 <android.hardware.Camera: int CAMERA_ERROR_SERVER_DIED>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.accessibilityservice.AccessibilityService: int GESTURE_SWIPE_DOWN_AND_LEFT>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.os.Build.VERSION_CODES: int P>:[28,29,30]:false
-<android.graphics.Paint.Join: android.graphics.Paint.Join[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.Im: int PROTOCOL_YAHOO>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.widget.TextView: int AUTO_SIZE_TEXT_TYPE_UNIFORM>:[26,27,28,29,30]:false
 <android.accounts.AccountManager: int ERROR_CODE_BAD_REQUEST>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -9044,7 +9008,6 @@
 <android.icu.text.DateTimePatternGenerator.PatternInfo: java.lang.String conflictingPattern>:[24,25,26,27,28,29,30]:false
 <android.R.attr: int state_empty>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.ActivityManager.RecentTaskInfo: int persistentId>:[12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.number.NumberRangeFormatter.RangeCollapse: android.icu.number.NumberRangeFormatter.RangeCollapse[] .VALUES>:[30]:false
 <android.util.Pair: java.lang.Object first>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int logoDescription>:[23,24,25,26,27,28,29,30]:false
 <android.os.Build.VERSION_CODES: int N>:[24,25,26,27,28,29,30]:false
@@ -9052,7 +9015,6 @@
 <android.opengl.GLES10: int GL_FIXED>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int _SC_OPEN_MAX>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.SettingsSlicesContract: android.net.Uri BASE_URI>:[28,29,30]:false
-<android.graphics.Canvas.VertexMode: android.graphics.Canvas.VertexMode[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.service.controls.DeviceTypes: int TYPE_CLOSET>:[30]:false
 <android.icu.lang.UProperty: int INDIC_POSITIONAL_CATEGORY>:[29,30]:false
 <android.opengl.GLES20: int GL_BUFFER_SIZE>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -9172,7 +9134,6 @@
 <android.opengl.GLES32: int GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY>:[24,25,26,27,28,29,30]:false
 <android.media.tv.TvContract.Programs.Genres: java.lang.String FAMILY_KIDS>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UScript: int SAURASHTRA>:[24,25,26,27,28,29,30]:false
-<android.graphics.ColorSpace.RenderIntent: android.graphics.ColorSpace.RenderIntent[] .VALUES>:[26,27,28,29,30]:false
 <android.view.WindowManager.LayoutParams: int FIRST_SYSTEM_WINDOW>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock TIFINAGH>:[24,25,26,27,28,29,30]:false
 <android.Manifest.permission: java.lang.String REQUEST_DELETE_PACKAGES>:[26,27,28,29,30]:false
@@ -9224,7 +9185,6 @@
 <android.opengl.GLES20: int GL_STENCIL_REF>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.usage.UsageStats: android.os.Parcelable.Creator CREATOR>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.text.Collator: int FULL_DECOMPOSITION>:[24,25,26,27,28,29,30]:false
-<android.icu.text.CompactDecimalFormat.CompactStyle: android.icu.text.CompactDecimalFormat.CompactStyle[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.media.AudioFormat: int CHANNEL_OUT_MONO>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.pm.ComponentInfo: java.lang.String processName>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: int CJK_UNIFIED_IDEOGRAPHS_EXTENSION_E_ID>:[24,25,26,27,28,29,30]:false
@@ -9322,7 +9282,6 @@
 <android.security.keystore.KeyProperties: int AUTH_BIOMETRIC_STRONG>:[30]:false
 <android.telephony.ims.ImsManager: java.lang.String EXTRA_WFC_REGISTRATION_FAILURE_TITLE>:[30]:false
 <android.icu.text.DateFormat.Field: android.icu.text.DateFormat.Field AM_PM>:[24,25,26,27,28,29,30]:false
-<android.renderscript.Program.TextureType: android.renderscript.Program.TextureType[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.opengl.GLES31Ext: int GL_DEBUG_TYPE_PERFORMANCE_KHR>:[21,22,23,24,25,26,27,28,29,30]:false
 <org.apache.http.HttpVersion: org.apache.http.HttpVersion HTTP_0_9>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.graphics.Color: int GRAY>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -9330,7 +9289,6 @@
 <android.renderscript.RenderScript.ContextType: android.renderscript.RenderScript.ContextType NORMAL>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodec.BufferInfo: int size>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.WindowManager.LayoutParams: android.os.Parcelable.Creator CREATOR>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.drawable.GradientDrawable.Orientation: android.graphics.drawable.GradientDrawable.Orientation[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.graphics.RectF: android.os.Parcelable.Creator CREATOR>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES20: int GL_TEXTURE5>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UScript: int DUPLOYAN>:[24,25,26,27,28,29,30]:false
@@ -9453,7 +9411,6 @@
 <android.content.Context: java.lang.String DROPBOX_SERVICE>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.audiofx.Equalizer: int PARAM_BAND_LEVEL>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <dalvik.bytecode.Opcodes: int OP_ADD_INT_2ADDR>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.Allocation.MipmapControl: android.renderscript.Allocation.MipmapControl[] .VALUES>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaDrm: int SECURITY_LEVEL_HW_SECURE_ALL>:[28,29,30]:false
 <android.media.ExifInterface: int ORIENTATION_FLIP_VERTICAL>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_DeviceDefault_Light_ProgressBar>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -9577,7 +9534,6 @@
 <android.media.PlaybackParams: int AUDIO_FALLBACK_MODE_FAIL>:[23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock OLD_SOUTH_ARABIAN>:[24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock COMBINING_DIACRITICAL_MARKS_EXTENDED>:[24,25,26,27,28,29,30]:false
-<android.webkit.WebSettings.RenderPriority: android.webkit.WebSettings.RenderPriority[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES31Ext: int GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.VoicemailContract: java.lang.String ACTION_NEW_VOICEMAIL>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.camera2.CameraMetadata: int EDGE_MODE_ZERO_SHUTTER_LAG>:[23,24,25,26,27,28,29,30]:false
@@ -10141,7 +10097,6 @@
 <android.telephony.mbms.StreamingServiceInfo: android.os.Parcelable.Creator CREATOR>:[28,29,30]:false
 <android.provider.Settings.Secure: java.lang.String ENABLED_ACCESSIBILITY_SERVICES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int y>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.database.CursorJoiner.Result: android.database.CursorJoiner.Result[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.IndicSyllabicCategory: int NUMBER>:[29,30]:false
 <android.media.MediaRecorder.AudioSource: int MIC>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.camera2.CaptureResult: android.hardware.camera2.CaptureResult.Key STATISTICS_LENS_SHADING_CORRECTION_MAP>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -10286,7 +10241,6 @@
 <android.service.autofill.FillRequest: int FLAG_COMPATIBILITY_MODE_REQUEST>:[29,30]:false
 <org.apache.http.cookie.ClientCookie: java.lang.String COMMENT_ATTR>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.icu.util.IslamicCalendar.CalculationType: android.icu.util.IslamicCalendar.CalculationType ISLAMIC_UMALQURA>:[24,25,26,27,28,29,30]:false
-<android.graphics.Matrix.ScaleToFit: android.graphics.Matrix.ScaleToFit[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.FullNameStyle: int CJK>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_Material_Light_ScrollView>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.drm.DrmManagerClient: int ERROR_UNKNOWN>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -10352,7 +10306,6 @@
 <android.system.OsConstants: int FIONREAD>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.text.TimeZoneFormat.Style: android.icu.text.TimeZoneFormat.Style GENERIC_SHORT>:[24,25,26,27,28,29,30]:false
 <android.telephony.CarrierConfigManager.Apn: java.lang.String KEY_PREFIX>:[30]:false
-<android.icu.lang.UScript.ScriptUsage: android.icu.lang.UScript.ScriptUsage[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.telephony.SubscriptionPlan: long BYTES_UNKNOWN>:[28,29,30]:false
 <android.icu.util.VersionInfo: android.icu.util.VersionInfo UCOL_BUILDER_VERSION>:[24,25,26,27,28,29,30]:false
 <android.telephony.ims.ImsReasonInfo: int CODE_DIAL_MODIFIED_TO_DIAL_VIDEO>:[30]:false
@@ -10432,7 +10385,6 @@
 <android.opengl.GLES30: int GL_DRAW_BUFFER6>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.CallLog.Calls: int REJECTED_TYPE>:[24,25,26,27,28,29,30]:false
 <android.telephony.euicc.EuiccManager: int EMBEDDED_SUBSCRIPTION_RESULT_ERROR>:[28,29,30]:false
-<org.apache.http.conn.routing.RouteInfo.LayerType: org.apache.http.conn.routing.RouteInfo.LayerType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.provider.Telephony.MmsSms: int ERR_TYPE_SMS_PROTO_TRANSIENT>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.Intent: java.lang.String ACTION_SHOW_APP_INFO>:[24,25,26,27,28,29,30]:false
 <android.net.NetworkInfo.DetailedState: android.net.NetworkInfo.DetailedState BLOCKED>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -10646,7 +10598,6 @@
 <android.icu.text.DateFormat: java.lang.String YEAR_ABBR_MONTH_DAY>:[24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock PSALTER_PAHLAVI>:[24,25,26,27,28,29,30]:false
 <android.R.attr: int hint>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.number.NumberRangeFormatter.RangeIdentityResult: android.icu.number.NumberRangeFormatter.RangeIdentityResult[] .VALUES>:[30]:false
 <android.app.AppOpsManager: int MODE_ALLOWED>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_ProgressBar_Inverse>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int TextAppearance_DeviceDefault_Widget_DropDownItem>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -10861,7 +10812,6 @@
 <android.telephony.DataFailCause: int SERVICE_OPTION_NOT_SUPPORTED>:[30]:false
 <android.R.id: int inputArea>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.WindowManager.LayoutParams: int memoryType>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.util.IslamicCalendar.CalculationType: android.icu.util.IslamicCalendar.CalculationType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.graphics.Region.Op: android.graphics.Region.Op REPLACE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int thumb>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.DocumentsContract: java.lang.String QUERY_ARG_LAST_MODIFIED_AFTER>:[29,30]:false
@@ -10897,7 +10847,6 @@
 <android.R.attr: int editTextStyle>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.Menu: int NONE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.drawable: int presence_audio_busy>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.LocaleDisplayNames.DialectHandling: android.icu.text.LocaleDisplayNames.DialectHandling[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.provider.MediaStore.MediaColumns: java.lang.String DATA>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.util.Calendar: int AM_PM>:[24,25,26,27,28,29,30]:false
 <android.mtp.MtpEvent: int EVENT_UNREPORTED_STATUS>:[24,25,26,27,28,29,30]:false
@@ -10934,7 +10883,6 @@
 <android.R.style: int Widget_DeviceDefault_Light_CalendarView>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.service.voice.AlwaysOnHotwordDetector: int RECOGNITION_FLAG_ENABLE_AUDIO_NOISE_SUPPRESSION>:[30]:false
 <android.provider.Telephony.Sms.Intents: java.lang.String EXTRA_IS_DEFAULT_SMS_APP>:[24,25,26,27,28,29,30]:false
-<android.telephony.SmsMessage.MessageClass: android.telephony.SmsMessage.MessageClass[] .VALUES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int INVALID_TRANSACTION_ID>:[30]:false
 <android.media.MediaFormat: java.lang.String KEY_STRIDE>:[23,24,25,26,27,28,29,30]:false
 <android.opengl.EGL14: int EGL_RENDERABLE_TYPE>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -11587,7 +11535,6 @@
 <android.media.MediaCodecInfo.CodecProfileLevel: int MPEG4Level1>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.NetworkInfo.DetailedState: android.net.NetworkInfo.DetailedState DISCONNECTING>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodecInfo.CodecProfileLevel: int MPEG4Level3>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.TimeZoneFormat.Style: android.icu.text.TimeZoneFormat.Style[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES31: int GL_INT_SAMPLER_2D_MULTISAMPLE>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES31: int GL_IMAGE_3D>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothGattService: java.util.List mCharacteristics>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -11837,7 +11784,6 @@
 <android.icu.lang.UScript: int MONGOLIAN>:[24,25,26,27,28,29,30]:false
 <android.net.rtp.AudioCodec: android.net.rtp.AudioCodec AMR>:[12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.camera2.CameraMetadata: int CONTROL_AE_MODE_ON_AUTO_FLASH_REDEYE>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.RelativeDateTimeFormatter.Direction: android.icu.text.RelativeDateTimeFormatter.Direction[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.renderscript.Double4: double x>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.ApplicationErrorReport.CrashInfo: java.lang.String exceptionClassName>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int ACTIVATION_REJECT_UNSPECIFIED>:[30]:false
@@ -11982,7 +11928,6 @@
 <android.content.pm.PackageManager: int INSTALL_FAILED_INSUFFICIENT_STORAGE>:[2,3]:false
 <android.opengl.GLES31Ext: int GL_COMPRESSED_RGBA_ASTC_10x6_KHR>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.p2p.WifiP2pWfdInfo: int DEVICE_TYPE_PRIMARY_SINK>:[30]:false
-<android.renderscript.ProgramStore.BlendDstFunc: android.renderscript.ProgramStore.BlendDstFunc[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.media.MediaFormat: java.lang.String KEY_BIT_RATE>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.text.MessagePattern.ArgType: android.icu.text.MessagePattern.ArgType CHOICE>:[24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_ImageButton>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -12107,7 +12052,6 @@
 <android.R.attr: int galleryStyle>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_DeviceDefault_Light_ProgressBar_Small>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int ENETUNREACH>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.Element.DataType: android.renderscript.Element.DataType[] .VALUES>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.Secure: java.lang.String PARENTAL_CONTROL_REDIRECT_URL>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.drawable: int ic_dialog_email>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <org.apache.http.protocol.HTTP: java.lang.String CHUNK_CODING>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
@@ -12182,7 +12126,6 @@
 <android.app.admin.DevicePolicyManager: int LOCK_TASK_FEATURE_NONE>:[28,29,30]:false
 <android.net.ConnectivityDiagnosticsManager.DataStallReport: java.lang.String KEY_DNS_CONSECUTIVE_TIMEOUTS>:[30]:false
 <android.R.drawable: int alert_light_frame>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.MessagePattern.ApostropheMode: android.icu.text.MessagePattern.ApostropheMode[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.graphics.Color: int MAGENTA>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.Secure: java.lang.String DEVICE_PROVISIONED>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.PeriodicSync: android.os.Bundle extras>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -12784,7 +12727,6 @@
 <android.system.OsConstants: int IFF_LOOPBACK>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaFormat: java.lang.String KEY_MIME>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.Panel: java.lang.String ACTION_VOLUME>:[29,30]:false
-<android.renderscript.Mesh.Primitive: android.renderscript.Mesh.Primitive[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.appwidget.AppWidgetProviderInfo: int widgetCategory>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.le.ScanSettings: int MATCH_NUM_ONE_ADVERTISEMENT>:[23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int MIP_HA_MOBILE_NODE_AUTHENTICATION_FAILURE>:[30]:false
@@ -13132,7 +13074,6 @@
 <android.provider.Settings: java.lang.String EXTRA_AUTHORITIES>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.Context: java.lang.String POWER_SERVICE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.Manifest.permission_group: java.lang.String HARDWARE_CONTROLS>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
-<android.renderscript.RenderScript.ContextType: android.renderscript.RenderScript.ContextType[] .VALUES>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.os.storage.OnObbStateChangeListener: int ERROR_NOT_MOUNTED>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.Intent: java.lang.String ACTION_WEB_SEARCH>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int windowEnableSplitTouch>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -13191,7 +13132,6 @@
 <android.hardware.camera2.CameraMetadata: int FLASH_MODE_OFF>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.MediaStore: java.lang.String EXTRA_SHOW_ACTION_ICONS>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.renderscript.Long4: long w>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.view.ViewDebug.RecyclerTraceType: android.view.ViewDebug.RecyclerTraceType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.util.proto.ProtoOutputStream: long FIELD_TYPE_FIXED32>:[30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: int THAANA_ID>:[24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.DecompositionType: int CANONICAL>:[24,25,26,27,28,29,30]:false
@@ -13411,7 +13351,6 @@
 <android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction: android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction ACTION_PAGE_LEFT>:[29,30]:false
 <android.view.KeyEvent: int KEYCODE_M>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.graphics.BlendMode: android.graphics.BlendMode EXCLUSION>:[29,30]:false
-<android.graphics.ColorSpace.Adaptation: android.graphics.ColorSpace.Adaptation[] .VALUES>:[26,27,28,29,30]:false
 <android.service.controls.ControlsProviderService: java.lang.String SERVICE_CONTROLS>:[30]:false
 <org.apache.http.cookie.SM: java.lang.String COOKIE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.content.RestrictionEntry: int TYPE_STRING>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -13667,7 +13606,6 @@
 <android.telephony.TelephonyManager: java.lang.String ACTION_NETWORK_COUNTRY_CHANGED>:[29,30]:false
 <android.R.attr: int fullBright>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_Holo_Light_ActionMode>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.webkit.WebSettings.TextSize: android.webkit.WebSettings.TextSize[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.inputmethod.EditorInfo: java.lang.CharSequence hintText>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int contentInsetLeft>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.view.KeyEvent: int KEYCODE_J>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -14707,7 +14645,6 @@
 <android.R.attr: int contextUri>:[25,26,27,28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.Photo: java.lang.String CONTENT_ITEM_TYPE>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.tv.TvInputManager: int VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED>:[30]:false
-<android.icu.text.Normalizer2.Mode: android.icu.text.Normalizer2.Mode[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.hardware.camera2.CaptureResult: android.hardware.camera2.CaptureResult.Key CONTROL_EXTENDED_SCENE_MODE>:[30]:false
 <android.R.attr: int wallpaperOpenEnterAnimation>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.CalendarContract.Instances: java.lang.String START_MINUTE>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -14790,7 +14727,6 @@
 <android.view.WindowManager.LayoutParams: int LAST_SUB_WINDOW>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings: java.lang.String ACTION_ADD_ACCOUNT>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES31Ext: int GL_COMPRESSED_RGBA_ASTC_5x4_KHR>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.PluralRules.PluralType: android.icu.text.PluralRules.PluralType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.content.Intent: int EXTRA_DOCK_STATE_DESK>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.rtp.RtpStream: int MODE_NORMAL>:[12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.speech.tts.TextToSpeech: int ERROR>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -14991,7 +14927,6 @@
 <android.content.pm.PackageManager: java.lang.String FEATURE_CANT_SAVE_STATE>:[28,29,30]:false
 <android.net.wifi.WifiInfo: java.lang.String LINK_SPEED_UNITS>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodecInfo.CodecCapabilities: int COLOR_Format18bitRGB666>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.Canvas.EdgeType: android.graphics.Canvas.EdgeType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.service.notification.Condition: int STATE_TRUE>:[24,25,26,27,28,29,30]:false
 <android.media.midi.MidiDeviceService: java.lang.String SERVICE_INTERFACE>:[23,24,25,26,27,28,29,30]:false
 <android.provider.Settings: java.lang.String ACTION_LOCALE_SETTINGS>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -15142,7 +15077,6 @@
 <dalvik.bytecode.Opcodes: int OP_APUT_SHORT>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.text.format.DateFormat: char DATE>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21]:false
 <android.R.style: int Widget_Holo_Light_RatingBar_Indicator>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.webkit.ConsoleMessage.MessageLevel: android.webkit.ConsoleMessage.MessageLevel[] .VALUES>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.ContentResolver: java.lang.String SYNC_EXTRAS_FORCE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UProperty: int CHANGES_WHEN_CASEMAPPED>:[24,25,26,27,28,29,30]:false
 <android.view.AbsSavedState: android.view.AbsSavedState EMPTY_STATE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -15430,7 +15364,6 @@
 <android.view.Gravity: int START>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.AudioManager: java.lang.String ACTION_MICROPHONE_MUTE_CHANGED>:[28,29,30]:false
 <android.opengl.EGL15: int EGL_SYNC_FLUSH_COMMANDS_BIT>:[29,30]:false
-<android.graphics.Region.Op: android.graphics.Region.Op[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UScript: int TRADITIONAL_HAN>:[24,25,26,27,28,29,30]:false
 <android.telephony.CarrierConfigManager: java.lang.String KEY_CARRIER_INSTANT_LETTERING_AVAILABLE_BOOL>:[24,25,26,27,28,29,30]:false
 <android.provider.MediaStore.Audio.Playlists.Members: java.lang.String CONTENT_DIRECTORY>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -15574,7 +15507,6 @@
 <android.opengl.GLES30: int GL_RGBA32UI>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.WifiManager: int WIFI_STATE_UNKNOWN>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int targetPackage>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.ProgramFragmentFixedFunction.Builder.EnvMode: android.renderscript.ProgramFragmentFixedFunction.Builder.EnvMode[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.opengl.EGL14: int EGL_MATCH_NATIVE_PIXMAP>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int layout_marginVertical>:[26,27,28,29,30]:false
 <android.R.style: int Widget_Material_PopupMenu>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -15650,7 +15582,6 @@
 <android.accounts.AccountManager: java.lang.String ACTION_ACCOUNT_REMOVED>:[26,27,28,29,30]:false
 <android.widget.ListView: int CHOICE_MODE_MULTIPLE>:[2,3,4,5,6,7,8,9,10]:false
 <android.accessibilityservice.AccessibilityService: int GESTURE_SWIPE_LEFT_AND_RIGHT>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.UnicodeSet.ComparisonStyle: android.icu.text.UnicodeSet.ComparisonStyle[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.provider.Settings.Secure: java.lang.String TTS_DEFAULT_PITCH>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES32: int GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS>:[24,25,26,27,28,29,30]:false
 <android.widget.LinearLayout: int HORIZONTAL>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -15666,8 +15597,6 @@
 <android.opengl.GLES32: int GL_INT_SAMPLER_CUBE_MAP_ARRAY>:[24,25,26,27,28,29,30]:false
 <android.nfc.NdefRecord: short TNF_WELL_KNOWN>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.widget.RelativeLayout: int BELOW>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.os.AsyncTask.Status: android.os.AsyncTask.Status[] .VALUES>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.MessagePattern.Part.Type: android.icu.text.MessagePattern.Part.Type[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.app.ActivityManager.RunningAppProcessInfo: int IMPORTANCE_FOREGROUND>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.job.JobInfo: int NETWORK_TYPE_ANY>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.media.midi.MidiDeviceInfo.PortInfo: int TYPE_OUTPUT>:[23,24,25,26,27,28,29,30]:false
@@ -15892,7 +15821,6 @@
 <android.appwidget.AppWidgetProviderInfo: android.content.ComponentName configure>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.LocalSocket: int SOCKET_STREAM>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.KeyEvent: int KEYCODE_EXPLORER>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.Bitmap.CompressFormat: android.graphics.Bitmap.CompressFormat[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.textservice.SpellCheckerInfo: android.os.Parcelable.Creator CREATOR>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCas: int SCRAMBLING_MODE_MULTI2>:[30]:false
 <android.content.res.Resources.Theme: android.content.res.Resources this.0>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -16089,7 +16017,6 @@
 <org.apache.http.impl.client.DefaultRequestDirector: org.apache.http.ConnectionReuseStrategy reuseStrategy>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.provider.ContactsContract.Directory: java.lang.String ACCOUNT_NAME>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int dialogTitle>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.ProgramStore.DepthFunc: android.renderscript.ProgramStore.DepthFunc[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.content.res.Configuration: int UI_MODE_NIGHT_NO>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.text.TimeZoneFormat.GMTOffsetPatternType: android.icu.text.TimeZoneFormat.GMTOffsetPatternType NEGATIVE_H>:[24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int RT_SCOPE_LINK>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -16744,7 +16671,6 @@
 <android.R.attr: int state_pressed>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telecom.Connection.VideoProvider: int SESSION_MODIFY_REQUEST_INVALID>:[23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES30: int GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.MessagePattern.ArgType: android.icu.text.MessagePattern.ArgType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.app.ActivityManager.RunningAppProcessInfo: java.lang.String[] pkgList>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothAssignedNumbers: int QUUPPA>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.Global: int WIFI_SLEEP_POLICY_NEVER_WHILE_PLUGGED>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -16982,7 +16908,6 @@
 <android.opengl.GLES30: int GL_READ_FRAMEBUFFER>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.Manifest.permission_group: java.lang.String ACCESSIBILITY_FEATURES>:[18,19,21,22]:false
 <android.content.pm.PackageManager: java.lang.String FEATURE_EMBEDDED>:[26,27,28,29,30]:false
-<android.icu.number.NumberFormatter.UnitWidth: android.icu.number.NumberFormatter.UnitWidth[] .VALUES>:[30]:false
 <android.print.PrintAttributes.MediaSize: android.print.PrintAttributes.MediaSize NA_LEGAL>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaFormat: int COLOR_TRANSFER_SDR_VIDEO>:[24,25,26,27,28,29,30]:false
 <android.content.pm.ActivityInfo: int CONFIG_NAVIGATION>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -17393,7 +17318,6 @@
 <android.media.RingtoneManager: int ID_COLUMN_INDEX>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES11: int GL_STENCIL_REF>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.print.PrinterInfo: int STATUS_UNAVAILABLE>:[19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.Paint.Cap: android.graphics.Paint.Cap[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.inputmethod.CompletionInfo: android.os.Parcelable.Creator CREATOR>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.CallLog.Calls: java.lang.String GEOCODED_LOCATION>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaExtractor: int SEEK_TO_CLOSEST_SYNC>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -17471,7 +17395,6 @@
 <android.net.http.SslError: int SSL_NOTYETVALID>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.pm.ActivityInfo: int FLAG_IMMERSIVE>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.id: int accessibilityActionPageRight>:[29,30]:false
-<android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit: android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.service.controls.templates.ControlTemplate: int TYPE_NO_TEMPLATE>:[30]:false
 <android.app.AutomaticZenRule: android.os.Parcelable.Creator CREATOR>:[24,25,26,27,28,29,30]:false
 <android.location.GpsStatus: int GPS_EVENT_STARTED>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -17624,7 +17547,6 @@
 <android.opengl.GLES10: int GL_LIGHT2>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.res.Configuration: int TOUCHSCREEN_UNDEFINED>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int MIP_FA_REASON_UNSPECIFIED>:[30]:false
-<android.net.LocalSocketAddress.Namespace: android.net.LocalSocketAddress.Namespace[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int buttonStyleSmall>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.TelephonyManager: java.lang.String EXTRA_STATE>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int windowReenterTransition>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -17777,7 +17699,6 @@
 <android.net.wifi.WifiConfiguration: int networkId>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.renderscript.ProgramStore.BlendSrcFunc: android.renderscript.ProgramStore.BlendSrcFunc DST_COLOR>:[11,12,13,14,15,16,17]:false
 <android.provider.ContactsContract.ProviderStatus: java.lang.String DATABASE_CREATION_TIMESTAMP>:[26,27,28,29,30]:false
-<android.renderscript.Element.DataKind: android.renderscript.Element.DataKind[] .VALUES>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.KeyEvent: int KEYCODE_TV_INPUT_VGA_1>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.biometrics.BiometricPrompt: int BIOMETRIC_ERROR_HW_NOT_PRESENT>:[28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.SipAddress: java.lang.String EXTRA_ADDRESS_BOOK_INDEX_COUNTS>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -17856,7 +17777,6 @@
 <android.icu.lang.UCharacterEnums.ECharacterDirection: int EUROPEAN_NUMBER_SEPARATOR>:[24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: int ADLAM_ID>:[26,27,28,29,30]:false
 <android.telephony.AccessNetworkConstants.UtranBand: int BAND_19>:[28,29,30]:false
-<android.graphics.Path.FillType: android.graphics.Path.FillType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.Manifest.permission: java.lang.String DELETE_PACKAGES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.ContactOptionsColumns: java.lang.String LAST_TIME_CONTACTED>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES10: int GL_NEAREST_MIPMAP_NEAREST>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -17945,7 +17865,6 @@
 <android.opengl.GLES10: int GL_ALIASED_POINT_SIZE_RANGE>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.speech.tts.TextToSpeech.EngineInfo: java.lang.String label>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.aware.Characteristics: int WIFI_AWARE_CIPHER_SUITE_NCS_SK_256>:[30]:false
-<android.icu.text.TimeZoneFormat.GMTOffsetPatternType: android.icu.text.TimeZoneFormat.GMTOffsetPatternType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES10: int GL_TEXTURE0>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.aware.ParcelablePeerHandle: android.os.Parcelable.Creator CREATOR>:[29,30]:false
 <android.provider.Settings: java.lang.String ACTION_VPN_SETTINGS>:[24,25,26,27,28,29,30]:false
@@ -18019,7 +17938,6 @@
 <android.view.DragEvent: int ACTION_DRAG_ENTERED>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.appwidget.AppWidgetManager: java.lang.String ACTION_APPWIDGET_RESTORED>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int minResizeWidth>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.Font.Style: android.renderscript.Font.Style[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.hardware.Camera.Parameters: java.lang.String FLASH_MODE_OFF>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int EHRPD_TO_HRPD_FALLBACK>:[30]:false
 <org.apache.http.HttpStatus: int SC_PROXY_AUTHENTICATION_REQUIRED>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
@@ -18238,7 +18156,6 @@
 <android.app.admin.SecurityLog: int TAG_PASSWORD_COMPLEXITY_SET>:[28,29,30]:false
 <android.view.textclassifier.ConversationAction: java.lang.String TYPE_SEND_SMS>:[29,30]:false
 <android.Manifest.permission: java.lang.String SET_ALARM>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.webkit.WebSettings.LayoutAlgorithm: android.webkit.WebSettings.LayoutAlgorithm[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.MotionEvent: int ACTION_POINTER_UP>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES31Ext: int GL_FRACTIONAL_ODD_EXT>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.graphics.Typeface: int NORMAL>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -18467,7 +18384,6 @@
 <android.opengl.GLES20: int GL_UNSIGNED_SHORT_5_5_5_1>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.KeyEvent: int KEYCODE_DPAD_DOWN_LEFT>:[24,25,26,27,28,29,30]:false
 <com.google.android.maps.Overlay: float SHADOW_Y_SCALE>:[2]:false
-<android.graphics.PorterDuff.Mode: android.graphics.PorterDuff.Mode[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.Window: int FEATURE_ACTIVITY_TRANSITIONS>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.graphics.Canvas: int CLIP_TO_LAYER_SAVE_FLAG>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27]:false
 <android.view.View: java.lang.String VIEW_LOG_TAG>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -18520,7 +18436,6 @@
 <android.widget.RelativeLayout: int ALIGN_PARENT_END>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.service.controls.templates.ControlTemplate: int TYPE_TEMPERATURE>:[30]:false
 <android.inputmethodservice.Keyboard.Key: int popupResId>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.renderscript.ProgramRaster.CullMode: android.renderscript.ProgramRaster.CullMode[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.hardware.SensorManager: int SENSOR_TRICORDER>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.SearchManager: java.lang.String CURSOR_EXTRA_KEY_IN_PROGRESS>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int taskAffinity>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -18613,7 +18528,6 @@
 <android.R.style: int Widget_Material_Light_ActionBar>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.content.pm.PackageManager: int SIGNATURE_NEITHER_SIGNED>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int PPP_TIMEOUT>:[30]:false
-<android.icu.text.RelativeDateTimeFormatter.RelativeDateTimeUnit: android.icu.text.RelativeDateTimeFormatter.RelativeDateTimeUnit[] .VALUES>:[28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock DIVES_AKURU>:[30]:false
 <android.media.MediaCodecInfo.CodecProfileLevel: int HEVCProfileMain10>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: int ALCHEMICAL_SYMBOLS_ID>:[24,25,26,27,28,29,30]:false
@@ -18921,7 +18835,6 @@
 <android.service.autofill.FillEventHistory.Event: int TYPE_DATASET_SELECTED>:[26,27,28,29,30]:false
 <android.os.Message: android.os.Messenger replyTo>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock LATIN_EXTENDED_A>:[24,25,26,27,28,29,30]:false
-<android.renderscript.RenderScript.Priority: android.renderscript.RenderScript.Priority[] .VALUES>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.IntentFilter: int MATCH_CATEGORY_HOST>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.ScanResult: java.lang.CharSequence venueName>:[23,24,25,26,27,28,29,30]:false
 <android.provider.Settings: java.lang.String ACTION_INPUT_METHOD_SUBTYPE_SETTINGS>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -18975,7 +18888,6 @@
 <android.provider.ContactsContract.CommonDataKinds.Callable: java.lang.String EXTRA_ADDRESS_BOOK_INDEX_TITLES>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_DeviceDefault_Light_ActionBar_Solid_Inverse>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.ApplicationErrorReport: int TYPE_RUNNING_SERVICE>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.widget.ImageView.ScaleType: android.widget.ImageView.ScaleType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.hardware.camera2.CameraMetadata: int CONTROL_AWB_MODE_SHADE>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.net.wifi.WifiManager: int WIFI_STATE_ENABLING>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <org.apache.http.impl.conn.SingleClientConnManager: org.apache.http.conn.scheme.SchemeRegistry schemeRegistry>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
@@ -19016,7 +18928,6 @@
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit ARC_SECOND>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES10: int GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.content.SyncInfo: android.accounts.Account account>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<org.apache.http.conn.routing.RouteInfo.TunnelType: org.apache.http.conn.routing.RouteInfo.TunnelType[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.opengl.GLES30: int GL_BUFFER_MAP_LENGTH>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.textclassifier.TextClassifier: java.lang.String TYPE_UNKNOWN>:[28,29,30]:false
 <android.opengl.GLES20: int GL_SAMPLER_2D>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -19058,7 +18969,6 @@
 <android.icu.lang.UCharacter.UnicodeBlock: int NKO_ID>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES30: long GL_TIMEOUT_IGNORED>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.bluetooth.BluetoothHealth: int SOURCE_ROLE>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.DisplayContext: android.icu.text.DisplayContext[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.media.tv.TvContract.WatchNextPrograms: java.lang.String COLUMN_DURATION_MILLIS>:[26,27,28,29,30]:false
 <android.view.Surface: int FX_SURFACE_BLUR>:[2,3,4,5,6,7,8,9,10,11,12,13]:false
 <android.telephony.emergency.EmergencyNumber: int EMERGENCY_CALL_ROUTING_NORMAL>:[29,30]:false
@@ -19100,7 +19010,6 @@
 <android.telecom.TelecomManager: java.lang.String EXTRA_START_CALL_WITH_SPEAKERPHONE>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Theme_Holo_Light_NoActionBar_Overscan>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit OUNCE>:[24,25,26,27,28,29,30]:false
-<android.icu.text.MeasureFormat.FormatWidth: android.icu.text.MeasureFormat.FormatWidth[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer: int NON_7_BIT_ASCII_OK>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_DeviceDefault_Button_Borderless_Small>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.renderscript.Mesh.Primitive: android.renderscript.Mesh.Primitive LINE_STRIP>:[11,12,13,14,15,16,17]:false
@@ -19173,7 +19082,6 @@
 <android.net.wifi.WifiConfiguration.KeyMgmt: int OWE>:[29,30]:false
 <android.R.string: int VideoView_error_button>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.FaceDetector.Face: int EULER_Y>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.DateTimePatternGenerator.DisplayWidth: android.icu.text.DateTimePatternGenerator.DisplayWidth[] .VALUES>:[30]:false
 <android.Manifest.permission: java.lang.String FORCE_BACK>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22]:false
 <android.R.drawable: int star_off>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.text.DateFormat: android.icu.util.Calendar calendar>:[24,25,26,27,28,29,30]:false
@@ -19184,7 +19092,6 @@
 <android.provider.ContactsContract.CommonDataKinds.Nickname: int TYPE_MAINDEN_NAME>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.AppOpsManager: int MODE_ERRORED>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.transition: int fade>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.TimeZoneFormat.ParseOption: android.icu.text.TimeZoneFormat.ParseOption[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.opengl.GLES20: int GL_TEXTURE29>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int TextAppearance_Material_Small_Inverse>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit HORSEPOWER>:[24,25,26,27,28,29,30]:false
@@ -19649,7 +19556,6 @@
 <android.provider.VoicemailContract.Status: java.lang.String NOTIFICATION_CHANNEL_STATE>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock YI_RADICALS>:[24,25,26,27,28,29,30]:false
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit PERMILLE>:[30]:false
-<android.graphics.Paint.Style: android.graphics.Paint.Style[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.textclassifier.SelectionEvent: int ACTION_PASTE>:[28,29,30]:false
 <android.content.ContentResolver: java.lang.String QUERY_ARG_SQL_GROUP_BY>:[30]:false
 <android.content.IntentFilter: int SYSTEM_LOW_PRIORITY>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -19762,7 +19668,6 @@
 <android.content.pm.ActivityInfo: int launchMode>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.icu.lang.UScript: int DEVANAGARI>:[24,25,26,27,28,29,30]:false
 <android.icu.text.UnicodeSet.SpanCondition: android.icu.text.UnicodeSet.SpanCondition CONTAINED>:[24,25,26,27,28,29,30]:false
-<android.renderscript.Sampler.Value: android.renderscript.Sampler.Value[] .VALUES>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.ActivityManager.RunningAppProcessInfo: int IMPORTANCE_EMPTY>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES20: int GL_CULL_FACE_MODE>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int IP_TOS>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -19792,7 +19697,6 @@
 <android.service.notification.NotificationListenerService: int HINT_HOST_DISABLE_CALL_EFFECTS>:[24,25,26,27,28,29,30]:false
 <android.net.ConnectivityDiagnosticsManager.ConnectivityReport: int NETWORK_VALIDATION_RESULT_INVALID>:[30]:false
 <android.media.Rating: int RATING_4_STARS>:[19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.Bitmap.Config: android.graphics.Bitmap.Config[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.drm.DrmInfoStatus: int STATUS_ERROR>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.service.notification.NotificationListenerService: int REASON_LISTENER_CANCEL>:[26,27,28,29,30]:false
 <android.net.NetworkInfo.DetailedState: android.net.NetworkInfo.DetailedState AUTHENTICATING>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -19853,7 +19757,6 @@
 <android.telephony.euicc.EuiccManager: int ERROR_EUICC_MISSING>:[30]:false
 <android.view.View: int[] PRESSED_ENABLED_FOCUSED_STATE_SET>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.speech.tts.TextToSpeech: int LANG_COUNTRY_VAR_AVAILABLE>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.UnicodeSetSpanner.CountMethod: android.icu.text.UnicodeSetSpanner.CountMethod[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.provider.MediaStore.Audio.Albums: java.lang.String CONTENT_TYPE>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.StructuredPostal: java.lang.String COUNTRY>:[5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.usage.UsageEvents.Event: int ACTIVITY_PAUSED>:[29,30]:false
@@ -19983,7 +19886,6 @@
 <android.opengl.GLES20: int GL_TEXTURE18>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Theme_Material_Light_NoActionBar_Fullscreen>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.content.pm.PackageManager: java.lang.String FEATURE_CAMERA_FRONT>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.PathDashPathEffect.Style: android.graphics.PathDashPathEffect.Style[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.Surface: int FX_SURFACE_DIM>:[2,3,4,5,6,7,8,9,10,11,12,13]:false
 <android.opengl.GLES20: int GL_RGB565>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.style: int Widget_DeviceDefault_ListView_DropDown>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -20070,7 +19972,6 @@
 <android.R.style: int Widget_DeviceDefault_ActionMode>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES30: int GL_STATIC_COPY>:[18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.EGL14: int EGL_OPENVG_BIT>:[17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<com.google.android.maps.MapView.ReticleDrawMode: com.google.android.maps.MapView.ReticleDrawMode[] .VALUES>:[2]:false
 <android.opengl.GLES20: int GL_SHORT>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.graphics.ImageFormat: int PRIVATE>:[23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES31Ext: int GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_EXT>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -20478,7 +20379,6 @@
 <android.provider.Contacts.PresenceColumns: int INVISIBLE>:[8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES10: int GL_TEXTURE26>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.ContactsContract.CommonDataKinds.StructuredName: java.lang.String FULL_NAME_STYLE>:[21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.TimeZoneFormat.TimeType: android.icu.text.TimeZoneFormat.TimeType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <dalvik.system.VMDebug: int KIND_THREAD_ALLOCATED_OBJECTS>:[2,3,4,5,6,7,8]:false
 <android.media.AudioRecord: int ERROR>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.text.style.SuggestionSpan: int FLAG_AUTO_CORRECTION>:[15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -21015,7 +20915,6 @@
 <android.location.Criteria: int ACCURACY_MEDIUM>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int translationX>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int indeterminate>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.ColorSpace.Model: android.graphics.ColorSpace.Model[] .VALUES>:[26,27,28,29,30]:false
 <android.net.wifi.rtt.ResponderLocation: int DATUM_WGS84>:[29,30]:false
 <android.opengl.GLES11Ext: int GL_RENDERBUFFER_BLUE_SIZE_OES>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.opengl.GLES11: int GL_COMBINE_ALPHA>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -21335,12 +21234,10 @@
 <android.view.KeyEvent: int FLAG_SOFT_KEYBOARD>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.AudioFormat: int ENCODING_IEC61937>:[24,25,26,27,28,29,30]:false
 <android.telephony.SmsManager: int RESULT_INVALID_ARGUMENTS>:[30]:false
-<android.renderscript.FileA3D.EntryType: android.renderscript.FileA3D.EntryType[] .VALUES>:[11,12,13,14,15,16,17]:false
 <android.system.OsConstants: int IPV6_UNICAST_HOPS>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodec: java.lang.String PARAMETER_KEY_VIDEO_BITRATE>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaCodecInfo.CodecProfileLevel: int AVCLevel11>:[16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.app.DownloadManager: int PAUSED_WAITING_FOR_NETWORK>:[9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.text.TimeZoneNames.NameType: android.icu.text.TimeZoneNames.NameType[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.provider.CalendarContract.EventsColumns: java.lang.String ALL_DAY>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.mbms.StreamingService: int REASON_END_OF_SESSION>:[28,29,30]:false
 <android.R.attr: int expandableListViewStyle>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -21422,7 +21319,6 @@
 <android.R.drawable: int stat_sys_vp_phone_call>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.AudioRecord: int READ_BLOCKING>:[23,24,25,26,27,28,29,30]:false
 <android.util.DisplayMetrics: int DENSITY_LOW>:[4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.graphics.Interpolator.Result: android.graphics.Interpolator.Result[] .VALUES>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.R.attr: int targetName>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.app.slice.SliceItem: android.os.Parcelable.Creator CREATOR>:[28,29,30]:false
 <android.bluetooth.BluetoothAssignedNumbers: int MATSUSHITA_ELECTRIC>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -21840,7 +21736,6 @@
 <android.view.WindowManager.LayoutParams: int TYPE_APPLICATION_PANEL>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.Manifest.permission: java.lang.String SMS_FINANCIAL_TRANSACTIONS>:[29,30]:false
 <android.R.attr: int numbersInnerTextColor>:[23,24,25,26,27,28,29,30]:false
-<android.graphics.Path.Op: android.graphics.Path.Op[] .VALUES>:[19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int SIGKILL>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.media.DrmInitData.SchemeInitData: byte[] data>:[24,25,26,27,28,29,30]:false
 <android.R.attr: int outlineProvider>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -21869,7 +21764,6 @@
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock SINHALA>:[24,25,26,27,28,29,30]:false
 <android.app.admin.SecurityLog.SecurityEvent: android.os.Parcelable.Creator CREATOR>:[24,25,26,27,28,29,30]:false
 <android.media.AudioTrack: int ENCAPSULATION_METADATA_TYPE_DVB_AD_DESCRIPTOR>:[30]:false
-<android.icu.text.UnicodeSet.SpanCondition: android.icu.text.UnicodeSet.SpanCondition[] .VALUES>:[24,25,26,27,28,29,30]:false
 <android.R.attr: int debuggable>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.view.MotionEvent: int AXIS_PRESSURE>:[12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.AccessNetworkConstants.UtranBand: int BAND_3>:[28,29,30]:false
@@ -22677,7 +22571,6 @@
 <android.view.MotionEvent: int AXIS_TOUCH_MAJOR>:[12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.telephony.DataFailCause: int CDMA_REORDER>:[30]:false
 <android.telephony.data.ApnSetting: int PROTOCOL_NON_IP>:[29,30]:false
-<android.icu.number.NumberRangeFormatter.RangeIdentityFallback: android.icu.number.NumberRangeFormatter.RangeIdentityFallback[] .VALUES>:[30]:false
 <android.media.ExifInterface: java.lang.String TAG_SUBSEC_TIME_DIGITIZED>:[24,25,26,27,28,29,30]:false
 <android.icu.lang.UCharacter.JoiningGroup: int BEH>:[24,25,26,27,28,29,30]:false
 <android.media.AudioManager: java.lang.String EXTRA_ENCODINGS>:[21,22,23,24,25,26,27,28,29,30]:false
@@ -23131,7 +23024,6 @@
 <android.R.style: int Widget_Holo_ListView_DropDown>:[11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.media.MediaFormat: java.lang.String KEY_TRACK_ID>:[24,25,26,27,28,29,30]:false
 <android.speech.RecognizerIntent: java.lang.String ACTION_RECOGNIZE_SPEECH>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.number.NumberFormatter.DecimalSeparatorDisplay: android.icu.number.NumberFormatter.DecimalSeparatorDisplay[] .VALUES>:[30]:false
 <android.opengl.GLES32: int GL_TESS_GEN_SPACING>:[24,25,26,27,28,29,30]:false
 <android.R.drawable: int status_bar_item_app_background>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.provider.Settings.System: java.lang.String WIFI_USE_STATIC_IP>:[2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
@@ -23424,7 +23316,6 @@
 <android.provider.ContactsContract.DisplayPhoto: java.lang.String THUMBNAIL_MAX_DIM>:[14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
 <android.system.OsConstants: int FD_CLOEXEC>:[21,22,23,24,25,26,27,28,29,30]:false
 <android.text.InputType: int TYPE_CLASS_PHONE>:[3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30]:false
-<android.icu.number.NumberFormatter.SignDisplay: android.icu.number.NumberFormatter.SignDisplay[] .VALUES>:[30]:false
 <android.telephony.ims.ImsReasonInfo: int CODE_DIAL_VIDEO_MODIFIED_TO_USSD>:[30]:false
 <android.telephony.PhoneStateListener: int LISTEN_USER_MOBILE_DATA_STATE>:[28,29,30]:false
 <android.icu.util.ULocale: android.icu.util.ULocale PRC>:[24,25,26,27,28,29,30]:false

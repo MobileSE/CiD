@@ -6,6 +6,7 @@ import java.util.Set;
 
 import lu.uni.snt.cid.AndroidAPILifeModel;
 import lu.uni.snt.cid.Config;
+import lu.uni.snt.cid.utils.CommonUtils;
 import lu.uni.snt.cid.utils.SootUtils;
 import soot.Body;
 import soot.SootClass;
@@ -18,6 +19,7 @@ import soot.jimple.IfStmt;
 import soot.jimple.InterfaceInvokeExpr;
 import soot.jimple.ReturnStmt;
 import soot.jimple.Stmt;
+import soot.tagkit.LineNumberTag;
 import soot.toolkits.graph.ExceptionalUnitGraph;
 
 public class AndroidSDKVersionChecker// extends BodyTransformer 
@@ -104,11 +106,34 @@ public class AndroidSDKVersionChecker// extends BodyTransformer
 						sdkIntValues.remove(leftOp);
 					}
 				}
+
+				String leftVar = CommonUtils.getVariable(leftOp.toString());
+
+				Value rightOp = assignStmt.getRightOp();
+				String rightVar = CommonUtils.getVariable(rightOp.toString());
+
+				if (stmt.hasTag("LineNumberTag")) {
+					LineNumberTag tag = (LineNumberTag) stmt.getTag("LineNumberTag");
+					int lineNumber = tag.getLineNumber();
+
+					if (!leftVar.isEmpty()) {
+						Edge edge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), leftVar.replace("$", ".") + "-" + lineNumber);
+						edge.conditions.add(conditions.toString());
+						ConditionalCallGraph.addEdge(edge);
+					}
+
+					if (!rightVar.isEmpty()) {
+						Edge edge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), rightVar.replace("$", ".") + "-" + lineNumber);
+						edge.conditions.add(conditions.toString());
+						ConditionalCallGraph.addEdge(edge);
+					}
+				}
+
 			}
-			
+
 			if (stmt.containsInvokeExpr())
 			{
-					Edge edge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), stmt.getInvokeExpr().getMethod().getSignature());
+					Edge edge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), stmt.getInvokeExpr().getMethod().getSignature().replace("$", "."));
 					edge.conditions.add(conditions.toString());
 					
 					ConditionalCallGraph.addEdge(edge);
