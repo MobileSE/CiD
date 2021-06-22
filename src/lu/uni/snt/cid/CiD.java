@@ -2,7 +2,11 @@ package lu.uni.snt.cid;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
@@ -73,39 +77,61 @@ public class CiD
 		System.out.println("Declared Min Sdk version is: " + manifest.getMinSdkVersion());
 		System.out.println("Declared Target Sdk version is: " + manifest.getTargetSdkVersion());
 		System.out.println("Declared Max Sdk version is: " + manifest.getMaxSdkVersion());
-		
+
 		System.out.println("Collected " + extractor.primaryAPIs.size() + " " + "Android APIs in the primary DEX file");
 		System.out.println("Collected " + extractor.secondaryAPIs.size() + " " + "Android APIs in the secondary DEX files");
-		
+
 		Set<APILife> problematicAPIs_forward = new HashSet<APILife>();
 		Set<APILife> protectedAPIs_forward = new HashSet<APILife>();
 		Set<APILife> problematicAPIs_backward = new HashSet<APILife>();
 		Set<APILife> protectedAPIs_backward = new HashSet<APILife>();
-		
+
+		Map<APILife, Set<APILife>> APIOverideIssues = new HashMap<APILife, Set<APILife>>();
+		Map<String, Set<APILife>> overrideIssues = new HashMap<String, Set<APILife>>();
+
 		for (String method : extractor.api2supermethods.keySet()) {
 			APILife methodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(method);
+			boolean callbackIssue = true;
+			Set<Integer> supportedLevels = new HashSet<Integer>();
+			if (null != methodLife && isAPISupported(methodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+				continue;
+			}
+			if (null != methodLife) {
+				supportedLevelRetrieve(methodLife, supportedLevels);
+			}
+			List<APILife> superLifes = new ArrayList<APILife>();
 			for (String superMethod : extractor.api2supermethods.get(method)) {
 				APILife superMethodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(superMethod);
-				if (null != methodLife && isAPIReverted(methodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-					System.out.println("Found Callback Current:" + superMethodLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">:" + methodLife);
+				superLifes.add(superMethodLife);
+				supportedLevelRetrieve(superMethodLife, supportedLevels);
+				if (isAPISupported(superMethodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+					callbackIssue = false;
+					break;
+				}
+			}
+			if (callbackIssue && isAPISupportedWithSupers(supportedLevels, minAPILevel, maxAPILevel)) {
+				callbackIssue = false;
+			}
+			if (callbackIssue) {
+				if (null != methodLife) {
+//					System.out.println("Found Callback Issue:" + methodLife + ":extends from:" + superLifes);
+					APIOverideIssues.put(methodLife, new HashSet<APILife>(superLifes));
 				} else {
-					if (isAPIReverted(superMethodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-						if (null != methodLife) {
-							System.out.println("Found Callback Official:" + superMethodLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">:" + methodLife);
-						} else {
-							System.out.println("Found Callback Customized:" + superMethodLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">:" + method);
-						}
-					}
+//					System.out.println("Found Callback Issue:" + method + ":extends from:" + superLifes);
+					overrideIssues.put(method, new HashSet<APILife>(superLifes));
 				}
 			}
 		}
 		
-//		for (String field : extractor.accessedFields) {
-//			APILife fieldLife = AndroidFieldLifeModel.getInstance().getDirectLifeTime(field);
-//			if (isAPIReverted(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-//				System.out.println("Found Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
-//			}
-//		}
+		for (String field : extractor.accessedFields) {
+			String[] splits = field.split("-");
+			APILife fieldLife = AndroidFieldLifeModel.getInstance().getDirectLifeTime(splits[0]);
+			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
+					System.out.println("Found Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
+				}
+			}
+		}
 		
 		for (String method : extractor.usedAndroidAPIs)
 		{
@@ -162,6 +188,9 @@ public class CiD
 			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
 			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
 			{
+				if (APIOverideIssues.containsKey(lifetime)) {
+					APIOverideIssues.remove(lifetime);
+				}
 				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
 				if (isLibraryMethod)
 				{
@@ -194,13 +223,16 @@ public class CiD
 			}
 		}
 		
-		
+
 		for (APILife lifetime : protectedAPIs_backward)
 		{
 			System.out.println("\n==>Protected_Backward" + lifetime);
 			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
 			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
 			{
+				if (APIOverideIssues.containsKey(lifetime)) {
+					APIOverideIssues.remove(lifetime);
+				}
 				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
 				if (isLibraryMethod)
 				{
@@ -231,6 +263,13 @@ public class CiD
 //					System.out.println(ConditionalCallGraph.obtainCallStack(method));
 				}	
 			}
+		}
+
+		for (APILife apilife : APIOverideIssues.keySet()) {
+			System.out.println("Found Callback Issue:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
+		}
+		for (String method : overrideIssues.keySet()) {
+			System.out.println("Found Callback Issue:" + method + ":extends from:" + overrideIssues.get(method));
 		}
 	}
 	
@@ -281,8 +320,8 @@ public class CiD
 		}
 	}
 
-	public static boolean isAPIReverted(int[] apis, int minAPI, int maxAPI) {
-		boolean isReverted = false;
+	public static boolean isAPISupported(int[] apis, int minAPI, int maxAPI) {
+		boolean isSupported = true;
 		boolean[] supportAPIs = new boolean[31];
 		for (int api: apis) {
 			supportAPIs[api] = true;
@@ -293,11 +332,32 @@ public class CiD
 				continue;
 			}
 			if (!supportAPIs[i]) {
-				isReverted = true;
+				isSupported = false;
 				break;
 			}
 		}
-		return isReverted;
+		return isSupported;
+	}
+
+	public static void supportedLevelRetrieve(APILife life, Set<Integer> supportedLevels) {
+		int[] levels = life.getAPILevelsInInt();
+		for (int level : levels) {
+			supportedLevels.add(level);
+		}
+	}
+
+	public static boolean isAPISupportedWithSupers(Set<Integer> supportedLevels, int minAPI, int maxAPI) {
+		boolean isSupported = true;
+		for (int i = minAPI; i < maxAPI + 1; i++) {
+			if (i == 20) {
+				continue;
+			}
+			if (!supportedLevels.contains(i)) {
+				isSupported = false;
+				break;
+			}
+		}
+		return isSupported;
 	}
 }
 

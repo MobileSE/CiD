@@ -829,7 +829,6 @@
 <android.bluetooth.BluetoothAssignedNumbers: int WAVEPLUS_TECHNOLOGY>:<public static final>:<IntegerConstantValueTag:35>:<android.bluetooth.BluetoothAssignedNumbers>
 <android.accounts.AccountManager: java.lang.String ACTION_AUTHENTICATOR_INTENT>:<public static final>:<StringConstantValueTag:android.accounts.AccountAuthenticator>:<android.accounts.AccountManager>
 <android.provider.Telephony.Sms.Intents: int RESULT_SMS_DUPLICATED>:<public static final>:<IntegerConstantValueTag:5>:<android.provider.Telephony.Sms.Intents>
-<android.webkit.WebSettings.RenderPriority: android.webkit.WebSettings.RenderPriority[] .VALUES>:<private static final>:<>:<android.webkit.WebSettings.RenderPriority:java.lang.Enum>
 <android.R.attr: int textAppearanceSmallPopupMenu>:<public static final>:<IntegerConstantValueTag:16843522>:<android.R.attr>
 <android.opengl.GLES31: int GL_IMAGE_2D>:<public static final>:<IntegerConstantValueTag:36941>:<android.opengl.GLES31:android.opengl.GLES30,android.opengl.GLES20>
 <android.content.pm.PackageManager: java.lang.String FEATURE_AUDIO_PRO>:<public static final>:<StringConstantValueTag:android.hardware.audio.pro>:<android.content.pm.PackageManager>
@@ -913,7 +912,6 @@
 <android.content.Intent: java.lang.String ACTION_MAIN>:<public static final>:<StringConstantValueTag:android.intent.action.MAIN>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
 <android.text.Selection: java.lang.Object SELECTION_START>:<public static final>:<>:<android.text.Selection>
 <android.os.UserManager: java.lang.String DISALLOW_DEBUGGING_FEATURES>:<public static final>:<StringConstantValueTag:no_debugging_features>:<android.os.UserManager>
-<android.renderscript.RenderScript.ContextType: android.renderscript.RenderScript.ContextType[] .VALUES>:<private static final>:<>:<android.renderscript.RenderScript.ContextType:java.lang.Enum>
 <android.view.textservice.SuggestionsInfo: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/view/textservice/SuggestionsInfo;>;>:<android.view.textservice.SuggestionsInfo:android.os.Parcelable>
 <android.R.style: int TextAppearance_Material_Widget_ActionMode_Subtitle>:<public static final>:<IntegerConstantValueTag:16974353>:<android.R.style>
 <android.telephony.CarrierConfigManager: java.lang.String KEY_TREAT_DOWNGRADED_VIDEO_CALLS_AS_VIDEO_CALLS_BOOL>:<public static final>:<StringConstantValueTag:treat_downgraded_video_calls_as_video_calls_bool>:<android.telephony.CarrierConfigManager>
@@ -1284,7 +1282,6 @@
 <android.graphics.PixelFormat: int OPAQUE>:<public static final>:<IntegerConstantValueTag:-1>:<android.graphics.PixelFormat>
 <android.telephony.TelephonyManager: int NETWORK_TYPE_UNKNOWN>:<public static final>:<IntegerConstantValueTag:0>:<android.telephony.TelephonyManager>
 <android.graphics.RectF: float right>:<public>:<>:<android.graphics.RectF:android.os.Parcelable>
-<android.icu.util.ULocale.Category: android.icu.util.ULocale.Category[] .VALUES>:<private static final>:<>:<android.icu.util.ULocale.Category:java.lang.Enum>
 <android.view.accessibility.AccessibilityEvent: int TYPE_VIEW_ACCESSIBILITY_FOCUSED>:<public static final>:<IntegerConstantValueTag:32768>:<android.view.accessibility.AccessibilityEvent:android.view.accessibility.AccessibilityRecord,android.os.Parcelable>
 <android.content.pm.ActivityInfo: int PERSIST_NEVER>:<public static final>:<IntegerConstantValueTag:1>:<android.content.pm.ActivityInfo:android.content.pm.ComponentInfo,android.content.pm.PackageItemInfo,android.os.Parcelable>
 <android.icu.lang.UCharacterEnums.ECharacterCategory: byte SURROGATE>:<public static final>:<IntegerConstantValueTag:18>:<android.icu.lang.UCharacterEnums.ECharacterCategory>
@@ -1312,7 +1309,6 @@
 <android.telephony.TelephonyManager: int PHONE_TYPE_SIP>:<public static final>:<IntegerConstantValueTag:3>:<android.telephony.TelephonyManager>
 <android.icu.text.Normalizer: android.icu.text.Normalizer.QuickCheckResult NO>:<public static final>:<>:<android.icu.text.Normalizer:java.lang.Cloneable>
 <android.system.OsConstants: int MAP_FIXED>:<public static final>:<>:<android.system.OsConstants>
-<android.icu.text.TimeZoneFormat.GMTOffsetPatternType: android.icu.text.TimeZoneFormat.GMTOffsetPatternType[] .VALUES>:<private static final>:<>:<android.icu.text.TimeZoneFormat.GMTOffsetPatternType:java.lang.Enum>
 <android.icu.lang.UCharacterEnums.ECharacterCategory: byte UNASSIGNED>:<public static final>:<IntegerConstantValueTag:0>:<android.icu.lang.UCharacterEnums.ECharacterCategory>
 <android.opengl.GLES10: int GL_TEXTURE6>:<public static final>:<IntegerConstantValueTag:33990>:<android.opengl.GLES10>
 <android.provider.DocumentsContract.Document: java.lang.String COLUMN_DOCUMENT_ID>:<public static final>:<StringConstantValueTag:document_id>:<android.provider.DocumentsContract.Document>
@@ -1691,7 +1687,6 @@
 <android.text.format.DateUtils: int FORMAT_24HOUR>:<public static final>:<IntegerConstantValueTag:128>:<android.text.format.DateUtils>
 <android.opengl.GLES30: int GL_COLOR_ATTACHMENT1>:<public static final>:<IntegerConstantValueTag:36065>:<android.opengl.GLES30:android.opengl.GLES20>
 <android.system.OsConstants: int S_IWGRP>:<public static final>:<>:<android.system.OsConstants>
-<android.icu.text.RelativeDateTimeFormatter.RelativeUnit: android.icu.text.RelativeDateTimeFormatter.RelativeUnit[] .VALUES>:<private static final>:<>:<android.icu.text.RelativeDateTimeFormatter.RelativeUnit:java.lang.Enum>
 <android.content.pm.ResolveInfo: boolean isDefault>:<public>:<>:<android.content.pm.ResolveInfo:android.os.Parcelable>
 <android.view.Surface: int ROTATION_90>:<public static final>:<IntegerConstantValueTag:1>:<android.view.Surface:android.os.Parcelable>
 <android.bluetooth.BluetoothAssignedNumbers: int JIANGSU_TOPPOWER_AUTOMOTIVE_ELECTRONICS>:<public static final>:<IntegerConstantValueTag:155>:<android.bluetooth.BluetoothAssignedNumbers>
@@ -2220,7 +2215,6 @@
 <android.speech.RecognizerIntent: java.lang.String LANGUAGE_MODEL_FREE_FORM>:<public static final>:<StringConstantValueTag:free_form>:<android.speech.RecognizerIntent>
 <android.content.pm.PermissionInfo: java.lang.String group>:<public>:<>:<android.content.pm.PermissionInfo:android.content.pm.PackageItemInfo,android.os.Parcelable>
 <android.media.audiofx.AudioEffect: java.util.UUID EFFECT_TYPE_LOUDNESS_ENHANCER>:<public static final>:<>:<android.media.audiofx.AudioEffect>
-<android.icu.text.LocaleDisplayNames.DialectHandling: android.icu.text.LocaleDisplayNames.DialectHandling[] .VALUES>:<private static final>:<>:<android.icu.text.LocaleDisplayNames.DialectHandling:java.lang.Enum>
 <android.renderscript.Element.DataType: android.renderscript.Element.DataType FLOAT_64>:<public static final enum>:<>:<android.renderscript.Element.DataType:java.lang.Enum>
 <android.opengl.GLES11Ext: int GL_MATRIX_PALETTE_OES>:<public static final>:<IntegerConstantValueTag:34880>:<android.opengl.GLES11Ext>
 <android.R.attr: int numbersSelectorColor>:<public static final>:<IntegerConstantValueTag:16843939>:<android.R.attr>
@@ -2289,7 +2283,6 @@
 <android.provider.ContactsContract.ContactStatusColumns: java.lang.String CONTACT_STATUS>:<public static final>:<StringConstantValueTag:contact_status>:<android.provider.ContactsContract.ContactStatusColumns>
 <android.provider.VoicemailContract.Status: int CONFIGURATION_STATE_NOT_CONFIGURED>:<public static final>:<IntegerConstantValueTag:1>:<android.provider.VoicemailContract.Status:android.provider.BaseColumns>
 <android.media.audiofx.Equalizer: int PARAM_BAND_FREQ_RANGE>:<public static final>:<IntegerConstantValueTag:4>:<android.media.audiofx.Equalizer:android.media.audiofx.AudioEffect>
-<android.graphics.Bitmap.Config: android.graphics.Bitmap.Config[] .VALUES>:<private static final>:<>:<android.graphics.Bitmap.Config:java.lang.Enum>
 <android.net.wifi.WifiEnterpriseConfig.Phase2: int MSCHAPV2>:<public static final>:<IntegerConstantValueTag:3>:<android.net.wifi.WifiEnterpriseConfig.Phase2>
 <android.provider.MediaStore.MediaColumns: java.lang.String WIDTH>:<public static final>:<StringConstantValueTag:width>:<android.provider.MediaStore.MediaColumns:android.provider.BaseColumns>
 <android.provider.ContactsContract.CommonDataKinds.Im: int PROTOCOL_ICQ>:<public static final>:<IntegerConstantValueTag:6>:<android.provider.ContactsContract.CommonDataKinds.Im:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
@@ -2494,7 +2487,6 @@
 <android.icu.util.Currency: int SYMBOL_NAME>:<public static final>:<IntegerConstantValueTag:0>:<android.icu.util.Currency:android.icu.util.MeasureUnit>
 <android.Manifest.permission: java.lang.String WRITE_CALENDAR>:<public static final>:<StringConstantValueTag:android.permission.WRITE_CALENDAR>:<android.Manifest.permission>
 <android.provider.SearchRecentSuggestions: java.lang.String[] QUERIES_PROJECTION_1LINE>:<public static final>:<>:<android.provider.SearchRecentSuggestions>
-<android.graphics.PathDashPathEffect.Style: android.graphics.PathDashPathEffect.Style[] .VALUES>:<private static final>:<>:<android.graphics.PathDashPathEffect.Style:java.lang.Enum>
 <android.icu.lang.UCharacter.UnicodeBlock: int CJK_COMPATIBILITY_FORMS_ID>:<public static final>:<IntegerConstantValueTag:83>:<android.icu.lang.UCharacter.UnicodeBlock:java.lang.Character.Subset>
 <android.R.style: int Widget_Material_AutoCompleteTextView>:<public static final>:<IntegerConstantValueTag:16974423>:<android.R.style>
 <android.provider.MediaStore.Video.VideoColumns: java.lang.String ARTIST>:<public static final>:<StringConstantValueTag:artist>:<android.provider.MediaStore.Video.VideoColumns:android.provider.MediaStore.MediaColumns>
@@ -2755,7 +2747,6 @@
 <android.R.attr: int searchSuggestThreshold>:<public static final>:<IntegerConstantValueTag:16843373>:<android.R.attr>
 <android.view.KeyEvent: int KEYCODE_F4>:<public static final>:<IntegerConstantValueTag:134>:<android.view.KeyEvent:android.view.InputEvent,android.os.Parcelable>
 <android.view.KeyEvent: int KEYCODE_TV_NUMBER_ENTRY>:<public static final>:<IntegerConstantValueTag:234>:<android.view.KeyEvent:android.view.InputEvent,android.os.Parcelable>
-<android.graphics.Bitmap.CompressFormat: android.graphics.Bitmap.CompressFormat[] .VALUES>:<private static final>:<>:<android.graphics.Bitmap.CompressFormat:java.lang.Enum>
 <android.system.OsConstants: int _SC_PAGESIZE>:<public static final>:<>:<android.system.OsConstants>
 <android.view.MotionEvent: int AXIS_Y>:<public static final>:<IntegerConstantValueTag:1>:<android.view.MotionEvent:android.view.InputEvent,android.os.Parcelable>
 <android.hardware.camera2.CameraMetadata: int NOISE_REDUCTION_MODE_OFF>:<public static final>:<IntegerConstantValueTag:0>:<android.hardware.camera2.CameraMetadata>
@@ -2892,7 +2883,6 @@
 <android.opengl.GLES10: int GL_IMPLEMENTATION_COLOR_READ_TYPE_OES>:<public static final>:<IntegerConstantValueTag:35738>:<android.opengl.GLES10>
 <android.content.pm.PackageInfo: android.content.pm.FeatureGroupInfo[] featureGroups>:<public>:<>:<android.content.pm.PackageInfo:android.os.Parcelable>
 <android.telephony.TelephonyManager: int SIM_STATE_NETWORK_LOCKED>:<public static final>:<IntegerConstantValueTag:4>:<android.telephony.TelephonyManager>
-<android.icu.text.PluralRules.PluralType: android.icu.text.PluralRules.PluralType[] .VALUES>:<private static final>:<>:<android.icu.text.PluralRules.PluralType:java.lang.Enum>
 <android.content.pm.ProviderInfo: java.lang.String writePermission>:<public>:<>:<android.content.pm.ProviderInfo:android.content.pm.ComponentInfo,android.content.pm.PackageItemInfo,android.os.Parcelable>
 <android.content.pm.ApplicationInfo: int FLAG_EXTRACT_NATIVE_LIBS>:<public static final>:<IntegerConstantValueTag:268435456>:<android.content.pm.ApplicationInfo:android.content.pm.PackageItemInfo,android.os.Parcelable>
 <android.opengl.GLES20: int GL_ZERO>:<public static final>:<IntegerConstantValueTag:0>:<android.opengl.GLES20>
@@ -2946,7 +2936,6 @@
 <android.icu.text.DateFormat: int JULIAN_DAY_FIELD>:<public static final>:<IntegerConstantValueTag:21>:<android.icu.text.DateFormat:android.icu.text.UFormat,java.text.Format>
 <android.provider.ContactsContract.CommonDataKinds.Relation: int TYPE_BROTHER>:<public static final>:<IntegerConstantValueTag:2>:<android.provider.ContactsContract.CommonDataKinds.Relation:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.opengl.GLES30: int GL_COLOR_ATTACHMENT12>:<public static final>:<IntegerConstantValueTag:36076>:<android.opengl.GLES30:android.opengl.GLES20>
-<android.icu.text.UnicodeSetSpanner.TrimOption: android.icu.text.UnicodeSetSpanner.TrimOption[] .VALUES>:<private static final>:<>:<android.icu.text.UnicodeSetSpanner.TrimOption:java.lang.Enum>
 <android.telephony.TelephonyManager: int DATA_ACTIVITY_INOUT>:<public static final>:<IntegerConstantValueTag:3>:<android.telephony.TelephonyManager>
 <android.provider.Contacts.PhonesColumns: java.lang.String NUMBER>:<public static final>:<StringConstantValueTag:number>:<android.provider.Contacts.PhonesColumns>
 <android.telecom.Connection: java.lang.String EXTRA_CHILD_ADDRESS>:<public static final>:<StringConstantValueTag:android.telecom.extra.CHILD_ADDRESS>:<android.telecom.Connection:android.telecom.Conferenceable>
@@ -3153,7 +3142,6 @@
 <android.icu.text.UnicodeSet: android.icu.text.UnicodeSet ALL_CODE_POINTS>:<public static final>:<>:<android.icu.text.UnicodeSet:android.icu.text.UnicodeFilter,java.lang.Iterable,java.lang.Comparable,android.icu.util.Freezable>
 <android.media.audiofx.PresetReverb.Settings: short preset>:<public>:<>:<android.media.audiofx.PresetReverb.Settings>
 <android.opengl.GLES31Ext: int GL_INT_IMAGE_BUFFER_EXT>:<public static final>:<IntegerConstantValueTag:36956>:<android.opengl.GLES31Ext>
-<android.graphics.Path.FillType: android.graphics.Path.FillType[] .VALUES>:<private static final>:<>:<android.graphics.Path.FillType:java.lang.Enum>
 <android.accessibilityservice.AccessibilityServiceInfo: int FLAG_REQUEST_TOUCH_EXPLORATION_MODE>:<public static final>:<IntegerConstantValueTag:4>:<android.accessibilityservice.AccessibilityServiceInfo:android.os.Parcelable>
 <android.hardware.camera2.CaptureResult: android.hardware.camera2.CaptureResult.Key REQUEST_PIPELINE_DEPTH>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CaptureResult$Key<Ljava/lang/Byte;>;>:<android.hardware.camera2.CaptureResult:android.hardware.camera2.CameraMetadata>
 <android.bluetooth.BluetoothAssignedNumbers: int ATHEROS_COMMUNICATIONS>:<public static final>:<IntegerConstantValueTag:69>:<android.bluetooth.BluetoothAssignedNumbers>
@@ -3408,7 +3396,6 @@
 <android.R.attr: int id>:<public static final>:<IntegerConstantValueTag:16842960>:<android.R.attr>
 <android.view.KeyEvent: int META_SCROLL_LOCK_ON>:<public static final>:<IntegerConstantValueTag:4194304>:<android.view.KeyEvent:android.view.InputEvent,android.os.Parcelable>
 <android.media.AudioFormat: int CHANNEL_OUT_LOW_FREQUENCY>:<public static final>:<IntegerConstantValueTag:32>:<android.media.AudioFormat:android.os.Parcelable>
-<android.icu.text.UnicodeSet.SpanCondition: android.icu.text.UnicodeSet.SpanCondition[] .VALUES>:<private static final>:<>:<android.icu.text.UnicodeSet.SpanCondition:java.lang.Enum>
 <android.R.layout: int expandable_list_content>:<public static final>:<IntegerConstantValueTag:17367041>:<android.R.layout>
 <android.os.Process: int PHONE_UID>:<public static final>:<IntegerConstantValueTag:1001>:<android.os.Process>
 <android.R.style: int Widget_DeviceDefault_ExpandableListView>:<public static final>:<IntegerConstantValueTag:16974155>:<android.R.style>
@@ -3431,7 +3418,6 @@
 <android.provider.ContactsContract.CommonDataKinds.Phone: int TYPE_CALLBACK>:<public static final>:<IntegerConstantValueTag:8>:<android.provider.ContactsContract.CommonDataKinds.Phone:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.service.wallpaper.WallpaperService: java.lang.String SERVICE_META_DATA>:<public static final>:<StringConstantValueTag:android.service.wallpaper>:<android.service.wallpaper.WallpaperService:android.app.Service,android.content.ContextWrapper,android.content.Context>
 <android.icu.text.DateTimePatternGenerator: int MINUTE>:<public static final>:<IntegerConstantValueTag:12>:<android.icu.text.DateTimePatternGenerator:android.icu.util.Freezable,java.lang.Cloneable>
-<android.icu.text.MessagePattern.ApostropheMode: android.icu.text.MessagePattern.ApostropheMode[] .VALUES>:<private static final>:<>:<android.icu.text.MessagePattern.ApostropheMode:java.lang.Enum>
 <android.view.inputmethod.EditorInfo: java.lang.String packageName>:<public>:<>:<android.view.inputmethod.EditorInfo:android.text.InputType,android.os.Parcelable>
 <android.R.style: int Widget_Material_ProgressBar_Small_Title>:<public static final>:<IntegerConstantValueTag:16974458>:<android.R.style>
 <android.opengl.GLES32: int GL_LINES_ADJACENCY>:<public static final>:<IntegerConstantValueTag:10>:<android.opengl.GLES32:android.opengl.GLES31,android.opengl.GLES30,android.opengl.GLES20>
@@ -4202,7 +4188,6 @@
 <android.R.attr: int layout_centerInParent>:<public static final>:<IntegerConstantValueTag:16843151>:<android.R.attr>
 <android.R.attr: int submitBackground>:<public static final>:<IntegerConstantValueTag:16843912>:<android.R.attr>
 <android.system.OsConstants: int IPV6_RECVTCLASS>:<public static final>:<>:<android.system.OsConstants>
-<android.icu.text.TimeZoneFormat.TimeType: android.icu.text.TimeZoneFormat.TimeType[] .VALUES>:<private static final>:<>:<android.icu.text.TimeZoneFormat.TimeType:java.lang.Enum>
 <android.Manifest.permission: java.lang.String GET_ACCOUNTS_PRIVILEGED>:<public static final>:<StringConstantValueTag:android.permission.GET_ACCOUNTS_PRIVILEGED>:<android.Manifest.permission>
 <android.system.OsConstants: int ENOPROTOOPT>:<public static final>:<>:<android.system.OsConstants>
 <android.R.style: int TextAppearance_DeviceDefault_Widget_Button>:<public static final>:<IntegerConstantValueTag:16974266>:<android.R.style>
@@ -4463,7 +4448,6 @@
 <android.system.StructPollfd: short revents>:<public>:<>:<android.system.StructPollfd>
 <android.bluetooth.BluetoothAssignedNumbers: int SYNOPSYS>:<public static final>:<IntegerConstantValueTag:49>:<android.bluetooth.BluetoothAssignedNumbers>
 <android.R.drawable: int screen_background_light>:<public static final>:<IntegerConstantValueTag:17301657>:<android.R.drawable>
-<android.graphics.BlurMaskFilter.Blur: android.graphics.BlurMaskFilter.Blur[] .VALUES>:<private static final>:<>:<android.graphics.BlurMaskFilter.Blur:java.lang.Enum>
 <android.icu.text.DateFormat.Field: android.icu.text.DateFormat.Field EXTENDED_YEAR>:<public static final>:<>:<android.icu.text.DateFormat.Field:java.text.Format.Field,java.text.AttributedCharacterIterator.Attribute>
 <android.view.MotionEvent: int BUTTON_STYLUS_PRIMARY>:<public static final>:<IntegerConstantValueTag:32>:<android.view.MotionEvent:android.view.InputEvent,android.os.Parcelable>
 <android.telephony.TelephonyManager: int DATA_ACTIVITY_NONE>:<public static final>:<IntegerConstantValueTag:0>:<android.telephony.TelephonyManager>
@@ -4559,7 +4543,6 @@
 <android.R.attr: int layout_marginBottom>:<public static final>:<IntegerConstantValueTag:16843002>:<android.R.attr>
 <android.net.wifi.WifiManager: java.lang.String SCAN_RESULTS_AVAILABLE_ACTION>:<public static final>:<StringConstantValueTag:android.net.wifi.SCAN_RESULTS>:<android.net.wifi.WifiManager>
 <android.view.inputmethod.EditorInfo: int IME_FLAG_NO_ENTER_ACTION>:<public static final>:<IntegerConstantValueTag:1073741824>:<android.view.inputmethod.EditorInfo:android.text.InputType,android.os.Parcelable>
-<android.telephony.gsm.SmsMessage.MessageClass: android.telephony.gsm.SmsMessage.MessageClass[] .VALUES>:<private static final>:<>:<android.telephony.gsm.SmsMessage.MessageClass:java.lang.Enum>
 <android.telecom.TelecomManager: java.lang.String ACTION_INCOMING_CALL>:<public static final>:<StringConstantValueTag:android.telecom.action.INCOMING_CALL>:<android.telecom.TelecomManager>
 <android.provider.ContactsContract.PresenceColumns: java.lang.String CUSTOM_PROTOCOL>:<public static final>:<StringConstantValueTag:custom_protocol>:<android.provider.ContactsContract.PresenceColumns>
 <junit.framework.TestResult: java.util.Vector fErrors>:<protected>:<SignatureTag:Ljava/util/Vector<Ljunit/framework/TestFailure;>;>:<junit.framework.TestResult>
@@ -4741,7 +4724,6 @@
 <android.R.style: int Widget_Material_Light_ActionBar_TabView>:<public static final>:<IntegerConstantValueTag:16974483>:<android.R.style>
 <android.app.Notification.WearableExtender: int SIZE_XSMALL>:<public static final>:<IntegerConstantValueTag:1>:<android.app.Notification.WearableExtender:android.app.Notification.Extender>
 <android.R.attr: int maxRows>:<public static final>:<IntegerConstantValueTag:16843059>:<android.R.attr>
-<android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit: android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit[] .VALUES>:<private static final>:<>:<android.icu.text.RelativeDateTimeFormatter.AbsoluteUnit:java.lang.Enum>
 <android.provider.CalendarContract.EventsColumns: java.lang.String LAST_DATE>:<public static final>:<StringConstantValueTag:lastDate>:<android.provider.CalendarContract.EventsColumns>
 <android.view.MotionEvent: int AXIS_HAT_Y>:<public static final>:<IntegerConstantValueTag:16>:<android.view.MotionEvent:android.view.InputEvent,android.os.Parcelable>
 <dalvik.bytecode.Opcodes: int OP_MUL_INT>:<public static final>:<IntegerConstantValueTag:146>:<dalvik.bytecode.Opcodes>
@@ -4915,7 +4897,6 @@
 <android.media.MediaFormat: java.lang.String KEY_AAC_DRC_ATTENUATION_FACTOR>:<public static final>:<StringConstantValueTag:aac-drc-cut-level>:<android.media.MediaFormat>
 <android.R.drawable: int ic_menu_search>:<public static final>:<IntegerConstantValueTag:17301583>:<android.R.drawable>
 <android.view.accessibility.AccessibilityNodeInfo: int ACTION_CLEAR_FOCUS>:<public static final>:<IntegerConstantValueTag:2>:<android.view.accessibility.AccessibilityNodeInfo:android.os.Parcelable>
-<android.icu.text.SearchIterator.ElementComparisonType: android.icu.text.SearchIterator.ElementComparisonType[] .VALUES>:<private static final>:<>:<android.icu.text.SearchIterator.ElementComparisonType:java.lang.Enum>
 <android.R.id: int shareText>:<public static final>:<IntegerConstantValueTag:16908341>:<android.R.id>
 <android.R.attr: int queryAfterZeroResults>:<public static final>:<IntegerConstantValueTag:16843394>:<android.R.attr>
 <android.widget.Spinner: int MODE_DIALOG>:<public static final>:<IntegerConstantValueTag:0>:<android.widget.Spinner:android.widget.AbsSpinner,android.widget.AdapterView,android.view.ViewGroup,android.view.View,android.content.DialogInterface.OnClickListener>
@@ -5427,7 +5408,6 @@
 <android.util.Patterns: java.lang.String TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL>:<public static final>:<StringConstantValueTag:(?:(?:aero|arpa|asia|a[cdefgilmnoqrstuwxz])|(?:biz|b[abdefghijmnorstvwyz])|(?:cat|com|coop|c[acdfghiklmnoruvxyz])|d[ejkmoz]|(?:edu|e[cegrstu])|f[ijkmor]|(?:gov|g[abdefghilmnpqrstuwy])|h[kmnrtu]|(?:info|int|i[delmnoqrst])|(?:jobs|j[emop])|k[eghimnprwyz]|l[abcikrstuvy]|(?:mil|mobi|museum|m[acdeghklmnopqrstuvwxyz])|(?:name|net|n[acefgilopruz])|(?:org|om)|(?:pro|p[aefghklmnrstwy])|qa|r[eosuw]|s[abcdeghijklmnortuvyz]|(?:tel|travel|t[cdfghjklmnoprtvwz])|u[agksyz]|v[aceginu]|w[fs]|(?:δοκιμή|испытание|рф|срб|טעסט|آزمایشی|إختبار|الاردن|الجزائر|السعودية|المغرب|امارات|بھارت|تونس|سورية|فلسطين|قطر|مصر|परीक्षा|भारत|ভারত|ਭਾਰਤ|ભારત|இந்தியா|இலங்கை|சிங்கப்பூர்|பரிட்சை|భారత్|ලංකා|ไทย|テスト|中国|中國|台湾|台灣|新加坡|测试|測試|香港|테스트|한국|xn\-\-0zwm56d|xn\-\-11b5bs3a9aj6g|xn\-\-3e0b707e|xn\-\-45brj9c|xn\-\-80akhbyknj4f|xn\-\-90a3ac|xn\-\-9t4b11yi5a|xn\-\-clchc0ea0b2g2a9gcd|xn\-\-deba0ad|xn\-\-fiqs8s|xn\-\-fiqz9s|xn\-\-fpcrj9c3d|xn\-\-fzc2c9e2c|xn\-\-g6w251d|xn\-\-gecrj9c|xn\-\-h2brj9c|xn\-\-hgbk6aj7f53bba|xn\-\-hlcj6aya9esc7a|xn\-\-j6w193g|xn\-\-jxalpdlp|xn\-\-kgbechtv|xn\-\-kprw13d|xn\-\-kpry57d|xn\-\-lgbbat1ad8j|xn\-\-mgbaam7a8h|xn\-\-mgbayh7gpa|xn\-\-mgbbh1a71e|xn\-\-mgbc0a9azcg|xn\-\-mgberp4a5d4ar|xn\-\-o3cw4h|xn\-\-ogbpf8fl|xn\-\-p1ai|xn\-\-pgbs0dh|xn\-\-s9brj9c|xn\-\-wgbh1c|xn\-\-wgbl6a|xn\-\-xkc2al3hye2a|xn\-\-xkc2dl3a5ee0h|xn\-\-yfro4i67o|xn\-\-ygbi2ammx|xn\-\-zckzah|xxx)|y[et]|z[amw]))>:<android.util.Patterns>
 <android.content.pm.PackageManager: java.lang.String FEATURE_FREEFORM_WINDOW_MANAGEMENT>:<public static final>:<StringConstantValueTag:android.software.freeform_window_management>:<android.content.pm.PackageManager>
 <android.hardware.usb.UsbManager: java.lang.String EXTRA_PERMISSION_GRANTED>:<public static final>:<StringConstantValueTag:permission>:<android.hardware.usb.UsbManager>
-<android.webkit.WebSettings.PluginState: android.webkit.WebSettings.PluginState[] .VALUES>:<private static final>:<>:<android.webkit.WebSettings.PluginState:java.lang.Enum>
 <android.icu.util.ULocale: android.icu.util.ULocale UK>:<public static final>:<>:<android.icu.util.ULocale:java.io.Serializable,java.lang.Comparable>
 <android.system.OsConstants: int _SC_VERSION>:<public static final>:<>:<android.system.OsConstants>
 <android.hardware.camera2.CaptureResult: android.hardware.camera2.CaptureResult.Key SENSOR_TIMESTAMP>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CaptureResult$Key<Ljava/lang/Long;>;>:<android.hardware.camera2.CaptureResult:android.hardware.camera2.CameraMetadata>
@@ -5467,7 +5447,6 @@
 <android.provider.Contacts.ContactMethods: int PROTOCOL_SKYPE>:<public static final>:<IntegerConstantValueTag:3>:<android.provider.Contacts.ContactMethods:android.provider.BaseColumns,android.provider.Contacts.ContactMethodsColumns,android.provider.Contacts.PeopleColumns>
 <android.system.OsConstants: int _SC_THREAD_SAFE_FUNCTIONS>:<public static final>:<>:<android.system.OsConstants>
 <android.R.style: int Widget_Material_Light_RatingBar_Indicator>:<public static final>:<IntegerConstantValueTag:16974528>:<android.R.style>
-<android.view.ViewDebug.HierarchyTraceType: android.view.ViewDebug.HierarchyTraceType[] .VALUES>:<private static final>:<>:<android.view.ViewDebug.HierarchyTraceType:java.lang.Enum>
 <android.provider.Telephony.Sms.Intents: java.lang.String SMS_DELIVER_ACTION>:<public static final>:<StringConstantValueTag:android.provider.Telephony.SMS_DELIVER>:<android.provider.Telephony.Sms.Intents>
 <android.provider.Settings: java.lang.String ACTION_ACCESSIBILITY_SETTINGS>:<public static final>:<StringConstantValueTag:android.settings.ACCESSIBILITY_SETTINGS>:<android.provider.Settings>
 <android.content.Intent: java.lang.String EXTRA_SHORTCUT_NAME>:<public static final>:<StringConstantValueTag:android.intent.extra.shortcut.NAME>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
@@ -5572,7 +5551,6 @@
 <android.app.admin.DeviceAdminReceiver: java.lang.String EXTRA_LOCK_TASK_PACKAGE>:<public static final>:<StringConstantValueTag:android.app.extra.LOCK_TASK_PACKAGE>:<android.app.admin.DeviceAdminReceiver:android.content.BroadcastReceiver>
 <android.system.OsConstants: int _SC_XBS5_ILP32_OFFBIG>:<public static final>:<>:<android.system.OsConstants>
 <android.media.RemoteControlClient.MetadataEditor: int BITMAP_KEY_ARTWORK>:<public static final>:<IntegerConstantValueTag:100>:<android.media.RemoteControlClient.MetadataEditor:android.media.MediaMetadataEditor>
-<android.icu.text.MessagePattern.ArgType: android.icu.text.MessagePattern.ArgType[] .VALUES>:<private static final>:<>:<android.icu.text.MessagePattern.ArgType:java.lang.Enum>
 <android.os.UserManager: java.lang.String DISALLOW_CONFIG_BLUETOOTH>:<public static final>:<StringConstantValueTag:no_config_bluetooth>:<android.os.UserManager>
 <android.opengl.GLES20: int GL_MAX_FRAGMENT_UNIFORM_VECTORS>:<public static final>:<IntegerConstantValueTag:36349>:<android.opengl.GLES20>
 <android.bluetooth.le.AdvertiseCallback: int ADVERTISE_FAILED_TOO_MANY_ADVERTISERS>:<public static final>:<IntegerConstantValueTag:2>:<android.bluetooth.le.AdvertiseCallback>
@@ -5844,7 +5822,6 @@
 <android.content.pm.ApplicationInfo: int FLAG_SUPPORTS_XLARGE_SCREENS>:<public static final>:<IntegerConstantValueTag:524288>:<android.content.pm.ApplicationInfo:android.content.pm.PackageItemInfo,android.os.Parcelable>
 <android.R.attr: int titleTextStyle>:<public static final>:<IntegerConstantValueTag:16843512>:<android.R.attr>
 <android.media.MediaFormat: java.lang.String MIMETYPE_AUDIO_MSGSM>:<public static final>:<StringConstantValueTag:audio/gsm>:<android.media.MediaFormat>
-<android.os.AsyncTask.Status: android.os.AsyncTask.Status[] .VALUES>:<private static final>:<>:<android.os.AsyncTask.Status:java.lang.Enum>
 <android.R.style: int Widget_DeviceDefault_ActionBar_Solid>:<public static final>:<IntegerConstantValueTag:16974195>:<android.R.style>
 <android.opengl.GLES31Ext: int GL_TESS_GEN_POINT_MODE_EXT>:<public static final>:<IntegerConstantValueTag:36473>:<android.opengl.GLES31Ext>
 <android.opengl.GLES31: int GL_MAX_VERTEX_ATOMIC_COUNTER_BUFFERS>:<public static final>:<IntegerConstantValueTag:37580>:<android.opengl.GLES31:android.opengl.GLES30,android.opengl.GLES20>
@@ -6241,7 +6218,6 @@
 <android.opengl.EGL14: int EGL_RGB_BUFFER>:<public static final>:<IntegerConstantValueTag:12430>:<android.opengl.EGL14>
 <android.content.Intent: java.lang.String ACTION_PACKAGES_SUSPENDED>:<public static final>:<StringConstantValueTag:android.intent.action.PACKAGES_SUSPENDED>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
 <android.hardware.fingerprint.FingerprintManager: int FINGERPRINT_ERROR_LOCKOUT>:<public static final>:<IntegerConstantValueTag:7>:<android.hardware.fingerprint.FingerprintManager>
-<android.icu.text.AlphabeticIndex.Bucket.LabelType: android.icu.text.AlphabeticIndex.Bucket.LabelType[] .VALUES>:<private static final>:<>:<android.icu.text.AlphabeticIndex.Bucket.LabelType:java.lang.Enum>
 <android.app.UiModeManager: java.lang.String ACTION_ENTER_DESK_MODE>:<public static>:<>:<android.app.UiModeManager>
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit SQUARE_MILE>:<public static final>:<>:<android.icu.util.MeasureUnit:java.io.Serializable>
 <android.opengl.GLES31Ext: int GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_EXT>:<public static final>:<IntegerConstantValueTag:36490>:<android.opengl.GLES31Ext>
@@ -6281,7 +6257,6 @@
 <android.view.KeyCharacterMap: int PREDICTIVE>:<public static final>:<IntegerConstantValueTag:2>:<android.view.KeyCharacterMap:android.os.Parcelable>
 <android.bluetooth.BluetoothGattCharacteristic: int FORMAT_SINT8>:<public static final>:<IntegerConstantValueTag:33>:<android.bluetooth.BluetoothGattCharacteristic:android.os.Parcelable>
 <android.R.style: int TextAppearance_Material_Widget_TextView_SpinnerItem>:<public static final>:<IntegerConstantValueTag:16974368>:<android.R.style>
-<android.net.LocalSocketAddress.Namespace: android.net.LocalSocketAddress.Namespace[] .VALUES>:<private static final>:<>:<android.net.LocalSocketAddress.Namespace:java.lang.Enum>
 <android.provider.Settings: java.lang.String ACTION_MANAGE_APPLICATIONS_SETTINGS>:<public static final>:<StringConstantValueTag:android.settings.MANAGE_APPLICATIONS_SETTINGS>:<android.provider.Settings>
 <android.R.attr: int contentInsetRight>:<public static final>:<IntegerConstantValueTag:16843862>:<android.R.attr>
 <android.mtp.MtpConstants: int FORMAT_ABSTRACT_VIDEO_PLAYLIST>:<public static final>:<IntegerConstantValueTag:47626>:<android.mtp.MtpConstants>
@@ -6585,7 +6560,6 @@
 <android.icu.lang.UCharacter.UnicodeBlock: int KHAROSHTHI_ID>:<public static final>:<IntegerConstantValueTag:137>:<android.icu.lang.UCharacter.UnicodeBlock:java.lang.Character.Subset>
 <android.R.attr: int widgetCategory>:<public static final>:<IntegerConstantValueTag:16843716>:<android.R.attr>
 <android.service.notification.Condition: java.lang.String SCHEME>:<public static final>:<StringConstantValueTag:condition>:<android.service.notification.Condition:android.os.Parcelable>
-<android.graphics.PorterDuff.Mode: android.graphics.PorterDuff.Mode[] .VALUES>:<private static final>:<>:<android.graphics.PorterDuff.Mode:java.lang.Enum>
 <android.R.attr: int autoCompleteTextViewStyle>:<public static final>:<IntegerConstantValueTag:16842859>:<android.R.attr>
 <android.telephony.TelephonyManager: int DATA_CONNECTED>:<public static final>:<IntegerConstantValueTag:2>:<android.telephony.TelephonyManager>
 <android.media.CamcorderProfile: int QUALITY_HIGH>:<public static final>:<IntegerConstantValueTag:1>:<android.media.CamcorderProfile>
@@ -6681,7 +6655,6 @@
 <android.telephony.SmsManager: java.lang.String MMS_CONFIG_MAX_IMAGE_HEIGHT>:<public static final>:<StringConstantValueTag:maxImageHeight>:<android.telephony.SmsManager>
 <android.bluetooth.BluetoothAssignedNumbers: int LESSWIRE>:<public static final>:<IntegerConstantValueTag:121>:<android.bluetooth.BluetoothAssignedNumbers>
 <android.R.attr: int notificationTimeout>:<public static final>:<IntegerConstantValueTag:16843651>:<android.R.attr>
-<android.util.JsonToken: android.util.JsonToken[] .VALUES>:<private static final>:<>:<android.util.JsonToken:java.lang.Enum>
 <android.opengl.GLES20: int GL_BLEND_EQUATION_RGB>:<public static final>:<IntegerConstantValueTag:32777>:<android.opengl.GLES20>
 <android.text.format.Time: int second>:<public>:<>:<android.text.format.Time>
 <android.R.style: int Widget_DropDownItem_Spinner>:<public static final>:<IntegerConstantValueTag:16973868>:<android.R.style>
@@ -7104,7 +7077,6 @@
 <android.icu.lang.UCharacter.SentenceBreak: int EXTEND>:<public static final>:<IntegerConstantValueTag:12>:<android.icu.lang.UCharacter.SentenceBreak>
 <android.R.style: int Widget_DeviceDefault_DropDownItem_Spinner>:<public static final>:<IntegerConstantValueTag:16974178>:<android.R.style>
 <android.accounts.Account: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/accounts/Account;>;>:<android.accounts.Account:android.os.Parcelable>
-<android.icu.text.RelativeDateTimeFormatter.Direction: android.icu.text.RelativeDateTimeFormatter.Direction[] .VALUES>:<private static final>:<>:<android.icu.text.RelativeDateTimeFormatter.Direction:java.lang.Enum>
 <android.opengl.GLES10: int GL_FASTEST>:<public static final>:<IntegerConstantValueTag:4353>:<android.opengl.GLES10>
 <dalvik.bytecode.Opcodes: int OP_SHR_INT>:<public static final>:<IntegerConstantValueTag:153>:<dalvik.bytecode.Opcodes>
 <android.view.Window: java.lang.String STATUS_BAR_BACKGROUND_TRANSITION_NAME>:<public static final>:<StringConstantValueTag:android:status:background>:<android.view.Window>
@@ -7120,7 +7092,6 @@
 <android.telephony.TelephonyManager: int NETWORK_TYPE_1xRTT>:<public static final>:<IntegerConstantValueTag:7>:<android.telephony.TelephonyManager>
 <android.net.NetworkCapabilities: int NET_CAPABILITY_EIMS>:<public static final>:<IntegerConstantValueTag:10>:<android.net.NetworkCapabilities:android.os.Parcelable>
 <android.icu.lang.UCharacter.UnicodeBlock: int UGARITIC_ID>:<public static final>:<IntegerConstantValueTag:120>:<android.icu.lang.UCharacter.UnicodeBlock:java.lang.Character.Subset>
-<android.icu.text.TimeZoneFormat.ParseOption: android.icu.text.TimeZoneFormat.ParseOption[] .VALUES>:<private static final>:<>:<android.icu.text.TimeZoneFormat.ParseOption:java.lang.Enum>
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit MEGAWATT>:<public static final>:<>:<android.icu.util.MeasureUnit:java.io.Serializable>
 <android.print.PrintAttributes.MediaSize: android.print.PrintAttributes.MediaSize ISO_B9>:<public static final>:<>:<android.print.PrintAttributes.MediaSize>
 <android.opengl.GLES32: int GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW>:<public static final>:<IntegerConstantValueTag:36877>:<android.opengl.GLES32:android.opengl.GLES31,android.opengl.GLES30,android.opengl.GLES20>
@@ -7511,7 +7482,6 @@
 <android.system.OsConstants: int MSG_OOB>:<public static final>:<>:<android.system.OsConstants>
 <android.icu.lang.UCharacter.UnicodeBlock: int GRANTHA_ID>:<public static final>:<IntegerConstantValueTag:228>:<android.icu.lang.UCharacter.UnicodeBlock:java.lang.Character.Subset>
 <android.opengl.GLES20: int GL_BLEND_SRC_ALPHA>:<public static final>:<IntegerConstantValueTag:32971>:<android.opengl.GLES20>
-<android.net.wifi.SupplicantState: android.net.wifi.SupplicantState[] .VALUES>:<private static final>:<>:<android.net.wifi.SupplicantState:java.lang.Enum,android.os.Parcelable>
 <android.os.UserManager: java.lang.String DISALLOW_NETWORK_RESET>:<public static final>:<StringConstantValueTag:no_network_reset>:<android.os.UserManager>
 <android.icu.util.CopticCalendar: int TOBA>:<public static final>:<IntegerConstantValueTag:4>:<android.icu.util.CopticCalendar:android.icu.util.CECalendar,android.icu.util.Calendar>
 <android.R.attr: int maxRecents>:<public static final>:<IntegerConstantValueTag:16843846>:<android.R.attr>
@@ -7738,7 +7708,6 @@
 <android.text.InputType: int TYPE_TEXT_VARIATION_WEB_PASSWORD>:<public static final>:<IntegerConstantValueTag:224>:<android.text.InputType>
 <android.content.Intent: java.lang.String CATEGORY_TAB>:<public static final>:<StringConstantValueTag:android.intent.category.TAB>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
 <android.R.attr: int layoutDirection>:<public static final>:<IntegerConstantValueTag:16843698>:<android.R.attr>
-<android.icu.util.TimeZone.SystemTimeZoneType: android.icu.util.TimeZone.SystemTimeZoneType[] .VALUES>:<private static final>:<>:<android.icu.util.TimeZone.SystemTimeZoneType:java.lang.Enum>
 <android.graphics.Region.Op: android.graphics.Region.Op DIFFERENCE>:<public static final enum>:<>:<android.graphics.Region.Op:java.lang.Enum>
 <android.icu.lang.UProperty: int CASE_SENSITIVE>:<public static final>:<IntegerConstantValueTag:34>:<android.icu.lang.UProperty>
 <android.view.ViewGroup: int PERSISTENT_SCROLLING_CACHE>:<public static final>:<IntegerConstantValueTag:2>:<android.view.ViewGroup:android.view.View,android.view.ViewParent,android.view.ViewManager>
@@ -7884,7 +7853,6 @@
 <android.R.attr: int subtypeId>:<public static final>:<IntegerConstantValueTag:16843713>:<android.R.attr>
 <android.R.attr: int vmSafeMode>:<public static final>:<IntegerConstantValueTag:16843448>:<android.R.attr>
 <android.bluetooth.BluetoothAssignedNumbers: int I_TECH_DYNAMIC_GLOBAL_DISTRIBUTION>:<public static final>:<IntegerConstantValueTag:153>:<android.bluetooth.BluetoothAssignedNumbers>
-<android.text.method.TextKeyListener.Capitalize: android.text.method.TextKeyListener.Capitalize[] .VALUES>:<private static final>:<>:<android.text.method.TextKeyListener.Capitalize:java.lang.Enum>
 <android.provider.Settings.Global: java.lang.String WIFI_MAX_DHCP_RETRY_COUNT>:<public static final>:<StringConstantValueTag:wifi_max_dhcp_retry_count>:<android.provider.Settings.Global:android.provider.Settings.NameValueTable>
 <android.bluetooth.BluetoothAssignedNumbers: int PHILIPS_SEMICONDUCTORS>:<public static final>:<IntegerConstantValueTag:37>:<android.bluetooth.BluetoothAssignedNumbers>
 <android.R.attr: int right>:<public static final>:<IntegerConstantValueTag:16843183>:<android.R.attr>
@@ -7959,7 +7927,6 @@
 <android.print.PrintAttributes.MediaSize: android.print.PrintAttributes.MediaSize PRC_8>:<public static final>:<>:<android.print.PrintAttributes.MediaSize>
 <android.telecom.Call.Details: int PROPERTY_GENERIC_CONFERENCE>:<public static final>:<IntegerConstantValueTag:2>:<android.telecom.Call.Details>
 <android.provider.MediaStore.Audio.AudioColumns: java.lang.String ALBUM_KEY>:<public static final>:<StringConstantValueTag:album_key>:<android.provider.MediaStore.Audio.AudioColumns:android.provider.MediaStore.MediaColumns>
-<android.text.Layout.Alignment: android.text.Layout.Alignment[] .VALUES>:<private static final>:<>:<android.text.Layout.Alignment:java.lang.Enum>
 <android.media.audiofx.AudioEffect: java.util.UUID EFFECT_TYPE_AEC>:<public static final>:<>:<android.media.audiofx.AudioEffect>
 <android.Manifest.permission: java.lang.String SET_WALLPAPER>:<public static final>:<StringConstantValueTag:android.permission.SET_WALLPAPER>:<android.Manifest.permission>
 <dalvik.bytecode.Opcodes: int OP_IGET_WIDE_QUICK>:<public static final>:<IntegerConstantValueTag:243>:<dalvik.bytecode.Opcodes>
@@ -8154,7 +8121,6 @@
 <android.Manifest.permission: java.lang.String ACCESS_NETWORK_STATE>:<public static final>:<StringConstantValueTag:android.permission.ACCESS_NETWORK_STATE>:<android.Manifest.permission>
 <android.media.ExifInterface: int ORIENTATION_TRANSVERSE>:<public static final>:<IntegerConstantValueTag:7>:<android.media.ExifInterface>
 <android.print.PrintAttributes.MediaSize: android.print.PrintAttributes.MediaSize ISO_C0>:<public static final>:<>:<android.print.PrintAttributes.MediaSize>
-<android.graphics.Paint.Cap: android.graphics.Paint.Cap[] .VALUES>:<private static final>:<>:<android.graphics.Paint.Cap:java.lang.Enum>
 <android.hardware.camera2.CaptureRequest: android.hardware.camera2.CaptureRequest.Key CONTROL_AE_TARGET_FPS_RANGE>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CaptureRequest$Key<Landroid/util/Range<Ljava/lang/Integer;>;>;>:<android.hardware.camera2.CaptureRequest:android.hardware.camera2.CameraMetadata,android.os.Parcelable>
 <android.speech.tts.TextToSpeech: int LANG_COUNTRY_AVAILABLE>:<public static final>:<IntegerConstantValueTag:1>:<android.speech.tts.TextToSpeech>
 <android.content.res.Configuration: int KEYBOARD_QWERTY>:<public static final>:<IntegerConstantValueTag:2>:<android.content.res.Configuration:android.os.Parcelable,java.lang.Comparable>
@@ -8331,7 +8297,6 @@
 <android.icu.util.ULocale: android.icu.util.ULocale PRC>:<public static final>:<>:<android.icu.util.ULocale:java.io.Serializable,java.lang.Comparable>
 <android.hardware.Camera.Parameters: java.lang.String SCENE_MODE_CANDLELIGHT>:<public static final>:<StringConstantValueTag:candlelight>:<android.hardware.Camera.Parameters>
 <android.R.style: int Theme_Dialog>:<public static final>:<IntegerConstantValueTag:16973835>:<android.R.style>
-<android.icu.text.DisplayContext: android.icu.text.DisplayContext[] .VALUES>:<private static final>:<>:<android.icu.text.DisplayContext:java.lang.Enum>
 <android.security.keystore.KeyProperties: java.lang.String ENCRYPTION_PADDING_RSA_OAEP>:<public static final>:<StringConstantValueTag:OAEPPadding>:<android.security.keystore.KeyProperties>
 <android.hardware.Sensor: java.lang.String STRING_TYPE_AMBIENT_TEMPERATURE>:<public static final>:<StringConstantValueTag:android.sensor.ambient_temperature>:<android.hardware.Sensor>
 <android.provider.LiveFolders: java.lang.String DESCRIPTION>:<public static final>:<StringConstantValueTag:description>:<android.provider.LiveFolders:android.provider.BaseColumns>
@@ -8444,7 +8409,6 @@
 <android.view.WindowManager.LayoutParams: int SCREEN_ORIENTATION_CHANGED>:<public static final>:<IntegerConstantValueTag:1024>:<android.view.WindowManager.LayoutParams:android.view.ViewGroup.LayoutParams,android.os.Parcelable>
 <android.security.keystore.KeyProperties: java.lang.String BLOCK_MODE_CTR>:<public static final>:<StringConstantValueTag:CTR>:<android.security.keystore.KeyProperties>
 <android.R.attr: int sharedUserId>:<public static final>:<IntegerConstantValueTag:16842763>:<android.R.attr>
-<android.database.CursorJoiner.Result: android.database.CursorJoiner.Result[] .VALUES>:<private static final>:<>:<android.database.CursorJoiner.Result:java.lang.Enum>
 <android.R.attr: int descendantFocusability>:<public static final>:<IntegerConstantValueTag:16842993>:<android.R.attr>
 <android.print.PageRange: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/print/PageRange;>;>:<android.print.PageRange:android.os.Parcelable>
 <android.R.drawable: int title_bar_tall>:<public static final>:<IntegerConstantValueTag:17301670>:<android.R.drawable>
@@ -8552,7 +8516,6 @@
 <android.app.VoiceInteractor.Prompt: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/app/VoiceInteractor$Prompt;>;>:<android.app.VoiceInteractor.Prompt:android.os.Parcelable>
 <android.bluetooth.BluetoothClass.Device: int TOY_DOLL_ACTION_FIGURE>:<public static final>:<IntegerConstantValueTag:2060>:<android.bluetooth.BluetoothClass.Device>
 <android.media.ToneGenerator: int TONE_CDMA_MED_SS_2>:<public static final>:<IntegerConstantValueTag:63>:<android.media.ToneGenerator>
-<android.icu.text.IDNA.Error: android.icu.text.IDNA.Error[] .VALUES>:<private static final>:<>:<android.icu.text.IDNA.Error:java.lang.Enum>
 <android.provider.Settings.Global: java.lang.String AIRPLANE_MODE_RADIOS>:<public static final>:<StringConstantValueTag:airplane_mode_radios>:<android.provider.Settings.Global:android.provider.Settings.NameValueTable>
 <android.content.Intent: java.lang.String ACTION_MANAGE_NETWORK_USAGE>:<public static final>:<StringConstantValueTag:android.intent.action.MANAGE_NETWORK_USAGE>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
 <dalvik.bytecode.Opcodes: int OP_SPUT_CHAR>:<public static final>:<IntegerConstantValueTag:108>:<dalvik.bytecode.Opcodes>
@@ -8704,7 +8667,6 @@
 <android.content.Intent: java.lang.String EXTRA_DOCK_STATE>:<public static final>:<StringConstantValueTag:android.intent.extra.DOCK_STATE>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
 <android.R.attr: int listPreferredItemPaddingEnd>:<public static final>:<IntegerConstantValueTag:16843710>:<android.R.attr>
 <android.opengl.GLES30: int GL_COLOR_ATTACHMENT9>:<public static final>:<IntegerConstantValueTag:36073>:<android.opengl.GLES30:android.opengl.GLES20>
-<android.graphics.Shader.TileMode: android.graphics.Shader.TileMode[] .VALUES>:<private static final>:<>:<android.graphics.Shader.TileMode:java.lang.Enum>
 <android.security.KeyChain: java.lang.String EXTRA_NAME>:<public static final>:<StringConstantValueTag:name>:<android.security.KeyChain>
 <android.webkit.WebSettings.LayoutAlgorithm: android.webkit.WebSettings.LayoutAlgorithm SINGLE_COLUMN>:<public static final enum>:<>:<android.webkit.WebSettings.LayoutAlgorithm:java.lang.Enum>
 <android.telecom.VideoProfile: int QUALITY_MEDIUM>:<public static final>:<IntegerConstantValueTag:2>:<android.telecom.VideoProfile:android.os.Parcelable>
@@ -8963,7 +8925,6 @@
 <android.renderscript.Element.DataType: android.renderscript.Element.DataType UNSIGNED_5_6_5>:<public static final enum>:<>:<android.renderscript.Element.DataType:java.lang.Enum>
 <android.system.OsConstants: int IFF_UP>:<public static final>:<>:<android.system.OsConstants>
 <android.util.DisplayMetrics: int DENSITY_360>:<public static final>:<IntegerConstantValueTag:360>:<android.util.DisplayMetrics>
-<android.icu.text.DateFormat.BooleanAttribute: android.icu.text.DateFormat.BooleanAttribute[] .VALUES>:<private static final>:<>:<android.icu.text.DateFormat.BooleanAttribute:java.lang.Enum>
 <android.content.RestrictionsManager: java.lang.String EXTRA_REQUEST_ID>:<public static final>:<StringConstantValueTag:android.content.extra.REQUEST_ID>:<android.content.RestrictionsManager>
 <android.content.res.Configuration: int SCREENLAYOUT_ROUND_NO>:<public static final>:<IntegerConstantValueTag:256>:<android.content.res.Configuration:android.os.Parcelable,java.lang.Comparable>
 <android.hardware.Camera.Parameters: java.lang.String FOCUS_MODE_CONTINUOUS_PICTURE>:<public static final>:<StringConstantValueTag:continuous-picture>:<android.hardware.Camera.Parameters>
@@ -8978,7 +8939,6 @@
 <android.opengl.GLES30: int GL_TRANSFORM_FEEDBACK_ACTIVE>:<public static final>:<IntegerConstantValueTag:36388>:<android.opengl.GLES30:android.opengl.GLES20>
 <android.icu.util.CopticCalendar: int TOUT>:<public static final>:<IntegerConstantValueTag:0>:<android.icu.util.CopticCalendar:android.icu.util.CECalendar,android.icu.util.Calendar>
 <android.media.MediaPlayer: int MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK>:<public static final>:<IntegerConstantValueTag:200>:<android.media.MediaPlayer>
-<android.widget.TextView.BufferType: android.widget.TextView.BufferType[] .VALUES>:<private static final>:<>:<android.widget.TextView.BufferType:java.lang.Enum>
 <android.view.accessibility.AccessibilityNodeInfo: int MOVEMENT_GRANULARITY_CHARACTER>:<public static final>:<IntegerConstantValueTag:1>:<android.view.accessibility.AccessibilityNodeInfo:android.os.Parcelable>
 <android.opengl.GLES20: int GL_DST_COLOR>:<public static final>:<IntegerConstantValueTag:774>:<android.opengl.GLES20>
 <android.view.InputDevice: int KEYBOARD_TYPE_ALPHABETIC>:<public static final>:<IntegerConstantValueTag:2>:<android.view.InputDevice:android.os.Parcelable>
@@ -9004,7 +8964,6 @@
 <android.opengl.GLES32: int GL_SCREEN>:<public static final>:<IntegerConstantValueTag:37525>:<android.opengl.GLES32:android.opengl.GLES31,android.opengl.GLES30,android.opengl.GLES20>
 <android.opengl.GLES20: int GL_BLEND_DST_ALPHA>:<public static final>:<IntegerConstantValueTag:32970>:<android.opengl.GLES20>
 <android.opengl.GLES31Ext: int GL_COMPRESSED_RGBA_ASTC_12x12_KHR>:<public static final>:<IntegerConstantValueTag:37821>:<android.opengl.GLES31Ext>
-<android.graphics.Canvas.VertexMode: android.graphics.Canvas.VertexMode[] .VALUES>:<private static final>:<>:<android.graphics.Canvas.VertexMode:java.lang.Enum>
 <android.net.NetworkInfo.DetailedState: android.net.NetworkInfo.DetailedState IDLE>:<public static final enum>:<>:<android.net.NetworkInfo.DetailedState:java.lang.Enum>
 <android.media.AudioAttributes: int USAGE_ASSISTANCE_ACCESSIBILITY>:<public static final>:<IntegerConstantValueTag:11>:<android.media.AudioAttributes:android.os.Parcelable>
 <android.R.attr: int listChoiceIndicatorSingle>:<public static final>:<IntegerConstantValueTag:16843289>:<android.R.attr>
@@ -9312,7 +9271,6 @@
 <android.provider.CalendarContract.CalendarSyncColumns: java.lang.String CAL_SYNC8>:<public static final>:<StringConstantValueTag:cal_sync8>:<android.provider.CalendarContract.CalendarSyncColumns>
 <android.R.attr: int fromXDelta>:<public static final>:<IntegerConstantValueTag:16843206>:<android.R.attr>
 <android.print.PrintAttributes.MediaSize: android.print.PrintAttributes.MediaSize ISO_B0>:<public static final>:<>:<android.print.PrintAttributes.MediaSize>
-<android.webkit.WebSettings.LayoutAlgorithm: android.webkit.WebSettings.LayoutAlgorithm[] .VALUES>:<private static final>:<>:<android.webkit.WebSettings.LayoutAlgorithm:java.lang.Enum>
 <android.media.AudioAttributes: int USAGE_GAME>:<public static final>:<IntegerConstantValueTag:14>:<android.media.AudioAttributes:android.os.Parcelable>
 <android.R.attr: int taskOpenEnterAnimation>:<public static final>:<IntegerConstantValueTag:16842940>:<android.R.attr>
 <android.net.wifi.WifiManager: java.lang.String EXTRA_RESULTS_UPDATED>:<public static final>:<StringConstantValueTag:resultsUpdated>:<android.net.wifi.WifiManager>
@@ -9499,7 +9457,6 @@
 <android.system.OsConstants: int EHOSTUNREACH>:<public static final>:<>:<android.system.OsConstants>
 <android.net.sip.SipErrorCode: int SERVER_UNREACHABLE>:<public static final>:<IntegerConstantValueTag:-12>:<android.net.sip.SipErrorCode>
 <android.R.attr: int smallIcon>:<public static final>:<IntegerConstantValueTag:16843422>:<android.R.attr>
-<android.net.NetworkInfo.DetailedState: android.net.NetworkInfo.DetailedState[] .VALUES>:<private static final>:<>:<android.net.NetworkInfo.DetailedState:java.lang.Enum>
 <android.content.SyncStats: long numDeletes>:<public>:<>:<android.content.SyncStats:android.os.Parcelable>
 <android.R.style: int TextAppearance_Holo_Widget_PopupMenu>:<public static final>:<IntegerConstantValueTag:16974095>:<android.R.style>
 <android.content.Intent: java.lang.String EXTRA_SHORTCUT_ICON>:<public static final>:<StringConstantValueTag:android.intent.extra.shortcut.ICON>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
@@ -9567,7 +9524,6 @@
 <android.nfc.NfcAdapter: int FLAG_READER_NFC_A>:<public static final>:<IntegerConstantValueTag:1>:<android.nfc.NfcAdapter>
 <dalvik.bytecode.Opcodes: int OP_MOVE_OBJECT_16>:<public static final>:<IntegerConstantValueTag:9>:<dalvik.bytecode.Opcodes>
 <android.icu.text.Collator: int NO_DECOMPOSITION>:<public static final>:<IntegerConstantValueTag:16>:<android.icu.text.Collator:java.util.Comparator,android.icu.util.Freezable,java.lang.Cloneable>
-<android.icu.text.MeasureFormat.FormatWidth: android.icu.text.MeasureFormat.FormatWidth[] .VALUES>:<private static final>:<>:<android.icu.text.MeasureFormat.FormatWidth:java.lang.Enum>
 <android.text.style.TtsSpan: java.lang.String TYPE_VERBATIM>:<public static final>:<StringConstantValueTag:android.type.verbatim>:<android.text.style.TtsSpan:android.text.ParcelableSpan>
 <android.R.attr: int restoreNeedsApplication>:<public static final>:<IntegerConstantValueTag:16843421>:<android.R.attr>
 <android.text.InputType: int TYPE_TEXT_VARIATION_FILTER>:<public static final>:<IntegerConstantValueTag:176>:<android.text.InputType>
@@ -9851,7 +9807,6 @@
 <android.icu.text.PluralRules: java.lang.String KEYWORD_FEW>:<public static final>:<StringConstantValueTag:few>:<android.icu.text.PluralRules:java.io.Serializable>
 <android.telephony.SmsManager: java.lang.String MMS_CONFIG_MMS_ENABLED>:<public static final>:<StringConstantValueTag:enabledMMS>:<android.telephony.SmsManager>
 <android.icu.lang.UCharacterEnums.ECharacterCategory: byte MODIFIER_SYMBOL>:<public static final>:<IntegerConstantValueTag:26>:<android.icu.lang.UCharacterEnums.ECharacterCategory>
-<android.text.TextUtils.TruncateAt: android.text.TextUtils.TruncateAt[] .VALUES>:<private static final>:<>:<android.text.TextUtils.TruncateAt:java.lang.Enum>
 <android.R.attr: int versionCode>:<public static final>:<IntegerConstantValueTag:16843291>:<android.R.attr>
 <org.xmlpull.v1.XmlPullParser: int END_TAG>:<public static final>:<IntegerConstantValueTag:3>:<org.xmlpull.v1.XmlPullParser>
 <android.view.HapticFeedbackConstants: int LONG_PRESS>:<public static final>:<IntegerConstantValueTag:0>:<android.view.HapticFeedbackConstants>
@@ -9921,7 +9876,6 @@
 <android.system.StructStatVfs: long f_favail>:<public final>:<>:<android.system.StructStatVfs>
 <android.media.ToneGenerator: int TONE_DTMF_P>:<public static final>:<IntegerConstantValueTag:11>:<android.media.ToneGenerator>
 <android.provider.Telephony.Mms.Part: java.lang.String CHARSET>:<public static final>:<StringConstantValueTag:chset>:<android.provider.Telephony.Mms.Part:android.provider.BaseColumns>
-<android.icu.text.TimeZoneNames.NameType: android.icu.text.TimeZoneNames.NameType[] .VALUES>:<private static final>:<>:<android.icu.text.TimeZoneNames.NameType:java.lang.Enum>
 <android.app.AppOpsManager: java.lang.String OPSTR_WRITE_SETTINGS>:<public static final>:<StringConstantValueTag:android:write_settings>:<android.app.AppOpsManager>
 <android.net.DhcpInfo: int dns2>:<public>:<>:<android.net.DhcpInfo:android.os.Parcelable>
 <android.R.style: int TextAppearance_Widget_TextView_SpinnerItem>:<public static final>:<IntegerConstantValueTag:16973906>:<android.R.style>
@@ -10655,7 +10609,6 @@
 <android.view.accessibility.CaptioningManager.CaptionStyle: int EDGE_TYPE_OUTLINE>:<public static final>:<IntegerConstantValueTag:1>:<android.view.accessibility.CaptioningManager.CaptionStyle>
 <android.icu.lang.UCharacterEnums.ECharacterDirection: byte DIRECTIONALITY_NONSPACING_MARK>:<public static final>:<IntegerConstantValueTag:17>:<android.icu.lang.UCharacterEnums.ECharacterDirection>
 <android.R.style: int TextAppearance_DeviceDefault_SearchResult_Subtitle>:<public static final>:<IntegerConstantValueTag:16974262>:<android.R.style>
-<android.renderscript.Type.CubemapFace: android.renderscript.Type.CubemapFace[] .VALUES>:<private static final>:<>:<android.renderscript.Type.CubemapFace:java.lang.Enum>
 <android.R.drawable: int ic_menu_report_image>:<public static final>:<IntegerConstantValueTag:17301579>:<android.R.drawable>
 <android.view.KeyEvent: int KEYCODE_U>:<public static final>:<IntegerConstantValueTag:49>:<android.view.KeyEvent:android.view.InputEvent,android.os.Parcelable>
 <android.media.tv.TvContract.Programs: java.lang.String COLUMN_SEARCHABLE>:<public static final>:<StringConstantValueTag:searchable>:<android.media.tv.TvContract.Programs:android.media.tv.TvContract.BaseTvColumns>
@@ -10980,7 +10933,6 @@
 <android.provider.Settings.Global: java.lang.String DEBUG_APP>:<public static final>:<StringConstantValueTag:debug_app>:<android.provider.Settings.Global:android.provider.Settings.NameValueTable>
 <android.app.Notification: java.lang.String EXTRA_TITLE_BIG>:<public static final>:<StringConstantValueTag:android.title.big>:<android.app.Notification:android.os.Parcelable>
 <android.os.Debug.MemoryInfo: int dalvikSharedDirty>:<public>:<>:<android.os.Debug.MemoryInfo:android.os.Parcelable>
-<android.renderscript.Sampler.Value: android.renderscript.Sampler.Value[] .VALUES>:<private static final>:<>:<android.renderscript.Sampler.Value:java.lang.Enum>
 <android.app.NotificationManager.Policy: int SUPPRESSED_EFFECT_SCREEN_ON>:<public static final>:<IntegerConstantValueTag:2>:<android.app.NotificationManager.Policy:android.os.Parcelable>
 <android.hardware.Sensor: int TYPE_TEMPERATURE>:<public static final>:<IntegerConstantValueTag:7>:<android.hardware.Sensor>
 <android.R.style: int Widget_Material_StackView>:<public static final>:<IntegerConstantValueTag:16974466>:<android.R.style>
@@ -11562,7 +11514,6 @@
 <android.hardware.camera2.CameraMetadata: int FLASH_STATE_CHARGING>:<public static final>:<IntegerConstantValueTag:1>:<android.hardware.camera2.CameraMetadata>
 <android.provider.ContactsContract.Data: android.net.Uri CONTENT_URI>:<public static final>:<>:<android.provider.ContactsContract.Data:android.provider.ContactsContract.DataColumnsWithJoins>
 <android.opengl.GLES30: int GL_COLOR>:<public static final>:<IntegerConstantValueTag:6144>:<android.opengl.GLES30:android.opengl.GLES20>
-<android.graphics.Paint.Align: android.graphics.Paint.Align[] .VALUES>:<private static final>:<>:<android.graphics.Paint.Align:java.lang.Enum>
 <android.content.SyncResult: long delayUntil>:<public>:<>:<android.content.SyncResult:android.os.Parcelable>
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock COPTIC>:<public static final>:<>:<android.icu.lang.UCharacter.UnicodeBlock:java.lang.Character.Subset>
 <android.app.assist.AssistStructure.ViewNode: int TEXT_COLOR_UNDEFINED>:<public static final>:<IntegerConstantValueTag:1>:<android.app.assist.AssistStructure.ViewNode>
@@ -11581,7 +11532,6 @@
 <android.opengl.GLES20: int GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME>:<public static final>:<IntegerConstantValueTag:36049>:<android.opengl.GLES20>
 <android.icu.lang.UCharacter.UnicodeBlock: android.icu.lang.UCharacter.UnicodeBlock HANUNOO>:<public static final>:<>:<android.icu.lang.UCharacter.UnicodeBlock:java.lang.Character.Subset>
 <android.view.Window: int FEATURE_PROGRESS>:<public static final>:<IntegerConstantValueTag:2>:<android.view.Window>
-<android.widget.ImageView.ScaleType: android.widget.ImageView.ScaleType[] .VALUES>:<private static final>:<>:<android.widget.ImageView.ScaleType:java.lang.Enum>
 <android.provider.ContactsContract.CommonDataKinds.Phone: int TYPE_ASSISTANT>:<public static final>:<IntegerConstantValueTag:19>:<android.provider.ContactsContract.CommonDataKinds.Phone:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.provider.ContactsContract.CommonDataKinds.SipAddress: int TYPE_HOME>:<public static final>:<IntegerConstantValueTag:1>:<android.provider.ContactsContract.CommonDataKinds.SipAddress:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.bluetooth.BluetoothGattCharacteristic: java.util.List mDescriptors>:<protected>:<SignatureTag:Ljava/util/List<Landroid/bluetooth/BluetoothGattDescriptor;>;>:<android.bluetooth.BluetoothGattCharacteristic:android.os.Parcelable>
@@ -11608,7 +11558,6 @@
 <android.view.KeyEvent: int KEYCODE_MOVE_END>:<public static final>:<IntegerConstantValueTag:123>:<android.view.KeyEvent:android.view.InputEvent,android.os.Parcelable>
 <android.media.MediaCodecInfo.CodecProfileLevel: int AACObjectLD>:<public static final>:<IntegerConstantValueTag:23>:<android.media.MediaCodecInfo.CodecProfileLevel>
 <android.R.attr: int colorForegroundInverse>:<public static final>:<IntegerConstantValueTag:16843270>:<android.R.attr>
-<android.icu.text.DisplayContext.Type: android.icu.text.DisplayContext.Type[] .VALUES>:<private static final>:<>:<android.icu.text.DisplayContext.Type:java.lang.Enum>
 <android.hardware.Camera.Parameters: java.lang.String WHITE_BALANCE_INCANDESCENT>:<public static final>:<StringConstantValueTag:incandescent>:<android.hardware.Camera.Parameters>
 <android.print.PrintJobInfo: int STATE_COMPLETED>:<public static final>:<IntegerConstantValueTag:5>:<android.print.PrintJobInfo:android.os.Parcelable>
 <android.R.attr: int toDegrees>:<public static final>:<IntegerConstantValueTag:16843188>:<android.R.attr>
@@ -11637,11 +11586,9 @@
 <android.service.voice.AlwaysOnHotwordDetector: int RECOGNITION_MODE_USER_IDENTIFICATION>:<public static final>:<IntegerConstantValueTag:2>:<android.service.voice.AlwaysOnHotwordDetector>
 <android.content.pm.PackageManager: int COMPONENT_ENABLED_STATE_ENABLED>:<public static final>:<IntegerConstantValueTag:1>:<android.content.pm.PackageManager>
 <android.hardware.camera2.CaptureResult: android.hardware.camera2.CaptureResult.Key CONTROL_AE_EXPOSURE_COMPENSATION>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CaptureResult$Key<Ljava/lang/Integer;>;>:<android.hardware.camera2.CaptureResult:android.hardware.camera2.CameraMetadata>
-<android.icu.text.RelativeDateTimeFormatter.Style: android.icu.text.RelativeDateTimeFormatter.Style[] .VALUES>:<private static final>:<>:<android.icu.text.RelativeDateTimeFormatter.Style:java.lang.Enum>
 <android.hardware.camera2.CaptureRequest: android.hardware.camera2.CaptureRequest.Key TONEMAP_MODE>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CaptureRequest$Key<Ljava/lang/Integer;>;>:<android.hardware.camera2.CaptureRequest:android.hardware.camera2.CameraMetadata,android.os.Parcelable>
 <android.media.MediaCodecInfo.CodecProfileLevel: int MPEG4ProfileAdvancedCoding>:<public static final>:<IntegerConstantValueTag:4096>:<android.media.MediaCodecInfo.CodecProfileLevel>
 <android.content.RestrictionEntry: int TYPE_BOOLEAN>:<public static final>:<IntegerConstantValueTag:1>:<android.content.RestrictionEntry:android.os.Parcelable>
-<android.icu.util.Currency.CurrencyUsage: android.icu.util.Currency.CurrencyUsage[] .VALUES>:<private static final>:<>:<android.icu.util.Currency.CurrencyUsage:java.lang.Enum>
 <android.text.TextUtils: int CAP_MODE_SENTENCES>:<public static final>:<IntegerConstantValueTag:16384>:<android.text.TextUtils>
 <android.bluetooth.BluetoothClass.Device: int PHONE_MODEM_OR_GATEWAY>:<public static final>:<IntegerConstantValueTag:528>:<android.bluetooth.BluetoothClass.Device>
 <android.opengl.GLES31: int GL_REFERENCED_BY_COMPUTE_SHADER>:<public static final>:<IntegerConstantValueTag:37643>:<android.opengl.GLES31:android.opengl.GLES30,android.opengl.GLES20>
@@ -11688,7 +11635,6 @@
 <android.icu.text.StringPrepParseException: int UNASSIGNED_ERROR>:<public static final>:<IntegerConstantValueTag:3>:<android.icu.text.StringPrepParseException:java.text.ParseException,java.lang.Exception,java.lang.Throwable>
 <android.opengl.GLES30: int GL_DRAW_BUFFER1>:<public static final>:<IntegerConstantValueTag:34854>:<android.opengl.GLES30:android.opengl.GLES20>
 <android.content.SyncStats: long numEntries>:<public>:<>:<android.content.SyncStats:android.os.Parcelable>
-<android.webkit.WebSettings.TextSize: android.webkit.WebSettings.TextSize[] .VALUES>:<private static final>:<>:<android.webkit.WebSettings.TextSize:java.lang.Enum>
 <android.content.pm.ComponentInfo: android.content.pm.ApplicationInfo applicationInfo>:<public>:<>:<android.content.pm.ComponentInfo:android.content.pm.PackageItemInfo>
 <android.media.AudioTrack: int WRITE_NON_BLOCKING>:<public static final>:<IntegerConstantValueTag:1>:<android.media.AudioTrack:android.media.AudioRouting>
 <android.hardware.camera2.CameraCharacteristics: android.hardware.camera2.CameraCharacteristics.Key SENSOR_ORIENTATION>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CameraCharacteristics$Key<Ljava/lang/Integer;>;>:<android.hardware.camera2.CameraCharacteristics:android.hardware.camera2.CameraMetadata>
@@ -12580,7 +12526,6 @@
 <android.icu.text.PluralRules: java.lang.String KEYWORD_OTHER>:<public static final>:<StringConstantValueTag:other>:<android.icu.text.PluralRules:java.io.Serializable>
 <android.app.Notification: int color>:<public>:<>:<android.app.Notification:android.os.Parcelable>
 <android.mtp.MtpEvent: int EVENT_STORE_FULL>:<public static final>:<IntegerConstantValueTag:16394>:<android.mtp.MtpEvent>
-<android.renderscript.RenderScript.Priority: android.renderscript.RenderScript.Priority[] .VALUES>:<private static final>:<>:<android.renderscript.RenderScript.Priority:java.lang.Enum>
 <android.content.pm.ApplicationInfo: int theme>:<public>:<>:<android.content.pm.ApplicationInfo:android.content.pm.PackageItemInfo,android.os.Parcelable>
 <android.hardware.Sensor: java.lang.String STRING_TYPE_LINEAR_ACCELERATION>:<public static final>:<StringConstantValueTag:android.sensor.linear_acceleration>:<android.hardware.Sensor>
 <dalvik.bytecode.Opcodes: int OP_APUT_SHORT>:<public static final>:<IntegerConstantValueTag:81>:<dalvik.bytecode.Opcodes>
@@ -12714,7 +12659,6 @@
 <android.system.StructPollfd: java.io.FileDescriptor fd>:<public>:<>:<android.system.StructPollfd>
 <android.app.NotificationManager.Policy: int priorityCallSenders>:<public final>:<>:<android.app.NotificationManager.Policy:android.os.Parcelable>
 <android.icu.text.DateFormat: java.lang.String YEAR_MONTH>:<public static final>:<StringConstantValueTag:yMMMM>:<android.icu.text.DateFormat:android.icu.text.UFormat,java.text.Format>
-<android.view.ViewDebug.RecyclerTraceType: android.view.ViewDebug.RecyclerTraceType[] .VALUES>:<private static final>:<>:<android.view.ViewDebug.RecyclerTraceType:java.lang.Enum>
 <android.view.MenuItem: int SHOW_AS_ACTION_WITH_TEXT>:<public static final>:<IntegerConstantValueTag:4>:<android.view.MenuItem>
 <android.bluetooth.BluetoothGattCharacteristic: int PROPERTY_SIGNED_WRITE>:<public static final>:<IntegerConstantValueTag:64>:<android.bluetooth.BluetoothGattCharacteristic:android.os.Parcelable>
 <android.text.style.SuggestionSpan: java.lang.String SUGGESTION_SPAN_PICKED_AFTER>:<public static final>:<StringConstantValueTag:after>:<android.text.style.SuggestionSpan:android.text.style.CharacterStyle,android.text.ParcelableSpan>
@@ -12785,7 +12729,6 @@
 <android.telephony.NeighboringCellInfo: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/telephony/NeighboringCellInfo;>;>:<android.telephony.NeighboringCellInfo:android.os.Parcelable>
 <android.media.AudioManager: int FX_KEYPRESS_INVALID>:<public static final>:<IntegerConstantValueTag:9>:<android.media.AudioManager>
 <android.view.WindowManager.LayoutParams: float verticalMargin>:<public>:<>:<android.view.WindowManager.LayoutParams:android.view.ViewGroup.LayoutParams,android.os.Parcelable>
-<android.icu.util.IslamicCalendar.CalculationType: android.icu.util.IslamicCalendar.CalculationType[] .VALUES>:<private static final>:<>:<android.icu.util.IslamicCalendar.CalculationType:java.lang.Enum>
 <dalvik.bytecode.Opcodes: int OP_IGET_OBJECT>:<public static final>:<IntegerConstantValueTag:84>:<dalvik.bytecode.Opcodes>
 <android.telephony.gsm.SmsMessage: int ENCODING_8BIT>:<public static final>:<IntegerConstantValueTag:2>:<android.telephony.gsm.SmsMessage>
 <android.net.wifi.p2p.WifiP2pGroup: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/net/wifi/p2p/WifiP2pGroup;>;>:<android.net.wifi.p2p.WifiP2pGroup:android.os.Parcelable>
@@ -13330,12 +13273,10 @@
 <android.view.Display: int FLAG_SUPPORTS_PROTECTED_BUFFERS>:<public static final>:<IntegerConstantValueTag:1>:<android.view.Display>
 <dalvik.bytecode.Opcodes: int OP_INVOKE_SUPER_RANGE>:<public static final>:<IntegerConstantValueTag:117>:<dalvik.bytecode.Opcodes>
 <android.media.AudioManager: int ADJUST_LOWER>:<public static final>:<IntegerConstantValueTag:-1>:<android.media.AudioManager>
-<android.renderscript.Element.DataKind: android.renderscript.Element.DataKind[] .VALUES>:<private static final>:<>:<android.renderscript.Element.DataKind:java.lang.Enum>
 <android.hardware.Sensor: java.lang.String STRING_TYPE_GEOMAGNETIC_ROTATION_VECTOR>:<public static final>:<StringConstantValueTag:android.sensor.geomagnetic_rotation_vector>:<android.hardware.Sensor>
 <android.icu.text.DateFormat: java.lang.String HOUR_MINUTE>:<public static final>:<StringConstantValueTag:jm>:<android.icu.text.DateFormat:android.icu.text.UFormat,java.text.Format>
 <android.R.attr: int indeterminateOnly>:<public static final>:<IntegerConstantValueTag:16843066>:<android.R.attr>
 <android.system.OsConstants: int _SC_THREAD_THREADS_MAX>:<public static final>:<>:<android.system.OsConstants>
-<android.icu.text.TimeZoneFormat.Style: android.icu.text.TimeZoneFormat.Style[] .VALUES>:<private static final>:<>:<android.icu.text.TimeZoneFormat.Style:java.lang.Enum>
 <android.system.OsConstants: int ST_MANDLOCK>:<public static final>:<>:<android.system.OsConstants>
 <android.opengl.GLES11: int GL_LINE_WIDTH>:<public static final>:<IntegerConstantValueTag:2849>:<android.opengl.GLES11:android.opengl.GLES10>
 <android.system.StructUtsname: java.lang.String machine>:<public final>:<>:<android.system.StructUtsname>
@@ -13477,7 +13418,6 @@
 <android.nfc.NdefRecord: byte[] RTD_URI>:<public static final>:<>:<android.nfc.NdefRecord:android.os.Parcelable>
 <android.opengl.GLES30: int GL_RGB16F>:<public static final>:<IntegerConstantValueTag:34843>:<android.opengl.GLES30:android.opengl.GLES20>
 <android.view.accessibility.AccessibilityEvent: int TYPE_VIEW_FOCUSED>:<public static final>:<IntegerConstantValueTag:8>:<android.view.accessibility.AccessibilityEvent:android.view.accessibility.AccessibilityRecord,android.os.Parcelable>
-<android.graphics.Paint.Style: android.graphics.Paint.Style[] .VALUES>:<private static final>:<>:<android.graphics.Paint.Style:java.lang.Enum>
 <android.telecom.TelecomManager: java.lang.String ACTION_SHOW_CALL_ACCESSIBILITY_SETTINGS>:<public static final>:<StringConstantValueTag:android.telecom.action.SHOW_CALL_ACCESSIBILITY_SETTINGS>:<android.telecom.TelecomManager>
 <android.opengl.GLES30: int GL_SYNC_FLUSH_COMMANDS_BIT>:<public static final>:<IntegerConstantValueTag:1>:<android.opengl.GLES30:android.opengl.GLES20>
 <android.R.attr: int layout_margin>:<public static final>:<IntegerConstantValueTag:16842998>:<android.R.attr>
@@ -14071,7 +14011,6 @@
 <android.hardware.camera2.CameraMetadata: int SENSOR_REFERENCE_ILLUMINANT1_ISO_STUDIO_TUNGSTEN>:<public static final>:<IntegerConstantValueTag:24>:<android.hardware.camera2.CameraMetadata>
 <android.hardware.camera2.CameraCharacteristics: android.hardware.camera2.CameraCharacteristics.Key LENS_FACING>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CameraCharacteristics$Key<Ljava/lang/Integer;>;>:<android.hardware.camera2.CameraCharacteristics:android.hardware.camera2.CameraMetadata>
 <android.os.BatteryManager: int BATTERY_HEALTH_GOOD>:<public static final>:<IntegerConstantValueTag:2>:<android.os.BatteryManager>
-<android.graphics.drawable.GradientDrawable.Orientation: android.graphics.drawable.GradientDrawable.Orientation[] .VALUES>:<private static final>:<>:<android.graphics.drawable.GradientDrawable.Orientation:java.lang.Enum>
 <android.app.Notification: long when>:<public>:<>:<android.app.Notification:android.os.Parcelable>
 <android.os.Message: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/os/Message;>;>:<android.os.Message:android.os.Parcelable>
 <android.inputmethodservice.Keyboard.Key: int[] codes>:<public>:<>:<android.inputmethodservice.Keyboard.Key>
@@ -14468,7 +14407,6 @@
 <android.opengl.GLES20: int GL_MAX_VIEWPORT_DIMS>:<public static final>:<IntegerConstantValueTag:3386>:<android.opengl.GLES20>
 <android.media.effect.EffectFactory: java.lang.String EFFECT_CONTRAST>:<public static final>:<StringConstantValueTag:android.media.effect.effects.ContrastEffect>:<android.media.effect.EffectFactory>
 <android.R.attr: int alertDialogIcon>:<public static final>:<IntegerConstantValueTag:16843605>:<android.R.attr>
-<android.icu.text.CompactDecimalFormat.CompactStyle: android.icu.text.CompactDecimalFormat.CompactStyle[] .VALUES>:<private static final>:<>:<android.icu.text.CompactDecimalFormat.CompactStyle:java.lang.Enum>
 <android.icu.lang.UCharacter.JoiningType: int JOIN_CAUSING>:<public static final>:<IntegerConstantValueTag:1>:<android.icu.lang.UCharacter.JoiningType>
 <android.opengl.GLES11Ext: int GL_TEXTURE_CUBE_MAP_NEGATIVE_X_OES>:<public static final>:<IntegerConstantValueTag:34070>:<android.opengl.GLES11Ext>
 <android.view.View: int TEXT_ALIGNMENT_TEXT_END>:<public static final>:<IntegerConstantValueTag:3>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
@@ -14775,7 +14713,6 @@
 <android.content.pm.PackageInfo: android.content.pm.ApplicationInfo applicationInfo>:<public>:<>:<android.content.pm.PackageInfo:android.os.Parcelable>
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit INCH>:<public static final>:<>:<android.icu.util.MeasureUnit:java.io.Serializable>
 <android.service.voice.VoiceInteractionSession: int SHOW_WITH_ASSIST>:<public static final>:<IntegerConstantValueTag:1>:<android.service.voice.VoiceInteractionSession:android.view.KeyEvent.Callback,android.content.ComponentCallbacks2>
-<android.webkit.ConsoleMessage.MessageLevel: android.webkit.ConsoleMessage.MessageLevel[] .VALUES>:<private static final>:<>:<android.webkit.ConsoleMessage.MessageLevel:java.lang.Enum>
 <android.content.res.ObbInfo: int OBB_OVERLAY>:<public static final>:<IntegerConstantValueTag:1>:<android.content.res.ObbInfo:android.os.Parcelable>
 <android.provider.VoicemailContract.Voicemails: java.lang.String DURATION>:<public static final>:<StringConstantValueTag:duration>:<android.provider.VoicemailContract.Voicemails:android.provider.BaseColumns,android.provider.OpenableColumns>
 <android.system.OsConstants: int F_SETFL>:<public static final>:<>:<android.system.OsConstants>
@@ -14798,7 +14735,6 @@
 <android.print.PrintJobInfo: int STATE_CREATED>:<public static final>:<IntegerConstantValueTag:1>:<android.print.PrintJobInfo:android.os.Parcelable>
 <android.opengl.GLES32: int GL_GEOMETRY_SHADER_INVOCATIONS>:<public static final>:<IntegerConstantValueTag:34943>:<android.opengl.GLES32:android.opengl.GLES31,android.opengl.GLES30,android.opengl.GLES20>
 <android.opengl.GLES32: int GL_TEXTURE_BINDING_CUBE_MAP_ARRAY>:<public static final>:<IntegerConstantValueTag:36874>:<android.opengl.GLES32:android.opengl.GLES31,android.opengl.GLES30,android.opengl.GLES20>
-<android.graphics.Canvas.EdgeType: android.graphics.Canvas.EdgeType[] .VALUES>:<private static final>:<>:<android.graphics.Canvas.EdgeType:java.lang.Enum>
 <android.R.attr: int cropToPadding>:<public static final>:<IntegerConstantValueTag:16843043>:<android.R.attr>
 <android.icu.util.MeasureUnit: android.icu.util.MeasureUnit NANOSECOND>:<public static final>:<>:<android.icu.util.MeasureUnit:java.io.Serializable>
 <android.R.attr: int actionBarStyle>:<public static final>:<IntegerConstantValueTag:16843470>:<android.R.attr>
@@ -14849,7 +14785,6 @@
 <android.icu.lang.UCharacter.UnicodeBlock: int WARANG_CITI_ID>:<public static final>:<IntegerConstantValueTag:252>:<android.icu.lang.UCharacter.UnicodeBlock:java.lang.Character.Subset>
 <android.opengl.GLES11Ext: int GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES>:<public static final>:<IntegerConstantValueTag:36050>:<android.opengl.GLES11Ext>
 <dalvik.bytecode.Opcodes: int OP_USHR_LONG>:<public static final>:<IntegerConstantValueTag:165>:<dalvik.bytecode.Opcodes>
-<android.icu.text.MessagePattern.Part.Type: android.icu.text.MessagePattern.Part.Type[] .VALUES>:<private static final>:<>:<android.icu.text.MessagePattern.Part.Type:java.lang.Enum>
 <android.view.View: int FOCUS_DOWN>:<public static final>:<IntegerConstantValueTag:130>:<android.view.View:android.graphics.drawable.Drawable.Callback,android.view.KeyEvent.Callback,android.view.accessibility.AccessibilityEventSource>
 <android.speech.tts.TextToSpeech.Engine: java.lang.String KEY_FEATURE_NETWORK_TIMEOUT_MS>:<public static final>:<StringConstantValueTag:networkTimeoutMs>:<android.speech.tts.TextToSpeech.Engine>
 <android.util.DisplayMetrics: int DENSITY_400>:<public static final>:<IntegerConstantValueTag:400>:<android.util.DisplayMetrics>
@@ -14862,7 +14797,6 @@
 <android.content.Intent: java.lang.String EXTRA_STREAM>:<public static final>:<StringConstantValueTag:android.intent.extra.STREAM>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
 <android.bluetooth.BluetoothHeadset: int STATE_AUDIO_CONNECTED>:<public static final>:<IntegerConstantValueTag:12>:<android.bluetooth.BluetoothHeadset:android.bluetooth.BluetoothProfile>
 <android.opengl.GLES10: int GL_FLAT>:<public static final>:<IntegerConstantValueTag:7424>:<android.opengl.GLES10>
-<android.renderscript.Element.DataType: android.renderscript.Element.DataType[] .VALUES>:<private static final>:<>:<android.renderscript.Element.DataType:java.lang.Enum>
 <android.speech.tts.TextToSpeech.Engine: int CHECK_VOICE_DATA_PASS>:<public static final>:<IntegerConstantValueTag:1>:<android.speech.tts.TextToSpeech.Engine>
 <android.graphics.Paint: int EMBEDDED_BITMAP_TEXT_FLAG>:<public static final>:<IntegerConstantValueTag:1024>:<android.graphics.Paint>
 <android.media.AudioTrack: int PLAYSTATE_PAUSED>:<public static final>:<IntegerConstantValueTag:2>:<android.media.AudioTrack:android.media.AudioRouting>
@@ -15419,7 +15353,6 @@
 <android.net.wifi.WifiConfiguration: java.lang.String[] wepKeys>:<public>:<>:<android.net.wifi.WifiConfiguration:android.os.Parcelable>
 <android.R.attr: int enableVrMode>:<public static final>:<IntegerConstantValueTag:16844069>:<android.R.attr>
 <android.media.ExifInterface: java.lang.String TAG_MAKE>:<public static final>:<StringConstantValueTag:Make>:<android.media.ExifInterface>
-<android.icu.text.Normalizer2.Mode: android.icu.text.Normalizer2.Mode[] .VALUES>:<private static final>:<>:<android.icu.text.Normalizer2.Mode:java.lang.Enum>
 <android.mtp.MtpConstants: int FORMAT_UNDEFINED_DOCUMENT>:<public static final>:<IntegerConstantValueTag:47744>:<android.mtp.MtpConstants>
 <android.provider.ContactsContract.CommonDataKinds.Relation: int TYPE_RELATIVE>:<public static final>:<IntegerConstantValueTag:12>:<android.provider.ContactsContract.CommonDataKinds.Relation:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
 <android.provider.ContactsContract.PhoneLookupColumns: java.lang.String NUMBER>:<public static final>:<StringConstantValueTag:number>:<android.provider.ContactsContract.PhoneLookupColumns>
@@ -15789,7 +15722,6 @@
 <android.provider.Settings.System: java.lang.String HTTP_PROXY>:<public static final>:<StringConstantValueTag:http_proxy>:<android.provider.Settings.System:android.provider.Settings.NameValueTable>
 <android.system.OsConstants: int CAP_KILL>:<public static final>:<>:<android.system.OsConstants>
 <android.bluetooth.BluetoothAssignedNumbers: int NINE_SOLUTIONS>:<public static final>:<IntegerConstantValueTag:102>:<android.bluetooth.BluetoothAssignedNumbers>
-<android.icu.text.UnicodeSet.ComparisonStyle: android.icu.text.UnicodeSet.ComparisonStyle[] .VALUES>:<private static final>:<>:<android.icu.text.UnicodeSet.ComparisonStyle:java.lang.Enum>
 <android.R.attr: int taskToBackExitAnimation>:<public static final>:<IntegerConstantValueTag:16842947>:<android.R.attr>
 <android.R.attr: int dropDownListViewStyle>:<public static final>:<IntegerConstantValueTag:16842861>:<android.R.attr>
 <dalvik.bytecode.Opcodes: int OP_SGET>:<public static final>:<IntegerConstantValueTag:96>:<dalvik.bytecode.Opcodes>
@@ -15859,12 +15791,10 @@
 <android.opengl.GLES10: int GL_TEXTURE23>:<public static final>:<IntegerConstantValueTag:34007>:<android.opengl.GLES10>
 <android.media.tv.TvInputManager: int VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY>:<public static final>:<IntegerConstantValueTag:4>:<android.media.tv.TvInputManager>
 <android.media.SyncParams: int SYNC_SOURCE_DEFAULT>:<public static final>:<IntegerConstantValueTag:0>:<android.media.SyncParams>
-<android.util.Xml.Encoding: android.util.Xml.Encoding[] .VALUES>:<private static final>:<>:<android.util.Xml.Encoding:java.lang.Enum>
 <android.appwidget.AppWidgetManager: java.lang.String OPTION_APPWIDGET_MIN_WIDTH>:<public static final>:<StringConstantValueTag:appWidgetMinWidth>:<android.appwidget.AppWidgetManager>
 <android.media.MediaPlayer: int MEDIA_ERROR_TIMED_OUT>:<public static final>:<IntegerConstantValueTag:-110>:<android.media.MediaPlayer>
 <android.gesture.OrientedBoundingBox: float orientation>:<public final>:<>:<android.gesture.OrientedBoundingBox>
 <dalvik.bytecode.Opcodes: int OP_SGET_CHAR>:<public static final>:<IntegerConstantValueTag:101>:<dalvik.bytecode.Opcodes>
-<android.icu.lang.UScript.ScriptUsage: android.icu.lang.UScript.ScriptUsage[] .VALUES>:<private static final>:<>:<android.icu.lang.UScript.ScriptUsage:java.lang.Enum>
 <android.view.MotionEvent: int AXIS_RUDDER>:<public static final>:<IntegerConstantValueTag:20>:<android.view.MotionEvent:android.view.InputEvent,android.os.Parcelable>
 <android.R.drawable: int ic_menu_zoom>:<public static final>:<IntegerConstantValueTag:17301593>:<android.R.drawable>
 <android.opengl.GLES20: int GL_FRONT_AND_BACK>:<public static final>:<IntegerConstantValueTag:1032>:<android.opengl.GLES20>
@@ -15999,7 +15929,6 @@
 <android.R.attr: int textColorPrimaryNoDisable>:<public static final>:<IntegerConstantValueTag:16842811>:<android.R.attr>
 <android.icu.util.VersionInfo: android.icu.util.VersionInfo UNICODE_6_3>:<public static final>:<>:<android.icu.util.VersionInfo:java.lang.Comparable>
 <android.icu.lang.UCharacter.LineBreak: int H3>:<public static final>:<IntegerConstantValueTag:32>:<android.icu.lang.UCharacter.LineBreak>
-<android.renderscript.Allocation.MipmapControl: android.renderscript.Allocation.MipmapControl[] .VALUES>:<private static final>:<>:<android.renderscript.Allocation.MipmapControl:java.lang.Enum>
 <android.net.wifi.WifiConfiguration.Protocol: int RSN>:<public static final>:<IntegerConstantValueTag:1>:<android.net.wifi.WifiConfiguration.Protocol>
 <android.app.DownloadManager.Request: int NETWORK_WIFI>:<public static final>:<IntegerConstantValueTag:2>:<android.app.DownloadManager.Request>
 <android.hardware.camera2.CameraCharacteristics: android.hardware.camera2.CameraCharacteristics.Key LENS_INFO_MINIMUM_FOCUS_DISTANCE>:<public static final>:<SignatureTag:Landroid/hardware/camera2/CameraCharacteristics$Key<Ljava/lang/Float;>;>:<android.hardware.camera2.CameraCharacteristics:android.hardware.camera2.CameraMetadata>
@@ -16151,7 +16080,6 @@
 <android.bluetooth.BluetoothSocket: int TYPE_SCO>:<public static final>:<IntegerConstantValueTag:2>:<android.bluetooth.BluetoothSocket:java.io.Closeable>
 <android.hardware.camera2.params.RggbChannelVector: int GREEN_ODD>:<public static final>:<IntegerConstantValueTag:2>:<android.hardware.camera2.params.RggbChannelVector>
 <android.view.animation.Animation: int ZORDER_TOP>:<public static final>:<IntegerConstantValueTag:1>:<android.view.animation.Animation:java.lang.Cloneable>
-<android.graphics.Matrix.ScaleToFit: android.graphics.Matrix.ScaleToFit[] .VALUES>:<private static final>:<>:<android.graphics.Matrix.ScaleToFit:java.lang.Enum>
 <android.R.style: int Widget_Material_Light_MediaRouteButton>:<public static final>:<IntegerConstantValueTag:16974515>:<android.R.style>
 <android.widget.Toast: int LENGTH_LONG>:<public static final>:<IntegerConstantValueTag:1>:<android.widget.Toast>
 <android.provider.ContactsContract.CommonDataKinds.Phone: java.lang.String SEARCH_DISPLAY_NAME_KEY>:<public static final>:<StringConstantValueTag:search_display_name>:<android.provider.ContactsContract.CommonDataKinds.Phone:android.provider.ContactsContract.DataColumnsWithJoins,android.provider.ContactsContract.CommonDataKinds.CommonColumns>
@@ -16196,7 +16124,6 @@
 <android.net.wifi.WifiConfiguration.AuthAlgorithm: java.lang.String[] strings>:<public static final>:<>:<android.net.wifi.WifiConfiguration.AuthAlgorithm>
 <android.content.Intent: java.lang.String ACTION_PICK_ACTIVITY>:<public static final>:<StringConstantValueTag:android.intent.action.PICK_ACTIVITY>:<android.content.Intent:android.os.Parcelable,java.lang.Cloneable>
 <android.view.inputmethod.ExtractedTextRequest: android.os.Parcelable.Creator CREATOR>:<public static final>:<SignatureTag:Landroid/os/Parcelable$Creator<Landroid/view/inputmethod/ExtractedTextRequest;>;>:<android.view.inputmethod.ExtractedTextRequest:android.os.Parcelable>
-<android.graphics.Region.Op: android.graphics.Region.Op[] .VALUES>:<private static final>:<>:<android.graphics.Region.Op:java.lang.Enum>
 <android.opengl.GLES31Ext: int GL_MAX_GEOMETRY_OUTPUT_COMPONENTS_EXT>:<public static final>:<IntegerConstantValueTag:37156>:<android.opengl.GLES31Ext>
 <android.opengl.GLES20: int GL_FLOAT_MAT4>:<public static final>:<IntegerConstantValueTag:35676>:<android.opengl.GLES20>
 <android.hardware.camera2.CameraMetadata: int SENSOR_REFERENCE_ILLUMINANT1_FINE_WEATHER>:<public static final>:<IntegerConstantValueTag:9>:<android.hardware.camera2.CameraMetadata>
@@ -16451,7 +16378,6 @@
 <android.opengl.GLES10: int GL_LIGHT6>:<public static final>:<IntegerConstantValueTag:16390>:<android.opengl.GLES10>
 <android.text.style.TtsSpan: java.lang.String ARG_PASSWORD>:<public static final>:<StringConstantValueTag:android.arg.password>:<android.text.style.TtsSpan:android.text.ParcelableSpan>
 <android.icu.lang.UCharacter.JoiningType: int TRANSPARENT>:<public static final>:<IntegerConstantValueTag:5>:<android.icu.lang.UCharacter.JoiningType>
-<android.icu.text.UnicodeSetSpanner.CountMethod: android.icu.text.UnicodeSetSpanner.CountMethod[] .VALUES>:<private static final>:<>:<android.icu.text.UnicodeSetSpanner.CountMethod:java.lang.Enum>
 <android.icu.text.NumberFormat.Field: android.icu.text.NumberFormat.Field PERCENT>:<public static final>:<>:<android.icu.text.NumberFormat.Field:java.text.Format.Field,java.text.AttributedCharacterIterator.Attribute>
 <android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction: android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction ACTION_LONG_CLICK>:<public static final>:<>:<android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction>
 <android.media.audiofx.Visualizer: int STATE_UNINITIALIZED>:<public static final>:<IntegerConstantValueTag:0>:<android.media.audiofx.Visualizer>
@@ -16506,7 +16432,6 @@
 <android.bluetooth.BluetoothGattDescriptor: byte[] DISABLE_NOTIFICATION_VALUE>:<public static final>:<>:<android.bluetooth.BluetoothGattDescriptor:android.os.Parcelable>
 <android.telephony.SmsManager: java.lang.String MMS_CONFIG_HTTP_PARAMS>:<public static final>:<StringConstantValueTag:httpParams>:<android.telephony.SmsManager>
 <android.system.OsConstants: int AI_PASSIVE>:<public static final>:<>:<android.system.OsConstants>
-<android.net.NetworkInfo.State: android.net.NetworkInfo.State[] .VALUES>:<private static final>:<>:<android.net.NetworkInfo.State:java.lang.Enum>
 <android.media.tv.TvContract.Channels.Logo: java.lang.String CONTENT_DIRECTORY>:<public static final>:<StringConstantValueTag:logo>:<android.media.tv.TvContract.Channels.Logo>
 <android.view.MotionEvent: int AXIS_X>:<public static final>:<IntegerConstantValueTag:0>:<android.view.MotionEvent:android.view.InputEvent,android.os.Parcelable>
 <android.opengl.GLES32: int GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED>:<public static final>:<IntegerConstantValueTag:33313>:<android.opengl.GLES32:android.opengl.GLES31,android.opengl.GLES30,android.opengl.GLES20>
@@ -16855,7 +16780,6 @@
 <android.accessibilityservice.AccessibilityService: int GLOBAL_ACTION_HOME>:<public static final>:<IntegerConstantValueTag:2>:<android.accessibilityservice.AccessibilityService:android.app.Service,android.content.ContextWrapper,android.content.Context>
 <android.provider.Contacts.PeopleColumns: java.lang.String SEND_TO_VOICEMAIL>:<public static final>:<StringConstantValueTag:send_to_voicemail>:<android.provider.Contacts.PeopleColumns>
 <android.R.attr: int usesCleartextTraffic>:<public static final>:<IntegerConstantValueTag:16844012>:<android.R.attr>
-<android.graphics.Interpolator.Result: android.graphics.Interpolator.Result[] .VALUES>:<private static final>:<>:<android.graphics.Interpolator.Result:java.lang.Enum>
 <android.opengl.GLES20: int GL_DEPTH_COMPONENT16>:<public static final>:<IntegerConstantValueTag:33189>:<android.opengl.GLES20>
 <android.opengl.GLES10: int GL_CONSTANT_ATTENUATION>:<public static final>:<IntegerConstantValueTag:4615>:<android.opengl.GLES10>
 <android.R.string: int status_bar_notification_info_overflow>:<public static final>:<IntegerConstantValueTag:17039383>:<android.R.string>
@@ -17192,7 +17116,6 @@
 <android.opengl.GLES30: int GL_COLOR_ATTACHMENT10>:<public static final>:<IntegerConstantValueTag:36074>:<android.opengl.GLES30:android.opengl.GLES20>
 <android.bluetooth.BluetoothA2dp: java.lang.String ACTION_PLAYING_STATE_CHANGED>:<public static final>:<StringConstantValueTag:android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED>:<android.bluetooth.BluetoothA2dp:android.bluetooth.BluetoothProfile>
 <android.util.DisplayMetrics: int DENSITY_XXHIGH>:<public static final>:<IntegerConstantValueTag:480>:<android.util.DisplayMetrics>
-<android.graphics.Path.Op: android.graphics.Path.Op[] .VALUES>:<private static final>:<>:<android.graphics.Path.Op:java.lang.Enum>
 <android.media.MediaFormat: java.lang.String KEY_STRIDE>:<public static final>:<StringConstantValueTag:stride>:<android.media.MediaFormat>
 <android.net.rtp.AudioCodec: int type>:<public final>:<>:<android.net.rtp.AudioCodec>
 <android.provider.ContactsContract.Contacts.Entity: java.lang.String CONTENT_DIRECTORY>:<public static final>:<StringConstantValueTag:entities>:<android.provider.ContactsContract.Contacts.Entity:android.provider.BaseColumns,android.provider.ContactsContract.ContactsColumns,android.provider.ContactsContract.ContactNameColumns,android.provider.ContactsContract.RawContactsColumns,android.provider.ContactsContract.BaseSyncColumns,android.provider.ContactsContract.SyncColumns,android.provider.ContactsContract.DataColumns,android.provider.ContactsContract.StatusColumns,android.provider.ContactsContract.ContactOptionsColumns,android.provider.ContactsContract.ContactStatusColumns,android.provider.ContactsContract.DataUsageStatColumns>
@@ -17253,7 +17176,6 @@
 <android.R.style: int Theme_Light_WallpaperSettings>:<public static final>:<IntegerConstantValueTag:16973922>:<android.R.style>
 <android.media.tv.TvContract.Programs: java.lang.String COLUMN_RECORDING_PROHIBITED>:<public static final>:<StringConstantValueTag:recording_prohibited>:<android.media.tv.TvContract.Programs:android.media.tv.TvContract.BaseTvColumns>
 <android.provider.Settings.System: java.lang.String SHOW_PROCESSES>:<public static final>:<StringConstantValueTag:show_processes>:<android.provider.Settings.System:android.provider.Settings.NameValueTable>
-<android.webkit.WebSettings.ZoomDensity: android.webkit.WebSettings.ZoomDensity[] .VALUES>:<private static final>:<>:<android.webkit.WebSettings.ZoomDensity:java.lang.Enum>
 <android.hardware.camera2.CameraMetadata: int CONTROL_SCENE_MODE_FIREWORKS>:<public static final>:<IntegerConstantValueTag:12>:<android.hardware.camera2.CameraMetadata>
 <android.webkit.WebSyncManager: java.lang.String LOGTAG>:<protected static final>:<StringConstantValueTag:websync>:<android.webkit.WebSyncManager:java.lang.Runnable>
 <android.print.PrintDocumentInfo: int CONTENT_TYPE_PHOTO>:<public static final>:<IntegerConstantValueTag:1>:<android.print.PrintDocumentInfo:android.os.Parcelable>
@@ -17323,7 +17245,6 @@
 <android.opengl.GLES31Ext: int GL_DEBUG_SEVERITY_HIGH_KHR>:<public static final>:<IntegerConstantValueTag:37190>:<android.opengl.GLES31Ext>
 <android.content.pm.PackageStats: long dataSize>:<public>:<>:<android.content.pm.PackageStats:android.os.Parcelable>
 <android.inputmethodservice.Keyboard: int EDGE_TOP>:<public static final>:<IntegerConstantValueTag:4>:<android.inputmethodservice.Keyboard>
-<android.graphics.Path.Direction: android.graphics.Path.Direction[] .VALUES>:<private static final>:<>:<android.graphics.Path.Direction:java.lang.Enum>
 <android.R.attr: int includeFontPadding>:<public static final>:<IntegerConstantValueTag:16843103>:<android.R.attr>
 <android.R.attr: int numericShortcut>:<public static final>:<IntegerConstantValueTag:16843236>:<android.R.attr>
 <android.R.drawable: int ic_dialog_map>:<public static final>:<IntegerConstantValueTag:17301546>:<android.R.drawable>
@@ -17492,7 +17413,6 @@
 <android.telecom.TelecomManager: java.lang.String METADATA_IN_CALL_SERVICE_UI>:<public static final>:<StringConstantValueTag:android.telecom.IN_CALL_SERVICE_UI>:<android.telecom.TelecomManager>
 <android.hardware.camera2.CaptureFailure: int REASON_FLUSHED>:<public static final>:<IntegerConstantValueTag:1>:<android.hardware.camera2.CaptureFailure>
 <android.opengl.GLES31Ext: int GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS_EXT>:<public static final>:<IntegerConstantValueTag:37582>:<android.opengl.GLES31Ext>
-<android.graphics.Paint.Join: android.graphics.Paint.Join[] .VALUES>:<private static final>:<>:<android.graphics.Paint.Join:java.lang.Enum>
 <android.content.Context: java.lang.String NETWORK_STATS_SERVICE>:<public static final>:<StringConstantValueTag:netstats>:<android.content.Context>
 <android.media.MediaFormat: java.lang.String KEY_AAC_DRC_HEAVY_COMPRESSION>:<public static final>:<StringConstantValueTag:aac-drc-heavy-compression>:<android.media.MediaFormat>
 <android.opengl.GLES11: int GL_CLIENT_ACTIVE_TEXTURE>:<public static final>:<IntegerConstantValueTag:34017>:<android.opengl.GLES11:android.opengl.GLES10>
@@ -17803,7 +17723,6 @@
 <android.provider.Telephony.BaseMmsColumns: java.lang.String RESPONSE_TEXT>:<public static final>:<StringConstantValueTag:resp_txt>:<android.provider.Telephony.BaseMmsColumns:android.provider.BaseColumns>
 <android.telephony.TelephonyManager: int NETWORK_TYPE_EHRPD>:<public static final>:<IntegerConstantValueTag:14>:<android.telephony.TelephonyManager>
 <android.icu.lang.UCharacter.JoiningGroup: int DALATH_RISH>:<public static final>:<IntegerConstantValueTag:7>:<android.icu.lang.UCharacter.JoiningGroup>
-<android.telephony.SmsMessage.MessageClass: android.telephony.SmsMessage.MessageClass[] .VALUES>:<private static final>:<>:<android.telephony.SmsMessage.MessageClass:java.lang.Enum>
 <android.renderscript.Allocation: int USAGE_GRAPHICS_VERTEX>:<public static final>:<IntegerConstantValueTag:4>:<android.renderscript.Allocation:android.renderscript.BaseObj>
 <android.os.UserManager: java.lang.String DISALLOW_SHARE_LOCATION>:<public static final>:<StringConstantValueTag:no_share_location>:<android.os.UserManager>
 <android.bluetooth.BluetoothAssignedNumbers: int LINAK>:<public static final>:<IntegerConstantValueTag:164>:<android.bluetooth.BluetoothAssignedNumbers>

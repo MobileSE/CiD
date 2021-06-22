@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import lu.uni.snt.cid.utils.CommonUtils;
 import lu.uni.snt.cid.utils.MethodSignature;
 
 public class ConditionalCallGraph 
@@ -98,7 +99,13 @@ public class ConditionalCallGraph
 		
 		if (! edge.tgtSig.contains("<init>"))
 		{
-			String cls = new MethodSignature(edge.tgtSig).getCls();
+			// check if the target signature is a method or field.
+			String cls = "";
+			if (edge.tgtSig.contains("(") && edge.tgtSig.contains(")") ) {
+				cls = new MethodSignature(edge.tgtSig).getCls();
+			} else {
+				cls = CommonUtils.getClassName(edge.tgtSig);
+			}
 			if (cls2methods.containsKey(cls))
 			{
 				Set<String> methods = cls2methods.get(cls);

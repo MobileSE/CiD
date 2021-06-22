@@ -8,6 +8,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -189,11 +190,60 @@ public class AndroidAPILifeModel implements Serializable
 				return true;
 			}
 		}
-		
+
 
 		return false;
 	}
 	
+	public Set<String> getInheritedAPIs(String methodSig) {
+		Set<String> inheritedMethods = new HashSet<String>();
+		try
+		{
+			SootMethod sootMethod = Scene.v().getMethod(methodSig);
+
+			SootClass sootClass = sootMethod.getDeclaringClass();
+
+			List<SootClass> workList = new LinkedList<SootClass>();
+			if (sootClass.hasSuperclass())
+			{
+				workList.add(sootClass.getSuperclass());
+			}
+			for (Iterator<SootClass> iter = sootClass.getInterfaces().snapshotIterator(); iter.hasNext(); )
+			{
+				workList.add(iter.next());
+			}
+
+			while (! workList.isEmpty())
+			{
+				sootClass = workList.remove(0);
+
+				String newMethodSig = methodSig.replace("<" + sootMethod.getDeclaringClass().getName() + ":", "<" + sootClass.getName() + ":");
+
+				if (isAndroidAPI(newMethodSig))
+				{
+					inheritedMethods.add(newMethodSig.replace("$", "."));
+				}
+//				else
+//				{
+					if (sootClass.hasSuperclass() && !sootClass.getSuperclass().getName().equals("java.lang.Object"))
+					{
+						workList.add(sootClass.getSuperclass());
+					}
+					for (Iterator<SootClass> iter = sootClass.getInterfaces().snapshotIterator(); iter.hasNext(); )
+					{
+						workList.add(iter.next());
+					}
+//				}
+			}
+		}
+		catch (Exception ex)
+		{
+			//TODO:
+		}
+
+		return inheritedMethods;
+	}
+
 	public boolean isInheritedAndroidAPI(String methodSig)
 	{
 		try
@@ -317,7 +367,7 @@ public class AndroidAPILifeModel implements Serializable
 						if (Config.DEBUG)
 							System.out.println("[DEBUG]: Varargs Found, " + methodSig + "-->" + methodSignature);
 					}
-					
+
 					if (ms.containsGenericReturnType() ||
 						ms.getReturnType().equals(sig.getReturnType()))
 					{
