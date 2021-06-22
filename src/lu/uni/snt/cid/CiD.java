@@ -123,16 +123,6 @@ public class CiD
 			}
 		}
 		
-		for (String field : extractor.accessedFields) {
-			String[] splits = field.split("-");
-			APILife fieldLife = AndroidFieldLifeModel.getInstance().getDirectLifeTime(splits[0]);
-			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
-					System.out.println("Found Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
-				}
-			}
-		}
-		
 		for (String method : extractor.usedAndroidAPIs)
 		{
 			APILife lifetime = AndroidAPILifeModel.getInstance().getLifetime(method);
