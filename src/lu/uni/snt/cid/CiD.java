@@ -89,6 +89,8 @@ public class CiD
 		Map<APILife, Set<APILife>> APIOverideIssues = new HashMap<APILife, Set<APILife>>();
 		Map<String, Set<APILife>> overrideIssues = new HashMap<String, Set<APILife>>();
 
+		Map<APILife, Integer> back_forward_protect = new HashMap<APILife, Integer>();
+
 		for (String method : extractor.api2supermethods.keySet()) {
 			APILife methodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(method);
 			boolean callbackIssue = true;
@@ -179,7 +181,7 @@ public class CiD
 			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
 			{
 				if (APIOverideIssues.containsKey(lifetime)) {
-					APIOverideIssues.remove(lifetime);
+					back_forward_protect.put(lifetime, 1);
 				}
 				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
 				if (isLibraryMethod)
@@ -221,7 +223,11 @@ public class CiD
 			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
 			{
 				if (APIOverideIssues.containsKey(lifetime)) {
-					APIOverideIssues.remove(lifetime);
+					if (back_forward_protect.containsKey(lifetime)) {
+						back_forward_protect.put(lifetime, 2);
+					} else {
+						back_forward_protect.put(lifetime, 1);
+					}
 				}
 				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
 				if (isLibraryMethod)
@@ -252,6 +258,13 @@ public class CiD
 					System.out.println("--Library:False-->" + lifetime + "-->" + method);
 //					System.out.println(ConditionalCallGraph.obtainCallStack(method));
 				}	
+			}
+		}
+
+		for (APILife apilife : back_forward_protect.keySet()) {
+			int cnt = back_forward_protect.get(apilife);
+			if (cnt == 2) {
+				APIOverideIssues.remove(apilife);
 			}
 		}
 
