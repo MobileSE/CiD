@@ -93,6 +93,22 @@ public class CiD
 
 		for (String method : extractor.api2supermethods.keySet()) {
 			APILife methodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(method);
+
+			/***
+			 * print all api and super methods
+			 */
+			Set<APILife> superLifeOuts = new HashSet<APILife>();
+			for (String superMethod : extractor.api2supermethods.get(method)) {
+				APILife superMethodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(superMethod);
+				superLifeOuts.add(superMethodLife);
+			}
+
+			if (null != methodLife) {
+				System.out.println("override api and super:" + methodLife + ":extends from:" + superLifeOuts);
+			} else {
+				System.out.println("override api and super: " + method + ":extends from:" + superLifeOuts);
+			}
+
 			boolean callbackIssue = true;
 			Set<Integer> supportedLevels = new HashSet<Integer>();
 			if (null != methodLife && isAPISupported(methodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
