@@ -100,22 +100,22 @@ public class AndroidAPILifeModel implements Serializable
 	private AndroidAPILifeModel()
 	{
 		File androidAPIsDir = new File(androidAPIsDirPath);
-//		for (File file : androidAPIsDir.listFiles())
-//		{
-//			FrameworkBase fb = new FrameworkBase();
-//			
-//			fb.load(file.getAbsolutePath());
-//			
-//			CommonUtils.put(class2SuperClasses, fb.class2SuperClasses);
-//			CommonUtils.put(class2Methods, fb.class2Methods);
-//		}
-		
-		for (File file : androidAPIsDir.listFiles()) {
-			FrameworkExtract fe = new FrameworkExtract();
-			fe.load(file.getAbsolutePath());
-			CommonUtils.put(class2SuperClasses, fe.class2SuperClasses);
-			CommonUtils.put(class2Methods, fe.class2Methods);
+		for (File file : androidAPIsDir.listFiles())
+		{
+			FrameworkBase fb = new FrameworkBase();
+			
+			fb.load(file.getAbsolutePath());
+			
+			CommonUtils.put(class2SuperClasses, fb.class2SuperClasses);
+			CommonUtils.put(class2Methods, fb.class2Methods);
 		}
+		
+//		for (File file : androidAPIsDir.listFiles()) {
+//			FrameworkExtract fe = new FrameworkExtract();
+//			fe.load(file.getAbsolutePath());
+//			CommonUtils.put(class2SuperClasses, fe.class2SuperClasses);
+//			CommonUtils.put(class2Methods, fe.class2Methods);
+//		}
 		
 		Set<String> lines = CommonUtils.loadFile(lifetimeAPIPath);
 		for (String line : lines)

@@ -72,10 +72,11 @@ public class AndroidFieldLifeModel implements Serializable {
 		File androidAPIsDir = new File(androidFieldsDirPath);
 		
 		for (File file : androidAPIsDir.listFiles()) {
-			FrameworkExtract fe = new FrameworkExtract();
-			fe.load(file.getAbsolutePath());
-			CommonUtils.put(field2SuperClasses, fe.field2SuperClasses);
-			CommonUtils.put(field2Class, fe.field2Class);
+//			FrameworkExtract fe = new FrameworkExtract();
+			FrameworkBase fb = new FrameworkBase();
+			fb.load(file.getAbsolutePath());
+//			CommonUtils.put(field2SuperClasses, fb.field2SuperClasses);
+//			CommonUtils.put(field2Class, fb.field2Class);
 		}
 		
 		Set<String> lines = CommonUtils.loadFile(lifetimeFieldPath);

@@ -17,7 +17,7 @@ public class APILifeStudy
 	
 	public static void main(String[] args) 
 	{
-		for (int level = 2; level <= LATEST_API_LEVEL; level++)
+		for (int level = 1; level <= LATEST_API_LEVEL; level++)
 		{
 			if (level == 20)
 			{
@@ -29,10 +29,11 @@ public class APILifeStudy
 				System.out.println("Non exists:" + "apis/Official/android/android-apis-refinement/android-" + level + ".txt");
 				continue;
 			}
-//			Set<String> methods = CommonUtils.loadFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
-			Set<String> methods = CommonUtils.loadContentFromFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+			Set<String> methods = CommonUtils.loadFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+//			Set<String> methods = CommonUtils.loadContentFromFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
 			
-			Set<String> fields = CommonUtils.loadContentFromFile("apis/Official/android/android-fields-refinement/android-" + level + ".txt");
+			Set<String> fields = CommonUtils.loadFile("apis/Official/android/android-fields-refinement/android-" + level + ".txt");
+//			Set<String> fields = CommonUtils.loadContentFromFile("apis/Official/android/android-fields-refinement/android-" + level + ".txt");
 			
 			for (String method : methods)
 			{

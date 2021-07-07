@@ -68,15 +68,15 @@ public class Mining4UTransformer extends SceneTransformer
 					accessedAndroidAPIs.add(methodSig);
 					CommonUtils.put(api2callers, methodSig, callerMethodSig);
 				}
-				else if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(methodSig))
-				{
-					methodSig = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(methodSig);
-					
-					methodSig = methodSig.replace("$", ".");
-					
-					accessedAndroidAPIs.add(methodSig);
-					CommonUtils.put(api2callers, methodSig, callerMethodSig);
-				}
+//				else if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(methodSig))
+//				{
+//					methodSig = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(methodSig);
+//					
+//					methodSig = methodSig.replace("$", ".");
+//					
+//					accessedAndroidAPIs.add(methodSig);
+//					CommonUtils.put(api2callers, methodSig, callerMethodSig);
+//				}
 				
 				String maySuperSig = sootMethod.getSignature();
 				String currSig = sootMethod.getSignature();
