@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="libs/jdom-2.0.5.jar"/>
 	<classpathentry kind="lib" path="libs/commons-io-2.5.jar"/>
 	<classpathentry kind="lib" path="libs/soot-trunk.jar"/>
+	<classpathentry kind="lib" path="libs/opencsv-3.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

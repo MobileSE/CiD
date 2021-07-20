@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -39,24 +40,34 @@ public class AndroidAPILifeModel implements Serializable
 	
 	public Map<String, String> method2inheritedAPIs = new HashMap<String, String>();
 	
+	Map<String, Set<String[]>> deviceMethods  = new HashMap<String, Set<String[]>>();
+	Map<String, Set<String[]>> deviceFields = new HashMap<String, Set<String[]>>();
+	
+	public String[] csvMethodHeaders = null;
+	public String[] csvFieldHeaders = null;
+	
 	private static AndroidAPILifeModel instance = null;
 	private static String modelPath = "apis/Official/android/android_api_model.txt";
+	private static String deviceModelPath = "devices/device_specific_method_field.txt";
 	
 	private String lifetimeAPIPath = "apis/Official/android/android_api_lifetime.txt";
 	private String genericAPIPath = "apis/Official/android/android_api_generictype.txt";
 	private String varargsAPIPath = "apis/Official/android/android_api_varargs.txt";
 	private String androidAPIsDirPath = "apis/Official/android/android-apis-refinement";
 	
+	private String deviceAPIPath = "devices/device_specific_methods.csv";
+	private String deviceFieldPath = "devices/device_specific_fields.csv";
+	
 	public static AndroidAPILifeModel getInstance()
 	{
 		if (null == instance)
 		{
-			File model = new File(modelPath);
+			File model = new File(deviceModelPath);
 			if (model.exists())
 			{
 				try
 				{
-					FileInputStream fis = new FileInputStream(modelPath);
+					FileInputStream fis = new FileInputStream(deviceModelPath);
 					ObjectInputStream ois = new ObjectInputStream(fis);
 					
 					instance = (AndroidAPILifeModel) ois.readObject();
@@ -74,21 +85,21 @@ public class AndroidAPILifeModel implements Serializable
 				instance.serialize();
 			}
 			
-			Set<String> genericAPIs = CommonUtils.loadFile(instance.genericAPIPath);
-			for (String genericAPI : genericAPIs)
-			{
-				String compactSig = new MethodSignature(genericAPI).getCompactSignature();
-				CommonUtils.put(instance.compactSig2Methods, compactSig, genericAPI);
-				CommonUtils.put(instance.compactSig2Methods_gt, compactSig, genericAPI);
-			}
-			
-			Set<String> varargsAPIs = CommonUtils.loadFile(instance.varargsAPIPath);
-			for (String varargsAPI : varargsAPIs)
-			{
-				String compactSig = new MethodSignature(varargsAPI).getCompactSignature();
-				CommonUtils.put(instance.compactSig2Methods, compactSig, varargsAPI);
-				CommonUtils.put(instance.compactSig2Methods_varargs, compactSig, varargsAPI);
-			}
+//			Set<String> genericAPIs = CommonUtils.loadFile(instance.genericAPIPath);
+//			for (String genericAPI : genericAPIs)
+//			{
+//				String compactSig = new MethodSignature(genericAPI).getCompactSignature();
+//				CommonUtils.put(instance.compactSig2Methods, compactSig, genericAPI);
+//				CommonUtils.put(instance.compactSig2Methods_gt, compactSig, genericAPI);
+//			}
+//			
+//			Set<String> varargsAPIs = CommonUtils.loadFile(instance.varargsAPIPath);
+//			for (String varargsAPI : varargsAPIs)
+//			{
+//				String compactSig = new MethodSignature(varargsAPI).getCompactSignature();
+//				CommonUtils.put(instance.compactSig2Methods, compactSig, varargsAPI);
+//				CommonUtils.put(instance.compactSig2Methods_varargs, compactSig, varargsAPI);
+//			}
 			
 			//CommonUtils.put(instance.compactSig2Methods, instance.compactSig2Methods_gt);
 			//CommonUtils.put(instance.compactSig2Methods, instance.compactSig2Methods_varargs);
@@ -99,16 +110,34 @@ public class AndroidAPILifeModel implements Serializable
 	
 	private AndroidAPILifeModel()
 	{
-		File androidAPIsDir = new File(androidAPIsDirPath);
-		for (File file : androidAPIsDir.listFiles())
-		{
-			FrameworkBase fb = new FrameworkBase();
-			
-			fb.load(file.getAbsolutePath());
-			
-			CommonUtils.put(class2SuperClasses, fb.class2SuperClasses);
-			CommonUtils.put(class2Methods, fb.class2Methods);
+//		File androidAPIsDir = new File(androidAPIsDirPath);
+//		for (File file : androidAPIsDir.listFiles())
+//		{
+//			FrameworkBase fb = new FrameworkBase();
+//			
+//			fb.load(file.getAbsolutePath());
+//			
+//			CommonUtils.put(class2SuperClasses, fb.class2SuperClasses);
+//			CommonUtils.put(class2Methods, fb.class2Methods);
+//		}
+		Map<String, Set<String[]>> deviceM = CommonUtils.csvDeviceReader(deviceAPIPath);
+		Map<String, Set<String[]>> deviceF = CommonUtils.csvDeviceReader(deviceFieldPath);
+		
+		List<String[]> methodHeader = new ArrayList<String[]>(deviceM.get("headers"));
+		List<String[]> fieldHeader = new ArrayList<String[]>(deviceF.get("headers"));
+		csvMethodHeaders = new String[methodHeader.get(0).length];
+		int idx = 0;
+		for (String val : methodHeader.get(0)) {
+			csvMethodHeaders[idx++] = val; 
 		}
+		idx = 0;
+		csvFieldHeaders = new String[fieldHeader.get(0).length];
+		for (String val : fieldHeader.get(0)) {
+			csvFieldHeaders[idx++] = val;
+		}
+		
+		CommonUtils.devicePut(deviceMethods, deviceM);
+		CommonUtils.devicePut(deviceFields, deviceF);
 		
 //		for (File file : androidAPIsDir.listFiles()) {
 //			FrameworkExtract fe = new FrameworkExtract();
@@ -117,12 +146,12 @@ public class AndroidAPILifeModel implements Serializable
 //			CommonUtils.put(class2Methods, fe.class2Methods);
 //		}
 		
-		Set<String> lines = CommonUtils.loadFile(lifetimeAPIPath);
-		for (String line : lines)
-		{
-			APILife apiLife = new APILife(line);
-			method2APILifes.put(apiLife.getSignature(), apiLife);
-		}
+//		Set<String> lines = CommonUtils.loadFile(lifetimeAPIPath);
+//		for (String line : lines)
+//		{
+//			APILife apiLife = new APILife(line);
+//			method2APILifes.put(apiLife.getSignature(), apiLife);
+//		}
 	}
 	
 	public boolean containsGenericType(String methodSig)
@@ -153,6 +182,36 @@ public class AndroidAPILifeModel implements Serializable
 		}
 		
 		return false;
+	}
+	
+	public boolean isDeviceMethod(String method) {
+		boolean deviceMethod = false;
+		if (deviceMethods.containsKey(method)) {
+			deviceMethod = true;
+		}
+		return deviceMethod;
+	}
+	
+	public boolean isDeviceField(String field) {
+		boolean deviceField = false;
+		if (deviceFields.containsKey(field)) {
+			deviceField = true;
+		}
+		return deviceField;
+	}
+	
+	public Set<String[]> deviceSpecificMethod(String method) {
+		if (deviceMethods.containsKey(method)) {
+			return deviceMethods.get(method);
+		}
+		return null;
+	}
+	
+	public Set<String[]> deviceSpecificField(String field) {
+		if (deviceFields.containsKey(field)) {
+			return deviceFields.get(field);
+		}
+		return null;
 	}
 	
 	/**
@@ -298,13 +357,13 @@ public class AndroidAPILifeModel implements Serializable
 	{
 		try 
 		{
-			FileOutputStream fos = new FileOutputStream(modelPath);
+			FileOutputStream fos = new FileOutputStream(deviceModelPath);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(this);
 			oos.close();
 			fos.close();
 	        
-			System.out.printf("The API Life Model is Serialized into file res/android_api_model.txt");
+			System.out.printf("The API Life Model is Serialized into file device modle: devices/device_specific_method_field.txt");
 	    }
 		catch(IOException ex) 
 		{

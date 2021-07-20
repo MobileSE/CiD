@@ -7,12 +7,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+
+import com.opencsv.CSVReader;
 
 public class CommonUtils 
 {
@@ -260,7 +264,29 @@ public class CommonUtils
 			}
 		}
 	}
-	
+
+	public static void devicePut(Map<String, Set<String[]>> dest, Map<String, Set<String[]>> src)
+	{
+		for (Map.Entry<String, Set<String[]>> entry : src.entrySet())
+		{
+			String methodField = entry.getKey();
+			Set<String[]> set2 = entry.getValue();
+			
+			if (dest.containsKey(methodField))
+			{
+				Set<String[]> set1 = dest.get(methodField);
+				set1.addAll(set2);
+				dest.put(methodField, set1);
+			}
+			else
+			{
+				Set<String[]> set1 = new HashSet<String[]>();
+				set1.addAll(set2);
+				dest.put(methodField, set1);
+			}
+		}
+	}
+
 	public static String getClassName(String methodOrField) {
 		int semicolonPos = methodOrField.indexOf(":");
 		return methodOrField.substring(1, semicolonPos);
@@ -269,5 +295,50 @@ public class CommonUtils
 	public static String clsNameReplace(String origin, String clsName) {
 		int semicolonPos = origin.indexOf(":");
 		return "<" + clsName + origin.substring(semicolonPos);
+	}
+	
+	public static boolean isDeviceSpecific(String[] record) {
+		boolean isSpecific = false;
+		for (String val : record) {
+			if (val.equals("0")) {
+				isSpecific = true;
+				break;
+			}
+		}
+		return isSpecific;
+	}
+
+	public static Map<String, Set<String[]>> csvDeviceReader(String csvPath) {
+		Map<String, Set<String[]>> methodField = new HashMap<String, Set<String[]>>();
+		int idx = 0;
+		try {
+			try (CSVReader csvReader = new CSVReader(new FileReader(csvPath));) {
+			    String[] values = null;
+			    while ((values = csvReader.readNext()) != null) {
+			    	if (idx == 0) {
+			    		Set<String[]> lines = new HashSet<String[]>();
+		    			lines.add(values);
+			    		methodField.put("headers", lines);
+			    		idx += 1;
+			    	} else {
+			    		idx += 1;
+			    	}
+			    	if (isDeviceSpecific(values)) {
+			    		String mf = values[1];
+			    		if (methodField.containsKey(mf)) {
+			    			methodField.get(mf).add(values);
+			    		} else {
+			    			Set<String[]> lines = new HashSet<String[]>();
+			    			lines.add(values);
+			    			methodField.put(mf, lines);
+			    		}
+			    	}
+			    }
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return methodField;
 	}
 }

@@ -61,7 +61,7 @@ public class Mining4UTransformer extends SceneTransformer
 				SootMethod sootMethod = stmt.getInvokeExpr().getMethod();
 				String methodSig = sootMethod.getSignature();
 				
-				if (AndroidAPILifeModel.getInstance().isAndroidAPI(methodSig))
+				if (AndroidAPILifeModel.getInstance().isDeviceMethod(methodSig.replace("$", ".")))
 				{
 					methodSig = methodSig.replace("$", ".");
 					
@@ -100,13 +100,13 @@ public class Mining4UTransformer extends SceneTransformer
 					int lineNumber = tag.getLineNumber();
 					if (!leftVar.isEmpty()) {
 						String currField = leftVar;
-						if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
+						if (AndroidAPILifeModel.getInstance().isDeviceField(currField)) {
 							accessedFields.add(currField.replace("$", ".") + "-" + lineNumber);
 						}
 					}
 					if (!rightVar.isEmpty()) {
 						String currField = rightVar;
-						if (AndroidFieldLifeModel.getInstance().isAndroidField(currField)) {
+						if (AndroidAPILifeModel.getInstance().isDeviceField(currField)) {
 							accessedFields.add(currField.replace("$", ".") + "-" + lineNumber);
 						}
 					}

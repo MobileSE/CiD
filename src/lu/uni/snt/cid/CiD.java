@@ -3,6 +3,7 @@ package lu.uni.snt.cid;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -124,17 +125,18 @@ public class CiD
 //		}
 		
 		for (String field : extractor.accessedFields) {
-			System.out.println("Found Field:" + field);
-//			String[] splits = field.split("-");
-//			APILife fieldLife = AndroidFieldLifeModel.getInstance().getDirectLifeTime(splits[0]);
-//			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-//				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
-//					System.out.println("Found Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
-//				}
-//			}
+			String[] splits = field.split("-");
+			Set<String[]> fields = AndroidAPILifeModel.getInstance().deviceSpecificField(splits[0]);
+			for (String[] fs : fields) {
+				System.out.println("Found Field:" + field + "@" + Arrays.toString(fs));
+			}
+
 		}
 		for (String method : extractor.usedAndroidAPIs) {
-			System.out.println("Found Method:" + method);
+			Set<String[]> methods = AndroidAPILifeModel.getInstance().deviceSpecificMethod(method);
+			for (String[] ms : methods) {
+				System.out.println("Found Field:" + method + "@" + Arrays.toString(ms));
+			}
 		}
 //		for (String method : extractor.usedAndroidAPIs)
 //		{
