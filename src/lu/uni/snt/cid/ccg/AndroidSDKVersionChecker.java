@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import lu.uni.snt.cid.AndroidAPILifeModel;
+import lu.uni.snt.cid.AndroidAPIFieldLifeModel;
 import lu.uni.snt.cid.Config;
 import lu.uni.snt.cid.utils.CommonUtils;
 import lu.uni.snt.cid.utils.SootUtils;
@@ -138,8 +138,8 @@ public class AndroidSDKVersionChecker// extends BodyTransformer
 					
 					ConditionalCallGraph.addEdge(edge);
 					String currMethodSig = stmt.getInvokeExpr().getMethod().getSignature();
-					if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(currMethodSig)) {
-						String superMethodSig = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(currMethodSig);
+					if (AndroidAPIFieldLifeModel.getInstance().isInheritedAndroidAPI(currMethodSig)) {
+						String superMethodSig = AndroidAPIFieldLifeModel.getInstance().method2inheritedAPIs.get(currMethodSig);
 						superMethodSig = superMethodSig.replace("$", ".");
 						Edge superClassEdge = ConditionalCallGraph.getEdge(b.getMethod().getSignature(), superMethodSig);
 						superClassEdge.conditions.add(conditions.toString());

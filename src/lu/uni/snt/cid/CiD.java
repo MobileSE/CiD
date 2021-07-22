@@ -89,193 +89,216 @@ public class CiD
 
 		Map<APILife, Set<APILife>> APIOverideIssues = new HashMap<APILife, Set<APILife>>();
 		Map<String, Set<APILife>> overrideIssues = new HashMap<String, Set<APILife>>();
+		
+		Map<APILife, Integer> back_forward_protect = new HashMap<APILife, Integer>();
 
-//		for (String method : extractor.api2supermethods.keySet()) {
-//			APILife methodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(method);
-//			boolean callbackIssue = true;
-//			Set<Integer> supportedLevels = new HashSet<Integer>();
-//			if (null != methodLife && isAPISupported(methodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-//				continue;
-//			}
-//			if (null != methodLife) {
-//				supportedLevelRetrieve(methodLife, supportedLevels);
-//			}
-//			List<APILife> superLifes = new ArrayList<APILife>();
-//			for (String superMethod : extractor.api2supermethods.get(method)) {
-//				APILife superMethodLife = AndroidAPILifeModel.getInstance().getDirectLifeTime(superMethod);
-//				superLifes.add(superMethodLife);
-//				supportedLevelRetrieve(superMethodLife, supportedLevels);
-//				if (isAPISupported(superMethodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-//					callbackIssue = false;
-//					break;
-//				}
-//			}
-//			if (callbackIssue && isAPISupportedWithSupers(supportedLevels, minAPILevel, maxAPILevel)) {
-//				callbackIssue = false;
-//			}
-//			if (callbackIssue) {
-//				if (null != methodLife) {
-////					System.out.println("Found Callback Issue:" + methodLife + ":extends from:" + superLifes);
-//					APIOverideIssues.put(methodLife, new HashSet<APILife>(superLifes));
-//				} else {
-////					System.out.println("Found Callback Issue:" + method + ":extends from:" + superLifes);
-//					overrideIssues.put(method, new HashSet<APILife>(superLifes));
-//				}
+		for (String method : extractor.api2supermethods.keySet()) {
+			APILife methodLife = AndroidAPIFieldLifeModel.getInstance().getAPIDirectLifeTime(method);
+			boolean callbackIssue = true;
+			Set<Integer> supportedLevels = new HashSet<Integer>();
+			if (null != methodLife && isAPISupported(methodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+				continue;
+			}
+			if (null != methodLife) {
+				supportedLevelRetrieve(methodLife, supportedLevels);
+			}
+			List<APILife> superLifes = new ArrayList<APILife>();
+			for (String superMethod : extractor.api2supermethods.get(method)) {
+				APILife superMethodLife = AndroidAPIFieldLifeModel.getInstance().getAPIDirectLifeTime(superMethod);
+				superLifes.add(superMethodLife);
+				supportedLevelRetrieve(superMethodLife, supportedLevels);
+				if (isAPISupported(superMethodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+					callbackIssue = false;
+					break;
+				}
+			}
+			if (callbackIssue && isAPISupportedWithSupers(supportedLevels, minAPILevel, maxAPILevel)) {
+				callbackIssue = false;
+			}
+			if (callbackIssue) {
+				if (null != methodLife) {
+//					System.out.println("Found Callback Issue:" + methodLife + ":extends from:" + superLifes);
+					APIOverideIssues.put(methodLife, new HashSet<APILife>(superLifes));
+				} else {
+//					System.out.println("Found Callback Issue:" + method + ":extends from:" + superLifes);
+					overrideIssues.put(method, new HashSet<APILife>(superLifes));
+				}
+			}
+		}
+		
+		for (String field : extractor.usedDeviceFields) {
+			String[] splits = field.split("-");
+			Set<String[]> fields = AndroidAPIFieldLifeModel.getInstance().deviceSpecificField(splits[0]);
+			for (String[] fs : fields) {
+				System.out.println("Found Device Field:" + field + "@" + Arrays.toString(fs));
+			}
+
+		}
+		System.out.println("used device API number:" + extractor.usedDeviceAPIs.size());
+//		for (String method : extractor.usedDeviceAPIs) {
+//			Set<String[]> methods = AndroidAPIFieldLifeModel.getInstance().deviceSpecificMethod(method);
+//			for (String[] ms : methods) {
+//				System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
 //			}
 //		}
 		
-		for (String field : extractor.accessedFields) {
+		for (String field : extractor.usedAndroidFields) {
 			String[] splits = field.split("-");
-			Set<String[]> fields = AndroidAPILifeModel.getInstance().deviceSpecificField(splits[0]);
-			for (String[] fs : fields) {
-				System.out.println("Found Field:" + field + "@" + Arrays.toString(fs));
+			APILife fieldLife = AndroidAPIFieldLifeModel.getInstance().getFieldDirectLifeTime(splits[0]);
+			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
+					System.out.println("Found Android Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
+				}
 			}
+		}
+		for (String method : extractor.usedAndroidAPIs)
+		{
+			APILife lifetime = AndroidAPIFieldLifeModel.getInstance().getLifetime(method);
+			
+			if (lifetime.getMinAPILevel() == -1 || lifetime.getMaxAPILevel() == -1)
+			{
+				if (Config.DEBUG)
+				{
+					System.out.println("[DEBUG] Wrong Min/Max API Level for " + lifetime.getSignature());
+				}
+				
+				continue;
+			}
+			
+//			if (isAPIReverted(lifetime.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+//				System.out.println("Reverted: " + method + ":[" + lifetime.getAPILevels() + "]:[" + minAPILevel + "," + maxAPILevel + "]");
+//			}
 
-		}
-		for (String method : extractor.usedAndroidAPIs) {
-			Set<String[]> methods = AndroidAPILifeModel.getInstance().deviceSpecificMethod(method);
-			for (String[] ms : methods) {
-				System.out.println("Found Field:" + method + "@" + Arrays.toString(ms));
+			if (lifetime.getMaxAPILevel() < maxAPILevel)
+			{
+				if (ConditionalCallGraph.obtainConditions(method).isEmpty())
+				{
+					problematicAPIs_forward.add(lifetime);
+				}
+				else
+				{
+					protectedAPIs_forward.add(lifetime);
+				}
+			}
+			
+			if (lifetime.getMinAPILevel() > minAPILevel && lifetime.getMinAPILevel() > 1)
+			{
+				if (ConditionalCallGraph.obtainConditions(method).isEmpty())
+				{
+					problematicAPIs_backward.add(lifetime);
+				}
+				else
+				{
+					protectedAPIs_backward.add(lifetime);
+				}
 			}
 		}
-//		for (String method : extractor.usedAndroidAPIs)
-//		{
-//			APILife lifetime = AndroidAPILifeModel.getInstance().getLifetime(method);
-//			
-//			if (lifetime.getMinAPILevel() == -1 || lifetime.getMaxAPILevel() == -1)
-//			{
-//				if (Config.DEBUG)
-//				{
-//					System.out.println("[DEBUG] Wrong Min/Max API Level for " + lifetime.getSignature());
-//				}
-//				
-//				continue;
-//			}
-//			
-////			if (isAPIReverted(lifetime.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-////				System.out.println("Reverted: " + method + ":[" + lifetime.getAPILevels() + "]:[" + minAPILevel + "," + maxAPILevel + "]");
-////			}
-//
-//			if (lifetime.getMaxAPILevel() < maxAPILevel)
-//			{
-//				if (ConditionalCallGraph.obtainConditions(method).isEmpty())
-//				{
-//					problematicAPIs_forward.add(lifetime);
-//				}
-//				else
-//				{
-//					protectedAPIs_forward.add(lifetime);
-//				}
-//			}
-//			
-//			if (lifetime.getMinAPILevel() > minAPILevel && lifetime.getMinAPILevel() > 1)
-//			{
-//				if (ConditionalCallGraph.obtainConditions(method).isEmpty())
-//				{
-//					problematicAPIs_backward.add(lifetime);
-//				}
-//				else
-//				{
-//					protectedAPIs_backward.add(lifetime);
-//				}
-//			}
-//		}
-//		
-//		System.out.println("SDK Check:" + Config.containsSDKVersionChecker);
-//		System.out.println("Found " + protectedAPIs_forward.size() + " Android APIs (for forward compatibility) that are accessed with protection (SDK Check)");
-//		System.out.println("Found " + problematicAPIs_forward.size() + " Android APIs (for forward compatibility) that are accessed problematically ");
-//		System.out.println("Found " + protectedAPIs_backward.size() + " Android APIs (for backward compatibility) that are accessed with protection (SDK Check)");
-//		System.out.println("Found " + problematicAPIs_backward.size() + " Android APIs (for backward compatibility) that are accessed problematically ");
-//		
-//		for (APILife lifetime : protectedAPIs_forward)
-//		{
-//			System.out.println("\n==>Protected_Forward" + lifetime);
-//			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
-//			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
-//			{
-//				if (APIOverideIssues.containsKey(lifetime)) {
-//					APIOverideIssues.remove(lifetime);
-//				}
-//				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
-//				if (isLibraryMethod)
-//				{
-//					System.out.println("--Library:True-->" + lifetime + "-->" + methodSig);
-//				}
-//				else
-//				{
-//					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
-////					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
-//				}
-//			}
-//		}
-//		
-//		for (APILife lifetime : problematicAPIs_forward)
-//		{
-//			System.out.println("\n==>Problematic_Forward" + lifetime);
-//			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
-//			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
-//			{
-//				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
-//				if (isLibraryMethod)
-//				{
-//					System.out.println("--Library:True-->" + lifetime + "-->" + methodSig);
-//				}
-//				else
-//				{
-//					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
-////					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
-//				}
-//			}
-//		}
-//		
-//
-//		for (APILife lifetime : protectedAPIs_backward)
-//		{
-//			System.out.println("\n==>Protected_Backward" + lifetime);
-//			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
-//			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
-//			{
-//				if (APIOverideIssues.containsKey(lifetime)) {
-//					APIOverideIssues.remove(lifetime);
-//				}
-//				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
-//				if (isLibraryMethod)
-//				{
-//					System.out.println("--Library:True-->" + lifetime + "-->" + methodSig);
-//				}
-//				else
-//				{
-//					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
-////					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
-//				}
-//			}
-//		}
-//		
-//		for (APILife lifetime : problematicAPIs_backward)
-//		{
-//			System.out.println("\n==>Problematic_Backward" + lifetime);
-//			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
-//			for (String method : extractor.api2callers.get(lifetime.getSignature()))
-//			{
-//				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(method).getCls());
-//				if (isLibraryMethod)
-//				{
-//					System.out.println("--Library:True-->" + lifetime + "-->" + method);
-//				}
-//				else
-//				{
-//					System.out.println("--Library:False-->" + lifetime + "-->" + method);
-////					System.out.println(ConditionalCallGraph.obtainCallStack(method));
-//				}	
-//			}
-//		}
-//
-//		for (APILife apilife : APIOverideIssues.keySet()) {
-//			System.out.println("Found Callback Issue:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
-//		}
-//		for (String method : overrideIssues.keySet()) {
-//			System.out.println("Found Callback Issue:" + method + ":extends from:" + overrideIssues.get(method));
-//		}
+		
+		System.out.println("SDK Check:" + Config.containsSDKVersionChecker);
+		System.out.println("Found " + protectedAPIs_forward.size() + " Android APIs (for forward compatibility) that are accessed with protection (SDK Check)");
+		System.out.println("Found " + problematicAPIs_forward.size() + " Android APIs (for forward compatibility) that are accessed problematically ");
+		System.out.println("Found " + protectedAPIs_backward.size() + " Android APIs (for backward compatibility) that are accessed with protection (SDK Check)");
+		System.out.println("Found " + problematicAPIs_backward.size() + " Android APIs (for backward compatibility) that are accessed problematically ");
+		
+		for (APILife lifetime : protectedAPIs_forward)
+		{
+			System.out.println("\n==>Protected_Forward" + lifetime);
+			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
+			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
+			{
+				if (APIOverideIssues.containsKey(lifetime)) {
+					back_forward_protect.put(lifetime, 1);
+				}
+				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
+				if (isLibraryMethod)
+				{
+					System.out.println("--Library:True-->" + lifetime + "-->" + methodSig);
+				}
+				else
+				{
+					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
+//					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
+				}
+			}
+		}
+		
+		for (APILife lifetime : problematicAPIs_forward)
+		{
+			System.out.println("\n==>Problematic_Forward" + lifetime);
+			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
+			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
+			{
+				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
+				if (isLibraryMethod)
+				{
+					System.out.println("--Library:True-->" + lifetime + "-->" + methodSig);
+				}
+				else
+				{
+					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
+//					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
+				}
+			}
+		}
+		
+
+		for (APILife lifetime : protectedAPIs_backward)
+		{
+			System.out.println("\n==>Protected_Backward" + lifetime);
+			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
+			for (String methodSig : extractor.api2callers.get(lifetime.getSignature()))
+			{
+				if (APIOverideIssues.containsKey(lifetime)) {
+					if (back_forward_protect.containsKey(lifetime)) {
+						back_forward_protect.put(lifetime, 2);
+					} else {
+						back_forward_protect.put(lifetime, 1);
+					}
+				}
+				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
+				if (isLibraryMethod)
+				{
+					System.out.println("--Library:True-->" + lifetime + "-->" + methodSig);
+				}
+				else
+				{
+					System.out.println("--Library:False-->" + lifetime + "-->" + methodSig);
+//					System.out.println(ConditionalCallGraph.obtainCallStack(methodSig));
+				}
+			}
+		}
+		
+		for (APILife lifetime : problematicAPIs_backward)
+		{
+			System.out.println("\n==>Problematic_Backward" + lifetime);
+			System.out.println(extractor.api2callers.get(lifetime.getSignature()));
+			for (String method : extractor.api2callers.get(lifetime.getSignature()))
+			{
+				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(method).getCls());
+				if (isLibraryMethod)
+				{
+					System.out.println("--Library:True-->" + lifetime + "-->" + method);
+				}
+				else
+				{
+					System.out.println("--Library:False-->" + lifetime + "-->" + method);
+//					System.out.println(ConditionalCallGraph.obtainCallStack(method));
+				}	
+			}
+		}
+
+		for (APILife apilife : back_forward_protect.keySet()) {
+			int cnt = back_forward_protect.get(apilife);
+			if (cnt == 2) {
+				APIOverideIssues.remove(apilife);
+			}
+		}
+		for (APILife apilife : APIOverideIssues.keySet()) {
+			System.out.println("Found Callback Issue:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
+		}
+		for (String method : overrideIssues.keySet()) {
+			System.out.println("Found Callback Issue:" + method + ":extends from:" + overrideIssues.get(method));
+		}
 	}
 	
 	public static String constraint(int min1, int max1, int min2, int max2)
@@ -330,6 +353,9 @@ public class CiD
 		boolean[] supportAPIs = new boolean[31];
 		for (int api: apis) {
 			supportAPIs[api] = true;
+		}
+		if (!AndroidAPIFieldLifeModel.getInstance().apiLevel1Exists) {
+			supportAPIs[1] = true;
 		}
 		supportAPIs[20] = true; // default true for API level 20 (actually retained for other purpose, we believe it support every API.)
 		for (int i = minAPI; i < maxAPI + 1; i++) {

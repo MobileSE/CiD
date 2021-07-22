@@ -1,6 +1,6 @@
 package lu.uni.snt.cid.toolkits;
 
-import lu.uni.snt.cid.AndroidAPILifeModel;
+import lu.uni.snt.cid.AndroidAPIFieldLifeModel;
 
 public class AndroidAPILifeModelBuilder 
 {
@@ -60,6 +60,6 @@ public class AndroidAPILifeModelBuilder
 	
 	public static void build()
 	{
-		AndroidAPILifeModel.getInstance().serialize();
+		AndroidAPIFieldLifeModel.getInstance().serialize();
 	}
 }

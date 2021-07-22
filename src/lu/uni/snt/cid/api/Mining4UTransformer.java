@@ -7,8 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import lu.uni.snt.cid.AndroidAPILifeModel;
-import lu.uni.snt.cid.AndroidFieldLifeModel;
+import lu.uni.snt.cid.AndroidAPIFieldLifeModel;
 import lu.uni.snt.cid.Config;
 import lu.uni.snt.cid.ccg.AndroidSDKVersionChecker;
 import lu.uni.snt.cid.utils.CommonUtils;
@@ -26,14 +25,17 @@ import soot.util.Chain;
 
 public class Mining4UTransformer extends SceneTransformer
 {
+	public Set<String> accessedDeviceAPIs = new HashSet<String>();
+	public Set<String> accessedDeviceFields = new HashSet<String>();
+
 	public Set<String> accessedAndroidAPIs = new HashSet<String>();
+	public Set<String> accessedAndroidFields = new HashSet<String>();
+	
 	public Map<String, Set<String>> api2callers = new HashMap<String, Set<String>>();
 	
 	public Map<String, Set<String>> api2supers = new HashMap<String, Set<String>>();
 	
 	public Set<String> superMethods = new HashSet<String>();
-	
-	public Set<String> accessedFields = new HashSet<String>();
 
 	private void extract(Body b)
 	{
@@ -61,28 +63,34 @@ public class Mining4UTransformer extends SceneTransformer
 				SootMethod sootMethod = stmt.getInvokeExpr().getMethod();
 				String methodSig = sootMethod.getSignature();
 				
-				if (AndroidAPILifeModel.getInstance().isDeviceMethod(methodSig.replace("$", ".")))
+				if (AndroidAPIFieldLifeModel.getInstance().isDeviceMethod(methodSig.replace("$", ".")))
+				{
+					methodSig = methodSig.replace("$", ".");
+					
+					accessedDeviceAPIs.add(methodSig);
+				}
+				if (AndroidAPIFieldLifeModel.getInstance().isAndroidAPI(methodSig))
 				{
 					methodSig = methodSig.replace("$", ".");
 					
 					accessedAndroidAPIs.add(methodSig);
 					CommonUtils.put(api2callers, methodSig, callerMethodSig);
 				}
-//				else if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(methodSig))
-//				{
-//					methodSig = AndroidAPILifeModel.getInstance().method2inheritedAPIs.get(methodSig);
-//					
-//					methodSig = methodSig.replace("$", ".");
-//					
-//					accessedAndroidAPIs.add(methodSig);
-//					CommonUtils.put(api2callers, methodSig, callerMethodSig);
-//				}
+				else if (AndroidAPIFieldLifeModel.getInstance().isInheritedAndroidAPI(methodSig))
+				{
+					methodSig = AndroidAPIFieldLifeModel.getInstance().method2inheritedAPIs.get(methodSig);
+					
+					methodSig = methodSig.replace("$", ".");
+					
+					accessedAndroidAPIs.add(methodSig);
+					CommonUtils.put(api2callers, methodSig, callerMethodSig);
+				}
 				
 				String maySuperSig = sootMethod.getSignature();
 				String currSig = sootMethod.getSignature();
-				if (AndroidAPILifeModel.getInstance().isInheritedAndroidAPI(maySuperSig)) {
+				if (AndroidAPIFieldLifeModel.getInstance().isInheritedAndroidAPI(maySuperSig)) {
 					String currAPI = currSig.replace("$", ".");
-					Set<String> inheritedMethods = AndroidAPILifeModel.getInstance().getInheritedAPIs(currSig);
+					Set<String> inheritedMethods = AndroidAPIFieldLifeModel.getInstance().getInheritedAPIs(currSig);
 					if (api2supers.containsKey(currAPI)) {
 						api2supers.get(currAPI).addAll(inheritedMethods);
 					} else {
@@ -100,14 +108,20 @@ public class Mining4UTransformer extends SceneTransformer
 					int lineNumber = tag.getLineNumber();
 					if (!leftVar.isEmpty()) {
 						String currField = leftVar;
-						if (AndroidAPILifeModel.getInstance().isDeviceField(currField)) {
-							accessedFields.add(currField.replace("$", ".") + "-" + lineNumber);
+						if (AndroidAPIFieldLifeModel.getInstance().isDeviceField(currField)) {
+							accessedDeviceFields.add(currField.replace("$", ".") + "-" + lineNumber);
+						}
+						if (AndroidAPIFieldLifeModel.getInstance().isAndroidField(currField)) {
+							accessedAndroidFields.add(currField.replace("$", ".") + "-" + lineNumber);
 						}
 					}
 					if (!rightVar.isEmpty()) {
 						String currField = rightVar;
-						if (AndroidAPILifeModel.getInstance().isDeviceField(currField)) {
-							accessedFields.add(currField.replace("$", ".") + "-" + lineNumber);
+						if (AndroidAPIFieldLifeModel.getInstance().isDeviceField(currField)) {
+							accessedDeviceFields.add(currField.replace("$", ".") + "-" + lineNumber);
+						}
+						if (AndroidAPIFieldLifeModel.getInstance().isAndroidField(currField)) {
+							accessedAndroidFields.add(currField.replace("$", ".") + "-" + lineNumber);
 						}
 					}
 				}
