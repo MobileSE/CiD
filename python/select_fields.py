@@ -50,8 +50,15 @@ def load_file_neat(filename):
     return res
 
 
-def filter_fields(FrameworkOriginalFile, FrameworkFilteredFile):
-    res, lst, all = load_file(FrameworkOriginalFile)
+def filter_fields(OriginalFile1, OriginalFile2, FilteredFile):
+    res, lst, all = load_file(OriginalFile1)
+    if OriginalFile2:
+        res1_1, lst1_1, all1_1 = load_file(OriginalFile2)
+        for item in res1_1:
+            res[item] = res1_1[item]
+        lst.extend(lst1_1)
+        all.extend(all1_1)
+
     new_lst = []
     new_lst_2 = []
 
@@ -59,7 +66,7 @@ def filter_fields(FrameworkOriginalFile, FrameworkFilteredFile):
         item = lst[i]
         if "'" in item:
             continue
-        match = re.search(r'<(\S+):\s(\S+)\s(\S+)>', item)
+        match = re.search(r'<(\S+):\s(\S+)\s(\S+)', item.strip(">"))
         if match:
             class_name = match.group(1)
             rtn_type = match.group(2)
@@ -102,25 +109,23 @@ def filter_fields(FrameworkOriginalFile, FrameworkFilteredFile):
             continue
 
         new_lst.append(all[i])
-        new_lst_2.append(lst[i])
+        if "=" in lst[i]:
+            new_sig = lst[i].split("=")[0].strip() + ">"
+        else:
+            new_sig = lst[i]
 
-    save_lst(new_lst_2, FrameworkFilteredFile)
-    print("framework original: ", len(all), " filtered: ", len(new_lst))
+        new_lst_2.append(new_sig)
+
+    save_lst(new_lst_2, FilteredFile)
+    print("framework original: ", len(all), " filtered: ", len(new_lst_2))
 
 
-def select_fields(SourceCodeFile, SourceCodeHideFile, FrameworkFilteredFile,
+def select_fields(SourceFilteredFile, FrameworkFilteredFile,
                    SAVE_intersection, SAVE_source_selected, SAVE_framework_selected,
                    SAVE_SOURCECODE_discard, SAVE_FRAMEWORK_discard,
                    SAVE_SOUCECODE_PKG_discard, SAVE_FRAMEWORK_PKG_discard):
-    res1 = load_file_neat(SourceCodeFile)
-    res1_1 = load_file_neat(SourceCodeHideFile)
-    count111 = 0
-    for item in res1_1:
-        if item not in res1:
-            res1[item] = 1
-        else:
-            count111 += 1
 
+    res1 = load_file_neat(SourceFilteredFile)
     res2 = load_file_neat(FrameworkFilteredFile)
 
     pkgs_1 = []
@@ -245,8 +250,9 @@ if __name__ == '__main__':
     pkg_level = 4
 
     # input files
-    SourceCodeFile = "sourcecode-out/framework-" + str(level) + "/fields.txt"
-    SourceCodeHideFile = "sourcecode-out/framework-" + str(level) + "/fields.hide.txt"
+    SourceCodeFile = "sourcecode/framework-" + str(level) + "/fields.txt"
+    SourceCodeHideFile = "sourcecode/framework-" + str(level) + "/fields.hide.txt"
+    SourceCodeFilteredFile = "sourcecode/framework-" + str(level) + "/fields-filtered.txt"
 
     FrameworkOriginalFile = "official/framework-" + str(level) + "/fields.txt"
     FrameworkFilteredFile = "official/framework-" + str(level) + "/fields-filtered.txt"
@@ -256,18 +262,19 @@ if __name__ == '__main__':
     if not os.path.exists(OUTPUT_ROOT):
         os.mkdir(OUTPUT_ROOT)
     SAVE_intersection = OUTPUT_ROOT + "/intersection_fields_" + str(level) + ".txt"
-    SAVE_source_selected = OUTPUT_ROOT + "/sourcecode_selected.txt"
-    SAVE_framework_selected = OUTPUT_ROOT + "/framework_selected.txt"
-    SAVE_SOURCECODE_discard = OUTPUT_ROOT + "/sourcecode_discard.txt"
-    SAVE_FRAMEWORK_discard = OUTPUT_ROOT + "/framework_discard.txt"
-    SAVE_SOUCECODE_PKG_discard = OUTPUT_ROOT + "/sourcecode_pkg_discard.txt"
-    SAVE_FRAMEWORK_PKG_discard = OUTPUT_ROOT + "/framework_pkg_discard.txt"
+    SAVE_source_selected = OUTPUT_ROOT + "/sourcecode_selected_" + str(level) + ".txt"
+    SAVE_framework_selected = OUTPUT_ROOT + "/framework_selected_" + str(level) + ".txt"
+    SAVE_SOURCECODE_discard = OUTPUT_ROOT + "/sourcecode_discard_" + str(level) + ".txt"
+    SAVE_FRAMEWORK_discard = OUTPUT_ROOT + "/framework_discard_" + str(level) + ".txt"
+    SAVE_SOUCECODE_PKG_discard = OUTPUT_ROOT + "/sourcecode_pkg_discard_" + str(level) + ".txt"
+    SAVE_FRAMEWORK_PKG_discard = OUTPUT_ROOT + "/framework_pkg_discard_" + str(level) + ".txt"
 
     # Framework filter first
-    filter_fields(FrameworkOriginalFile, FrameworkFilteredFile)
+    filter_fields(SourceCodeFile, SourceCodeHideFile, SourceCodeFilteredFile)
+    filter_fields(FrameworkOriginalFile, "", FrameworkFilteredFile)
 
     # select
-    select_fields(SourceCodeFile, SourceCodeHideFile, FrameworkFilteredFile,
+    select_fields(SourceCodeFilteredFile, FrameworkFilteredFile,
                   SAVE_intersection, SAVE_source_selected, SAVE_framework_selected,
                   SAVE_SOURCECODE_discard, SAVE_FRAMEWORK_discard,
                   SAVE_SOUCECODE_PKG_discard, SAVE_FRAMEWORK_PKG_discard)

@@ -90,8 +90,9 @@ if __name__ == '__main__':
 
     # input file
     sourcecode_29 = "methods-official-29.txt"
-    sourcecode_30_discard_pkg = "selected/sourcecode_pkg_discard.txt"
-    sourcecode_30_discard_API = "selected/sourcecode_discard.txt"
+    sourcecode_30_discard_pkg = "filter_pkg.txt"
+
+    sourcecode_30_discard_API = "selected/sourcecode_discard.txt"  # dont't need
 
     # output
     SAVE_NEW_29 = "methods-official-29-new.txt"

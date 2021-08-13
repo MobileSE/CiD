@@ -254,7 +254,7 @@ if __name__ == '__main__':
     pkg_level = 4
 
     # input field discard
-    framework_30_discard = "selected_field/framework_pkg_discard.txt"
+    framework_30_discard = "filter_pkg.txt"
 
     # input files
     MiuiFramework = "fields-miui-30.txt"

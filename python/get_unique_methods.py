@@ -270,7 +270,7 @@ if __name__ == '__main__':
     pkg_level = 4
 
     # input field discard
-    framework_30_discard = "selected/framework_pkg_discard.txt"
+    framework_30_discard = "filter_pkg.txt"
     print("pkg length: ", pkg_level)
 
     # input files

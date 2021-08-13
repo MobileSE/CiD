@@ -173,7 +173,6 @@ def select_methods(SourceCodeFile, SourceCodeHideFile, FrameworkFilteredFile,
                 else:
                     pkgs_1[api_pro1.len_pkg][hash1] = 1
 
-
     for api in res2:
         match = re.search(r'<(\S+):\s(\S+)\s(\S+)\((.*)\)>', api)
         if match:
@@ -269,23 +268,23 @@ if __name__ == '__main__':
     print("pkg length: ", pkg_level)
 
     # input files
-    SourceCodeFile = "sourcecode-out/framework-" + str(level) + "/methods.txt"
-    SourceCodeHideFile = "sourcecode-out/framework-" + str(level) + "/methods.hide.txt"
+    SourceCodeFile = "sourcecode/framework-" + str(level) + "/methods.txt"
+    SourceCodeHideFile = "sourcecode/framework-" + str(level) + "/methods.hide.txt"
 
     FrameworkOriginalFile = "official/framework-" + str(level) + "/methods.txt"
     FrameworkFilteredFile = "official/framework-" + str(level) + "/methods-filtered.txt"
 
     # output files
-    OUTPUT_ROOT = "selected"
+    OUTPUT_ROOT = "selected_method"
     if not os.path.exists(OUTPUT_ROOT):
         os.mkdir(OUTPUT_ROOT)
     SAVE_intersection = OUTPUT_ROOT + "/intersection_methods_" + str(level) + ".txt"
-    SAVE_source_selected = OUTPUT_ROOT + "/sourcecode_selected.txt"
-    SAVE_framework_selected = OUTPUT_ROOT + "/framework_selected.txt"
-    SAVE_SOURCECODE_discard = OUTPUT_ROOT + "/sourcecode_discard.txt"
-    SAVE_FRAMEWORK_discard = OUTPUT_ROOT + "/framework_discard.txt"
-    SAVE_SOUCECODE_PKG_discard = OUTPUT_ROOT + "/sourcecode_pkg_discard.txt"
-    SAVE_FRAMEWORK_PKG_discard = OUTPUT_ROOT + "/framework_pkg_discard.txt"
+    SAVE_source_selected = OUTPUT_ROOT + "/sourcecode_selected_" + str(level) + ".txt"
+    SAVE_framework_selected = OUTPUT_ROOT + "/framework_selected_" + str(level) + ".txt"
+    SAVE_SOURCECODE_discard = OUTPUT_ROOT + "/sourcecode_discard_" + str(level) + ".txt"
+    SAVE_FRAMEWORK_discard = OUTPUT_ROOT + "/framework_discard_" + str(level) + ".txt"
+    SAVE_SOUCECODE_PKG_discard = OUTPUT_ROOT + "/sourcecode_pkg_discard_" + str(level) + ".txt"
+    SAVE_FRAMEWORK_PKG_discard = OUTPUT_ROOT + "/framework_pkg_discard_" + str(level) + ".txt"
 
     # Framework filter first
     filter_methods(FrameworkOriginalFile, FrameworkFilteredFile)
