@@ -46,6 +46,21 @@ def load_file_neat(filename):
         lines = fr.readlines()
         for line in lines:
             s = line.strip()
+            if "void <init>()>" in s:
+                print(s)
+                continue
+            if ".Stub:" in s:
+                print(s)
+                continue
+            if ".Proxy:" in s:
+                print(s)
+                continue
+            if ".Default:" in s:
+                print(s)
+                continue
+            if "void <clinit>()>" in s:
+                print(s)
+                continue
             res[s] = 1
     return res
 
@@ -263,7 +278,7 @@ if __name__ == '__main__':
 
     # run official-framework-30 and sourcecode-30, get two discard files
 
-    level = 30
+    level = 21
     pkg_level = 4
     print("pkg length: ", pkg_level)
 
