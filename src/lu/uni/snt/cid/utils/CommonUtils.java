@@ -20,6 +20,16 @@ import com.opencsv.CSVReader;
 
 public class CommonUtils 
 {
+	
+	public static List<String> deviceCheckers = new ArrayList<String>(Arrays.asList(
+			"<android.os.Build: java.lang.String MANUFACTURER>",
+	"<android.os.Build: java.lang.String PRODUCT>",
+	"<android.os.Build: java.lang.String TAGS>",
+	"<android.os.Build: java.lang.String MODEL>",
+	"<android.os.Build: java.lang.String DEVICE>",
+	"<android.os.Build: java.lang.String BRAND>",
+	"<android.os.Build: java.lang.String FINGERPRINT>"));
+	
 	public static boolean isStringEmpty(String str)
 	{
 		boolean isEmpty = false;
@@ -55,6 +65,28 @@ public class CommonUtils
 		}
 	}
 	
+	public static void appendResultToFile(String filePath, String content) {
+		BufferedWriter bw = null;
+		try {
+			bw = new BufferedWriter(new FileWriter(filePath, true));
+			bw.write(content);
+			bw.newLine();
+			bw.write("===============================================================");
+			bw.newLine();
+			bw.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (bw != null) {
+				try {
+				bw.close();
+				} catch (IOException ioe) {
+					ioe.printStackTrace();
+				}
+			}
+		}
+	}
+	
 	public static int totalValue(Map<String, Integer> map)
 	{
 		int total = 0;
@@ -70,13 +102,24 @@ public class CommonUtils
 	public static Set<String> loadFile(String filePath)
 	{
 		Set<String> lines = new HashSet<String>();
+		boolean isField = false;
+		if (filePath.contains("fields")) {
+			isField = true;
+		}
 		
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(filePath));
 			String line = "";
 			while ((line = br.readLine()) != null)
 			{
-				lines.add(line);
+				String trimLine = line;
+				if (isField) {
+					if (line.contains("=")) {
+						int eqPos = line.indexOf("=");
+						trimLine = line.substring(0, eqPos).trim() + ">";
+					}
+				}
+				lines.add(trimLine);
 			}
 			
 			br.close();
@@ -308,8 +351,10 @@ public class CommonUtils
 		return isSpecific;
 	}
 
-	public static Map<String, Set<String[]>> csvDeviceReader(String csvPath) {
-		Map<String, Set<String[]>> methodField = new HashMap<String, Set<String[]>>();
+	public static List<Map<String, Set<String[]>>> csvDeviceReader(String csvPath) {
+		List<Map<String, Set<String[]>>> deviceMethodField = new ArrayList<Map<String, Set<String[]>>>();
+		Map<String, Set<String[]>> deviceMethods = new HashMap<String, Set<String[]>>();
+		Map<String, Set<String[]>> deviceFields = new HashMap<String, Set<String[]>>();
 		int idx = 0;
 		try {
 			try (CSVReader csvReader = new CSVReader(new FileReader(csvPath));) {
@@ -318,19 +363,30 @@ public class CommonUtils
 			    	if (idx == 0) {
 			    		Set<String[]> lines = new HashSet<String[]>();
 		    			lines.add(values);
-			    		methodField.put("headers", lines);
+			    		deviceMethods.put("headers", lines);
+			    		deviceFields.put("headers", lines);
 			    		idx += 1;
 			    	} else {
 			    		idx += 1;
 			    	}
 			    	if (isDeviceSpecific(values)) {
 			    		String mf = values[1];
-			    		if (methodField.containsKey(mf)) {
-			    			methodField.get(mf).add(values);
+			    		if (mf.contains("(") && mf.contains(")")) {
+				    		if (deviceMethods.containsKey(mf)) {
+				    			deviceMethods.get(mf).add(values);
+				    		} else {
+				    			Set<String[]> lines = new HashSet<String[]>();
+				    			lines.add(values);
+				    			deviceMethods.put(mf, lines);
+				    		}
 			    		} else {
-			    			Set<String[]> lines = new HashSet<String[]>();
-			    			lines.add(values);
-			    			methodField.put(mf, lines);
+				    		if (deviceFields.containsKey(mf)) {
+				    			deviceFields.get(mf).add(values);
+				    		} else {
+				    			Set<String[]> lines = new HashSet<String[]>();
+				    			lines.add(values);
+				    			deviceFields.put(mf, lines);
+				    		}
 			    		}
 			    	}
 			    }
@@ -339,6 +395,22 @@ public class CommonUtils
 			e.printStackTrace();
 		}
 		
-		return methodField;
+		
+		deviceMethodField.add(deviceMethods);
+		deviceMethodField.add(deviceFields);
+				
+		return deviceMethodField;
+	}
+
+	public static boolean containDeviceCheck(String content) {
+		boolean containCheck = false;
+		for (String checker : deviceCheckers) {
+			if (content.contains(checker)) {
+				containCheck = true;
+				break;
+			}
+		}
+		
+		return containCheck;
 	}
 }

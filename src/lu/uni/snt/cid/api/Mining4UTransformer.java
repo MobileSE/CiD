@@ -51,6 +51,10 @@ public class Mining4UTransformer extends SceneTransformer
 					System.out.println("[DEBUG] SDK Field (deprecated in API level 4) is still used!");
 			}
 		}
+		if (CommonUtils.containDeviceCheck(b.toString())) {
+			String filePath = "./Devices/" + Config.apkName + ".txt";
+			CommonUtils.appendResultToFile(filePath, b.toString());
+		}
 		
 		PatchingChain<Unit> units = b.getUnits();
 		

@@ -64,7 +64,7 @@ public class AndroidAPIFieldLifeModel implements Serializable
 	private String androidFieldsDirPath = "apis/android/android-fields-refinement";
 	private String androidLifetimeFieldPath = "apis/android/android_field_lifetime.txt";
 	
-	private String deviceAPIPath = "apis/android/android-devices/device_specific_methods.csv";
+	private String deviceAPIPath = "apis/android/device_specific_apis.csv";
 	private String deviceFieldPath = "apis/android/android-devices/device_specific_fields.csv";
 	
 	public static AndroidAPIFieldLifeModel getInstance()
@@ -129,8 +129,9 @@ public class AndroidAPIFieldLifeModel implements Serializable
 //			CommonUtils.put(class2Methods, fb.class2Methods);
 //		}
 		apiLevel1Exists = false;
-		Map<String, Set<String[]>> deviceM = CommonUtils.csvDeviceReader(deviceAPIPath);
-		Map<String, Set<String[]>> deviceF = CommonUtils.csvDeviceReader(deviceFieldPath);
+		List<Map<String, Set<String[]>>> deviceMF = CommonUtils.csvDeviceReader(deviceAPIPath);
+		Map<String, Set<String[]>> deviceM = deviceMF.get(0);
+		Map<String, Set<String[]>> deviceF = deviceMF.get(1);
 		
 		List<String[]> methodHeader = new ArrayList<String[]>(deviceM.get("headers"));
 		List<String[]> fieldHeader = new ArrayList<String[]>(deviceF.get("headers"));
@@ -150,13 +151,15 @@ public class AndroidAPIFieldLifeModel implements Serializable
 		
 		File androidAPIsDir = new File(androidAPIsDirPath);
 		for (File file : androidAPIsDir.listFiles()) {
-			FrameworkExtract fe = new FrameworkExtract();
-			fe.load(file.getAbsolutePath());
+//			FrameworkExtract fe = new FrameworkExtract();
+//			fe.load(file.getAbsolutePath());
+			FrameworkBase fb = new FrameworkBase();
+			fb.load(file.getAbsolutePath());
 			if (file.getAbsolutePath().contains("android-1.txt")) {
 				apiLevel1Exists = true;
 			}
-			CommonUtils.put(class2SuperClasses, fe.class2SuperClasses);
-			CommonUtils.put(class2Methods, fe.class2Methods);
+			CommonUtils.put(class2SuperClasses, fb.class2SuperClasses);
+			CommonUtils.put(class2Methods, fb.class2Methods);
 		}
 		
 		Set<String> lines = CommonUtils.loadFile(lifetimeAPIPath);
@@ -223,6 +226,7 @@ public class AndroidAPIFieldLifeModel implements Serializable
 	}
 	
 	public boolean isDeviceField(String field) {
+		field = field.replace("$", ".");
 		boolean deviceField = false;
 		if (deviceFields.containsKey(field)) {
 			deviceField = true;

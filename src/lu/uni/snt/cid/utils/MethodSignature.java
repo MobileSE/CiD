@@ -37,7 +37,7 @@ public class MethodSignature
 		
 		int posStartBracket = signature.indexOf('(');
 		int posSpaceBeforeMethodName = signature.lastIndexOf(' ', posStartBracket);
-		
+
 		returnType = signature.substring(posColon+2, posSpaceBeforeMethodName);
 		methodName = signature.substring(posSpaceBeforeMethodName+1, posStartBracket);
 

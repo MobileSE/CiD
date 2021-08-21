@@ -24,15 +24,15 @@ public class APILifeStudy
 				continue;
 			}
 
-			File androidLevel = new File("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+			File androidLevel = new File("apis/android/android-apis-refinement/android-" + level + ".txt");
 			if (!androidLevel.exists()) {
-				System.out.println("Non exists:" + "apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+				System.out.println("Non exists:" + "apis/android/android-apis-refinement/android-" + level + ".txt");
 				continue;
 			}
-			Set<String> methods = CommonUtils.loadFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
+			Set<String> methods = CommonUtils.loadFile("apis/android/android-apis-refinement/android-" + level + ".txt");
 //			Set<String> methods = CommonUtils.loadContentFromFile("apis/Official/android/android-apis-refinement/android-" + level + ".txt");
 			
-			Set<String> fields = CommonUtils.loadFile("apis/Official/android/android-fields-refinement/android-" + level + ".txt");
+			Set<String> fields = CommonUtils.loadFile("apis/android/android-fields-refinement/android-" + level + ".txt");
 //			Set<String> fields = CommonUtils.loadContentFromFile("apis/Official/android/android-fields-refinement/android-" + level + ".txt");
 			
 			for (String method : methods)
@@ -115,7 +115,7 @@ public class APILifeStudy
 			output.append(apiLifeMap.get(key) + "\n");
 		}
 		
-		CommonUtils.writeResultToFile("apis/Official/android/android_api_lifetime.txt", output.toString());
+		CommonUtils.writeResultToFile("apis/android/android_api_lifetime.txt", output.toString());
 		
 		StringBuilder fieldOut = new StringBuilder();
 		
@@ -123,7 +123,7 @@ public class APILifeStudy
 			fieldOut.append(fieldLifeMap.get(key) + "\n");
 		}
 		
-		CommonUtils.writeResultToFile("apis/Official/android/android_field_lifetime.txt", fieldOut.toString());
+		CommonUtils.writeResultToFile("apis/android/android_field_lifetime.txt", fieldOut.toString());
 	}
 
 	static class APILife

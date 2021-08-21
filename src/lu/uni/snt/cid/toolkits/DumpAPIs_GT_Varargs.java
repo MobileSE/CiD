@@ -9,7 +9,7 @@ public class DumpAPIs_GT_Varargs {
 
 	public static void main(String[] args) 
 	{
-		Set<String> lines = CommonUtils.loadFile("apis/Official/android/android_api_lifetime.txt");
+		Set<String> lines = CommonUtils.loadFile("apis/android/android_api_lifetime.txt");
 
 		StringBuilder gt = new StringBuilder();
 		StringBuilder varargs = new StringBuilder();
@@ -31,10 +31,10 @@ public class DumpAPIs_GT_Varargs {
 		}
 		
 		if (gt.toString().length() == 0) {
-			CommonUtils.writeResultToFile("apis/Official/android/android_api_generictype.txt", gt.toString());
+			CommonUtils.writeResultToFile("apis/android/android_api_generictype.txt", gt.toString());
 		}
 		if (varargs.toString().length() == 0) {
-			CommonUtils.writeResultToFile("apis/Official/android/android_api_varargs.txt", varargs.toString());
+			CommonUtils.writeResultToFile("apis/android/android_api_varargs.txt", varargs.toString());
 		}
 	}
 

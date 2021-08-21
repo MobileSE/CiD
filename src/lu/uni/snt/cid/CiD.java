@@ -72,7 +72,7 @@ public class CiD
 		//(4) SDK check study (expand constructors)
 //		AndroidSDKVersionChecker.scan(apkPath, androidJars);
 		ConditionalCallGraph.expandConstructors();
-		
+
 		System.out.println("--------------------------------------------------------------------------------------------------------");
 		
 		System.out.println("Declared Min Sdk version is: " + manifest.getMinSdkVersion());
@@ -91,6 +91,7 @@ public class CiD
 		Map<String, Set<APILife>> overrideIssues = new HashMap<String, Set<APILife>>();
 		
 		Map<APILife, Integer> back_forward_protect = new HashMap<APILife, Integer>();
+		Map<String, Integer> method_protected = new HashMap<String, Integer>();
 
 		for (String method : extractor.api2supermethods.keySet()) {
 			APILife methodLife = AndroidAPIFieldLifeModel.getInstance().getAPIDirectLifeTime(method);
@@ -105,6 +106,9 @@ public class CiD
 			List<APILife> superLifes = new ArrayList<APILife>();
 			for (String superMethod : extractor.api2supermethods.get(method)) {
 				APILife superMethodLife = AndroidAPIFieldLifeModel.getInstance().getAPIDirectLifeTime(superMethod);
+				if (null == superMethodLife) {
+					continue;
+				}
 				superLifes.add(superMethodLife);
 				supportedLevelRetrieve(superMethodLife, supportedLevels);
 				if (isAPISupported(superMethodLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
@@ -126,31 +130,6 @@ public class CiD
 			}
 		}
 		
-		for (String field : extractor.usedDeviceFields) {
-			String[] splits = field.split("-");
-			Set<String[]> fields = AndroidAPIFieldLifeModel.getInstance().deviceSpecificField(splits[0]);
-			for (String[] fs : fields) {
-				System.out.println("Found Device Field:" + field + "@" + Arrays.toString(fs));
-			}
-
-		}
-		System.out.println("used device API number:" + extractor.usedDeviceAPIs.size());
-//		for (String method : extractor.usedDeviceAPIs) {
-//			Set<String[]> methods = AndroidAPIFieldLifeModel.getInstance().deviceSpecificMethod(method);
-//			for (String[] ms : methods) {
-//				System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
-//			}
-//		}
-		
-		for (String field : extractor.usedAndroidFields) {
-			String[] splits = field.split("-");
-			APILife fieldLife = AndroidAPIFieldLifeModel.getInstance().getFieldDirectLifeTime(splits[0]);
-			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
-				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
-					System.out.println("Found Android Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
-				}
-			}
-		}
 		for (String method : extractor.usedAndroidAPIs)
 		{
 			APILife lifetime = AndroidAPIFieldLifeModel.getInstance().getLifetime(method);
@@ -209,6 +188,7 @@ public class CiD
 				if (APIOverideIssues.containsKey(lifetime)) {
 					back_forward_protect.put(lifetime, 1);
 				}
+				method_protected.put(methodSig, 1);
 				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
 				if (isLibraryMethod)
 				{
@@ -255,6 +235,9 @@ public class CiD
 						back_forward_protect.put(lifetime, 1);
 					}
 				}
+				if (method_protected.containsKey(methodSig)) {
+					method_protected.put(methodSig, 2);
+				}
 				boolean isLibraryMethod = AndroidLibraries.isAndroidLibrary(new MethodSignature(methodSig).getCls());
 				if (isLibraryMethod)
 				{
@@ -287,6 +270,54 @@ public class CiD
 			}
 		}
 
+		for (String field : extractor.usedDeviceFields) {
+			String[] splits = field.split("-");
+			System.out.println(splits.toString() + "#" + splits[0]);
+			Set<String[]> fields = AndroidAPIFieldLifeModel.getInstance().deviceSpecificField(splits[0]);
+			if (AndroidAPIFieldLifeModel.getInstance().isAndroidField(splits[0])) {
+				APILife fieldLife = AndroidAPIFieldLifeModel.getInstance().getFieldDirectLifeTime(splits[0]);
+				if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+					if (!ConditionalCallGraph.obtainConditions(field).isEmpty()) {
+						for (String[] fs : fields) {
+							System.out.println("Found Device Field Protected:" + field + "@" + Arrays.toString(fs));
+						}
+						continue;
+					}
+				} else {
+					for (String[] fs : fields) {
+						System.out.println("Found Device Field Protected:" + field + "@" + Arrays.toString(fs));
+					}
+					continue;
+				}
+			}
+			for (String[] fs : fields) {
+				System.out.println("Found Device Field:" + field + "@" + Arrays.toString(fs));
+			}
+
+		}
+
+		for (String method : extractor.usedDeviceAPIs) {
+			Set<String[]> methods = AndroidAPIFieldLifeModel.getInstance().deviceSpecificMethod(method);
+			if (method_protected.containsKey(method) && method_protected.get(method).intValue() == 2) {
+				for (String[] ms : methods) {
+					System.out.println("Found Device Method Protected:" + method + "@" + Arrays.toString(ms));
+				}
+				continue;
+			}
+			for (String[] ms : methods) {
+				System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
+			}
+		}
+
+		for (String field : extractor.usedAndroidFields) {
+			String[] splits = field.split("-");
+			APILife fieldLife = AndroidAPIFieldLifeModel.getInstance().getFieldDirectLifeTime(splits[0]);
+			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
+				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
+					System.out.println("Found Android Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
+				}
+			}
+		}
 		for (APILife apilife : back_forward_protect.keySet()) {
 			int cnt = back_forward_protect.get(apilife);
 			if (cnt == 2) {

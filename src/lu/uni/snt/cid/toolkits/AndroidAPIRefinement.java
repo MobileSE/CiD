@@ -12,7 +12,7 @@ public class AndroidAPIRefinement
 {
 	public static void main(String[] args)
 	{
-		File androidAPIsDir = new File("apis/Official/android/android-apis/");
+		File androidAPIsDir = new File("apis/android/android-apis/");
 		for (File file : androidAPIsDir.listFiles())
 		{
 			if (! (file.getName().endsWith(".txt") || file.getName().endsWith(".xml")))
@@ -62,8 +62,8 @@ public class AndroidAPIRefinement
 				}
 			}
 			
-			CommonUtils.writeResultToFile("apis/Official/android/android-apis-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", sb.toString());
-			CommonUtils.writeResultToFile("apis/Official/android/android-fields-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", fieldsb.toString());
+			CommonUtils.writeResultToFile("apis/android/android-apis-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", sb.toString());
+			CommonUtils.writeResultToFile("apis/android/android-fields-refinement/" + PathUtils.getFileNameWithoutExtension(file.getAbsolutePath()) + ".txt", fieldsb.toString());
 		}
 	}
 }

@@ -23,7 +23,8 @@ public class FrameworkBase
 	
 	public Map<String, Set<String>> class2Fields = new HashMap<String, Set<String>>();
 
-	private String lifetimeAPIPath = "apis/Official/android/android-java-lang-classes.txt";
+	private String lifetimeAPIPath = "apis/android/android-java-lang-classes.txt";
+	private String[] possibleGenerics = new String[] {"A", "B", "D", "E", "F", "K", "S", "T", "U", "X", "V", "W"};
 	
 	public void load(String androidAPIPath)
 	{
@@ -52,9 +53,19 @@ public class FrameworkBase
 		String currentPkgName = "";
 		String currentClsName = "";
 		
+		Map<String, String> genericTypes = new HashMap<String, String>();
+		
+		String classGenericPattern = ".* class [a-zA-Z]\\w*(<.*?>)";
+		String methodGenericPattern = ".*(<.*?>).*";
+		Pattern clsGenericPattern = Pattern.compile(classGenericPattern);
+		Pattern mGenericPattern = Pattern.compile(methodGenericPattern);
+		
+		String genericLine = "";
+		
 		for (String line : lines)
 		{
 			line = line.trim();
+			genericLine = line;
 			
 			line = removeGenericType(line);
 			
@@ -65,10 +76,26 @@ public class FrameworkBase
 			}
 			else if (line.contains(" class "))
 			{
+				if (!genericTypes.isEmpty()) {
+					genericTypes.clear();
+				}
+				Matcher clsM = clsGenericPattern.matcher(genericLine);
+				if (clsM.find()) {
+					String genericMatch = clsM.group(1);
+					String genericDec = clsM.group(1).substring(1, genericMatch.length() - 1);
+					if (genericDec.contains("extends")) {
+						String[] decSplits = genericDec.split("extends");
+						String[] generics = decSplits[0].split(",");
+						for (String gt : generics) {
+							genericTypes.put(gt.trim(), decSplits[1].trim());
+						}
+					} else {
+						genericTypes.put(genericDec.trim(), "java.lang.Object");
+					}
+				}
 				line = line.replaceAll(".*class ", "");
 				line = currentPkgName + "." + line;
 				line = line.replace("{", "").trim();
-				
 				Set<String> superClses = new HashSet<String>();
 				
 				if (line.contains("implements"))
@@ -116,6 +143,14 @@ public class FrameworkBase
 					}
 				}
 				
+				if (line.contains("extends"))
+				{
+					String[] strs = line.split("extends");
+					line = strs[0].trim();
+					
+					superClses.add(strs[1].trim());
+				}
+				
 				currentClsName = line;
 				
 				if (!currentClsName.contains(".test."))
@@ -125,9 +160,46 @@ public class FrameworkBase
 			{
 				StringBuilder sb = new StringBuilder();
 				StringBuilder sbparams = new StringBuilder();
-
-				String regPattern = "@NonNull\\s*|@Nullable\\s*|@FloatRange\\(.*?\\)\\s*|@IntRange\\(.*?\\)\\s*|@Size\\(.*?\\)\\s*";
 				
+				Matcher mm = mGenericPattern.matcher(genericLine);
+				if (mm.find()) {
+					String genericMatch = mm.group(1);
+					String genericDec = genericMatch.substring(1, genericMatch.length() - 1);
+					if (genericDec.contains("extends")) {
+						String[] decSplits = genericDec.split("extends");
+						String[] gts = decSplits[0].split(",");
+						for(String gt : gts) {
+							String genDec = gt.trim();
+							if (genDec.equals("?")) {
+								genDec = ("\\" + genDec);
+							}
+							String genDecPattern = "\\b" + genDec + "\\b";
+							line = line.replaceAll(genDecPattern, decSplits[1].trim());
+						}
+					}
+				}
+				if (!genericTypes.isEmpty()) {
+					for (Map.Entry<String, String> entry : genericTypes.entrySet()) {
+						String genDec = entry.getKey().trim();
+						if (genDec.equals("?")) {
+							genDec = ("\\" + genDec);
+						}
+						String genDecPattern = "\\b" + genDec + "\\b";
+						line = line.replaceAll(genDecPattern, entry.getValue().trim());
+					}
+				}
+				line = line.replaceAll("\\.\\.\\.", "[]");
+				for (String gt : possibleGenerics) {
+					String genDec = gt.trim();
+					if (genDec.equals("?")) {
+						genDec = ("\\" + genDec);
+					}
+					String genDecPattern = "\\b" + genDec + "\\b";
+					line = line.replaceAll(genDecPattern, "java.lang.Object");
+				}
+
+//				String regPattern = "@BoolRes\\s*|@FontRes\\s*|@IntegerRes\\s*|@DimenRes\\s*|@ColorRes\\s*|@HalfFloat\\s*|@TransitionRes\\s*|@AnimatorRes\\s*|@android\\.*?\\s*|@InterpolatorRes\\s*|@Px\\s*|@RawRes\\s*|@AnimRes\\s*|@RequiresPermission\\s*|@ArrayRes\\s*|@XmlRes\\s*|@MenuRes\\s*|@StringRes\\s*|@PluralsRes\\s*|@AnyRes\\s*|@ColorLong\\s*|@IdRes\\s*|@AttrRes\\s*|@StyleRes\\s*|@LayoutRes\\s*|@DrawableRes\\s*|@Deprecated\\s*|@StyleableRes\\s*|@ColorInt\\s*|@NonNull\\s*|@Nullable\\s*|@FloatRange\\(.*?\\)\\s*|@IntRange\\(.*?\\)\\s*|@Size\\(.*?\\)\\s*";
+				String regPattern = "@[a-zA-Z].*?\\s+";
 				if (line.startsWith("ctor"))
 				{
 					sb.append("<" + currentClsName + ": void <init>");
@@ -138,10 +210,11 @@ public class FrameworkBase
 					sbparams.append("(");
 					boolean commaAdd = false;
 					for (String param: paramSplits) {
+						String neatParam = javaLangAppend(param.trim());
 						if (commaAdd) {
-							sbparams.append("," + param);
+							sbparams.append("," + neatParam);
 						} else {
-							sbparams.append(param);
+							sbparams.append(neatParam);
 							commaAdd = true;
 						}
 					}
@@ -155,7 +228,13 @@ public class FrameworkBase
 					int firstBracketPos = line.indexOf("(");
 					int lastBracketPos = line.lastIndexOf(")");
 
+					if (txtFilePath.contains("android-30.txt") && line.contains("setLineSpacing(float,")) {
+						System.out.println("Start:" + line);
+					}
 					line = line.substring(0, firstBracketPos + 1) + line.substring(firstBracketPos + 1, lastBracketPos).replaceAll(regPattern, "") + line.substring(lastBracketPos);
+					if (txtFilePath.contains("android-30.txt") && line.contains("setLineSpacing(float,")) {
+						System.out.println("End:" + line);
+					}
 					sb.append("<" + currentClsName + ": ");
 					
 					String params = line.substring(line.lastIndexOf('('), line.lastIndexOf(')')+1).replace(" ", "");
@@ -203,7 +282,7 @@ public class FrameworkBase
 					String splits[] = commentRemoved.split(" ");
 					int splitSize = splits.length;
 					// field public static final int STATE_ERROR = 3; // 0x3
-					sb.append(splits[splitSize - 4] + " ");
+					sb.append(javaLangAppend(splits[splitSize - 4]) + " ");
 					sb.append(splits[splitSize - 3] + " ");
 					sb.append(splits[splitSize - 2] + " ");
 					sb.append(splits[splitSize - 1]);
@@ -219,7 +298,7 @@ public class FrameworkBase
 					String splits[] = commentRemoved.split(" ");
 					int splitSize = splits.length;
 					// field public final int flags;
-					sb.append(splits[splitSize - 2] + " ");
+					sb.append(javaLangAppend(splits[splitSize - 2]) + " ");
 					sb.append(splits[splitSize - 1]);
 					
 					for (int i = 0; i < splitSize - 2; i++) {
@@ -305,9 +384,20 @@ public class FrameworkBase
 						}
 						
 						sb.append(")>");
+						
+						String ctorStr = sb.toString();
+						ctorStr = ctorStr.replaceAll("\\.\\.\\.", "[]");
+						for (String gt : possibleGenerics) {
+							String genDec = gt.trim();
+							if (genDec.equals("?")) {
+								genDec = ("\\" + genDec);
+							}
+							String genDecPattern = "\\b" + genDec + "\\b";
+							ctorStr = ctorStr.replaceAll(genDecPattern, "java.lang.Object");
+						}
 
 						if (!className.contains(".test."))
-							put(class2Methods, className, sb.toString());
+							put(class2Methods, className, ctorStr);
 					}
 					
 					for (Element methodEle : classEle.getChildren("method"))
@@ -335,8 +425,19 @@ public class FrameworkBase
 						
 						sb.append(")>");
 						
+						String methodStr = sb.toString();
+						methodStr = methodStr.replaceAll("\\.\\.\\.", "[]");
+						for (String gt : possibleGenerics) {
+							String genDec = gt.trim();
+							if (genDec.equals("?")) {
+								genDec = ("\\" + genDec);
+							}
+							String genDecPattern = "\\b" + genDec + "\\b";
+							methodStr = methodStr.replaceAll(genDecPattern, "java.lang.Object");
+						}
+						
 						if (!className.contains(".test."))
-							put(class2Methods, className, sb.toString());
+							put(class2Methods, className, methodStr);
 					}
 					
 					for (Element fieldEle : classEle.getChildren("field")) {
