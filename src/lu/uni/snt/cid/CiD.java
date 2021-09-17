@@ -1,23 +1,16 @@
 package lu.uni.snt.cid;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import org.apache.commons.io.FileUtils;
-
 import lu.uni.snt.cid.api.APIExtractor;
 import lu.uni.snt.cid.api.APILife;
 import lu.uni.snt.cid.ccg.ConditionalCallGraph;
 import lu.uni.snt.cid.ccg.DeviceConditionalCallGraph;
 import lu.uni.snt.cid.dcl.DexHunter;
 import lu.uni.snt.cid.utils.MethodSignature;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
 
 public class CiD
 {
@@ -175,11 +168,11 @@ public class CiD
 		}
 		
 		System.out.println("SDK Check:" + Config.containsSDKVersionChecker);
-		System.out.println("Found " + protectedAPIs_forward.size() + " Android APIs (for forward compatibility) that are accessed with protection (SDK Check)");
+		/*System.out.println("Found " + protectedAPIs_forward.size() + " Android APIs (for forward compatibility) that are accessed with protection (SDK Check)");
 		System.out.println("Found " + problematicAPIs_forward.size() + " Android APIs (for forward compatibility) that are accessed problematically ");
 		System.out.println("Found " + protectedAPIs_backward.size() + " Android APIs (for backward compatibility) that are accessed with protection (SDK Check)");
 		System.out.println("Found " + problematicAPIs_backward.size() + " Android APIs (for backward compatibility) that are accessed problematically ");
-		
+		*/
 		for (APILife lifetime : protectedAPIs_forward)
 		{
 			System.out.println("\n==>Protected_Forward" + lifetime);
@@ -294,7 +287,7 @@ public class CiD
 				}
 			}
 			for (String[] fs : fields) {
-				System.out.println("Found Device Field:" + field + "@" + Arrays.toString(fs));
+				System.out.println("[Display] Found Device Field:" + field + "@" + Arrays.toString(fs));
 			}
 
 		}
@@ -322,7 +315,7 @@ public class CiD
 ////					System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
 //				} else {
 					// only exists in specific customizations but Android OS.
-					System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
+					System.out.println("[Display] Found Device Method:" + method + "@" + Arrays.toString(ms));
 //				}
 				
 			}
@@ -334,10 +327,10 @@ public class CiD
 			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
 				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
 					if (fieldLife.getMaxAPILevel() < maxAPILevel) {
-						System.out.println("Found Evolution Android Field Problematic_Forward:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
+						System.out.println("[Display] Found Evolution Android Field Problematic_Forward:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
 					}
 					if (fieldLife.getMinAPILevel() > minAPILevel && fieldLife.getMinAPILevel() > 1) {
-						System.out.println("Found Evolution Android Field Problematic_Backward:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");						
+						System.out.println("[Display] Found Evolution Android Field Problematic_Backward:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
 					}
 				}
 			}
@@ -350,15 +343,15 @@ public class CiD
 		}
 		for (APILife apilife : APIOverideIssues.keySet()) {
 			if (apilife.getMaxAPILevel() < maxAPILevel) {
-				System.out.println("Found Override Problematic_Forward:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
+				System.out.println("[Display] Found Override Problematic_Forward:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
 			}
 			if (apilife.getMinAPILevel() > minAPILevel && apilife.getMinAPILevel() > 1) {
-				System.out.println("Found Override Problematic_Backward:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
+				System.out.println("[Display] Found Override Problematic_Backward:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
 			}
 //			System.out.println("Found Callback Issue:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
 		}
 		for (String method : overrideIssues.keySet()) {
-			System.out.println("Found Callback Issue:" + method + ":extends from:" + overrideIssues.get(method));
+			System.out.println("[Display] Found Callback Issue:" + method + ":extends from:" + overrideIssues.get(method));
 		}
 	}
 	
