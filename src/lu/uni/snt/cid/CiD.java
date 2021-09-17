@@ -15,6 +15,7 @@ import org.apache.commons.io.FileUtils;
 import lu.uni.snt.cid.api.APIExtractor;
 import lu.uni.snt.cid.api.APILife;
 import lu.uni.snt.cid.ccg.ConditionalCallGraph;
+import lu.uni.snt.cid.ccg.DeviceConditionalCallGraph;
 import lu.uni.snt.cid.dcl.DexHunter;
 import lu.uni.snt.cid.utils.MethodSignature;
 
@@ -272,7 +273,9 @@ public class CiD
 
 		for (String field : extractor.usedDeviceFields) {
 			String[] splits = field.split("-");
-			System.out.println(splits.toString() + "#" + splits[0]);
+			if (!DeviceConditionalCallGraph.obtainConditions(field).isEmpty()) {
+				System.out.println("Found Device Field Protected Device:" + splits[0]);
+			}
 			Set<String[]> fields = AndroidAPIFieldLifeModel.getInstance().deviceSpecificField(splits[0]);
 			if (AndroidAPIFieldLifeModel.getInstance().isAndroidField(splits[0])) {
 				APILife fieldLife = AndroidAPIFieldLifeModel.getInstance().getFieldDirectLifeTime(splits[0]);
@@ -297,6 +300,9 @@ public class CiD
 		}
 
 		for (String method : extractor.usedDeviceAPIs) {
+			if (!DeviceConditionalCallGraph.obtainConditions(method).isEmpty()) {
+				System.out.println("Found Device Method Protected Device:" + method);
+			}
 			Set<String[]> methods = AndroidAPIFieldLifeModel.getInstance().deviceSpecificMethod(method);
 			if (method_protected.containsKey(method) && method_protected.get(method).intValue() == 2) {
 				for (String[] ms : methods) {
@@ -305,7 +311,20 @@ public class CiD
 				continue;
 			}
 			for (String[] ms : methods) {
-				System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
+//				if (AndroidAPIFieldLifeModel.getInstance().isAndroidAPI(method)) {
+//					APILife methodLife = AndroidAPIFieldLifeModel.getInstance().getLifetime(method);
+//					if (methodLife.getMaxAPILevel() < maxAPILevel) {
+//						System.out.println("Found Device Method Problematic_Forward:" + methodLife + "@" + Arrays.toString(ms));
+//					}
+//					if (methodLife.getMinAPILevel() > minAPILevel && methodLife.getMinAPILevel() > 1) {
+//						System.out.println("Found Device Method Problematic_Backward:" + methodLife + "@" + Arrays.toString(ms));
+//					}
+////					System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
+//				} else {
+					// only exists in specific customizations but Android OS.
+					System.out.println("Found Device Method:" + method + "@" + Arrays.toString(ms));
+//				}
+				
 			}
 		}
 
@@ -314,7 +333,12 @@ public class CiD
 			APILife fieldLife = AndroidAPIFieldLifeModel.getInstance().getFieldDirectLifeTime(splits[0]);
 			if (!isAPISupported(fieldLife.getAPILevelsInInt(), minAPILevel, maxAPILevel)) {
 				if (ConditionalCallGraph.obtainConditions(field).isEmpty()) {
-					System.out.println("Found Android Field:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
+					if (fieldLife.getMaxAPILevel() < maxAPILevel) {
+						System.out.println("Found Evolution Android Field Problematic_Forward:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");
+					}
+					if (fieldLife.getMinAPILevel() > minAPILevel && fieldLife.getMinAPILevel() > 1) {
+						System.out.println("Found Evolution Android Field Problematic_Backward:" + fieldLife + ":<minAPI:" + minAPILevel + ">:<maxAPI:" + maxAPILevel + ">");						
+					}
 				}
 			}
 		}
@@ -325,7 +349,13 @@ public class CiD
 			}
 		}
 		for (APILife apilife : APIOverideIssues.keySet()) {
-			System.out.println("Found Callback Issue:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
+			if (apilife.getMaxAPILevel() < maxAPILevel) {
+				System.out.println("Found Override Problematic_Forward:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
+			}
+			if (apilife.getMinAPILevel() > minAPILevel && apilife.getMinAPILevel() > 1) {
+				System.out.println("Found Override Problematic_Backward:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
+			}
+//			System.out.println("Found Callback Issue:" + apilife + ":extends from:" + APIOverideIssues.get(apilife));
 		}
 		for (String method : overrideIssues.keySet()) {
 			System.out.println("Found Callback Issue:" + method + ":extends from:" + overrideIssues.get(method));

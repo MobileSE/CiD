@@ -132,15 +132,14 @@ public class APILifeStudy
 		int minAPILevel = Integer.MAX_VALUE;
 		int maxAPILevel = Integer.MIN_VALUE;
 		String levelInterval = "";
-		boolean revert = false;
 		
 		@Override
 		public String toString()
 		{
 			if (levelInterval.endsWith(",")) {
-				return signature + ":[" + levelInterval.substring(0, levelInterval.length() - 1) + "]:" + revert;
+				return signature + ":[" + levelInterval.substring(0, levelInterval.length() - 1) + "]";
 			} else {
-				return signature + ":[" + levelInterval + "]:" + revert;
+				return signature + ":[" + levelInterval + "]";
 			}
 		}
 	}

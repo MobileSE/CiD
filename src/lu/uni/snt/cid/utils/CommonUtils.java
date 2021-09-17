@@ -340,6 +340,15 @@ public class CommonUtils
 		return "<" + clsName + origin.substring(semicolonPos);
 	}
 	
+	public static boolean isEvolutionInduce(String[] record) {
+		boolean isEvolution = false;
+		if (record.length == 1) {
+			isEvolution = true;
+		}
+		
+		return isEvolution;
+	}
+	
 	public static boolean isDeviceSpecific(String[] record) {
 		boolean isSpecific = false;
 		for (String val : record) {
@@ -355,6 +364,8 @@ public class CommonUtils
 		List<Map<String, Set<String[]>>> deviceMethodField = new ArrayList<Map<String, Set<String[]>>>();
 		Map<String, Set<String[]>> deviceMethods = new HashMap<String, Set<String[]>>();
 		Map<String, Set<String[]>> deviceFields = new HashMap<String, Set<String[]>>();
+		Map<String, Set<String[]>> evoMethods = new HashMap<String, Set<String[]>>();
+		Map<String, Set<String[]>> evoFields = new HashMap<String, Set<String[]>>();
 		int idx = 0;
 		try {
 			try (CSVReader csvReader = new CSVReader(new FileReader(csvPath));) {
@@ -369,7 +380,27 @@ public class CommonUtils
 			    	} else {
 			    		idx += 1;
 			    	}
-			    	if (isDeviceSpecific(values)) {
+			    	if (isEvolutionInduce(values)) {
+			    		String val = values[0];
+			    		if (val.contains("(") && val.contains(")")) {
+			    			if (evoMethods.containsKey("Methods")) {
+			    				evoMethods.get("Methods").add(values);
+			    			} else {
+			    				Set<String[]> lines = new HashSet<String[]>();
+			    				lines.add(values);
+			    				evoMethods.put("Methods", lines);
+			    			}
+			    		} else {
+			    			if (evoFields.containsKey("Fields")) {
+			    				evoFields.get("Fields").add(values);
+			    			} else {
+			    				Set<String[]> lines = new HashSet<String[]>();
+			    				lines.add(values);	
+			    				evoFields.put("Fields", lines);;
+			    			}
+			    		}
+			    	}
+			    	else if (isDeviceSpecific(values)) {
 			    		String mf = values[1];
 			    		if (mf.contains("(") && mf.contains(")")) {
 				    		if (deviceMethods.containsKey(mf)) {
@@ -398,7 +429,8 @@ public class CommonUtils
 		
 		deviceMethodField.add(deviceMethods);
 		deviceMethodField.add(deviceFields);
-				
+		deviceMethodField.add(evoMethods);
+		deviceMethodField.add(evoFields);
 		return deviceMethodField;
 	}
 

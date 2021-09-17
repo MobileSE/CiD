@@ -132,6 +132,8 @@ public class AndroidAPIFieldLifeModel implements Serializable
 		List<Map<String, Set<String[]>>> deviceMF = CommonUtils.csvDeviceReader(deviceAPIPath);
 		Map<String, Set<String[]>> deviceM = deviceMF.get(0);
 		Map<String, Set<String[]>> deviceF = deviceMF.get(1);
+		Map<String, Set<String[]>> evoMethods = deviceMF.get(2);
+		Map<String, Set<String[]>> evoFields = deviceMF.get(3);
 		
 		List<String[]> methodHeader = new ArrayList<String[]>(deviceM.get("headers"));
 		List<String[]> fieldHeader = new ArrayList<String[]>(deviceF.get("headers"));
@@ -162,9 +164,11 @@ public class AndroidAPIFieldLifeModel implements Serializable
 			CommonUtils.put(class2Methods, fb.class2Methods);
 		}
 		
-		Set<String> lines = CommonUtils.loadFile(lifetimeAPIPath);
-		for (String line : lines)
+//		Set<String> lines = CommonUtils.loadFile(lifetimeAPIPath);
+		Set<String[]> methods = evoMethods.get("Methods");
+		for (String[] lines : methods)
 		{
+			String line = lines[0];
 			APILife apiLife = new APILife(line);
 			method2APILifes.put(apiLife.getSignature(), apiLife);
 		}
@@ -179,10 +183,12 @@ public class AndroidAPIFieldLifeModel implements Serializable
 ////			CommonUtils.put(field2Class, fb.field2Class);
 //		}
 		
-		Set<String> fields = CommonUtils.loadFile(androidLifetimeFieldPath);
-		for (String field : fields)
+//		Set<String> fields = CommonUtils.loadFile(androidLifetimeFieldPath);
+		Set<String[]> fields = evoFields.get("Fields");
+		for (String[] field : fields)
 		{
-			APILife apiLife = new APILife(field);
+			String line = field[0];
+			APILife apiLife = new APILife(line);
 			field2FieldLifes.put(apiLife.getSignature(), apiLife);
 		}
 	}

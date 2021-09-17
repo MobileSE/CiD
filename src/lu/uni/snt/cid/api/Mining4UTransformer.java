@@ -9,6 +9,7 @@ import java.util.Set;
 
 import lu.uni.snt.cid.AndroidAPIFieldLifeModel;
 import lu.uni.snt.cid.Config;
+import lu.uni.snt.cid.ccg.AndroidDeviceChecker;
 import lu.uni.snt.cid.ccg.AndroidSDKVersionChecker;
 import lu.uni.snt.cid.utils.CommonUtils;
 import soot.Body;
@@ -50,10 +51,6 @@ public class Mining4UTransformer extends SceneTransformer
 				if (Config.DEBUG)
 					System.out.println("[DEBUG] SDK Field (deprecated in API level 4) is still used!");
 			}
-		}
-		if (CommonUtils.containDeviceCheck(b.toString())) {
-			String filePath = "./Devices/" + Config.apkName + ".txt";
-			CommonUtils.appendResultToFile(filePath, b.toString());
 		}
 		
 		PatchingChain<Unit> units = b.getUnits();
@@ -137,6 +134,7 @@ public class Mining4UTransformer extends SceneTransformer
 	{
 		extract(b);
 		AndroidSDKVersionChecker.scan(b);
+		AndroidDeviceChecker.scan(b);
 	}
 
 	@Override
