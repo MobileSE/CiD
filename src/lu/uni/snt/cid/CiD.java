@@ -276,18 +276,21 @@ public class CiD
 					if (!ConditionalCallGraph.obtainConditions(field).isEmpty()) {
 						for (String[] fs : fields) {
 							System.out.println("Found Device Field Protected:" + field + "@" + Arrays.toString(fs));
+							break;
 						}
 						continue;
 					}
 				} else {
 					for (String[] fs : fields) {
 						System.out.println("Found Device Field Protected:" + field + "@" + Arrays.toString(fs));
+						break;
 					}
 					continue;
 				}
 			}
 			for (String[] fs : fields) {
 				System.out.println("[Display] Found Device Field:" + field + "@" + Arrays.toString(fs));
+				break;
 			}
 
 		}
@@ -300,6 +303,7 @@ public class CiD
 			if (method_protected.containsKey(method) && method_protected.get(method).intValue() == 2) {
 				for (String[] ms : methods) {
 					System.out.println("Found Device Method Protected:" + method + "@" + Arrays.toString(ms));
+					break;
 				}
 				continue;
 			}
@@ -316,6 +320,7 @@ public class CiD
 //				} else {
 					// only exists in specific customizations but Android OS.
 					System.out.println("[Display] Found Device Method:" + method + "@" + Arrays.toString(ms));
+					break;
 //				}
 				
 			}
